@@ -10,6 +10,8 @@
 
 ## Experiments
 
+ >Human Machine Interactions Lab
+
  - HMI [Experiment - 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Experiments/AMEY_B-50_HMI_EXPERIMENT-1.pdf)
 
 ## Quizzes
