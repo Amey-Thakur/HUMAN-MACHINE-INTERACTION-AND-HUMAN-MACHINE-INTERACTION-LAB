@@ -15,3 +15,4 @@
 
 ## Quizzes
  - HMI [Quiz 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Quizzes/HMI%20CO1%20QUIZ.pdf)
+
