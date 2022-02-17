@@ -11,7 +11,7 @@
 
 ## Experiments
  
- >Human Machine Interactions Lab
+ >Human Machine Interaction Lab
 
  - HMI Lab [Experiment - 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/HMI%20Lab/Experiment-1/AMEY_B-50_HMI_EXPERIMENT-1.pdf)
  
