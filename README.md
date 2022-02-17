@@ -13,7 +13,9 @@
  
  >Human Machine Interactions Lab
 
- - HMI [Experiment - 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Experiments/AMEY_B-50_HMI_EXPERIMENT-1.pdf)
+ - HMI Lab [Experiment - 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/HMI%20Lab/Experiment-1/AMEY_B-50_HMI_EXPERIMENT-1.pdf)
+ 
+ - HMI Lab [Experiment - 2](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/HMI%20Lab/Experiment-2/AMEY_B-50_HMI_EXPERIMENT-2.pdf) | [SOURCE CODE](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/tree/main/HMI%20Lab/Experiment-2/SOURCE%20CODE)
 
 
 ## Quizzes
