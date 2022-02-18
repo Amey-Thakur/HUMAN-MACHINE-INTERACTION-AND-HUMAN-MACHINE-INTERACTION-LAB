@@ -9,6 +9,13 @@
 
 ---
 
+## Assignments
+
+ - [Assignment - 1]()
+ - [Assignment - 2]()
+ - [Assignment - 3](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Assignments/AMEY_B-50_HMI_ASSIGNMENT-3.pdf)
+
+
 ## Experiments
  
  >Human Machine Interaction Lab
