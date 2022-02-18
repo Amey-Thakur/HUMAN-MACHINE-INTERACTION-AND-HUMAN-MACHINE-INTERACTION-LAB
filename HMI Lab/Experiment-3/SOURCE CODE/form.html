@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="form">
+	  <meta name="keywords" content="regisrtration form">
+  	<meta name="author" content="Amey Thakur">
+    <title>Amey Thakur</title>
+    <link rel="stylesheet" href="./css/style.css">
+    </head>
+  <body>
+
+    <br>
+    <aside id="sidebar">
+                  <p>
+                  <table border="0" bgcolor="#000000" align="center" cellspacing= "20">
+                  <tr style="color:#000dff">
+                  <th >Name</th>
+                  <th>Department</th>
+                  <th>Division</th>
+                  <th>Roll Number</th>
+
+                  </tr>
+                  <tr style="color:#ff0000">
+                  <td>Amey Thakur</td>
+                  <td>Computer Engineering</td>
+                  <td>B</td>
+                  <td>50</td>
+                  </tr>
+                  </table>
+                </p>
+                </aside>
+
+                <center><p style="color:#000dff">Registation for Cloud Account</p></center>
+
+<form name="RegForm" action="#" onsubmit="return ValidationForm()" method="post" class="docs">
+<table border="0" bgcolor="#000000" align="center" cellspacing= "20">
+<div>
+  <tr>
+    <td>First Name</td>
+    <td><input type="text" placeholder="First Name" size="25" id="fname" name="fname"></td>
+  </tr>
+</div>
+<div>
+  <tr>
+    <td>Last Name</td>
+    <td><input type="text" placeholder="Last Name" size="25" id="lname" name="lname"</td>
+  </tr>
+</div>
+<div>
+  <tr>
+    <td>Email ID</td>
+    <td><input type="email" placeholder="Email" size="25" id="email" name="email"></td>
+  </tr>
+</div>
+<div>
+  <tr>
+    <td>Contact Number</td>
+    <td><input type="number" placeholder="Phone Number" size="25" id="phone" name="phone"></td>
+  </tr>
+</div>
+<div>
+  <tr>
+    <td>Address</td>
+    <td><textarea rows="4" cols="25" placeholder="Address" id="address" name="address"></textarea></td>
+  </tr>
+</div>
+<div>
+  <td>Pin Code</td>
+  <td><input type="number" placeholder="Pin Code" size="25" id="pin" name="pin"></td>
+</tr>
+</div>
+<div>
+  <tr>
+    <td>Gender</td>
+    <td>
+      <input type="radio" id="r1" name="r1">Male
+      <input type="radio" id="r1"name="r1">Female
+    </td>
+  </tr>
+</div>
+<div>
+<tr>
+  <td>Date of birth</td>
+  <td>
+    <select value="" name="Subject">
+      <option>Day</option>
+      <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option>
+      <option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option>
+      <option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option>
+      <option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option>
+      <option>29</option><option>30</option><option>31</option>
+    </select>
+
+    <select value="" name="Subject">
+      <option>Month</option>
+      <option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option>
+      <option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option>
+    </select>
+
+    <select value="" name="Subject">
+      <option>Year</option>
+      <option>1990</option><option>1991</option><option>1992</option><option>1993</option><option>1994</option><option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option>
+      <option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option><option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option>
+      <option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option>
+    </select>
+  </td>
+  </tr>
+</div>
+<div>
+    <td>Languages Known</td>
+    <td>
+      <input type="checkbox" id="r1" name="r1">Marathi
+      <input type="checkbox" id="r1" name="r1">Hindi
+      <input type="checkbox" id="r1" name="r1">English
+    </td>
+  </div>
+<div>
+<tr>
+  <td colspan="2" align="center">
+    <input type="reset" value="Reset" name="reset" id="button">&nbsp &nbsp &nbsp &nbsp &nbsp
+    <input type="submit" value="Submit" name="submit" id=""="button"></td>
+</tr>
+</div>
+</table>
+</form>
+
+<script>
+function ValidationForm(){
+        let username = document.forms["RegForm"]["fname"];
+        let name = document.forms["RegForm"]["lmame"];
+        let email = document.forms["RegForm"]["email"];
+        let phoneNumber = document.forms["RegForm"]["phone"];
+        let address = document.forms["RegForm"]["address"];}
+        let pin = document.forms["RegForm"]["pin"];}
+        let select = document.forms["RegForm"]["Subject"];
+
+        if(username.value == "") {
+          alert("Kindly enter your first name");
+          username.focus();
+          return false;
+        }
+        if(name.value == "") {
+          alert("Kindly enter your last name");
+          name.focus();
+          return false;
+        }
+        if(email.value == "") {
+          alert("Kindly enter a valid e-mail address");
+          email.focus();
+          return false;
+        }
+        if(email.value.indexOf("@", 0) < 0) {
+          alert("Kindly enter a valid e-mail address");
+          email.focus();
+          return false;
+        }
+        if(email.value.indexOf(".", 0) < 0) {
+          alert("Kindly enter a valid e-mail address");
+          email.focus();
+          return false;
+        }
+        if(phoneNumber.value == "") {
+          alert("Kindly enter your contact number");
+          phoneNumber.focus();
+          return false;
+        }
+        if(address.value == "") {
+          alert("Kindly enter your address");
+          address.focus();
+          return false;
+        }
+        if(pin.value == "") {
+          alert("Kindly enter your address");
+          pin.focus();
+          return false;
+        }
+        if(select.selectedIndex < 1) {
+          alert("Kindly select your date of birth");
+          select.focus();
+          return false;
+        }
+        return true;
+      }
+    </script>
+
+
+    <footer>
+        <center><p style="color:#f70000">Amey Thakur B-50</p></center>
+    </footer>
+  </body>
+</html>
