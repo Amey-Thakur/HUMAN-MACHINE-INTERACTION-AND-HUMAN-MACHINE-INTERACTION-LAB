@@ -1,0 +1,61 @@
+body,
+html {
+    height: 99%;
+    overflow: hidden;
+
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+.main-panel{
+    background-color: #ffffff;
+    opacity:0.95;
+    margin-top: 15px;
+}
+.grayed {
+    background-color: #e3e3e3;
+}
+.green {
+    background-color: #47a447;
+    color: #ffffff;
+}
+.set-height {
+    height: 95%;
+}
+.full-height {
+    height: 99%;
+}
+.scrollable {
+    overflow: auto;
+}
+.ticket {
+    height: 63%;
+    width: 95%;
+    background-color: #fff0d9;
+    border-radius: 20px;
+    border-style: dashed;
+    border-width: 2px;
+    padding: 10px;
+}
+.pointer {
+    cursor: pointer;
+}
+.opaque {
+    opacity: 0.2;
+}
+.ticket hr {
+    border-color: #b4b4b4;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.adult {
+    height: 30px;
+    width: 25px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+}
+.logo{
+    height: 50px;
+    width:50px;
+}
