@@ -9,6 +9,17 @@
 
 ---
 
+## MEGA NOTES
+ 
+ >**[MEGA SATISH](https://github.com/msatmod) - AUTHOR**
+ 
+ - [HMI Module - 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/MEGA%20NOTES/HMI_Module-1.pdf)
+ 
+ - [HMI Module - 2](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/MEGA%20NOTES/HMI_Module-2.pdf)
+ 
+ - [HMI Module - 3](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/MEGA%20NOTES/HMI_Module-3.pdf)
+
+
 ## Assignments
 
  - [Assignment - 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Assignments/AMEY_B-50_HMI_ASSIGNMENT-1.pdf)
