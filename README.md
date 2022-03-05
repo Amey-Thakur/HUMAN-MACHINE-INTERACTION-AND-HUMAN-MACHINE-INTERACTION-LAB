@@ -41,3 +41,14 @@
 
  - HMI Lab [Experiment - 4](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/HMI%20Lab/Experiment-4/AMEY_B-50_HMI_EXPERIMENT-4.pdf) | [SOURCE CODE](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/tree/main/HMI%20Lab/Experiment-4/Source%20Code) | [GitHub Repository](https://github.com/Amey-Thakur/ATVM-INTERFACE) | [WEB APPLICATION](https://amey-thakur.github.io/ATVM-INTERFACE)
 
+
+## IAT - 1
+
+ - [Question Paper](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI%20IAT-1%20Question%20Paper.pdf)
+ 
+ - [HMI Module - 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI_Module-1.pdf)
+ 
+ - [HMI Module - 2](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI_Module-2.pdf)
+ 
+ - [HMI Module - 3](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI_Module-3.pdf)
+
