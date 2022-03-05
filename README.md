@@ -44,7 +44,7 @@
 
 ## IAT - 1
 
- - [Question Paper](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI%20IAT-1%20Question%20Paper.pdf)
+ - [Question Paper](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI%20IAT-1%20Question%20Paper.pdf) - IAT-1
  
  - [HMI Module - 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI_Module-1.pdf)
  
