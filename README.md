@@ -24,7 +24,7 @@
 
  - [Assignment - 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Assignments/AMEY_B-50_HMI_ASSIGNMENT-1.pdf)
  
- - [Assignment - 2]()
+ - [Assignment - 2](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Assignments/AMEY_B-50_HMI_ASSIGNMENT-2.pdf)
  
  - [Assignment - 3](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Assignments/AMEY_B-50_HMI_ASSIGNMENT-3.pdf)
 
