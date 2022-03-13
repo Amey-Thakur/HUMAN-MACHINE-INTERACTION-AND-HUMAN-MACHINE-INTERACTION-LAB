@@ -43,7 +43,7 @@
  
  - HMI Lab [Experiment - 5](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Experiments/Experiment%205/AMEY_B-50_HMI_EXPERIMENT-5.pdf)
  
- - HMI Lab [Experiment - 6]() | [SOURCE CODE]()
+ - HMI Lab [Experiment - 6](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Experiments/Experiment%206/AMEY_B-50_HMI_EXPERIMENT-6.pdf) | [SOURCE CODE](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/tree/main/Experiments/Experiment%206/SOURCE%20CODE) | [GitHub Repository](https://github.com/Amey-Thakur/CLOUD-SERVICES-WEBSITE) | [WEB APPLICATION](https://amey-thakur.github.io/CLOUD-SERVICES-WEBSITE)
 
 
 ## IAT - 1
@@ -55,4 +55,5 @@
  - [HMI Module - 2](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI_Module-2.pdf)
  
  - [HMI Module - 3](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI_Module-3.pdf)
+
 
