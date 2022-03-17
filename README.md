@@ -72,4 +72,3 @@
  
  - [HMI Module - 3](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI_Module-3.pdf)
 
-
