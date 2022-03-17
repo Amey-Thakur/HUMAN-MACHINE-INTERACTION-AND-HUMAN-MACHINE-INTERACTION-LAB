@@ -8,6 +8,22 @@
  - [X] **HMI - [Reference Books](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/tree/main/Reference%20Books)**
 
 ---
+## THE WALL
+
+ >**[MEGA SATISH](https://github.com/msatmod) - AUTHOR**
+ 
+ - HMI [Module - 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/THE%20WALL/HMI_Module-1.pdf)
+ 
+ - HMI [Module - 2](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/THE%20WALL/HMI_Module-2.pdf)
+ 
+ - HMI [Module - 3](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/THE%20WALL/HMI_Module-3.pdf)
+ 
+ - HMI [Module - 4]()
+ 
+ - HMI [Module - 5]()
+ 
+ - HMI [Module - 6]()
+
 
 ## MEGA NOTES
  
