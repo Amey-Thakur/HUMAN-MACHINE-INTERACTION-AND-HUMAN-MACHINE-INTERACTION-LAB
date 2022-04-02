@@ -65,6 +65,8 @@
  - HMI Lab [Experiment - 7](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Experiments/Experiment%207/AMEY_B-50_HMI_EXPERIMENT-7.pdf)
  
  - HMI Lab [Experiment - 8](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Experiments/Experiment%208/AMEY_B-50_HMI_EXPERIMENT-8.pdf)
+ 
+ - HMI Lab [Experiment - 9](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Experiments/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf)
 
 
 ## IAT - 1
