@@ -95,7 +95,7 @@
  - [HMI Module - 3](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI_Module-3.pdf)
 
 
-# Exit Surveys
+## Exit Surveys
 
  - HMI Course [Exit Survey](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Exit%20Surveys/HMI%20Course%20Exit%20Survey%20(BE%20-%20B).pdf)
  
