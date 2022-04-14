@@ -69,6 +69,21 @@
  - HMI Lab [Experiment - 9](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Experiments/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf)
 
 
+## Quizzes
+
+ - Quiz 1 - [Module 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Quizzes/HMI_QUIZ-1.pdf)
+ 
+ - Quiz 2 - [Module 2](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Quizzes/HMI_QUIZ-2.pdf)
+ 
+ - Quiz 3 - [Module 3](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Quizzes/HMI_QUIZ-3.pdf)
+ 
+ - Quiz 4 - [Module 4](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Quizzes/HMI_QUIZ-4.pdf)
+ 
+ - Quiz 5 - [Module 5](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Quizzes/HMI_QUIZ-5.pdf)
+ 
+ - Quiz 6 - [Module 6](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Quizzes/HMI_QUIZ-6.pdf)
+
+
 ## IAT - 1
 
  - [Question Paper](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI%20IAT-1%20Question%20Paper.pdf) - IAT-1
@@ -78,4 +93,11 @@
  - [HMI Module - 2](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI_Module-2.pdf)
  
  - [HMI Module - 3](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI_Module-3.pdf)
+
+
+# Exit Surveys
+
+ - HMI Course [Exit Survey](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Exit%20Surveys/HMI%20Course%20Exit%20Survey%20(BE%20-%20B).pdf)
+ 
+ - HMI Laboratory [Exit Survey](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Exit%20Surveys/HMI%20Laboratory%20Exit%20Survey%20(BE%20-%20B).pdf)
 
