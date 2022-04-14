@@ -69,6 +69,19 @@
  - HMI Lab [Experiment - 9](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Experiments/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf)
 
 
+## Mini Project
+
+ >**Online Chess Game**
+
+  - [GitHub Repository](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
+  
+  - [Web Application](https://onlinechess-game.herokuapp.com)
+  
+  - [Project Report](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/HMI%20Mini%20Project/HMI_MINI_PROJECT_REPORT_BE_COMPS_B-50%2C51%2C58.pdf)
+  
+  - [Project Presentation](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50%2C51%2C58.pdf)
+
+
 ## Quizzes
 
  - Quiz 1 - [Module 1](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Quizzes/HMI_QUIZ-1.pdf)
