@@ -111,6 +111,8 @@
 ## IAT - 2
 
  - [Question Paper]() - IAT-2
+
+ - [HMI Question Bank](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_IAT-2_Question_Bank.pdf)
  
  - [HMI Module - 4](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_Module-4.pdf)
  
@@ -124,8 +126,6 @@
  
  - [HMI Module - 6 Handwritten](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_Module-6_%5BHandwritten%5D.pdf)
  
- - [HMI Question Bank](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_UT_2.pdf)
-
 
 ## Exit Surveys
 
