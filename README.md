@@ -108,6 +108,25 @@
  - [HMI Module - 3](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-1/HMI_Module-3.pdf)
 
 
+## IAT - 2
+
+ - [Question Paper]() - IAT-2
+ 
+ - [HMI Module - 4](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_Module-4.pdf)
+ 
+ - [HMI Module - 5](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_Module-5.pdf)
+ 
+ - [HMI Module - 6](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_Module-6.pdf)
+
+ - [HMI Module - 4 Handwritten](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_Module-4_%5BHandwritten%5D.pdf)
+ 
+ - [HMI Module - 5 Handwritten](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_Module-5_%5BHandwritten%5D.pdf)
+ 
+ - [HMI Module - 6 Handwritten](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_Module-6_%5BHandwritten%5D.pdf)
+ 
+ - [HMI Question Bank](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_UT_2.pdf)
+
+
 ## Exit Surveys
 
  - HMI Course [Exit Survey](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Exit%20Surveys/HMI%20Course%20Exit%20Survey%20(BE%20-%20B).pdf)
