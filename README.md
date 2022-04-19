@@ -110,7 +110,7 @@
 
 ## IAT - 2
 
- - [Question Paper]() - IAT-2
+ - [Question Paper](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_IAT-2_Question_Paper.pdf) - IAT-2
 
  - [HMI Question Bank](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/IAT-2/HMI_IAT-2_Question_Bank.pdf)
  
