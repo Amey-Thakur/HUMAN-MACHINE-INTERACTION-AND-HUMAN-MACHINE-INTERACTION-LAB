@@ -133,3 +133,8 @@
  
  - HMI Laboratory [Exit Survey](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Exit%20Surveys/HMI%20Laboratory%20Exit%20Survey%20(BE%20-%20B).pdf)
 
+
+## Submission Report
+
+ - [HMI Submission Report](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Submission%20Report/AMEY_B-50_HMI_SUBMISSION_REPORT.pdf)
+
