@@ -36,11 +36,11 @@
  
  - [HMI Module - 3](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/MEGA%20NOTES/HMI_Module-3.pdf)
 
- - [Assignment - 4](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/MEGA%20NOTES/HMI_Module-4.pdf)
+ - [HMI Module - 4](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/MEGA%20NOTES/HMI_Module-4.pdf)
  
- - [Assignment - 5](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/MEGA%20NOTES/HMI_Module-5.pdf)
+ - [HMI Module - 5](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/MEGA%20NOTES/HMI_Module-5.pdf)
  
- - [Assignment - 6](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/MEGA%20NOTES/HMI_Module-6.pdf)
+ - [HMI Module - 6](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/MEGA%20NOTES/HMI_Module-6.pdf)
 
 
 ## Assignments
