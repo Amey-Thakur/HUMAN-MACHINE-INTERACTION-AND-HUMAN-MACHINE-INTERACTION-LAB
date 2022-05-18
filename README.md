@@ -129,7 +129,7 @@
 
 ## Semester Exam
 
- - [Question Paper]()
+ - [Question Paper](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Semester%20Exam/HMI_Question_Paper.pdf)
  
  - [Question Bank](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Semester%20Exam/HMI_Question_Bank.pdf)
  
