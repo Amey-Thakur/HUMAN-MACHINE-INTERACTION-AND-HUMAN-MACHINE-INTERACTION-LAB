@@ -148,4 +148,5 @@
 ## Submission Report
 
  - [HMI Submission Report](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Submission%20Report/AMEY_B-50_HMI_SUBMISSION_REPORT.pdf)
-
+ 
+ - [Semester 8 Submission Report](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/Submission%20Report/Amey_B-50_Submission_Report.pdf)
