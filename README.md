@@ -109,20 +109,20 @@ This collection includes **comprehensive reference materials** covering all majo
 **Collaborative Study Notes by Amey & Mega**
 
 <table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/Amey-Thakur">
-        <img src="https://github.com/Amey-Thakur.png" width="200" alt="Amey Thakur"/><br/>
-        <b>Amey Thakur</b>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/msatmod">
-        <img src="THE%20WALL/Mega/Mega.png" width="200" alt="Mega Satish"/><br/>
-        <b>Mega Satish</b>
-      </a>
-    </td>
-  </tr>
+<tr>
+<td align="center">
+<a href="https://github.com/Amey-Thakur">
+<img src="https://github.com/Amey-Thakur.png" alt="Amey Thakur" width="150" height="150"/><br/>
+<b>Amey Thakur</b>
+</a>
+</td>
+<td align="center">
+<a href="https://github.com/msatmod">
+<img src="THE%20WALL/Mega/Mega.png" alt="Mega Satish" width="150" height="150"/><br/>
+<b>Mega Satish</b>
+</a>
+</td>
+</tr>
 </table>
 
 </div>
