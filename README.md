@@ -81,6 +81,12 @@ This collection includes **comprehensive reference materials** covering all majo
 | 9 | [HCI Unit 4 Notes](Reference%20Books/UNIT-IV-HCI-NOTES.pdf) | Quick revision notes (Module 4) |
 | 10| [HMI Weightage](Reference%20Books/HMI%20Weightage.pdf) | Exam analysis and topic weightage |
 | 11| [HMI Viva QB](Reference%20Books/HMI%20Viva%20QB.pdf) | Oral/Viva preparation questions |
+| 12| [PPT/HMI](Reference%20Books/PPT/hmi.pdf) | Comprehensive subject overview PPT |
+| 13| [PPT/Design](Reference%20Books/PPT/design.pdf) | UI/UX Design principles PPT |
+| 14| [PPT/Window Management and Operations](Reference%20Books/PPT/Window%20Management%20and%20Operations.pdf) | Windowing systems and operations PPT |
+| 15| [PPT/HMI Chapter 4](Reference%20Books/PPT/HMI_chapter%204%20(1).pdf) | Interaction Models and Techniques PPT |
+| 16| [PPT/HMI 2](Reference%20Books/PPT/HMI%20(2).pdf) | Supplementary HMI concepts PPT |
+| 17| [PPT/Chapter 3 GUI](Reference%20Books/PPT/Chapter-3%20-GUI.pdf) | Designing the GUI (Visual Interface) PPT |
 
 ---
 
