@@ -153,7 +153,7 @@ Comprehensive module-wise notes curated by Mega Satish, covering all essential t
 <div align="center">
 
 <a href="https://github.com/msatmod">
-<img src="THE%20WALL/Mega/Mega.png" alt="Mega Satish" width="150" height="150"/><br/>
+<img src="https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/THE%20WALL/Mega/Mega.png?raw=true" alt="Mega Satish" width="150" height="150"/><br/>
 <b>Mega Satish</b>
 </a>
 
@@ -173,6 +173,9 @@ Comprehensive module-wise notes curated by Mega Satish, covering all essential t
 | 5 | [HMI Module - 5](MEGA%20NOTES/HMI_Module-5.pdf) | Usability engineering metrics |
 | 6 | [HMI Module - 6](MEGA%20NOTES/HMI_Module-6.pdf) | Advanced user interfaces |
 
+> [!NOTE]
+> **COVID-19 Impact**: This coursework was completed during the COVID-19 pandemic. While this section contains the **complete set** of comprehensive notes curated by Mega Satish, the signature "The Wall" collaborative study sessions (typically documented with photos) could not be conducted due to the nationwide lockdown. This section therefore focuses solely on the digitized study materials, as movement restrictions prevented the in-person collaboration required for "The Wall" sessions.
+
 ---
 
 
@@ -182,11 +185,11 @@ Academic assignments for comprehensive learning and practice:
 
 | # | Assignment | Description | Date | Marks |
 |:-:|:---|:---|:---:|:---:|
-| 1 | [Assignment 1](Assignments/AMEY_B-50_HMI_ASSIGNMENT-1.pdf) | Foundations and Interaction Models | April 2022 | - |
-| 2 | [Assignment 2](Assignments/AMEY_B-50_HMI_ASSIGNMENT-2.pdf) | Interface Design and Navigation | May 2022 | - |
-| 3 | [Assignment 3](Assignments/AMEY_B-50_HMI_ASSIGNMENT-3.pdf) | Usability Engineering and Advanced Trends | June 2022 | - |
+| 1 | [Assignment 1](Assignments/AMEY_B-50_HMI_ASSIGNMENT-1.pdf) | Evolution of User Interface Design, stages of actions, levels of processing | February 15, 2022 | 56/60 |
+| 2 | [Assignment 2](Assignments/AMEY_B-50_HMI_ASSIGNMENT-2.pdf) | Gestalt Principles, factors affecting learning, menu and navigation schemes | February 15, 2022 | 54/60 |
+| 3 | [Assignment 3](Assignments/AMEY_B-50_HMI_ASSIGNMENT-3.pdf) | Virtual Reality, input and output devices in VR, case study | February 15, 2022 | 18/20 |
 
-**Topics Covered**: Interaction Design · User Experience (UX) · Interface Paradigms · Task Analysis · Usability Testing
+**Topics Covered**: UI Design Evolution · Gestalt Principles · Menu and Navigation · Virtual Reality · Usability Engineering
 
 ---
 
