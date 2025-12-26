@@ -38,146 +38,152 @@
 
     // 2. Detect Current Experiment
     let currentExp = null;
-    const path = window.location.pathname;
+    const path = window.location.pathname; // e.g. /HMI/HMI-2/index.html
 
-    if (path.includes("HMI-2")) currentExp = experiments["HMI-2"];
-    else if (path.includes("HMI-3")) currentExp = experiments["HMI-3"];
-    else if (path.includes("HMI-4")) currentExp = experiments["HMI-4"];
-    else if (path.includes("HMI-6")) currentExp = experiments["HMI-6"];
+    // Improved detection logic (case-insensitive)
+    if (path.toLowerCase().includes("hmi-2")) currentExp = experiments["HMI-2"];
+    else if (path.toLowerCase().includes("hmi-3")) currentExp = experiments["HMI-3"];
+    else if (path.toLowerCase().includes("hmi-4")) currentExp = experiments["HMI-4"];
+    else if (path.toLowerCase().includes("hmi-6")) currentExp = experiments["HMI-6"];
 
-    if (!currentExp) return; // Exit if not a recognized experiment
+    if (!currentExp) {
+        console.warn("Portfolio Enhancer: No experiment detected in path", path);
+        return;
+    }
 
-    // 3. Inject CSS
+    // 3. Inject CSS (Robust)
     const style = document.createElement('style');
     style.innerHTML = `
         .enhancer-btn {
-            position: fixed;
-            bottom: 80px; /* Stacked above Back button */
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            background: #ffffff;
-            color: #2563eb;
-            border-radius: 50%;
-            border: 2px solid #2563eb;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-            z-index: 10001; /* Higher than back button */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: sans-serif;
+            position: fixed !important;
+            bottom: 80px !important;
+            right: 20px !important;
+            width: 50px !important;
+            height: 50px !important;
+            background: #ffffff !important;
+            color: #2563eb !important;
+            border-radius: 50% !important;
+            border: 2px solid #2563eb !important;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3) !important;
+            z-index: 2147483647 !important; /* Max Z-Index */
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-size: 24px !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            font-family: sans-serif !important;
+            opacity: 1 !important;
+            visibility: visible !important;
         }
         .enhancer-btn:hover {
-            background: #2563eb;
-            color: white;
-            transform: scale(1.1);
+            background: #2563eb !important;
+            color: white !important;
+            transform: scale(1.1) !important;
         }
         .enhancer-modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.6);
-            z-index: 10002;
-            display: none;
-            justify-content: center;
-            align-items: center;
-            backdrop-filter: blur(3px);
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            background: rgba(0,0,0,0.6) !important;
+            z-index: 2147483647 !important;
+            display: none !important; /* Managed by JS */
+            justify-content: center !important;
+            align-items: center !important;
+            backdrop-filter: blur(3px) !important;
+            opacity: 0 !important;
+            transition: opacity 0.3s ease !important;
         }
         .enhancer-modal-overlay.active {
-            display: flex;
-            opacity: 1;
+            display: flex !important;
+            opacity: 1 !important;
         }
         .enhancer-modal {
-            background: white;
-            width: 90%;
-            max-width: 500px;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            position: relative;
-            transform: translateY(20px);
-            transition: transform 0.3s ease;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: left;
-            color: #333;
+            background: white !important;
+            width: 90% !important;
+            max-width: 500px !important;
+            padding: 30px !important;
+            border-radius: 16px !important;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+            position: relative !important;
+            transform: translateY(20px) !important;
+            transition: transform 0.3s ease !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            text-align: left !important;
+            color: #333 !important;
         }
         .enhancer-modal-overlay.active .enhancer-modal {
-            transform: translateY(0);
+            transform: translateY(0) !important;
         }
         .enhancer-close {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 24px;
-            cursor: pointer;
-            color: #999;
+            position: absolute !important;
+            top: 15px !important;
+            right: 20px !important;
+            font-size: 24px !important;
+            cursor: pointer !important;
+            color: #999 !important;
         }
-        .enhancer-close:hover { color: #333; }
+        .enhancer-close:hover { color: #333 !important; }
         .enhancer-title {
-            margin: 0 0 10px 0;
-            font-size: 24px;
-            font-weight: bold;
-            color: #1e293b;
+            margin: 0 0 10px 0 !important;
+            font-size: 24px !important;
+            font-weight: bold !important;
+            color: #1e293b !important;
         }
         .enhancer-meta {
-            font-size: 14px;
-            color: #64748b;
-            margin-bottom: 20px;
-            display: flex;
-            gap: 15px;
+            font-size: 14px !important;
+            color: #64748b !important;
+            margin-bottom: 20px !important;
+            display: flex !important;
+            gap: 15px !important;
         }
         .enhancer-desc {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            color: #475569;
+            font-size: 16px !important;
+            line-height: 1.6 !important;
+            margin-bottom: 25px !important;
+            color: #475569 !important;
         }
         .enhancer-tags {
-            margin-bottom: 25px;
+            margin-bottom: 25px !important;
         }
         .enhancer-tag {
-            display: inline-block;
-            background: #eff6ff;
-            color: #2563eb;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            margin-right: 8px;
-            font-weight: 600;
+            display: inline-block !important;
+            background: #eff6ff !important;
+            color: #2563eb !important;
+            padding: 5px 12px !important;
+            border-radius: 20px !important;
+            font-size: 12px !important;
+            margin-right: 8px !important;
+            font-weight: 600 !important;
         }
         .enhancer-actions {
-            display: flex;
-            gap: 10px;
+            display: flex !important;
+            gap: 10px !important;
         }
         .enhancer-action-btn {
-            flex: 1;
-            padding: 12px;
-            border-radius: 8px;
-            text-align: center;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            transition: background 0.2s;
+            flex: 1 !important;
+            padding: 12px !important;
+            border-radius: 8px !important;
+            text-align: center !important;
+            text-decoration: none !important;
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            transition: background 0.2s !important;
         }
         .btn-source {
-            background: #1e293b;
-            color: white;
+            background: #1e293b !important;
+            color: white !important;
         }
-        .btn-source:hover { background: #334155; color: white; }
+        .btn-source:hover { background: #334155 !important; color: white !important; }
     `;
     document.head.appendChild(style);
 
     // 4. Inject HTML Elements
     const btn = document.createElement('div');
     btn.className = 'enhancer-btn';
-    btn.innerHTML = 'ℹ️'; // Emoji used as icon
+    btn.innerHTML = 'ℹ️';
     btn.title = "Technological Details";
     document.body.appendChild(btn);
 
@@ -218,5 +224,7 @@
             modalOverlay.classList.remove('active');
         }
     });
+
+    console.log("Portfolio Enhancer Loaded for: " + currentExp.title);
 
 })();
