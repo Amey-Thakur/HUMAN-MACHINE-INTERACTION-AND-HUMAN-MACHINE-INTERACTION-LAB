@@ -4,7 +4,7 @@
     Batch: B3
     Roll No: 50
     Subject: Human Machine Interaction (CSL801)
-    Date: 26/12/2025
+    Date: 11/02/2022
 
     This JavaScript file contains the core logic for the Math Sprint Game.
     It manages the application state, user interactions, and game lifecycle.
