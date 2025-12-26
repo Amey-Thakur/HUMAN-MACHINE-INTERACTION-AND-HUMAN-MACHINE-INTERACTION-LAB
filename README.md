@@ -1,15 +1,79 @@
-# HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB
+<!-- =========================================================================================
+                                     HEADER SECTION
+     ========================================================================================= -->
+<div align="center">
 
- 👍🏻 CSC801: HMI & CSL801: HMI LAB [SEMESTER VIII]
+  <img src="https://raw.githubusercontent.com/Amey-Thakur/COMPUTER-ENGINEERING/main/university-of-mumbai-logo.png" alt="University of Mumbai" width="200"/>
 
- [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+  # Human Machine Interaction and Human Machine Interaction Laboratory
+
+  ### CSC801 & CSL801 · Semester VIII · Computer Engineering
+
+  [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+  [![University](https://img.shields.io/badge/University-Mumbai-%23A6192E.svg)](https://mu.ac.in/)
+  [![Institution](https://img.shields.io/badge/Institution-Terna%20Engineering%20College-orange.svg)](https://ternaengg.ac.in/)
+  [![Curated by](https://img.shields.io/badge/Curated%20by-Amey%20Thakur-blue.svg)](https://github.com/Amey-Thakur)
+
+  **A comprehensive academic resource for Human Machine Interaction (HMI) and Human Machine Interaction Laboratory (HMI Lab), covering interaction design, usability engineering, user experience (UX), and interactive system implementation.**
+
+  ---
+
+  [Overview](#overview) &nbsp;·&nbsp; [Contents](#repository-contents) &nbsp;·&nbsp; [The Wall](#the-wall) &nbsp;·&nbsp; [Mega's Notes](#megas-notes) &nbsp;·&nbsp; [Assignments](#assignments) &nbsp;·&nbsp; [Laboratory](#hmi-lab) &nbsp;·&nbsp; [Mini Project](#mini-project) &nbsp;·&nbsp; [Quizzes](#quizzes) &nbsp;·&nbsp; [IAT-1](#iat-1) &nbsp;·&nbsp; [IAT-2](#iat-2) &nbsp;·&nbsp; [Semester Exam](#semester-exam) &nbsp;·&nbsp; [Submission Report](#submission-completion-report) &nbsp;·&nbsp; [Syllabus](#syllabus) &nbsp;·&nbsp; [Usage Guidelines](#usage-guidelines) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository) &nbsp;·&nbsp; [Acknowledgments](#acknowledgments)
+
+</div>
+
 ---
- 
- - [X] [Syllabus](MU%20SEM%20VIII%20SYLLABUS.pdf)
- 
- - [X] HMI - [Reference Books](Reference%20Books) | [HMI Essential User Interface Guide](Reference%20Books/Essential%20User%20Interface%20Guide.pdf)
- 
- - [X] [BE Timetable](BE%20Timetable.pdf)
+
+<!-- =========================================================================================
+                                     OVERVIEW SECTION
+     ========================================================================================= -->
+## Overview
+
+Human Machine Interaction (CSC801) and Human Machine Interaction Laboratory (CSL801) are pivotal subjects in the Final Year (Semester VIII) of the Computer Engineering curriculum at the University of Mumbai. These courses explore the design, evaluation, and implementation of interactive computing systems for human use and with the study of major phenomena surrounding them.
+
+### Course Topics
+
+The curriculum encompasses several key domains in Human Machine Interaction:
+
+- **Foundations of HMI**: History, human capabilities, computer capabilities, and the interaction cycle.
+- **HCI Basics**: Paradigms, design rules, and psychological aspects of interaction.
+- **Designing the User Interface**: Task analysis, interface styles, and design principles.
+- **Interaction Models and Techniques**: Direct manipulation, menu selection, and emerging interaction techniques.
+- **Usability Engineering and Evaluation**: Metrics, testing methodologies, and expert reviews.
+- **Advanced Interfaces**: Multi-modal interaction, virtual reality, and ubiquitous computing.
+
+### Repository Purpose
+
+This repository represents a curated collection of study materials, reference books, lab experiments, and personal preparation notes compiled during my academic journey. The primary motivation for creating and maintaining this archive is to preserve knowledge for continuous learning and future reference.
+
+As a computer engineer, understanding HMI is crucial for developing intuitive, efficient, and user-centric software systems. This repository serves as my intellectual reference point for UX/UI design and interactive system architecture.
+
+**Why this repository exists:**
+
+- **Knowledge Preservation**: To maintain organized access to comprehensive study materials beyond the classroom.
+- **Continuous Learning**: To support lifelong learning by enabling easy revisitation of fundamental HMI concepts.
+- **Academic Documentation**: To authentically document my learning journey through Human Machine Interaction and HMI Laboratory.
+- **Community Contribution**: To share these resources with students and learners who may benefit from them.
+
+All materials in this repository were gathered, organized, and documented by me during my undergraduate studies (2018-2022) as part of my coursework and exam preparation.
+
+---
+
+<!-- =========================================================================================
+                                     CONTENTS SECTION
+     ========================================================================================= -->
+## Repository Contents
+
+### Reference Books
+
+This collection includes **comprehensive reference materials** covering all major topics:
+
+| # | Resource | Focus Area |
+|:-:|:---|:---|
+| 1 | [Syllabus](MU%20SEM%20VIII%20SYLLABUS.pdf) | Official curriculum and outcomes |
+| 2 | [HMI - Reference Books](Reference%20Books) | Curated collection of HMI textbooks |
+| 3 | [HMI Essential User Interface Guide](Reference%20Books/Essential%20User%20Interface%20Guide.pdf) | Core UX/UI design principles |
+| 4 | [BE Timetable](BE%20Timetable.pdf) | Academic schedule |
 
 ---
 
@@ -58,129 +122,253 @@ Comprehensive module-wise notes curated by Mega Satish:
 > **COVID-19 Impact**: This coursework was completed during the COVID-19 pandemic in 2022. Due to the nationwide lockdown and the sudden transition to online learning, several planned laboratory sessions and collaborative note-taking activities could not be carried out as originally intended. Despite these challenges, efforts were made to adapt and preserve as much work as possible.
 
 
-## MEGA NOTES
- 
- >**[MEGA SATISH](https://github.com/msatmod) - AUTHOR**
- 
- - HMI [Module - 1](MEGA%20NOTES/HMI_Module-1.pdf)
- 
- - HMI [Module - 2](MEGA%20NOTES/HMI_Module-2.pdf)
- 
- - HMI [Module - 3](MEGA%20NOTES/HMI_Module-3.pdf)
+### Mega's Notes
 
- - HMI [Module - 4](MEGA%20NOTES/HMI_Module-4.pdf)
- 
- - HMI [Module - 5](MEGA%20NOTES/HMI_Module-5.pdf)
- 
- - HMI [Module - 6](MEGA%20NOTES/HMI_Module-6.pdf)
+<div align="center">
 
+<a href="https://github.com/msatmod">
+<img src="THE%20WALL/Mega/Mega.png" alt="Mega Satish" width="150" height="150"/><br/>
+<b>Mega Satish</b>
+</a>
 
-## Assignments
+</div>
 
- - [Assignment - 1](Assignments/AMEY_B-50_HMI_ASSIGNMENT-1.pdf)
- 
- - [Assignment - 2](Assignments/AMEY_B-50_HMI_ASSIGNMENT-2.pdf)
- 
- - [Assignment - 3](Assignments/AMEY_B-50_HMI_ASSIGNMENT-3.pdf)
+> [!NOTE]
+> **Additional Notes**: These supplementary notes were curated by Mega Satish to provide further clarity on core HMI modules.
 
+| Module | Resource | Topics Covered |
+|:---:|:---|:---|
+| 1 | [HMI Module - 1](MEGA%20NOTES/HMI_Module-1.pdf) | User interface design basics |
+| 2 | [HMI Module - 2](MEGA%20NOTES/HMI_Module-2.pdf) | Interaction paradigms and rules |
+| 3 | [HMI Module - 3](MEGA%20NOTES/HMI_Module-3.pdf) | Task analysis and interface styles |
+| 4 | [HMI Module - 4](MEGA%20NOTES/HMI_Module-4.pdf) | Menu selection and form fill-in |
+| 5 | [HMI Module - 5](MEGA%20NOTES/HMI_Module-5.pdf) | Usability engineering metrics |
+| 6 | [HMI Module - 6](MEGA%20NOTES/HMI_Module-6.pdf) | Advanced user interfaces |
 
-## HMI Lab
- 
- >Human Machine Interaction Lab
-
-  - HMI Lab [Experiment - 1](HMI%20Lab/Experiment%201/AMEY_B-50_HMI_EXPERIMENT-1.pdf)
- 
-  - HMI Lab [Experiment - 2](HMI%20Lab/Experiment%202/AMEY_B-50_HMI_EXPERIMENT-2.pdf) | [Source Code](HMI%20Lab/Experiment%202/Source%20Code/index.html)
- 
-  - HMI Lab [Experiment - 3](HMI%20Lab/Experiment%203/AMEY_B-50_HMI_EXPERIMENT-3.pdf) | [Source Code](HMI%20Lab/Experiment%203/Source%20Code/form.html)
-
-  - HMI Lab [Experiment - 4](HMI%20Lab/Experiment%204/AMEY_B-50_HMI_EXPERIMENT-4.pdf) | [Source Code](HMI%20Lab/Experiment%204/Source%20Code) | [GitHub Repository](https://github.com/Amey-Thakur/ATVM-INTERFACE) | [WEB APPLICATION](https://amey-thakur.github.io/ATVM-INTERFACE)
- 
- - HMI Lab [Experiment - 5](HMI%20Lab/Experiment%205/AMEY_B-50_HMI_EXPERIMENT-5.pdf)
- 
-  - HMI Lab [Experiment - 6](HMI%20Lab/Experiment%206/AMEY_B-50_HMI_EXPERIMENT-6.pdf) | [Source Code](HMI%20Lab/Experiment%206/Source%20Code)
- 
- - HMI Lab [Experiment - 7](HMI%20Lab/Experiment%207/AMEY_B-50_HMI_EXPERIMENT-7.pdf)
- 
- - HMI Lab [Experiment - 8](HMI%20Lab/Experiment%208/AMEY_B-50_HMI_EXPERIMENT-8.pdf)
- 
- - HMI Lab [Experiment - 9](HMI%20Lab/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf)
+---
 
 
-## Mini Project
+### Assignments
 
- >**Online Chess Game**
+Academic assignments for comprehensive learning and practice:
 
-  - [GitHub Repository](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
+| # | Assignment | Description | Date | Marks |
+|:-:|:---|:---|:---:|:---:|
+| 1 | [Assignment 1](Assignments/AMEY_B-50_HMI_ASSIGNMENT-1.pdf) | Foundations and Interaction Models | April 2022 | - |
+| 2 | [Assignment 2](Assignments/AMEY_B-50_HMI_ASSIGNMENT-2.pdf) | Interface Design and Navigation | May 2022 | - |
+| 3 | [Assignment 3](Assignments/AMEY_B-50_HMI_ASSIGNMENT-3.pdf) | Usability Engineering and Advanced Trends | June 2022 | - |
+
+**Topics Covered**: Interaction Design · User Experience (UX) · Interface Paradigms · Task Analysis · Usability Testing
+
+---
+
+
+## Human Machine Interaction Laboratory
+
+The laboratory component (CSL801) focuses on hands-on implementation of user interface design, interaction techniques, usability evaluation, and developing interactive web applications.
+
+<div align="center">
+
+  [![Total Experiments](https://img.shields.io/badge/Total%20Experiments-9-yellowgreen.svg)](HMI%20Lab/)
+  [![Language](https://img.shields.io/badge/Language-HTML%20%7C%20JS%20%7C%20CSS-blueviolet.svg)](HMI%20Lab/)
+  [![Status](https://img.shields.io/badge/Status-Complete-brightgreen.svg)](HMI%20Lab/)
+
+</div>
+
+> [!TIP]
+> **Source Code**: For the complete source code and detailed documentation of each experiment, visit the [**HMI Lab**](HMI%20Lab/) directory.
+
+| # | Experiment Name | Description | Date | Marks | Report |
+|:-:|:---|:---|:---:|:---:|:-:|
+| 1 | Introduction to HMI | Basic interaction concepts and cycles | 2022 | - | [View](HMI%20Lab/Experiment%201/AMEY_B-50_HMI_EXPERIMENT-1.pdf) |
+| 2 | Static Web Page | Design of a simple static UI layout | 2022 | - | [View](HMI%20Lab/Experiment%202/AMEY_B-50_HMI_EXPERIMENT-2.pdf) |
+| 3 | Dynamic Web Page | Implementation of interactive forms and validation | 2022 | - | [View](HMI%20Lab/Experiment%203/AMEY_B-50_HMI_EXPERIMENT-3.pdf) |
+| 4 | ATVM Interface | ATVM Ticketing system interface design | 2022 | - | [View](HMI%20Lab/Experiment%204/AMEY_B-50_HMI_EXPERIMENT-4.pdf) |
+| 5 | Usability Guidelines | Application of design rules and guidelines | 2022 | - | [View](HMI%20Lab/Experiment%205/AMEY_B-50_HMI_EXPERIMENT-5.pdf) |
+| 6 | E-Commerce UI | Design of a complex interactive store interface | 2022 | - | [View](HMI%20Lab/Experiment%206/AMEY_B-50_HMI_EXPERIMENT-6.pdf) |
+| 7 | Mobile UI Design | Prototyping for mobile platforms | 2022 | - | [View](HMI%20Lab/Experiment%207/AMEY_B-50_HMI_EXPERIMENT-7.pdf) |
+| 8 | Evaluation | Heuristic evaluation of interactive systems | 2022 | - | [View](HMI%20Lab/Experiment%208/AMEY_B-50_HMI_EXPERIMENT-8.pdf) |
+| 9 | Specialized Interface | Advanced interaction techniques and models | 2022 | - | [View](HMI%20Lab/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf) |
+
+### Program Details
+
+<details>
+<summary><b>Experiment 2: Static Web Page (1 Program)</b></summary>
+
+| Program | Category | Description | Code |
+|:---|:---|:---|:-:|
+| `index.html` | Web UI | Static layout for a basic HMI concept | [View](HMI%20Lab/Experiment%202/Source%20Code/index.html) |
+
+</details>
+
+<details>
+<summary><b>Experiment 3: Dynamic Web Page (1 Program)</b></summary>
+
+| Program | Category | Description | Code |
+|:---|:---|:---|:-:|
+| `form.html` | Web UI | Interactive form with validation logic | [View](HMI%20Lab/Experiment%203/Source%20Code/form.html) |
+
+</details>
+
+<details>
+<summary><b>Experiment 4: ATVM Interface (4 Programs)</b></summary>
+
+| Program | Category | Description | Code |
+|:---|:---|:---|:-:|
+| `index.html` | Application | Main ATVM interface layout | [View](HMI%20Lab/Experiment%204/Source%20Code/index.html) |
+| `script.js` | Logic | Interactive ticketing logic | [View](HMI%20Lab/Experiment%204/Source%20Code/script.js) |
+| `style.css` | Design | ATM/ATVM visual styling | [View](HMI%20Lab/Experiment%204/Source%20Code/style.css) |
+| `README.md` | Doc | Setup and usage instructions | [View](HMI%20Lab/Experiment%204/Source%20Code/README.md) |
+
+</details>
+
+<details>
+<summary><b>Experiment 6: E-Commerce UI (Complex Application)</b></summary>
+
+| Program | Category | Description | Code |
+|:---|:---|:---|:-:|
+| `index.html` | Web UI | Multi-page store interface | [View](HMI%20Lab/Experiment%206/Source%20Code/index.html) |
+| `blog.html` | Content | Integrated blog/news section | [View](HMI%20Lab/Experiment%206/Source%20Code/blog.html) |
+| `services.html` | Service | Service offering catalog | [View](HMI%20Lab/Experiment%206/Source%20Code/services.html) |
+| `contact_us.html` | Contact | Customer support interface | [View](HMI%20Lab/Experiment%206/Source%20Code/contact_us.html) |
+
+</details>
+
+---
+
+
+## Human Machine Interaction Project
+
+<div align="center">
+
+  ### [♟️ Online Chess Game](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
   
-  - [Web Application](https://onlinechess-game.herokuapp.com)
+  **A comprehensive web-based multiplayer chess game with interactive UI**
   
-   - [Project Report](HMI%20Mini%20Project/HMI_MINI_PROJECT_REPORT_BE_COMPS_B-50,51,58.pdf)
+  [![Project](https://img.shields.io/badge/Project-Online%20Chess%20Game-purple.svg)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
+  [![Platform](https://img.shields.io/badge/Platform-Web-green.svg)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
+  [![Technology](https://img.shields.io/badge/Technology-PHP%20%7C%20JS%20%7C%20MySQL-blue.svg)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
+  [![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
 
-   - [Project Teams](HMI%20Mini%20Project/HMI%20Mini%20Project%20Teams.pdf)
-  
-   - [Project Presentation](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf)
+</div>
 
+<div align="center">
 
-## Quizzes
+### 👥 Author
+| <img src="https://github.com/Amey-Thakur.png" width="150" alt="Amey Thakur"><br>[**Amey Thakur**](https://github.com/Amey-Thakur) |
+| :---: |
+</div>
 
- - Quiz 1 - [Module 1](Quizzes/HMI_QUIZ-1.pdf)
- 
- - Quiz 2 - [Module 2](Quizzes/HMI_QUIZ-2.pdf)
- 
- - Quiz 3 - [Module 3](Quizzes/HMI_QUIZ-3.pdf)
- 
- - Quiz 4 - [Module 4](Quizzes/HMI_QUIZ-4.pdf)
- 
- - Quiz 5 - [Module 5](Quizzes/HMI_QUIZ-5.pdf)
- 
- - Quiz 6 - [Module 6](Quizzes/HMI_QUIZ-6.pdf)
+### Project Overview
 
+This project implements an Online Chess Game featuring a responsive user interface, real-time move validation, and multiplayer capabilities, demonstrating principles of interactive system design and UX/UI optimization.
 
-## IAT - 1
+### Resources
 
- - [Question Paper](IAT-1/HMI%20IAT-1%20Question%20Paper.pdf) - IAT-1
- 
- - [HMI Module - 1](IAT-1/HMI_Module-1.pdf)
- 
- - [HMI Module - 2](IAT-1/HMI_Module-2.pdf)
- 
- - [HMI Module - 3](IAT-1/HMI_Module-3.pdf)
+| # | Project Component | Description | Date | Marks | Link |
+|:-:|:---|:---|:---:|:---:|:---:|
+| 1 | Chess Game Code | Complete source code on GitHub | 2022 | - | [View](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME) |
+| 2 | Project Report | Detailed project documentation | 2022 | - | [View](HMI%20Mini%20Project/HMI_MINI_PROJECT_REPORT_BE_COMPS_B-50,51,58.pdf) |
+| 3 | Project Teams | Team composition and roles | 2022 | - | [View](HMI%20Project/HMI%20Mini%20Project%20Teams.pdf) |
+| 4 | Presentation | Final project demonstration slides | 2022 | - | [View](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf) |
+| 5 | Demo | Live Web Application | - | - | [View](https://onlinechess-game.herokuapp.com) |
+
+---
 
 
-## IAT - 2
+### Quizzes
 
- - [Question Paper](IAT-2/HMI_IAT-2_Question_Paper.pdf) - IAT-2
+HMI-specific quizzes conducted during the course:
 
- - [HMI Question Bank](IAT-2/HMI_IAT-2_Question_Bank.pdf)
- 
- - [HMI Module - 4 Handwritten](IAT-2/HMI_Module-4_%5BHandwritten%5D.pdf)
- 
- - [HMI Module - 5 Handwritten](IAT-2/HMI_Module-5_%5BHandwritten%5D.pdf)
- 
- - [HMI Module - 6 Handwritten](IAT-2/HMI_Module-6_%5BHandwritten%5D.pdf)
+| # | Quiz | Topics | Date | Marks |
+|:-:|:---|:---|:---:|:---:|
+| 1 | [Quiz 1](Quizzes/HMI_QUIZ-1.pdf) | Module 1: Introduction to HMI | 2022 | - |
+| 2 | [Quiz 2](Quizzes/HMI_QUIZ-2.pdf) | Module 2: HCI Basics | 2022 | - |
+| 3 | [Quiz 3](Quizzes/HMI_QUIZ-3.pdf) | Module 3: Designing the UI | 2022 | - |
+| 4 | [Quiz 4](Quizzes/HMI_QUIZ-4.pdf) | Module 4: Interaction Models | 2022 | - |
+| 5 | [Quiz 5](Quizzes/HMI_QUIZ-5.pdf) | Module 5: Usability Engineering | 2022 | - |
+| 6 | [Quiz 6](Quizzes/HMI_QUIZ-6.pdf) | Module 6: Advanced Interfaces | 2022 | - |
+
+---
+
+
+## Internal Assessment (IAT)
+
+### IAT - 1
+
+| # | Resource | Description | Date |
+|:-:|:---|:---|:---:|
+| 1 | [Question Paper](IAT-1/HMI%20IAT-1%20Question%20Paper.pdf) | University IAT-1 Question Paper | 2022 |
+| 2 | [HMI Module - 1](IAT-1/HMI_Module-1.pdf) | Foundations of HMI Notes | 2022 |
+| 3 | [HMI Module - 2](IAT-1/HMI_Module-2.pdf) | HCI Basics Notes | 2022 |
+| 4 | [HMI Module - 3](IAT-1/HMI_Module-3.pdf) | Designing the UI Notes | 2022 |
+
+---
+
+### IAT - 2
+
+| # | Resource | Description | Date |
+|:-:|:---|:---|:---:|
+| 1 | [Question Paper](IAT-2/HMI_IAT-2_Question_Paper.pdf) | University IAT-2 Question Paper | 2022 |
+| 2 | [HMI Question Bank](IAT-2/HMI_IAT-2_Question_Bank.pdf) | Comprehensive IAT-2 preparation bank | 2022 |
+| 3 | [HMI Module - 4](IAT-2/HMI_Module-4_%5BHandwritten%5D.pdf) | Handwritten notes on Interaction Models | 2022 |
+| 4 | [HMI Module - 5](IAT-2/HMI_Module-5_%5BHandwritten%5D.pdf) | Handwritten notes on Usability Engineering | 2022 |
+| 5 | [HMI Module - 6](IAT-2/HMI_Module-6_%5BHandwritten%5D.pdf) | Handwritten notes on Advanced Interfaces | 2022 |
+
+---
  
 
 ## Semester Exam
 
- - [Question Paper](Semester%20Exam/HMI_Question_Paper.pdf)
- 
- - [Question Bank](Semester%20Exam/HMI_Question_Bank.pdf)
- 
- - [Question Bank MCQs](Semester%20Exam/HMI%20QB%20Answers.pdf)
- 
-  - [Timetable](Semester%20Exam/Semester%208%20Timetable.pdf)
+Final semester examination resources and submissions:
+
+| # | Resource | Description | Date |
+|:-:|:---|:---|:---:|
+| 1 | [Question Paper](Semester%20Exam/HMI_Question_Paper.pdf) | Official University Question Paper | 2022 |
+| 2 | [Question Bank](Semester%20Exam/HMI_Question_Bank.pdf) | Subject-wise essential questions | 2022 |
+| 3 | [Question Bank MCQs](Semester%20Exam/HMI%20QB%20Answers.pdf) | Solved MCQs for exam preparation | 2022 |
+| 4 | [Timetable](Semester%20Exam/Semester%208%20Timetable.pdf) | Semester 8 examination schedule | 2022 |
+
+---
 
 
-## Submission Report
+## Submission Completion Report
 
- - HMI Course [Exit Survey](Submission%20Report/HMI%20Course%20Exit%20Survey%20(BE%20-%20B).pdf)
- 
- - HMI Laboratory [Exit Survey](Submission%20Report/HMI%20Laboratory%20Exit%20Survey%20(BE%20-%20B).pdf)
+Course completion documentation and exit surveys:
 
- - [HMI Submission Report](Submission%20Report/AMEY_B-50_HMI_SUBMISSION_REPORT.pdf)
- 
- - Semester 8 [Submission Report](Submission%20Report/Amey_B-50_Submission_Report.pdf)
+| # | Document | Description |
+|:-:|:---|:---|
+| 1 | [Submission Report](Submission%20Report/AMEY_B-50_HMI_SUBMISSION_REPORT.pdf) | Final HMI coursework submission report |
+| 2 | [Exit Survey (Theory)](Submission%20Report/HMI%20Course%20Exit%20Survey%20(BE%20-%20B).pdf) | Course outcome survey for HMI Theory |
+| 3 | [Exit Survey (Lab)](Submission%20Report/HMI%20Laboratory%20Exit%20Survey%20(BE%20-%20B).pdf) | Course outcome survey for HMI Laboratory |
+| 4 | [Semester Report](Submission%20Report/Amey_B-50_Submission_Report.pdf) | Collective Semester 8 submission report |
+
+---
+
+## Syllabus
+
+> [**Official CBCGS Syllabus**](MU%20SEM%20VIII%20SYLLABUS.pdf)  
+> Complete Fourth Year Computer Engineering syllabus document from the University of Mumbai, including detailed course outcomes, assessment criteria, and module specifications for Human Machine Interaction and Human Machine Interaction Laboratory.
+
+> [!IMPORTANT]
+> Always verify the latest syllabus details with the official University of Mumbai website, as curriculum updates may occur after this repository's archival date.
+
+---
+
+## Usage Guidelines
+
+This repository is openly shared to support learning and knowledge exchange across the academic community.
+
+**For Students**  
+Use these resources as reference materials for understanding interaction design principles, usability testing, and preparing for examinations. All content is organized for self-paced learning.
+
+**For Educators**  
+These materials may serve as curriculum references, lab examples, or supplementary teaching resources. Attribution is appreciated when utilizing content.
+
+**For Researchers**  
+The documentation and organization may provide insights into interactive system development and user experience research.
+
+---
 
 ## License
 
@@ -191,6 +379,51 @@ This repository and all linked academic content are made available under the **C
 
 ---
 
-<p align="center"> <b> 👉🏻 Subject as a part of the 8th Semester of Engineering @ University of Mumbai 👈🏻 </b> </p>
- 
-<p align="center"><a href='https://github.com/Amey-Thakur/COMPUTER-ENGINEERING', style='color: greenyellow;'> ✌🏻 Back To Engineering ✌🏻</a></p>
+## About This Repository
+
+**Created & Maintained by**: [Amey Thakur](https://github.com/Amey-Thakur)  
+**Academic Journey**: Bachelor of Engineering in Computer Engineering (2018-2022)  
+**Institution**: [Terna Engineering College](https://ternaengg.ac.in/), Navi Mumbai  
+**University**: [University of Mumbai](https://mu.ac.in/)
+
+This repository represents a comprehensive collection of study materials, reference books, assignments, and personal preparation notes curated during my academic journey. All content has been carefully organized and documented to serve as a valuable resource for students pursuing Human Machine Interaction & Human Machine Interaction Laboratory.
+
+**Connect**: [GitHub](https://github.com/Amey-Thakur) · [LinkedIn](https://www.linkedin.com/in/amey-thakur)
+
+### Acknowledgments
+
+Grateful acknowledgment to **[Mega Satish](https://github.com/msatmod)** for her exceptional contribution to this repository through "Mega's Notes" and "The Wall" - comprehensive module-wise notes that became an invaluable resource for understanding complex HMI concepts. Her constant support, patience, and clarity throughout this journey made a real difference. Learning alongside her was transformative, not only because she explained concepts so clearly, but because she truly cared about understanding them together. Her thoughtful approach to teaching, openness to discussion, and steady encouragement turned challenges into meaningful learning moments. This work reflects the growth that came from learning side by side. Thank you, Mega, for everything you shared and taught along the way.
+
+Special thanks to the faculty members of the Department of Computer Engineering at Terna Engineering College for their guidance and instruction in Human Machine Interaction. Their expertise and support helped develop a strong understanding of user-centric design.
+
+Special thanks to the mentors and peers whose encouragement, discussions, and support contributed meaningfully to this learning experience.
+
+---
+
+<!-- =========================================================================================
+                                     FOOTER SECTION
+     ========================================================================================= -->
+<div align="center">
+
+  <!-- Footer Navigation -->
+  [↑ Back to Top](#human-machine-interaction-and-human-machine-interaction-laboratory)
+
+  [Overview](#overview) &nbsp;·&nbsp; [Contents](#repository-contents) &nbsp;·&nbsp; [The Wall](#the-wall) &nbsp;·&nbsp; [Mega's Notes](#megas-notes) &nbsp;·&nbsp; [Assignments](#assignments) &nbsp;·&nbsp; [Laboratory](#hmi-lab) &nbsp;·&nbsp; [Mini Project](#mini-project) &nbsp;·&nbsp; [Quizzes](#quizzes) &nbsp;·&nbsp; [IAT-1](#iat-1) &nbsp;·&nbsp; [IAT-2](#iat-2) &nbsp;·&nbsp; [Semester Exam](#semester-exam) &nbsp;·&nbsp; [Submission Report](#submission-completion-report) &nbsp;·&nbsp; [Syllabus](#syllabus) &nbsp;·&nbsp; [Usage Guidelines](#usage-guidelines) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository) &nbsp;·&nbsp; [Acknowledgments](#acknowledgments)
+
+  <br>
+
+  🔬 **[HMI Lab](HMI%20Lab/)** &nbsp;·&nbsp; ♟️ **[Chess Game App](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)**
+
+</div>
+
+---
+
+<div align="center">
+
+  ### [🎓 Computer Engineering Repository](https://github.com/Amey-Thakur/COMPUTER-ENGINEERING)
+  
+  **Computer Engineering (B.E.) - University of Mumbai**
+  
+  *Semester-wise curriculum, laboratories, projects, and academic notes.*
+  
+</div>
