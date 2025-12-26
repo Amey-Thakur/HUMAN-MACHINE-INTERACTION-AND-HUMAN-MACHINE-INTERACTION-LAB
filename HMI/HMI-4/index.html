@@ -181,6 +181,35 @@
     <script src="js/angular.min.js"></script>
     <script src="js/angular-touch.min.js"></script>
     <script src="js/atvm-controller.js"></script>
+    <style>
+        .back-to-dashboard {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: sans-serif;
+            font-weight: bold;
+            z-index: 9999;
+            transition: transform 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-to-dashboard:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+    </style>
+    <a href="../index.html" class="back-to-dashboard">
+        <span>&larr;</span> Back to Dashboard
+    </a>
 </body>
 
 </html>
