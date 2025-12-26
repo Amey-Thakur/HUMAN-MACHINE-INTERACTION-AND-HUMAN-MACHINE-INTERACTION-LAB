@@ -193,6 +193,21 @@ Academic assignments for comprehensive learning and practice:
 
 ---
 
+### Quizzes
+
+HMI-specific quizzes conducted during the course:
+
+| # | Quiz | Topics | Marks |
+|:-:|:---|:---|:---:|
+| 1 | [Quiz 1](Quizzes/HMI_QUIZ-1.pdf) | Module 1 | 12/12 |
+| 2 | [Quiz 2](Quizzes/HMI_QUIZ-2.pdf) | Module 2 | 10/10 |
+| 3 | [Quiz 3](Quizzes/HMI_QUIZ-3.pdf) | Module 3 | 6/10 |
+| 4 | [Quiz 4](Quizzes/HMI_QUIZ-4.pdf) | Module 4 | 5/6 |
+| 5 | [Quiz 5](Quizzes/HMI_QUIZ-5.pdf) | Module 5 | 6/6 |
+| 6 | [Quiz 6](Quizzes/HMI_QUIZ-6.pdf) | Module 6 | 5/6 |
+
+---
+
 
 ## Human Machine Interaction Laboratory
 
