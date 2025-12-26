@@ -288,6 +288,12 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 </details>
 
+### Laboratory Documentation
+
+| # | Resource | Description |
+|:-:|:---|:---|
+| 1 | [Lab README](HMI%20Lab/README.md) | Detailed navigation guide with program descriptions |
+
 ---
 
 
