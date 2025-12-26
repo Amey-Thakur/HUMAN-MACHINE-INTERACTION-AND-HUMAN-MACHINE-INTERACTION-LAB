@@ -226,7 +226,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 | # | Experiment | Date | Marks | Report |
 |:-:|:---|:---:|:---:|:-:|
-| 1 | Analyze and rate existing at least 3 websites and users for any specific Domain of your choice | February 04, 2022 | 9/10 | [View](HMI%20Lab/Experiment%201/AMEY_B-50_HMI_EXPERIMENT-1.pdf) |
+| 1 | Analyze and rate existing at least 3 websites and users for any specific Domain of your choice. Visualize the ratings using graphs. | February 04, 2022 | 9/10 | [View](HMI%20Lab/Experiment%201/AMEY_B-50_HMI_EXPERIMENT-1.pdf) |
 | 2 | Static Web Page | 2022 | 9/10 | [View](HMI%20Lab/Experiment%202/AMEY_B-50_HMI_EXPERIMENT-2.pdf) |
 | 3 | Dynamic Web Page | 2022 | 10/10 | [View](HMI%20Lab/Experiment%203/AMEY_B-50_HMI_EXPERIMENT-3.pdf) |
 | 4 | ATVM Interface | 2022 | 9/10 | [View](HMI%20Lab/Experiment%204/AMEY_B-50_HMI_EXPERIMENT-4.pdf) |
