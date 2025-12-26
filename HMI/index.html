@@ -373,6 +373,24 @@
             }
         }
 
+
+        /* Clickable Badge Animation */
+        .clickable-badge {
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .clickable-badge:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+            background: var(--accent-color) !important;
+            color: #fff !important;
+            border-color: var(--accent-color) !important;
+        }
+
         /* Tech Badges */
         .badge-tech {
             font-size: 0.75rem;
@@ -409,9 +427,7 @@
                 accessibility, and modern web architecture.</p>
 
             <div class="info-badges">
-                <a href="https://github.com/Amey-Thakur" class="badge-pill"
-                    style="text-decoration: none; transition: transform 0.2s; display: inline-flex; align-items: center;"
-                    target="_blank">
+                <a href="https://github.com/Amey-Thakur" class="badge-pill clickable-badge" target="_blank">
                     <i class="fas fa-user-graduate me-2"></i>Amey Thakur
                 </a>
                 <span class="badge-pill">Roll No: 50</span>
