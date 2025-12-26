@@ -233,7 +233,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 | 5 | Design an interface for any machine which you find troublesome to use and want to change its interface like automatic washing machine, microwave oven etc. | March 12, 2022 | 10/10 | [View](HMI%20Lab/Experiment%205/AMEY_B-50_HMI_EXPERIMENT-5.pdf) |
 | 6 | Design website for an application of the selected domain with home page and subsequent pages. | March 13, 2022 | 10/10 | [View](HMI%20Lab/Experiment%206/AMEY_B-50_HMI_EXPERIMENT-6.pdf) |
 | 7 | Design menu for selected website. | March 23, 2022 | 9/10 | [View](HMI%20Lab/Experiment%207/AMEY_B-50_HMI_EXPERIMENT-7.pdf) |
-| 8 | Evaluation | 2022 | 9/10 | [View](HMI%20Lab/Experiment%208/AMEY_B-50_HMI_EXPERIMENT-8.pdf) |
+| 8 | Design the menus for the selected website. | March 24, 2022 | 9/10 | [View](HMI%20Lab/Experiment%208/AMEY_B-50_HMI_EXPERIMENT-8.pdf) |
 | 9 | Specialized Interface | 2022 | 10/10 | [View](HMI%20Lab/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf) |
 
 ### Program Details
