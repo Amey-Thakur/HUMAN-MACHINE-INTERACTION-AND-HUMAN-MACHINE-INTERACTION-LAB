@@ -341,6 +341,26 @@
             animation-delay: 0.5s;
         }
 
+        /* Tech Badges */
+        .badge-tech {
+            font-size: 0.75rem;
+            font-weight: 500;
+            background: var(--bg-color);
+            color: var(--text-secondary);
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-right: 5px;
+            border: 1px solid var(--border-color);
+            display: inline-block;
+            transition: all 0.2s;
+        }
+
+        .card-custom:hover .badge-tech {
+            background: var(--badge-bg);
+            color: var(--badge-text);
+            border-color: var(--badge-bg);
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -352,160 +372,85 @@
                 transform: translateY(0);
             }
         }
-    </style>
-</head>
 
-<body>
+        /* Animated Hero Background */
+        .hero {
+            background: linear-gradient(-45deg, #ffffff, #f0f4ff, #e0e7ff, #f8fafc);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite, fadeInDown 0.8s ease-out;
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+        }
 
-    <div class="main-container">
+        [data-theme="dark"] .hero {
+            background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1a237e);
+            background-size: 400% 400%;
+        }
 
-        <!-- Hero Section -->
-        <div class="hero">
-            <button class="theme-switch" id="theme-toggle" title="Switch Theme">
-                <i class="fas fa-moon"></i>
-            </button>
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
 
-            <h1>Human Machine Interaction Lab</h1>
-            <p>A curated portfolio of experimental interface designs, demonstrating principles of usability,
-                accessibility, and modern web architecture.</p>
+            50% {
+                background-position: 100% 50%;
+            }
 
-            <div class="info-badges">
-                <span class="badge-pill"><i class="fas fa-user-graduate me-2"></i>Amey Thakur</span>
-                <span class="badge-pill">Roll No: 50</span>
-                <span class="badge-pill">Batch: B3</span>
-            </div>
+            100% {
+                background-position: 0% 50%;
+            }
+        }
 
-            <div class="hero-buttons">
-                <a href="https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB"
-                    class="btn btn-primary-custom">
-                    <i class="fab fa-github me-2"></i>HMI Repository
-                </a>
-                <a href="https://github.com/Amey-Thakur" class="btn btn-primary-custom"
-                    style="background:var(--card-bg); color:var(--text-primary); border:1px solid var(--border-color);">
-                    <i class="fas fa-code-branch me-2"></i>Computer Engineering Repo
-                </a>
-            </div>
-        </div>
-
-        <!-- Section Title -->
-        <div class="section-title">
-            <h3>Laboratory Experiments</h3>
-        </div>
-
-        <!-- Experiments Grid -->
-        <div class="row g-4">
-
-            <!-- Experiment 2 -->
-            <div class="col-md-6">
-                <div class="card-custom">
-                    <div class="icon-wrapper">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <span class="exp-tag">Experiment 02</span>
-                    <h5>Math Sprint Game</h5>
-                    <p>
-                        An interactive, gamified application for children to test mathematical speed. Features real-time
-                        scoring, responsive feedback loops, and dynamic difficulty adjustment.
-                    </p>
-                    <a href="HMI-2/index.html" class="launch-link">
-                        Launch Experiment <i class="fas fa-arrow-right ms-2"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Experiment 3 -->
-            <div class="col-md-6">
-                <div class="card-custom">
-                    <div class="icon-wrapper">
-                        <i class="fas fa-file-signature"></i>
-                    </div>
-                    <span class="exp-tag">Experiment 03</span>
-                    <h5>Registration Interface</h5>
-                    <p>
-                        A formal data entry GUI emphasizing form usability. Implements comprehensive client-side
-                        validation, accessible labeling, and clear error recovery mechanisms.
-                    </p>
-                    <a href="HMI-3/form.html" class="launch-link">
-                        Launch Experiment <i class="fas fa-arrow-right ms-2"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Experiment 4 -->
-            <div class="col-md-6">
-                <div class="card-custom">
-                    <div class="icon-wrapper">
-                        <i class="fas fa-subway"></i>
-                    </div>
-                    <span class="exp-tag">Experiment 04</span>
-                    <h5>ATVM Simulator</h5>
-                    <p>
-                        A metro ticket vending machine interface simulation. Focuses on task flow efficiency, distinct
-                        touch targets, and visual clarity for public kiosk usage.
-                    </p>
-                    <a href="HMI-4/index.html" class="launch-link">
-                        Launch Experiment <i class="fas fa-arrow-right ms-2"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Experiment 6 -->
-            <div class="col-md-6">
-                <div class="card-custom">
-                    <div class="icon-wrapper">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                    </div>
-                    <span class="exp-tag">Experiment 06</span>
-                    <h5>Cloud Services Portal</h5>
-                    <p>
-                        A comprehensive multi-page corporate website. Demonstrates modern layout structures, sticky
-                        navigation, service showcasing, and responsive design patterns.
-                    </p>
-                    <a href="HMI-6/index.html" class="launch-link">
-                        Launch Experiment <i class="fas fa-arrow-right ms-2"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>2022 &copy; All Rights Reserved | Designed and Developed by <a href="https://github.com/Amey-Thakur">Amey
-                Thakur</a></p>
-    </footer>
-
-    <script>
-        const toggleBtn = document.getElementById('theme-toggle');
-        const themeIcon = toggleBtn.querySelector('i');
-        const htmlElement = document.documentElement;
+        </head><body><div class="main-container">< !-- Hero Section --><div class="hero"><button class="theme-switch" id="theme-toggle" title="Switch Theme"><i class="fas fa-moon"></i></button><h1>Human Machine Interaction Lab</h1><p>A curated portfolio of experimental interface designs,
+        demonstrating principles of usability,
+        accessibility,
+        and modern web architecture.</p><div class="info-badges"><span class="badge-pill"><i class="fas fa-user-graduate me-2"></i>Amey Thakur</span><span class="badge-pill">Roll No: 50</span><span class="badge-pill">Batch: B3</span></div><div class="hero-buttons"><a href="https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB"
+        class="btn btn-primary-custom"><i class="fab fa-github me-2"></i>HMI Repository </a><a href="https://github.com/Amey-Thakur" class="btn btn-primary-custom"
+        style="background:var(--card-bg); color:var(--text-primary); border:1px solid var(--border-color);"><i class="fas fa-code-branch me-2"></i>Computer Engineering Repo </a></div></div>< !-- Section Title --><div class="section-title"><h3>Laboratory Experiments</h3></div>< !-- Experiments Grid --><div class="row g-4">< !-- Experiment 2 --><div class="col-md-6"><div class="card-custom"><div class="icon-wrapper"><i class="fas fa-calculator"></i></div><span class="exp-tag">Experiment 02</span><h5>Math Sprint Game</h5><div class="tech-stack mb-3"><span class="badge-tech">HTML5</span><span class="badge-tech">CSS3</span><span class="badge-tech">JavaScript</span></div><p>An interactive,
+        gamified application for children to test mathematical speed. Features real-time scoring,
+        responsive feedback loops,
+        and dynamic difficulty adjustment. </p><a href="HMI-2/index.html" class="launch-link">Launch Experiment <i class="fas fa-arrow-right ms-2"></i></a></div></div>< !-- Experiment 3 --><div class="col-md-6"><div class="card-custom"><div class="icon-wrapper"><i class="fas fa-file-signature"></i></div><span class="exp-tag">Experiment 03</span><h5>Registration Interface</h5><div class="tech-stack mb-3"><span class="badge-tech">Forms</span><span class="badge-tech">Validation</span><span class="badge-tech">UI/UX</span></div><p>A formal data entry GUI emphasizing form usability. Implements comprehensive client-side validation,
+        accessible labeling,
+        and clear error recovery mechanisms. </p><a href="HMI-3/form.html" class="launch-link">Launch Experiment <i class="fas fa-arrow-right ms-2"></i></a></div></div>< !-- Experiment 4 --><div class="col-md-6"><div class="card-custom"><div class="icon-wrapper"><i class="fas fa-subway"></i></div><span class="exp-tag">Experiment 04</span><h5>ATVM Simulator</h5><div class="tech-stack mb-3"><span class="badge-tech">Simulation</span><span class="badge-tech">Interaction</span><span class="badge-tech">Layout</span></div><p>A metro ticket vending machine interface simulation. Focuses on task flow efficiency,
+        distinct touch targets,
+        and visual clarity for public kiosk usage. </p><a href="HMI-4/index.html" class="launch-link">Launch Experiment <i class="fas fa-arrow-right ms-2"></i></a></div></div>< !-- Experiment 6 --><div class="col-md-6"><div class="card-custom"><div class="icon-wrapper"><i class="fas fa-cloud-upload-alt"></i></div><span class="exp-tag">Experiment 06</span><h5>Cloud Services Portal</h5><div class="tech-stack mb-3"><span class="badge-tech">Bootstrap 5</span><span class="badge-tech">Responsive</span><span class="badge-tech">PaaS</span></div><p>A comprehensive multi-page corporate website. Demonstrates modern layout structures,
+        sticky navigation,
+        service showcasing,
+        and responsive design patterns. </p><a href="HMI-6/index.html" class="launch-link">Launch Experiment <i class="fas fa-arrow-right ms-2"></i></a></div></div></div></div>< !-- Footer --><footer class="footer"><p>2022 &copy;
+        All Rights Reserved | Designed and Developed by <a href="https://github.com/Amey-Thakur">Amey Thakur</a></p></footer><script>const toggleBtn=document.getElementById('theme-toggle');
+        const themeIcon=toggleBtn.querySelector('i');
+        const htmlElement=document.documentElement;
 
         // Check for saved user preference
-        const savedTheme = localStorage.getItem('theme') || 'light';
+        const savedTheme=localStorage.getItem('theme') || 'light';
         htmlElement.setAttribute('data-theme', savedTheme);
         updateIcon(savedTheme);
 
-        toggleBtn.addEventListener('click', () => {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        toggleBtn.addEventListener('click', ()=> {
+                const currentTheme=htmlElement.getAttribute('data-theme');
+                const newTheme=currentTheme==='light' ? 'dark' : 'light';
 
-            htmlElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateIcon(newTheme);
-        });
+                htmlElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateIcon(newTheme);
+            });
 
         function updateIcon(theme) {
-            if (theme === 'dark') {
+            if (theme==='dark') {
                 themeIcon.classList.remove('fa-moon');
                 themeIcon.classList.add('fa-sun');
-            } else {
+            }
+
+            else {
                 themeIcon.classList.remove('fa-sun');
                 themeIcon.classList.add('fa-moon');
             }
         }
-    </script>
-</body>
 
-</html>
+        </script></body></html>
