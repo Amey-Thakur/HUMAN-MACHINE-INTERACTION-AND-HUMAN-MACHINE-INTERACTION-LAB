@@ -22,7 +22,7 @@ table {
 /* Body Styling: Aqua background and cursive font preference */
 body {
   font: 15px/1.5 cursive;
-  padding: 0;
+  padding: 20px;
   margin: 0;
   background-color: aqua;
 }
