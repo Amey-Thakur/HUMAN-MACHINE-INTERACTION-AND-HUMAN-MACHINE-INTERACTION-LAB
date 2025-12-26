@@ -219,6 +219,8 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
   [![Language](https://img.shields.io/badge/Language-HTML%20%7C%20JS%20%7C%20CSS-blueviolet.svg)](HMI%20Lab/)
   [![Status](https://img.shields.io/badge/Status-Complete-brightgreen.svg)](HMI%20Lab/)
 
+  [![Live Demo HMI Portfolio](https://img.shields.io/badge/Live_Demo-HMI_Portfolio-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/)
+
   [![Live Demo HMI-2](https://img.shields.io/badge/Live_Demo-HMI--2-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-2/index.html)
   [![Live Demo HMI-3](https://img.shields.io/badge/Live_Demo-HMI--3-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-3/form.html)
   [![Live Demo HMI-4](https://img.shields.io/badge/Live_Demo-HMI--4-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-4/index.html)
@@ -227,7 +229,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 </div>
 
 > [!TIP]
-> **Live Implementation**: For a quick structural and responsive evaluation, use the 🚀 (**Rocket**) links in the 'Live Demo' column to view the implementations directly in your browser. For the complete source code and detailed documentation, visit the [**HMI Lab**](HMI%20Lab/) directory.
+> **Live Implementation**: For a comprehensive showcase, visit the [**HMI Portfolio Dashboard**](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/). For a quick structural and responsive evaluation, use the 🚀 (**Rocket**) links in the 'Live Demo' column to view the implementations directly in your browser. For the complete source code and detailed documentation, visit the [**HMI Lab**](HMI%20Lab/) directory.
 
 | # | Experiment | Date | Marks | Report | Live Demo |
 |:-:|:---|:---:|:---:|:-:|:-:|
