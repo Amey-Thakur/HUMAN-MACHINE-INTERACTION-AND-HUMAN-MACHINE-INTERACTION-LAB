@@ -227,7 +227,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 | # | Experiment | Date | Marks | Report |
 |:-:|:---|:---:|:---:|:-:|
 | 1 | Analyze and rate existing at least 3 websites and users for any specific Domain of your choice. Visualize the ratings using graphs. | February 04, 2022 | 9/10 | [View](HMI%20Lab/Experiment%201/AMEY_B-50_HMI_EXPERIMENT-1.pdf) |
-| 2 | Static Web Page | 2022 | 9/10 | [View](HMI%20Lab/Experiment%202/AMEY_B-50_HMI_EXPERIMENT-2.pdf) |
+| 2 | Create a mathematical application for kids of age 4-7 years to teach them the basics of mathematics. | February 11, 2022 | 9/10 | [View](HMI%20Lab/Experiment%202/AMEY_B-50_HMI_EXPERIMENT-2.pdf) |
 | 3 | Dynamic Web Page | 2022 | 10/10 | [View](HMI%20Lab/Experiment%203/AMEY_B-50_HMI_EXPERIMENT-3.pdf) |
 | 4 | ATVM Interface | 2022 | 9/10 | [View](HMI%20Lab/Experiment%204/AMEY_B-50_HMI_EXPERIMENT-4.pdf) |
 | 5 | Usability Guidelines | 2022 | 10/10 | [View](HMI%20Lab/Experiment%205/AMEY_B-50_HMI_EXPERIMENT-5.pdf) |
