@@ -1,7 +1,8 @@
 # HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB
 
  👍🏻 CSC801: HMI & CSL801: HMI LAB [SEMESTER VIII]
- 
+
+ [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 ---
  
  - [X] **[Syllabus](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/blob/main/MU%20SEM%20VIII%20SYLLABUS.pdf)**
