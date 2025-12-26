@@ -7,7 +7,7 @@
  
  - [X] [Syllabus](MU%20SEM%20VIII%20SYLLABUS.pdf)
  
- - [X] HMI - [Reference Books](Reference%20Books) | [HMI Essential User interface guide](Reference%20Books/Essential%20User%20interface%20guide.pdf)
+ - [X] HMI - [Reference Books](Reference%20Books) | [HMI Essential User Interface Guide](Reference%20Books/Essential%20User%20Interface%20Guide.pdf)
  
  - [X] [BE Timetable](BE%20Timetable.pdf)
 
