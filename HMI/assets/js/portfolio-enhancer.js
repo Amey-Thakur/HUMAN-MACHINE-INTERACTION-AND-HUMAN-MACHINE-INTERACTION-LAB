@@ -1,6 +1,7 @@
 (function () {
-    // 1. Define Experiment Data
+    // 1. Define Experiment Data & Order
     const repoBase = "https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/tree/main/HMI/";
+    const experimentOrder = ["HMI-2", "HMI-3", "HMI-4", "HMI-6"];
     const experiments = {
         "HMI-2": {
             id: "02",
@@ -37,19 +38,26 @@
     };
 
     // 2. Detect Current Experiment
-    let currentExp = null;
+    let currentKey = null;
     const path = window.location.pathname; // e.g. /HMI/HMI-2/index.html
 
     // Improved detection logic (case-insensitive)
-    if (path.toLowerCase().includes("hmi-2")) currentExp = experiments["HMI-2"];
-    else if (path.toLowerCase().includes("hmi-3")) currentExp = experiments["HMI-3"];
-    else if (path.toLowerCase().includes("hmi-4")) currentExp = experiments["HMI-4"];
-    else if (path.toLowerCase().includes("hmi-6")) currentExp = experiments["HMI-6"];
+    if (path.toLowerCase().includes("hmi-2")) currentKey = "HMI-2";
+    else if (path.toLowerCase().includes("hmi-3")) currentKey = "HMI-3";
+    else if (path.toLowerCase().includes("hmi-4")) currentKey = "HMI-4";
+    else if (path.toLowerCase().includes("hmi-6")) currentKey = "HMI-6";
 
-    if (!currentExp) {
+    if (!currentKey) {
         console.warn("Portfolio Enhancer: No experiment detected in path", path);
         return;
     }
+
+    const currentExp = experiments[currentKey];
+    const currentIndex = experimentOrder.indexOf(currentKey);
+
+    // Determine Prev/Next
+    const prevKey = currentIndex > 0 ? experimentOrder[currentIndex - 1] : null;
+    const nextKey = currentIndex < experimentOrder.length - 1 ? experimentOrder[currentIndex + 1] : null;
 
     // 3. Inject CSS (Robust)
     const style = document.createElement('style');
@@ -161,6 +169,7 @@
         .enhancer-actions {
             display: flex !important;
             gap: 10px !important;
+            margin-top: 20px !important;
         }
         .enhancer-action-btn {
             flex: 1 !important;
@@ -171,12 +180,26 @@
             font-weight: 600 !important;
             font-size: 14px !important;
             transition: background 0.2s !important;
+            border: none !important;
+            cursor: pointer !important;
         }
         .btn-source {
             background: #1e293b !important;
             color: white !important;
         }
         .btn-source:hover { background: #334155 !important; color: white !important; }
+        .btn-nav {
+            background: #f1f5f9 !important;
+            color: #475569 !important;
+        }
+        .btn-nav:hover { background: #e2e8f0 !important; }
+        .enhancer-navigation {
+            display: flex !important;
+            justify-content: space-between !important;
+            margin-top: 20px !important;
+            padding-top: 20px !important;
+            border-top: 1px solid #e2e8f0 !important;
+        }
     `;
     document.head.appendChild(style);
 
@@ -189,6 +212,28 @@
 
     const modalOverlay = document.createElement('div');
     modalOverlay.className = 'enhancer-modal-overlay';
+
+    // Build Navigation HTML
+    let navHtml = '';
+    if (prevKey || nextKey) {
+        navHtml = `<div class="enhancer-navigation">`;
+        if (prevKey) {
+            navHtml += `<a href="../${experiments[prevKey].path}" class="enhancer-action-btn btn-nav">← Prev: Exp ${experiments[prevKey].id}</a>`;
+        } else {
+            navHtml += `<div></div>`; // Spacer
+        }
+
+        // Spacer if both exist
+        if (prevKey && nextKey) navHtml += `<div style="width: 10px;"></div>`;
+
+        if (nextKey) {
+            navHtml += `<a href="../${experiments[nextKey].path}" class="enhancer-action-btn btn-nav">Next: Exp ${experiments[nextKey].id} →</a>`;
+        } else {
+            navHtml += `<div></div>`; // Spacer
+        }
+        navHtml += `</div>`;
+    }
+
     modalOverlay.innerHTML = `
         <div class="enhancer-modal">
             <div class="enhancer-close">&times;</div>
@@ -205,6 +250,7 @@
                     View Source Code
                 </a>
             </div>
+            ${navHtml}
         </div>
     `;
     document.body.appendChild(modalOverlay);
