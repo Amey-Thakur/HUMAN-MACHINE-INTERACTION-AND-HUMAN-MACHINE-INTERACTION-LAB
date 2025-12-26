@@ -1,3 +1,26 @@
+/*
+    Experiment 2: Mathematical Application for Kids (Math Sprint Game)
+    Author: Amey Thakur
+    Batch: B3
+    Roll No: 50
+    Subject: Human Machine Interaction (CSL801)
+    Date: 26/12/2025
+
+    This script implements the Fisher-Yates (aka Knuth) Shuffle algorithm.
+    It is used to randomize the order of equations in the game arrays.
+    
+    Functionality:
+    - Accepts an array as input.
+    - Iterates through the array elements in reverse order.
+    - Swaps each element with a randomly selected element that comes before it (or itself).
+    - Returns the mutated, randomized array.
+*/
+
+/**
+ * Randomizes the order of elements in an array using the Fisher-Yates Shuffle algorithm.
+ * @param {Array} array - The array to be shuffled.
+ * @returns {Array} - The shuffled array.
+ */
 function shuffle(array) {
     var currentIndex = array.length,
         temporaryValue, randomIndex;
@@ -17,8 +40,3 @@ function shuffle(array) {
 
     return array;
 }
-
-// Used like so
-//   var arr = [2, 11, 37, 42];
-//   shuffle(arr);
-//   console.log(arr);
