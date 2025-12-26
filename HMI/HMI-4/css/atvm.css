@@ -1,0 +1,94 @@
+/*
+    Experiment 4: ATVM Interface Design
+    Author: Amey Thakur
+    Batch: B3
+    Roll No: 50
+    Subject: Human Machine Interaction (CSL801)
+    Date: 18/02/2022
+
+    This CSS file handles the custom styling for the ATVM Interface.
+    It overrides default Bootstrap styles to create a realistic ticket layout.
+    
+    Key Elements:
+    1. Full Height Layout: Ensures the interface occupies 100% of the viewport.
+    2. Ticket Simulation: Styles for the '.ticket' class to mimic printed paper (dashed borders, background color).
+    3. State Indicators: 'grayed' and 'green' classes for selection feedback.
+    4. Background: Sets the full-screen background image for the terminal.
+*/
+
+body,
+html {
+    height: 99%;
+    overflow: hidden;
+
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.main-panel {
+    background-color: #ffffff;
+    opacity: 0.95;
+    margin-top: 15px;
+}
+
+/* Visual feedback for selected station */
+.grayed {
+    background-color: #e3e3e3;
+}
+
+/* Success state for confirmed actions */
+.green {
+    background-color: #47a447;
+    color: #ffffff;
+}
+
+.set-height {
+    height: 95%;
+}
+
+.full-height {
+    height: 99%;
+}
+
+.scrollable {
+    overflow: auto;
+}
+
+/* Realistic Ticket Styling */
+.ticket {
+    height: 63%;
+    width: 95%;
+    background-color: #fff0d9;
+    border-radius: 20px;
+    border-style: dashed;
+    border-width: 2px;
+    padding: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.opaque {
+    opacity: 0.2;
+}
+
+.ticket hr {
+    border-color: #b4b4b4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Icons for passenger types */
+.adult {
+    height: 30px;
+    width: 25px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
