@@ -226,15 +226,15 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 | # | Experiment Name | Description | Date | Marks | Report |
 |:-:|:---|:---|:---:|:---:|:-:|
-| 1 | Introduction to HMI | Basic interaction concepts and cycles | 2022 | - | [View](HMI%20Lab/Experiment%201/AMEY_B-50_HMI_EXPERIMENT-1.pdf) |
-| 2 | Static Web Page | Design of a simple static UI layout | 2022 | - | [View](HMI%20Lab/Experiment%202/AMEY_B-50_HMI_EXPERIMENT-2.pdf) |
-| 3 | Dynamic Web Page | Implementation of interactive forms and validation | 2022 | - | [View](HMI%20Lab/Experiment%203/AMEY_B-50_HMI_EXPERIMENT-3.pdf) |
-| 4 | ATVM Interface | ATVM Ticketing system interface design | 2022 | - | [View](HMI%20Lab/Experiment%204/AMEY_B-50_HMI_EXPERIMENT-4.pdf) |
-| 5 | Usability Guidelines | Application of design rules and guidelines | 2022 | - | [View](HMI%20Lab/Experiment%205/AMEY_B-50_HMI_EXPERIMENT-5.pdf) |
-| 6 | E-Commerce UI | Design of a complex interactive store interface | 2022 | - | [View](HMI%20Lab/Experiment%206/AMEY_B-50_HMI_EXPERIMENT-6.pdf) |
-| 7 | Mobile UI Design | Prototyping for mobile platforms | 2022 | - | [View](HMI%20Lab/Experiment%207/AMEY_B-50_HMI_EXPERIMENT-7.pdf) |
-| 8 | Evaluation | Heuristic evaluation of interactive systems | 2022 | - | [View](HMI%20Lab/Experiment%208/AMEY_B-50_HMI_EXPERIMENT-8.pdf) |
-| 9 | Specialized Interface | Advanced interaction techniques and models | 2022 | - | [View](HMI%20Lab/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf) |
+| 1 | Introduction to HMI | Basic interaction concepts and cycles | 2022 | 9/10 | [View](HMI%20Lab/Experiment%201/AMEY_B-50_HMI_EXPERIMENT-1.pdf) |
+| 2 | Static Web Page | Design of a simple static UI layout | 2022 | 9/10 | [View](HMI%20Lab/Experiment%202/AMEY_B-50_HMI_EXPERIMENT-2.pdf) |
+| 3 | Dynamic Web Page | Implementation of interactive forms and validation | 2022 | 10/10 | [View](HMI%20Lab/Experiment%203/AMEY_B-50_HMI_EXPERIMENT-3.pdf) |
+| 4 | ATVM Interface | ATVM Ticketing system interface design | 2022 | 9/10 | [View](HMI%20Lab/Experiment%204/AMEY_B-50_HMI_EXPERIMENT-4.pdf) |
+| 5 | Usability Guidelines | Application of design rules and guidelines | 2022 | 10/10 | [View](HMI%20Lab/Experiment%205/AMEY_B-50_HMI_EXPERIMENT-5.pdf) |
+| 6 | E-Commerce UI | Design of a complex interactive store interface | 2022 | 10/10 | [View](HMI%20Lab/Experiment%206/AMEY_B-50_HMI_EXPERIMENT-6.pdf) |
+| 7 | Mobile UI Design | Prototyping for mobile platforms | 2022 | 9/10 | [View](HMI%20Lab/Experiment%207/AMEY_B-50_HMI_EXPERIMENT-7.pdf) |
+| 8 | Evaluation | Heuristic evaluation of interactive systems | 2022 | 9/10 | [View](HMI%20Lab/Experiment%208/AMEY_B-50_HMI_EXPERIMENT-8.pdf) |
+| 9 | Specialized Interface | Advanced interaction techniques and models | 2022 | 10/10 | [View](HMI%20Lab/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf) |
 
 ### Program Details
 
