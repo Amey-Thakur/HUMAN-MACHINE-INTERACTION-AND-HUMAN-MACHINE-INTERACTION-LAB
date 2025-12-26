@@ -130,7 +130,7 @@ This collection includes **comprehensive reference materials** covering all majo
 > [!IMPORTANT]
 > 💝 **Special Thanks**: A heartfelt thank you to Mega for her constant support, patience, and clarity throughout this journey. Learning alongside her made a real difference, not only because she explained concepts so clearly, but because she truly cared about understanding them together. Her thoughtful approach to teaching, openness to discussion, and steady encouragement turned challenges into meaningful learning moments. This work reflects the growth that came from learning side by side. Thank you, Mega, for everything you shared and taught along the way.
 
-### The Wall - Notes Authored by MEGA SATISH
+### The Wall - Notes Authored by [MEGA SATISH](https://github.com/msatmod)
 
 Comprehensive module-wise notes curated by Mega Satish, covering all essential topics:
 
@@ -144,7 +144,7 @@ Comprehensive module-wise notes curated by Mega Satish, covering all essential t
 | 6 | [HMI Module - 6](THE%20WALL/HMI_Module-6.pdf) | Advanced Interfaces and Future Trends |
 
 > [!NOTE]
-> **COVID-19 Impact**: This coursework was completed during the COVID-19 pandemic in 2022. Due to the nationwide lockdown and the sudden transition to online learning, several planned laboratory sessions and collaborative note-taking activities could not be carried out as originally intended. Despite these challenges, efforts were made to adapt and preserve as much work as possible.
+> **COVID-19 Impact**: This coursework was completed during the COVID-19 pandemic in 2022. Due to the nationwide lockdown and the sudden transition to online learning, several planned laboratory sessions and collaborative note-taking activities could not be carried out as originally intended. Despite these challenges, efforts were made to adapt and preserve as much work as possible. The limited module notes in this section reflect the disruption caused by the pandemic, rather than a lack of effort or commitment.
 
 ---
 
