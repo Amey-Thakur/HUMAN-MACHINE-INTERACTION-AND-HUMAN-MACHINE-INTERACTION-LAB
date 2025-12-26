@@ -1,0 +1,44 @@
+/*
+    Experiment 3: GUI Design for Data Entry Form
+    Author: Amey Thakur
+    Batch: B3
+    Roll No: 50
+    Subject: Human Machine Interaction (CSL801)
+    Date: 18/02/2022
+
+    This CSS file defines the visual styling for the Data Entry Form.
+    Key Design Choices:
+    1. High Contrast: Uses black table backgrounds with contrasting text colors for visibility.
+    2. Readability: Cursive font choice for a distinct visual style.
+    3. Layout: Centralized alignment for focus.
+*/
+
+/* Table Styling: Rounded corners and white text for high contrast against black background */
+table {
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+/* Body Styling: Aqua background and cursive font preference */
+body {
+  font: 15px/1.5 cursive;
+  padding: 0;
+  margin: 0;
+  background-color: aqua;
+}
+
+/* Button Styling: Distinct blue background with ample padding for clickability */
+input[type="submit"],
+input[type="reset"] {
+  height: 38px;
+  background: #263dd4;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  /* Corrected to white for readability on blue bg */
+  border-radius: 5px;
+  /* Added for consistent aesthetics */
+  cursor: pointer;
+  font-weight: bold;
+}

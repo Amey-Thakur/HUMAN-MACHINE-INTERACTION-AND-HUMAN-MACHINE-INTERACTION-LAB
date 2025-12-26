@@ -1,0 +1,186 @@
+<!--
+    Experiment 4: ATVM Interface Design
+    Author: Amey Thakur
+    Batch: B3
+    Roll No: 50
+    Subject: Human Machine Interaction (CSL801)
+    Date: 18/02/2022
+
+    This HTML document defines the user interface for an Automatic Ticket Vending Machine (ATVM).
+    It utilizes AngularJS for dynamic data binding and interaction handling, and Bootstrap for layout.
+    
+    Key UI Components:
+    1. Station List: Interactive list to select source and destination.
+    2. Route Selection: Grouped buttons for main transit hubs.
+    3. Ticket Visualization: Dynamic preview of the printed ticket.
+    4. Configuration Controls: Options for passenger count (Adult/Child) and journey type (Single/Return).
+-->
+<!DOCTYPE html>
+<html lang="en" ng-app>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATVM Interface | Amey Thakur</title>
+
+    <!-- Bootstrap CSS for grid system and components -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for ATVM specific styling -->
+    <link href="css/atvm.css" rel="stylesheet">
+</head>
+
+<body ng-controller="atvmController">
+    <div class="main-container full-height">
+        <div class="container full-height">
+            <div class="panel panel-default full-height main-panel">
+                <div class="panel-body full-height">
+                    <div class="row set-height">
+
+                        <!-- Left Panel: All Stations List -->
+                        <div class="col-sm-3 hidden-xs set-height">
+                            <h3>All Stations</h3>
+                            <hr />
+                            <div class="list-group set-height scrollable">
+                                <a href="#" class="list-group-item" ng-repeat="station in stations track by $index"
+                                    ng-class="getSelectedStationStyle($index)"
+                                    ng-click="setSelectedStation($index)">{{station.name}} - {{station.devng}}</a>
+                            </div>
+                        </div>
+
+                        <!-- Right Panel: Destination Selection & Ticket Preview -->
+                        <div class="col-sm-9 hidden-xs set-height">
+
+                            <!-- Main Station Selection (Hubs) -->
+                            <h3>Choose Destination</h3>
+                            <hr />
+                            <div class="btn-group btn-group-justified btn-group-lg">
+                                <div class="btn-group btn-group-lg"
+                                    ng-repeat="mainStation in mainStations track by $index">
+                                    <button type="button" class="btn btn-default"
+                                        ng-class="getSelectedStationStylePrimary(mainStation)"
+                                        ng-click="setSelectedMainStation($index)">{{getStation(mainStation)}}
+                                    </button>
+                                </div>
+                            </div>
+                            <br />
+
+                            <!-- Sub-station Selection -->
+                            <div class="btn-group btn-group-justified btn-group-md center-block" style="width:90%;">
+                                <div class="btn-group btn-group-md"
+                                    ng-repeat="subStation in getSubstations(selectedMainStation)">
+                                    <button type="button" class="btn btn-default"
+                                        ng-class="getSelectedStationStylePrimary(subStation[1])"
+                                        ng-click="setSelectedStation(subStation[1])">{{subStation[0]}}
+                                    </button>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <!-- Ticket Visualizer -->
+                            <h3>Ticket</h3>
+                            <div class="ticket center-block">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <img src="images/logo.png" class="logo">
+                                    </div>
+                                    <div class="col-xs-6 text-center">
+                                        <h4>Mumbai Metro</h4>
+                                        <h5 ng-show="! returnTicket">Single Journey / एकदिश प्रवास</h5>
+                                        <h5 ng-show="returnTicket">Return Journey / परतीचा प्रवास</h5>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <h5>{{getCost()}} Rs</h5>
+                                        <h5>{{getCost() * (noOfAdults + noOfChildren)}}.00 Rs</h5>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-xs-6 text-center">
+                                        <h3>{{stations[source].name}}</h3>
+                                        <h4>{{stations[source].devng}}</h4>
+                                    </div>
+                                    <div class="col-xs-6 text-center">
+                                        <h3>{{stations[selectedStation].name}}</h3>
+                                        <h4>{{stations[selectedStation].devng}}</h4>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-xs-6 text-center"
+                                        style="border-right:dashed; border-width: 2px; border-color: #b4b4b4">
+                                        <h5>Adult / प्रौढ़ : {{noOfAdults}}</h5>
+                                        <img src="images/adult.png" class="adult"
+                                            ng-repeat="i in range(noOfAdults) track by $index">
+                                    </div>
+                                    <div class="col-xs-6 text-center">
+                                        <h5>Child / मूल : {{noOfChildren}}</h5>
+                                        <img src="images/child.png" class="adult"
+                                            ng-repeat="i in range(noOfChildren) track by $index">
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-xs-12 text-center pointer" ng-click="printTicket()">
+                                        <h3 class="opaque">Click Here to Print Ticket</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer / Controls Panel -->
+                <div class="panel-footer" style="height: 15%">
+                    <div class="row">
+                        <!-- Passenger Count Controls -->
+                        <div class="col-xs-3 text-center"
+                            style="border-right:solid; border-width: 1px; border-color: #b4b4b4">
+                            <h4>Adults : {{noOfAdults}}</h4>
+                            <div class="btn-group btn-group-sm" role="group">
+                                <button type="button" class="btn btn-default" ng-click="addAdult(-1)">-</button>
+                                <button type="button" class="btn btn-default" ng-click="addAdult(1)">+</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 text-center"
+                            style="border-right:solid; border-width: 1px; border-color: #b4b4b4">
+                            <h4>Children : {{noOfChildren}}</h4>
+                            <div class="btn-group btn-group-sm" role="group">
+                                <button type="button" class="btn btn-default" ng-click="addChild(-1)">-</button>
+                                <button type="button" class="btn btn-default" ng-click="addChild(1)">+</button>
+                            </div>
+                        </div>
+
+                        <!-- Journey Type Controls -->
+                        <div class="col-xs-3 text-center"
+                            style="border-right:solid; border-width: 1px; border-color: #b4b4b4">
+                            <h4>Return Journey</h4>
+                            <div class="btn-group btn-group-sm" role="group">
+                                <button type="button" class="btn btn-default" ng-class="{'btn-primary': returnTicket}"
+                                    ng-click="returnTicket = true">Yes</button>
+                                <button type="button" class="btn btn-default" ng-class="{'btn-primary': !returnTicket}"
+                                    ng-click="returnTicket = false">No</button>
+                            </div>
+                        </div>
+
+                        <!-- Print Action -->
+                        <div class="col-xs-3 text-center">
+                            <button type="button" class="btn btn-success btn-lg" style="margin-top:10px"
+                                ng-click="printTicket()">Print Ticket</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Imports -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-touch.min.js"></script>
+    <script src="js/atvm-controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!--
+    Experiment 2: Mathematical Application for Kids (Math Sprint Game)
+    Author: Amey Thakur
+    Batch: B3
+    Roll No: 50
+    Subject: Human Machine Interaction (CSL801)
+    Date: 11/02/2022
+
+    This HTML document serves as the main entry point for the "Math Sprint Game" application.
+    It structures the user interface, dividing it into logical sections:
+    1. Splash Page: For game setup (selecting the number of questions).
+    2. Countdown Page: Providing a visual cue before the game starts.
+    3. Game Page: The active gameplay interface where equations are presented.
+    4. Score Page: Displaying the final results and time processing.
+    
+    The layout uses semantic HTML5 elements and integrates with the external CSS for styling and JavaScript for game logic.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Sprint Game</title>
+    <!-- Visual icon for the browser tab -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- External stylesheet for application styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main Game Container -->
+    <div class="game-container">
+
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Math Sprint Game</h1>
+        </div>
+
+        <!-- Splash Page: Initial User Interface -->
+        <div class="card" id="splash-page">
+            <form id="start-form">
+                <div class="selection-container">
+                    <!-- Option: 10 Questions -->
+                    <div class="radio-container selected-label">
+                        <label for="value-10">10 Questions</label>
+                        <input type="radio" name="questions" value="10" id="value-10" checked>
+                        <div class="best-score">
+                            <span>Best Score</span>
+                            <span class="best-score-value"></span>
+                        </div>
+                    </div>
+                    <!-- Option: 25 Questions -->
+                    <div class="radio-container">
+                        <label for="value-25">25 Questions</label>
+                        <input type="radio" name="questions" value="25" id="value-25">
+                        <div class="best-score">
+                            <span>Best Score</span>
+                            <span class="best-score-value"></span>
+                        </div>
+                    </div>
+                    <!-- Option: 50 Questions -->
+                    <div class="radio-container">
+                        <label for="value-50">50 Questions</label>
+                        <input type="radio" name="questions" value="50" id="value-50">
+                        <div class="best-score">
+                            <span>Best Score</span>
+                            <span class="best-score-value"></span>
+                        </div>
+                    </div>
+                    <!-- Option: 99 Questions -->
+                    <div class="radio-container">
+                        <label for="value-99">99 Questions</label>
+                        <input type="radio" name="questions" value="99" id="value-99">
+                        <div class="best-score">
+                            <span>Best Score</span>
+                            <span class="best-score-value"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Start Game Button -->
+                <div class="selection-footer">
+                    <button class="start" type="submit">Start Round</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Countdown Page: Transitional Interface -->
+        <div class="card" id="countdown-page" hidden>
+            <h1 class="countdown"></h1>
+        </div>
+
+        <!-- Game Page: Active Gameplay Interface -->
+        <div class="card" id="game-page" hidden>
+            <!-- Item Container: Scrolls through generated equations -->
+            <div class="item-container"></div>
+            <!-- Right/Wrong Buttons -->
+            <div class="item-footer">
+                <button class="wrong" onclick="select(false)">Wrong</button>
+                <button class="right" onclick="select(true)">Right</button>
+            </div>
+        </div>
+
+        <!-- Score Page: Results Interface -->
+        <div class="card" id="score-page" hidden>
+            <div class="score-container">
+                <h1 class="title">Your Time</h1>
+                <h1 class="final-time"></h1>
+                <h1 class="base-time"></h1>
+                <h1 class="penalty-time"></h1>
+            </div>
+            <!-- Play Again Action -->
+            <div class="score-footer">
+                <button class="play-again" onclick="playAgain()" hidden>Play Again</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- Script Imports -->
+    <script src="shuffle.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
