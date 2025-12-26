@@ -182,6 +182,24 @@
     <script src="js/angular-touch.min.js"></script>
     <script src="js/atvm-controller.js"></script>
     <style>
+        /* Page Load Transition */
+        body {
+            animation: pageFadeIn 0.4s ease-in;
+        }
+
+        @keyframes pageFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Back to Dashboard Button */
         .back-to-dashboard {
             position: fixed !important;
             bottom: 20px !important;
