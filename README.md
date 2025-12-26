@@ -84,27 +84,27 @@ Comprehensive module-wise notes curated by Mega Satish:
  - [Assignment - 3](Assignments/AMEY_B-50_HMI_ASSIGNMENT-3.pdf)
 
 
-## Experiments
+## HMI Lab
  
  >Human Machine Interaction Lab
 
-  - HMI Lab [Experiment - 1](Experiments/Experiment%201/AMEY_B-50_HMI_EXPERIMENT-1.pdf)
+  - HMI Lab [Experiment - 1](HMI%20Lab/Experiment%201/AMEY_B-50_HMI_EXPERIMENT-1.pdf)
  
-  - HMI Lab [Experiment - 2](Experiments/Experiment%202/AMEY_B-50_HMI_EXPERIMENT-2.pdf) | [Source Code](Experiments/Experiment%202/Source%20Code/index.html)
+  - HMI Lab [Experiment - 2](HMI%20Lab/Experiment%202/AMEY_B-50_HMI_EXPERIMENT-2.pdf) | [Source Code](HMI%20Lab/Experiment%202/Source%20Code/index.html)
  
-  - HMI Lab [Experiment - 3](Experiments/Experiment%203/AMEY_B-50_HMI_EXPERIMENT-3.pdf) | [Source Code](Experiments/Experiment%203/Source%20Code/form.html)
+  - HMI Lab [Experiment - 3](HMI%20Lab/Experiment%203/AMEY_B-50_HMI_EXPERIMENT-3.pdf) | [Source Code](HMI%20Lab/Experiment%203/Source%20Code/form.html)
 
-  - HMI Lab [Experiment - 4](Experiments/Experiment%204/AMEY_B-50_HMI_EXPERIMENT-4.pdf) | [Source Code](Experiments/Experiment%204/Source%20Code) | [GitHub Repository](https://github.com/Amey-Thakur/ATVM-INTERFACE) | [WEB APPLICATION](https://amey-thakur.github.io/ATVM-INTERFACE)
+  - HMI Lab [Experiment - 4](HMI%20Lab/Experiment%204/AMEY_B-50_HMI_EXPERIMENT-4.pdf) | [Source Code](HMI%20Lab/Experiment%204/Source%20Code) | [GitHub Repository](https://github.com/Amey-Thakur/ATVM-INTERFACE) | [WEB APPLICATION](https://amey-thakur.github.io/ATVM-INTERFACE)
  
- - HMI Lab [Experiment - 5](Experiments/Experiment%205/AMEY_B-50_HMI_EXPERIMENT-5.pdf)
+ - HMI Lab [Experiment - 5](HMI%20Lab/Experiment%205/AMEY_B-50_HMI_EXPERIMENT-5.pdf)
  
-  - HMI Lab [Experiment - 6](Experiments/Experiment%206/AMEY_B-50_HMI_EXPERIMENT-6.pdf) | [Source Code](Experiments/Experiment%206/Source%20Code)
+  - HMI Lab [Experiment - 6](HMI%20Lab/Experiment%206/AMEY_B-50_HMI_EXPERIMENT-6.pdf) | [Source Code](HMI%20Lab/Experiment%206/Source%20Code)
  
- - HMI Lab [Experiment - 7](Experiments/Experiment%207/AMEY_B-50_HMI_EXPERIMENT-7.pdf)
+ - HMI Lab [Experiment - 7](HMI%20Lab/Experiment%207/AMEY_B-50_HMI_EXPERIMENT-7.pdf)
  
- - HMI Lab [Experiment - 8](Experiments/Experiment%208/AMEY_B-50_HMI_EXPERIMENT-8.pdf)
+ - HMI Lab [Experiment - 8](HMI%20Lab/Experiment%208/AMEY_B-50_HMI_EXPERIMENT-8.pdf)
  
- - HMI Lab [Experiment - 9](Experiments/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf)
+ - HMI Lab [Experiment - 9](HMI%20Lab/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf)
 
 
 ## Mini Project
@@ -172,14 +172,11 @@ Comprehensive module-wise notes curated by Mega Satish:
   - [Timetable](Semester%20Exam/Semester%208%20Timetable.pdf)
 
 
-## Exit Surveys
-
- - HMI Course [Exit Survey](Exit%20Surveys/HMI%20Course%20Exit%20Survey%20(BE%20-%20B).pdf)
- 
- - HMI Laboratory [Exit Survey](Exit%20Surveys/HMI%20Laboratory%20Exit%20Survey%20(BE%20-%20B).pdf)
-
-
 ## Submission Report
+
+ - HMI Course [Exit Survey](Submission%20Report/HMI%20Course%20Exit%20Survey%20(BE%20-%20B).pdf)
+ 
+ - HMI Laboratory [Exit Survey](Submission%20Report/HMI%20Laboratory%20Exit%20Survey%20(BE%20-%20B).pdf)
 
  - [HMI Submission Report](Submission%20Report/AMEY_B-50_HMI_SUBMISSION_REPORT.pdf)
  
