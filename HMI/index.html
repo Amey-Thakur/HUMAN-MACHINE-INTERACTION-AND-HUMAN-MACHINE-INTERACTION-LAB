@@ -1,18 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HMI Lab Portfolio | Amey Thakur</title>
+    <!-- Fonts: Merriweather for headings (Scholarly), Roboto for body (Readability) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #2c3e50;
+            --card-bg: #ffffff;
+            --accent-color: #1a237e;
+            /* Scholarly Navy Blue */
+            --secondary-text: #5f6368;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --shadow-hover: rgba(0, 0, 0, 0.1);
+            --header-bg: #ffffff;
+            --btn-bg: #1a237e;
+            --btn-text: #ffffff;
+            --badge-bg: #e8eaf6;
+            --badge-text: #1a237e;
+            --icon-box-bg: #e8eaf6;
+            --icon-color: #1a237e;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --card-bg: #1e1e1e;
+            --accent-color: #8c9eff;
+            /* Lighter Blue for Dark Mode */
+            --secondary-text: #a0a0a0;
+            --border-color: #333333;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --shadow-hover: rgba(0, 0, 0, 0.5);
+            --header-bg: #1e1e1e;
+            --btn-bg: #3949ab;
+            --btn-text: #ffffff;
+            --badge-bg: #2c3e50;
+            --badge-text: #8c9eff;
+            --icon-box-bg: #2c3e50;
+            --icon-color: #8c9eff;
+        }
+
         body {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
             min-height: 100vh;
             padding-bottom: 60px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Merriweather', serif;
+            color: var(--text-color);
         }
 
         .main-container {
@@ -21,28 +75,32 @@
             padding: 30px 15px;
         }
 
+        /* Hero Section */
         .hero-section {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 40px;
+            background: var(--header-bg);
+            border-radius: 8px;
+            /* Sharper corners for formal look */
+            padding: 50px;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 10px var(--shadow-color);
             margin-bottom: 40px;
-            border-top: 5px solid #3498db;
+            border-top: 4px solid var(--accent-color);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
         }
 
         .hero-title {
-            color: #2c3e50;
-            font-weight: 800;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            font-size: 2.5rem;
+            letter-spacing: -0.5px;
         }
 
         .hero-subtitle {
-            color: #7f8c8d;
-            font-size: 1.1rem;
-            margin-bottom: 25px;
+            color: var(--secondary-text);
+            font-size: 1.15rem;
+            margin-bottom: 30px;
+            font-weight: 300;
         }
 
         .student-info {
@@ -50,60 +108,107 @@
             gap: 15px;
             flex-wrap: wrap;
             justify-content: center;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
         .info-badge {
-            background: #f1f2f6;
-            color: #2c3e50;
+            background: var(--badge-bg);
+            color: var(--badge-text);
             padding: 8px 16px;
-            border-radius: 50px;
-            font-weight: 600;
+            border-radius: 4px;
+            font-weight: 500;
             font-size: 0.9rem;
-            border: 1px solid #dfe4ea;
+            border: 1px solid var(--border-color);
+            font-family: 'Roboto', sans-serif;
         }
 
         .repo-links .btn {
-            border-radius: 50px;
+            border-radius: 4px;
             padding: 10px 25px;
-            font-weight: 600;
+            font-weight: 500;
             margin: 5px;
-            transition: transform 0.2s;
+            transition: transform 0.2s ease, opacity 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.85rem;
         }
 
-        .repo-links .btn:hover {
-            transform: translateY(-2px);
+        .btn-primary-custom {
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            border: none;
         }
 
+        .btn-primary-custom:hover {
+            opacity: 0.9;
+            color: var(--btn-text);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline-custom {
+            background-color: transparent;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-outline-custom:hover {
+            background-color: var(--border-color);
+            color: var(--text-color);
+            transform: translateY(-1px);
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--badge-bg);
+            transform: rotate(15deg);
+        }
+
+        /* Section Header */
         .section-header {
             display: flex;
             align-items: center;
-            margin-bottom: 25px;
-            color: #2c3e50;
+            margin-bottom: 30px;
+            color: var(--text-color);
             font-weight: 700;
+            font-size: 1.5rem;
         }
 
         .section-header::after {
             content: '';
             flex: 1;
-            height: 2px;
-            background: #e9ecef;
-            margin-left: 15px;
+            height: 1px;
+            background: var(--border-color);
+            margin-left: 20px;
         }
 
+        /* Cards */
         .card {
-            border: none;
-            border-radius: 12px;
-            background: #ffffff;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--card-bg);
+            box-shadow: 0 4px 6px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
             height: 100%;
-            overflow: hidden;
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 12px 20px var(--shadow-hover);
+            border-color: var(--accent-color);
         }
 
         .card-body {
@@ -111,63 +216,78 @@
         }
 
         .icon-box {
-            width: 60px;
-            height: 60px;
-            background: #e3f2fd;
-            color: #1976d2;
-            border-radius: 12px;
+            width: 50px;
+            height: 50px;
+            background: var(--icon-box-bg);
+            color: var(--icon-color);
+            border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             margin-bottom: 20px;
         }
 
         .card-title {
             font-weight: 700;
-            color: #2c3e50;
+            color: var(--text-color);
             margin-bottom: 10px;
+            font-size: 1.25rem;
         }
 
         .exp-number {
-            color: #3498db;
-            font-size: 0.85rem;
+            color: var(--accent-color);
+            font-size: 0.75rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .card-text {
+            color: var(--secondary-text);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
 
         .btn-launch {
-            background: #2c3e50;
-            color: white;
+            background: transparent;
+            color: var(--accent-color);
             width: 100%;
-            padding: 12px;
-            border-radius: 8px;
+            padding: 10px;
+            border-radius: 4px;
             font-weight: 600;
-            border: none;
-            margin-top: 15px;
-            transition: background 0.2s;
+            border: 1px solid var(--accent-color);
+            margin-top: auto;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
         }
 
         .btn-launch:hover {
-            background: #34495e;
-            color: white;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            /* Invert text color on hover */
         }
 
+        /* Footer */
         .site-footer {
             text-align: center;
             margin-top: 60px;
-            color: #95a5a6;
+            color: var(--secondary-text);
             font-size: 0.9rem;
-            border-top: 1px solid #e9ecef;
+            border-top: 1px solid var(--border-color);
             padding-top: 30px;
+            font-family: 'Merriweather', serif;
         }
 
         .footer-highlight {
-            color: #2c3e50;
-            font-weight: 600;
+            color: var(--text-color);
+            font-weight: 700;
         }
     </style>
 </head>
@@ -178,21 +298,26 @@
 
         <!-- Hero Section -->
         <div class="hero-section">
+            <button class="theme-toggle" id="theme-toggle" title="Toggle Dark/Light Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+
             <h1 class="hero-title">Human Machine Interaction Lab</h1>
-            <p class="hero-subtitle">Practical Implementation Portfolio</p>
+            <p class="hero-subtitle">Academic Configuration & Experimental Portfolio</p>
 
             <div class="student-info">
                 <span class="info-badge"><i class="fas fa-user-graduate me-2"></i>Amey Mahendra Thakur</span>
+                <span class="info-badge"><i class="fas fa-university me-2"></i>Terna Engineering College</span>
                 <span class="info-badge"><i class="fas fa-id-card me-2"></i>Roll No: 50</span>
-                <span class="info-badge"><i class="fas fa-users me-2"></i>Batch: B3</span>
+                <span class="info-badge"><i class="fas fa-layer-group me-2"></i>Batch: B3</span>
             </div>
 
             <div class="repo-links">
                 <a href="https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB"
-                    class="btn btn-primary">
+                    class="btn btn-primary-custom">
                     <i class="fab fa-github me-2"></i>HMI Repository
                 </a>
-                <a href="https://github.com/Amey-Thakur" class="btn btn-outline-dark">
+                <a href="https://github.com/Amey-Thakur" class="btn btn-outline-custom">
                     <i class="fas fa-code-branch me-2"></i>Computer Engineering Repo
                 </a>
             </div>
@@ -205,22 +330,21 @@
 
             <!-- Experiment 2 -->
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
                         <div class="d-flex justify-content-between align-items-start">
                             <div class="icon-box">
-                                <i class="fas fa-gamepad"></i>
+                                <i class="fas fa-calculator"></i>
                             </div>
-                            <span class="badge bg-light text-dark">Exp 2</span>
                         </div>
                         <span class="exp-number">Experiment 02</span>
                         <h5 class="card-title">Math Sprint Game</h5>
-                        <p class="text-muted small mb-4">
-                            Interactive educational game assessing mathematical responsiveness. Demonstrates real-time
-                            feedback and gamified interface design for children.
+                        <p class="card-text">
+                            An interactive educational tool designed to assess and improve mathematical responsiveness
+                            in children through gamified elements and immediate feedback loops.
                         </p>
                         <a href="HMI-2/index.html" class="btn btn-launch">
-                            Launch Application <i class="fas fa-arrow-right ms-2"></i>
+                            Launch Experiment <i class="fas fa-external-link-alt ms-2"></i>
                         </a>
                     </div>
                 </div>
@@ -228,22 +352,21 @@
 
             <!-- Experiment 3 -->
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
                         <div class="d-flex justify-content-between align-items-start">
                             <div class="icon-box">
-                                <i class="fas fa-clipboard-list"></i>
+                                <i class="fas fa-file-alt"></i>
                             </div>
-                            <span class="badge bg-light text-dark">Exp 3</span>
                         </div>
                         <span class="exp-number">Experiment 03</span>
-                        <h5 class="card-title">Registration Form GUI</h5>
-                        <p class="text-muted small mb-4">
-                            Data entry interface with robust client-side validation. Focuses on visual hierarchy,
-                            accessibility, and error handling for form design.
+                        <h5 class="card-title">Registration Interface</h5>
+                        <p class="card-text">
+                            A formal data entry GUI focusing on accessibility and visual hierarchy. Implements robust
+                            client-side validation to ensure data integrity during user registration.
                         </p>
                         <a href="HMI-3/form.html" class="btn btn-launch">
-                            Launch Application <i class="fas fa-arrow-right ms-2"></i>
+                            Launch Experiment <i class="fas fa-external-link-alt ms-2"></i>
                         </a>
                     </div>
                 </div>
@@ -251,22 +374,21 @@
 
             <!-- Experiment 4 -->
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
                         <div class="d-flex justify-content-between align-items-start">
                             <div class="icon-box">
-                                <i class="fas fa-ticket-alt"></i>
+                                <i class="fas fa-subway"></i>
                             </div>
-                            <span class="badge bg-light text-dark">Exp 4</span>
                         </div>
                         <span class="exp-number">Experiment 04</span>
                         <h5 class="card-title">ATVM Interface</h5>
-                        <p class="text-muted small mb-4">
-                            Automatic Ticket Vending Machine simulation. Features distinct user flows for ticket
-                            booking, station selection, and fare calculation.
+                        <p class="card-text">
+                            A simulation of an Automatic Ticket Vending Machine for Metro Rail systems. efficient task
+                            flow design for ticket booking and dynamic fare calculation.
                         </p>
                         <a href="HMI-4/index.html" class="btn btn-launch">
-                            Launch Application <i class="fas fa-arrow-right ms-2"></i>
+                            Launch Experiment <i class="fas fa-external-link-alt ms-2"></i>
                         </a>
                     </div>
                 </div>
@@ -274,22 +396,21 @@
 
             <!-- Experiment 6 -->
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
                         <div class="d-flex justify-content-between align-items-start">
                             <div class="icon-box">
                                 <i class="fas fa-cloud"></i>
                             </div>
-                            <span class="badge bg-light text-dark">Exp 6</span>
                         </div>
                         <span class="exp-number">Experiment 06</span>
-                        <h5 class="card-title">Cloud Services Website</h5>
-                        <p class="text-muted small mb-4">
-                            Comprehensive multi-page responsive website design. Includes Home, Services, and About Us
-                            pages with a modern professional aesthetic.
+                        <h5 class="card-title">Cloud Services Portal</h5>
+                        <p class="card-text">
+                            A comprehensive, responsive web portal for a Cloud Service Provider. Demonstrates modern web
+                            aesthetics, sticky navigation, and multi-page information architecture.
                         </p>
                         <a href="HMI-6/index.html" class="btn btn-launch">
-                            Launch Application <i class="fas fa-arrow-right ms-2"></i>
+                            Launch Experiment <i class="fas fa-external-link-alt ms-2"></i>
                         </a>
                     </div>
                 </div>
@@ -301,11 +422,40 @@
         <footer class="site-footer">
             <p class="mb-1">2022 &copy; All Rights Reserved | Designed and Developed by <span
                     class="footer-highlight">Amey Thakur</span></p>
-            <p class="mb-0">Department of Computer Engineering</p>
+            <p class="mb-0">Department of Computer Engineering | Terna Engineering College</p>
         </footer>
 
     </div>
 
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = toggleBtn.querySelector('i');
+        const htmlElement = document.documentElement;
+
+        // Check for saved user preference
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        htmlElement.setAttribute('data-theme', savedTheme);
+        updateIcon(savedTheme);
+
+        toggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        function updateIcon(theme) {
+            if (theme === 'dark') {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        }
+    </script>
 </body>
 
 </html>
