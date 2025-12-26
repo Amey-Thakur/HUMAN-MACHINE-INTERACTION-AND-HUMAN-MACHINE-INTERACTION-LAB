@@ -271,6 +271,21 @@
         }
     });
 
+    // Keyboard Navigation
+    document.addEventListener('keydown', (e) => {
+        if (!modalOverlay.classList.contains('active')) return;
+
+        if (e.key === 'ArrowLeft' && prevKey) {
+            window.location.href = `../${experiments[prevKey].path}`;
+        }
+        if (e.key === 'ArrowRight' && nextKey) {
+            window.location.href = `../${experiments[nextKey].path}`;
+        }
+        if (e.key === 'Escape') {
+            modalOverlay.classList.remove('active');
+        }
+    });
+
     console.log("Portfolio Enhancer Loaded for: " + currentExp.title);
 
 })();
