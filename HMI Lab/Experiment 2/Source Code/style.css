@@ -1,318 +1,346 @@
+/*
+    Experiment 2: Mathematical Application for Kids (Math Sprint Game)
+    Author: Amey Thakur
+    Batch: B3
+    Roll No: 50
+    Subject: Human Machine Interaction (CSL801)
+    Date: 26/12/2025
+
+    This CSS file defines the visual styling for the Math Sprint Game.
+    It includes:
+    1. Global Styles: Color variables, font definitions, and body layout.
+    2. Container Styles: The main game card and its shadow effects.
+    3. UI Elements: Buttons, radio inputs, and interactive components.
+    4. Screen-Specific Styles: Custom layouts for Splash, Game, and Score pages.
+    5. Responsive Design: Media queries for varying screen sizes (Laptops, Smartphones).
+*/
+
+/* Import Google Font 'Play' */
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
+/* Global Reset */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+/* CSS Variables for consistent theming */
 :root {
-  --primary-color: dodgerblue;
-  --select-color: dodgerblue;
-  --success: rgb(15, 158, 2);
-  --danger: rgb(214, 23, 23);
+    --primary-color: dodgerblue;
+    --select-color: dodgerblue;
+    --success: rgb(15, 158, 2);
+    --danger: rgb(214, 23, 23);
 }
 
+/* Body Styling: Centered layout with background pattern */
 body {
-  margin: 0;
-  font-family: 'Play', sans-serif;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  background: #e8e8e8;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23161616' fill-opacity='0.1'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+    margin: 0;
+    font-family: 'Play', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: #e8e8e8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23161616' fill-opacity='0.1'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+/* Main Container for the Game UI */
 .game-container {
-  border: 1px solid black;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
-  width: 530px;
-  height: 750px;
-  position: relative;
-  background: rgba(255, 255, 255, 0.5);
-  user-select: none;
-  margin-top: 100px;
+    border: 1px solid black;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+    width: 530px;
+    height: 750px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    user-select: none;
+    margin-top: 100px;
 }
 
+/* Application Header */
 .header {
-  background: var(--primary-color);
-  color: white;
-  font-family: 'Play', sans-serif;
-  font-size: 24px;
-  text-shadow: 1px 2px 2px black;
-  letter-spacing: 2px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background: var(--primary-color);
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    text-shadow: 1px 2px 2px black;
+    letter-spacing: 2px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-  margin: 5px auto 10px;
-  height: 600px;
+    margin: 5px auto 10px;
+    height: 600px;
 }
 
-/* Splash Page -------------------- */
+/* Splash Page Styling -------------------- */
 input[type="radio"] {
-  opacity: 0;
-  width: 100%;
-  height: 75px;
-  position: relative;
-  top: -40px;
-  cursor: pointer;
-  z-index: 2;
+    opacity: 0;
+    width: 100%;
+    height: 75px;
+    position: relative;
+    top: -40px;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .selection-container {
-  position: relative;
-  top: 65px;
+    position: relative;
+    top: 65px;
 }
 
 .radio-container {
-  width: 90%;
-  height: 75px;
-  margin: 25px;
-  cursor: pointer;
-  border: 2px solid black;
-  border-radius: 5px;
+    width: 90%;
+    height: 75px;
+    margin: 25px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 label {
-  position: relative;
-  top: 20px;
-  left: 20px;
-  font-size: 30px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
 }
 
 .selected-label {
-  background: var(--select-color);
-  color: white;
+    background: var(--select-color);
+    color: white;
 }
 
 .best-score {
-  position: relative;
-  top: -100px;
-  left: 330px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 18px;
-  max-width: fit-content;
+    position: relative;
+    top: -100px;
+    left: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    max-width: fit-content;
 }
 
 .best-score span {
-  margin: 0;
+    margin: 0;
 }
 
 .best-score span:last-child {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 .selection-footer {
-  top: 134px;
+    top: 134px;
 }
 
-/* Game Page -------------------------- */
+/* Game Page Styling -------------------------- */
 .height-240 {
-  height: 240px;
-  width: 100%;
+    height: 240px;
+    width: 100%;
 }
 
 .height-500 {
-  height: 500px;
-  width: 100%;
+    height: 500px;
+    width: 100%;
 }
 
 .item-container {
-  height: 552px;
-  overflow-y: scroll;
-  position: relative;
-  -ms-overflow-style: none;
+    height: 552px;
+    overflow-y: scroll;
+    position: relative;
+    -ms-overflow-style: none; /* IE/Edge */
 }
 
+/* Hide scrollbar for Chrome/Safari/Opera */
 .item-container::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .item {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  height: 80px;
-  margin: 0 50px;
-  user-select: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 80px;
+    margin: 0 50px;
+    user-select: none;
 }
 
-.finished > h1 {
-  opacity: 0.5;
+.finished>h1 {
+    opacity: 0.5;
 }
 
+/* Sticky Selection indicator */
 .selected-item {
-  background: var(--select-color);
-  position: fixed;
-  top: 443px;
-  z-index: -1;
-  width: 529px;
-  height: 80px;
+    background: var(--select-color);
+    position: fixed;
+    top: 443px;
+    z-index: -1;
+    width: 529px;
+    height: 80px;
 }
 
 .item-footer,
 .selection-footer {
-  width: 100%;
-  height: 90px;
-  background: rgba(0, 0, 0, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+    width: 100%;
+    height: 90px;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .item-footer {
-  top: 1px;
+    top: 1px;
 }
 
+/* Button Styling */
 button {
-  cursor: pointer;
-  height: 50px;
-  border-radius: 5px;
-  font-size: 25px;
-  font-family: 'Play', sans-serif;
-  color: white;
-  border: none;
-  outline: none;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Play', sans-serif;
+    color: white;
+    border: none;
+    outline: none;
 }
 
 button:hover {
-  filter: brightness(110%);
+    filter: brightness(110%);
 }
 
 button:active {
-  transform: scale(0.99);
+    transform: scale(0.99);
 }
 
 .wrong,
 .right {
-  width: 40%;
+    width: 40%;
 }
 
 .wrong {
-  background: var(--danger);
-  margin-right: 25px;
+    background: var(--danger);
+    margin-right: 25px;
 }
 
 .right {
-  background: var(--success);
+    background: var(--success);
 }
 
 .start,
 .play-again {
-  width: 90%;
-  background: var(--primary-color);
+    width: 90%;
+    background: var(--primary-color);
 }
 
-/* Countdown Page ---------------------- */
+/* Countdown Page Styling ---------------------- */
 .countdown {
-  margin-top: 45%;
-  font-size: 100px;
-  text-align: center;
-  user-select: none;
-  cursor: pointer;
+    margin-top: 45%;
+    font-size: 100px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
 }
 
-/* Score Page ------------------------- */
+/* Score Page Styling ------------------------- */
 .score-container {
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .score-footer {
-  width: 100%;
-  height: 90px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: -30px;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -30px;
 }
 
 .title {
-  font-size: 45px;
+    font-size: 45px;
 }
 
 .final-time {
-  font-size: 100px;
-  margin: 0;
-  color: var(--success);
+    font-size: 100px;
+    margin: 0;
+    color: var(--success);
 }
 
 .base-time {
-  margin-top: 100px;
-  margin-bottom: 0;
+    margin-top: 100px;
+    margin-bottom: 0;
 }
 
 .penalty-time {
-  color: var(--danger);
+    color: var(--danger);
 }
 
-/* Media Query: Laptop */
+/* Media Queries for Responsiveness */
+
+/* Laptop */
 @media screen and (max-width: 1800px) {
-  .game-container {
-    margin-top: 35px;
-  }
+    .game-container {
+        margin-top: 35px;
+    }
 
-  .selected-item {
-    top: 380px;
-  }
+    .selected-item {
+        top: 380px;
+    }
 }
 
-/* Media Query: Large Smartphone (Vertical) */
+/* Large Smartphone (Vertical) */
 @media screen and (max-width: 500px) {
-  .game-container {
-    width: 100%;
-    margin-top: 0;
-    border: none;
-  }
+    .game-container {
+        width: 100%;
+        margin-top: 0;
+        border: none;
+    }
 
-  .selected-item {
-    top: 345px;
-  }
+    .selected-item {
+        top: 345px;
+    }
 
-  .header {
-    font-size: 1.2rem;
-  }
+    .header {
+        font-size: 1.2rem;
+    }
 
-  .countdown {
-    margin-top: 60%;
-  }
+    .countdown {
+        margin-top: 60%;
+    }
 
-  .selection-container {
-    top: 100px;
-  }
+    .selection-container {
+        top: 100px;
+    }
 
-  .radio-container {
-    width: 93%;
-    margin: 15px;
-  }
+    .radio-container {
+        width: 93%;
+        margin: 15px;
+    }
 
-  label {
-    font-size: 1.7rem;
-  }
+    label {
+        font-size: 1.7rem;
+    }
 
-  .best-score {
-    font-size: 1rem;
-    left: 245px;
-  }
+    .best-score {
+        font-size: 1rem;
+        left: 245px;
+    }
 
-  .selection-footer {
-    top: 183px;
-  }
+    .selection-footer {
+        top: 183px;
+    }
 }
 
-/* Media Query: iPhone */
+/* iPhone specific adjustments */
 @media screen and (max-width: 376px) {
-  .best-score {
-    left: 232px;
-  }
+    .best-score {
+        left: 232px;
+    }
 }
