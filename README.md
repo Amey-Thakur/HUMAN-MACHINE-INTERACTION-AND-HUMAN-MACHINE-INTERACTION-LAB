@@ -302,22 +302,31 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 <div align="center">
 
   ### [♟️ Online Chess Game](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
-  
+
   **A comprehensive web-based multiplayer chess game with interactive UI**
-  
-  [![Project](https://img.shields.io/badge/Project-Online%20Chess%20Game-purple.svg)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
-  [![Platform](https://img.shields.io/badge/Platform-Web-green.svg)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
-  [![Technology](https://img.shields.io/badge/Technology-PHP%20%7C%20JS%20%7C%20MySQL-blue.svg)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
-  [![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
+
+  [![Presentation](https://img.shields.io/badge/%F0%9F%93%94%20Presentation-PDF-E31B23?style=flat-square)](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf)
+  [![Source Code](https://img.shields.io/badge/%F0%9F%92%BB%20Source%20Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
+  [![Game Repository](https://img.shields.io/badge/%F0%9F%91%BE%20Game%20Repository-GitHub-F05032?style=flat-square&logo=git)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
+
+  <br>
+
+  [![Alternative Text](https://img.youtube.com/vi/CCbrTQwYyE8/maxresdefault.jpg)](https://youtu.be/CCbrTQwYyE8)
+
+  ### 👥 Authors
+
+  | [<img src="https://github.com/Amey-Thakur.png" width="150" alt="Amey Thakur"><br>**Amey Thakur**](https://github.com/Amey-Thakur) | [<img src="https://github.com/msatmod.png" width="150" alt="Mega Satish"><br>**Mega Satish**](https://github.com/msatmod) | [<img src="https://github.com/SaakshiDeokar.png" width="150" alt="Saakshi Deokar"><br>**Saakshi Deokar**](https://github.com/SaakshiDeokar) |
+  | :---: | :---: | :---: |
 
 </div>
 
-<div align="center">
+> [!IMPORTANT]
+>
+> ### 🤝 Special Acknowledgement
+>
+> Special thanks to **[Mega Satish](https://github.com/msatmod)** and **[Saakshi Deokar](https://github.com/SaakshiDeokar)** for their meaningful contributions, guidance, and support that helped shape this work.
 
-### 👥 Author
-| <img src="https://github.com/Amey-Thakur.png" width="150" alt="Amey Thakur"><br>[**Amey Thakur**](https://github.com/Amey-Thakur) |
-| :---: |
-</div>
+---
 
 ### Project Overview
 
@@ -331,7 +340,7 @@ This project implements an Online Chess Game featuring a responsive user interfa
 | 2 | Project Report | Detailed project documentation | 2022 | - | [View](HMI%20Mini%20Project/HMI_MINI_PROJECT_REPORT_BE_COMPS_B-50,51,58.pdf) |
 | 3 | Project Teams | Team composition and roles | 2022 | - | [View](HMI%20Project/HMI%20Mini%20Project%20Teams.pdf) |
 | 4 | Presentation | Final project demonstration slides | 2022 | - | [View](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf) |
-| 5 | Demo | Live Web Application | - | - | [View](https://onlinechess-game.herokuapp.com) |
+| 5 | Demo | Live Web Application (YouTube) | - | - | [YouTube](https://youtu.be/CCbrTQwYyE8) |
 
 ---
 
