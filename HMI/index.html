@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HMI Lab Portfolio | Amey Thakur</title>
+    <meta name="description"
+        content="A curated portfolio of Human Machine Interaction (HMI) experiments designed by Amey Thakur.">
+    <meta name="author" content="Amey Thakur">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
     <!-- Fonts: Playfair Display (Scholarly/Elegant) & Poppins (Modern/Clean) -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap"
@@ -52,6 +57,10 @@
             --footer-border: #334155;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background-color: var(--bg-color);
             color: var(--text-primary);
@@ -60,6 +69,32 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+        }
+
+        /* Back to Top Button */
+        #btn-back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            display: none;
+            z-index: 100;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        #btn-back-to-top:hover {
+            transform: translateY(-5px);
+            background: var(--accent-hover);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
         h1,
@@ -556,10 +591,37 @@
                 Thakur</a></p>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button type="button" class="btn" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script>
         const toggleBtn = document.getElementById('theme-toggle');
         const themeIcon = toggleBtn.querySelector('i');
         const htmlElement = document.documentElement;
+
+        // Back to Top Logic
+        const backToTopBtn = document.getElementById("btn-back-to-top");
+
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "flex";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        backToTopBtn.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
 
         // Check for saved user preference
         const savedTheme = localStorage.getItem('theme') || 'light';
