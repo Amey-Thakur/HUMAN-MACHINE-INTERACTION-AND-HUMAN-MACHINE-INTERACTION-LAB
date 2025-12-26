@@ -55,7 +55,7 @@ Comprehensive module-wise notes curated by Mega Satish:
 | 6 | [HMI Module - 6](THE%20WALL/HMI_Module-6.pdf) | Advanced Interfaces and Future Trends |
 
 > [!NOTE]
-> **COVID-19 Impact**: This coursework was completed during the COVID-19 pandemic in 2022. Due to the nationwide lockdown and the transition to online learning, the signature "The Wall" collaborative study sessions (typically documented with photos) could not be conducted in person. Despite these challenges, efforts were made to adapt and preserve the digitized module notes in this section, reflecting the resilience in learning during the pandemic disruption.
+> **COVID-19 Impact**: This coursework was completed during the COVID-19 pandemic in 2022. Due to the nationwide lockdown and the sudden transition to online learning, several planned laboratory sessions and collaborative note-taking activities could not be carried out as originally intended. Despite these challenges, efforts were made to adapt and preserve as much work as possible.
 
 
 ## MEGA NOTES
