@@ -70,33 +70,35 @@ This collection includes **comprehensive reference materials** covering all majo
 
 | # | Resource | Focus Area |
 |:-:|:---|:---|
-| 1 | [HMI Essential User Interface Guide](Reference%20Books/Essential%20User%20Interface%20Guide.pdf) | Core UX/UI design principles |
-| 2 | [Human Computer Interaction (Alan Dix)](Reference%20Books/Human%20Computer%20Interaction,%20Alan%20Dix.pdf) | Standard Textbook (Alan Dix) |
-| 3 | [Galitz’s HMI - Chapter 1](Reference%20Books/Galitz’s%20Human%20Machine%20Interaction%20by%20Kalbande,%20Kanade%20and%20Iyer%20Chapter%201.pdf) | Foundations of Human-Machine Interaction |
-| 4 | [Galitz’s HMI - Chapter 3](Reference%20Books/Galitz’s%20Human%20Machine%20Interaction%20by%20Kalbande,%20Kanade%20and%20Iyer%20Chapter%203.pdf) | Interaction design and navigation models |
-| 5 | [HMI Topper's Solution](Reference%20Books/HMI%20Topper's%20Solution.pdf) | Solved questions and exam-oriented summaries |
-| 6 | [HMI Notes](Reference%20Books/HMI%20Notes.pdf) | Comprehensive subject notes |
-| 7 | [Psychopathology of Everyday Things](Reference%20Books/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf) | Psychological aspects of interaction (Norman) |
-| 8 | [HCI Unit 1 Notes](Reference%20Books/HCI%20Unit%201.pdf) | Quick revision notes (Module 1) |
-| 9 | [HCI Unit 4 Notes](Reference%20Books/UNIT-IV-HCI-NOTES.pdf) | Quick revision notes (Module 4) |
-| 10| [HMI Weightage](Reference%20Books/HMI%20Weightage.pdf) | Exam analysis and topic weightage |
-| 11| [HMI Viva QB](Reference%20Books/HMI%20Viva%20QB.pdf) | Oral/Viva preparation questions |
-| 12| [HMI Viva](Reference%20Books/HMI%20Viva.pdf) | Solved viva questions for HMI |
-| 13| [Color/Colors](Reference%20Books/COLOR/Colors.pdf) | Visual design and color theory PPT |
-| 14| [Color/Icons](Reference%20Books/COLOR/Icons.pdf) | Iconography and symbolic interaction PPT |
-| 15| [Color/Multimedia](Reference%20Books/COLOR/Multimedia.pdf) | Multimedia systems and interaction PPT |
-| 16| [Color/Text for Web Pages](Reference%20Books/COLOR/Text%20for%20Web%20Pages.pdf) | Typography and web text design PPT |
-| 17| [Color/Window Management](Reference%20Books/COLOR/Window%20Management.pdf) | Systems for window management PPT |
-| 18| [Color/Window Operations](Reference%20Books/COLOR/Window%20Operations.pdf) | Interactive window operations PPT |
-| 19| [Color/Window Presentation Styles](Reference%20Books/COLOR/Window%20Presentation%20styles,types%20of%20windows.pdf) | UI windowing styles and types PPT |
-| 20| [Color/Windows Characteristics](Reference%20Books/COLOR/Windows%20characteristics%20and%20components.pdf) | GUI window components and traits PPT |
-| 21| [Color/Word, Text, Messages](Reference%20Books/COLOR/Word,text,messages.pdf) | Verbal interaction and messaging PPT |
-| 22| [PPT/HMI](Reference%20Books/PPT/hmi.pdf) | Comprehensive subject overview PPT |
-| 23| [PPT/Design](Reference%20Books/PPT/design.pdf) | UI/UX Design principles PPT |
-| 24| [PPT/Window Management and Operations](Reference%20Books/PPT/Window%20Management%20and%20Operations.pdf) | Windowing systems and operations PPT |
-| 25| [PPT/HMI Chapter 4](Reference%20Books/PPT/HMI_chapter%204%20(1).pdf) | Interaction Models and Techniques PPT |
-| 26| [PPT/HMI 2](Reference%20Books/PPT/HMI%20(2).pdf) | Supplementary HMI concepts PPT |
-| 27| [PPT/Chapter 3 GUI](Reference%20Books/PPT/Chapter-3%20-GUI.pdf) | Designing the GUI (Visual Interface) PPT |
+| 1 | [Syllabus](MU%20SEM%20VIII%20SYLLABUS.pdf) | Official curriculum and outcomes |
+| 2 | [HMI Essential User Interface Guide](Reference%20Books/Essential%20User%20Interface%20Guide.pdf) | Core UX/UI design principles |
+| 3 | [Human Computer Interaction (Alan Dix)](Reference%20Books/Human%20Computer%20Interaction,%20Alan%20Dix.pdf) | Standard Textbook (Alan Dix) |
+| 4 | [Galitz’s HMI - Chapter 1](Reference%20Books/Galitz’s%20Human%20Machine%20Interaction%20by%20Kalbande,%20Kanade%20and%20Iyer%20Chapter%201.pdf) | Foundations of Human-Machine Interaction |
+| 5 | [Galitz’s HMI - Chapter 3](Reference%20Books/Galitz’s%20Human%20Machine%20Interaction%20by%20Kalbande,%20Kanade%20and%20Iyer%20Chapter%203.pdf) | Interaction design and navigation models |
+| 6 | [HMI Topper's Solution](Reference%20Books/HMI%20Topper's%20Solution.pdf) | Solved questions and exam-oriented summaries |
+| 7 | [HMI Notes](Reference%20Books/HMI%20Notes.pdf) | Comprehensive subject notes |
+| 8 | [Psychopathology of Everyday Things](Reference%20Books/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf) | Psychological aspects of interaction (Norman) |
+| 9 | [HCI Unit 1 Notes](Reference%20Books/HCI%20Unit%201.pdf) | Quick revision notes (Module 1) |
+| 10| [HCI Unit 4 Notes](Reference%20Books/UNIT-IV-HCI-NOTES.pdf) | Quick revision notes (Module 4) |
+| 11| [HMI Weightage](Reference%20Books/HMI%20Weightage.pdf) | Exam analysis and topic weightage |
+| 12| [HMI Viva QB](Reference%20Books/HMI%20Viva%20QB.pdf) | Oral/Viva preparation questions |
+| 13| [HMI Viva](Reference%20Books/HMI%20Viva.pdf) | Solved viva questions for HMI |
+| 14| [Color/Colors](Reference%20Books/COLOR/Colors.pdf) | Visual design and color theory PPT |
+| 15| [Color/Icons](Reference%20Books/COLOR/Icons.pdf) | Iconography and symbolic interaction PPT |
+| 16| [Color/Multimedia](Reference%20Books/COLOR/Multimedia.pdf) | Multimedia systems and interaction PPT |
+| 17| [Color/Text for Web Pages](Reference%20Books/COLOR/Text%20for%20Web%20Pages.pdf) | Typography and web text design PPT |
+| 18| [Color/Window Management](Reference%20Books/COLOR/Window%20Management.pdf) | Systems for window management PPT |
+| 19| [Color/Window Operations](Reference%20Books/COLOR/Window%20Operations.pdf) | Interactive window operations PPT |
+| 20| [Color/Window Presentation Styles](Reference%20Books/COLOR/Window%20Presentation%20styles,types%20of%20windows.pdf) | UI windowing styles and types PPT |
+| 21| [Color/Windows Characteristics](Reference%20Books/COLOR/Windows%20characteristics%20and%20components.pdf) | GUI window components and traits PPT |
+| 22| [Color/Word, Text, Messages](Reference%20Books/COLOR/Word,text,messages.pdf) | Verbal interaction and messaging PPT |
+| 23| [PPT/HMI](Reference%20Books/PPT/hmi.pdf) | Comprehensive subject overview PPT |
+| 24| [PPT/Design](Reference%20Books/PPT/design.pdf) | UI/UX Design principles PPT |
+| 25| [PPT/Window Management and Operations](Reference%20Books/PPT/Window%20Management%20and%20Operations.pdf) | Windowing systems and operations PPT |
+| 26| [PPT/HMI Chapter 4](Reference%20Books/PPT/HMI_chapter%204%20(1).pdf) | Interaction Models and Techniques PPT |
+| 27| [PPT/HMI 2](Reference%20Books/PPT/HMI%20(2).pdf) | Supplementary HMI concepts PPT |
+| 28| [PPT/Chapter 3 GUI](Reference%20Books/PPT/Chapter-3%20-GUI.pdf) | Designing the GUI (Visual Interface) PPT |
+| 29| [BE Timetable](BE%20Timetable.pdf) | Final Year academic schedule |
 
 ---
 
