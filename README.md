@@ -102,7 +102,7 @@ This collection includes **comprehensive reference materials** covering all majo
 
 ---
 
-## The Wall
+### The Wall
 
 <div align="center">
 
@@ -111,12 +111,16 @@ This collection includes **comprehensive reference materials** covering all majo
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/Amey-Thakur.png" width="200" alt="Amey Thakur"><br>
-      <sub><b>Amey Thakur</b></sub>
+      <a href="https://github.com/Amey-Thakur">
+        <img src="https://github.com/Amey-Thakur.png" width="200" alt="Amey Thakur"/><br/>
+        <b>Amey Thakur</b>
+      </a>
     </td>
     <td align="center">
-      <img src="THE%20WALL/Mega/Mega.png" width="200" alt="Mega Satish"><br>
-      <sub><b>Mega Satish</b></sub>
+      <a href="https://github.com/msatmod">
+        <img src="THE%20WALL/Mega/Mega.png" width="200" alt="Mega Satish"/><br/>
+        <b>Mega Satish</b>
+      </a>
     </td>
   </tr>
 </table>
