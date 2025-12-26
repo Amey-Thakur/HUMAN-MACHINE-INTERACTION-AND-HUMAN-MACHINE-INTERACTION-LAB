@@ -4,7 +4,7 @@
     Batch: B3
     Roll No: 50
     Subject: Human Machine Interaction (CSL801)
-    Date: 26/12/2025
+    Date: 11/02/2022
 
     This script implements the Fisher-Yates (aka Knuth) Shuffle algorithm.
     It is used to randomize the order of equations in the game arrays.
