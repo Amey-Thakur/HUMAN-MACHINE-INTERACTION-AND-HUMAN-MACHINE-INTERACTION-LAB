@@ -70,10 +70,17 @@ This collection includes **comprehensive reference materials** covering all majo
 
 | # | Resource | Focus Area |
 |:-:|:---|:---|
-| 1 | [Syllabus](MU%20SEM%20VIII%20SYLLABUS.pdf) | Official curriculum and outcomes |
-| 2 | [HMI - Reference Books](Reference%20Books) | Curated collection of HMI textbooks |
-| 3 | [HMI Essential User Interface Guide](Reference%20Books/Essential%20User%20Interface%20Guide.pdf) | Core UX/UI design principles |
-| 4 | [BE Timetable](BE%20Timetable.pdf) | Academic schedule |
+| 1 | [HMI Essential User Interface Guide](Reference%20Books/Essential%20User%20Interface%20Guide.pdf) | Core UX/UI design principles |
+| 2 | [Human Computer Interaction (Alan Dix)](Reference%20Books/Human%20Computer%20Interaction,%20Alan%20Dix.pdf) | Standard Textbook (Alan Dix) |
+| 3 | [Galitz’s HMI - Chapter 1](Reference%20Books/Galitz’s%20Human%20Machine%20Interaction%20by%20Kalbande,%20Kanade%20and%20Iyer%20Chapter%201.pdf) | Foundations of Human-Machine Interaction |
+| 4 | [Galitz’s HMI - Chapter 3](Reference%20Books/Galitz’s%20Human%20Machine%20Interaction%20by%20Kalbande,%20Kanade%20and%20Iyer%20Chapter%203.pdf) | Interaction design and navigation models |
+| 5 | [HMI Topper's Solution](Reference%20Books/HMI%20Topper's%20Solution.pdf) | Solved questions and exam-oriented summaries |
+| 6 | [HMI Notes](Reference%20Books/HMI%20Notes.pdf) | Comprehensive subject notes |
+| 7 | [Psychopathology of Everyday Things](Reference%20Books/Norman-COGS1-The%20Psychopathology-of-Everyday-Things.pdf) | Psychological aspects of interaction (Norman) |
+| 8 | [HCI Unit 1 Notes](Reference%20Books/HCI%20Unit%201.pdf) | Quick revision notes (Module 1) |
+| 9 | [HCI Unit 4 Notes](Reference%20Books/UNIT-IV-HCI-NOTES.pdf) | Quick revision notes (Module 4) |
+| 10| [HMI Weightage](Reference%20Books/HMI%20Weightage.pdf) | Exam analysis and topic weightage |
+| 11| [HMI Viva QB](Reference%20Books/HMI%20Viva%20QB.pdf) | Oral/Viva preparation questions |
 
 ---
 
