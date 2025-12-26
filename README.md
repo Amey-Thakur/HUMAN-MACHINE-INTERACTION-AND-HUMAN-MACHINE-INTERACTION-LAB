@@ -305,9 +305,9 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
   **A comprehensive web-based multiplayer chess game with interactive UI**
 
-  [![Presentation](https://img.shields.io/badge/%F0%9F%93%94%20Presentation-PDF-E31B23?style=flat-square)](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf)
-  [![Source Code](https://img.shields.io/badge/%F0%9F%92%BB%20Source%20Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
-  [![Game Repository](https://img.shields.io/badge/%F0%9F%91%BE%20Game%20Repository-GitHub-F05032?style=flat-square&logo=git)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
+  [![Presentation](https://img.shields.io/badge/%F0%9F%93%8A%20Presentation-007bff?style=flat-square)](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf)
+  [![Source Code](https://img.shields.io/badge/%F0%9F%92%BB%20Source%20Code-97ca00?style=flat-square)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
+  [![Game Repository](https://img.shields.io/badge/%F0%9F%8E%AE%20Game%20Repository-f08042?style=flat-square)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
 
   <br>
 
