@@ -1,3 +1,25 @@
+/*
+    Experiment 4: ATVM Interface Design
+    Author: Amey Thakur
+    Batch: B3
+    Roll No: 50
+    Subject: Human Machine Interaction (CSL801)
+    Date: 18/02/2022
+
+    This AngularJS controller manages the state and logic for the ATVM.
+    
+    Functionality:
+    - State Management: Tracks source station, destination, passenger count, and journey type.
+    - Cost Calculation: Computes ticket price based on selected stations and passengers.
+    - Localization: Includes a utility to transliterate numbers to Hindi.
+    - Data Model: Contains a comprehensive list of Mumbai Metro stations with cost/time matrices.
+*/
+
+/**
+ * Converts a number to its Hindi digit representation.
+ * @param {number} num - The number to convert.
+ * @returns {string} - The string representation in Hindi digits.
+ */
 function num2hindi(num) {
     var hnum = "०१२३४५६७८९";
     var trans = "";
@@ -10,28 +32,37 @@ function num2hindi(num) {
     return trans;
 }
 
+/**
+ * Main Controller for the ATVM Application
+ * @param {Object} $scope - The AngularJS scope object.
+ */
 function atvmController($scope) {
-    $scope.source = 5;
+    // Initial State
+    $scope.source = 5; // Default source station index (e.g., Andheri)
     $scope.noOfAdults = 1;
     $scope.noOfChildren = 0;
     $scope.selectedStation = 0;
-    $scope.selectedMainStation = 0;
+    $scope.selectedMainStation = 0; // Default selected destination category
 
     $scope.title = "Mumbai Metro";
     $scope.returnTicket = false;
 
-    $scope.range = function(num) {
+    // Utility: Create array of size N for ng-repeat (to show icons)
+    $scope.range = function (num) {
         return new Array(num);
     }
 
-    $scope.getSelectedStationStyle = function(index) {
+    // Styling Helper: Gray out the source station in the list
+    $scope.getSelectedStationStyle = function (index) {
         if ($scope.source == index) {
             return "grayed";
         } else {
             return "";
         }
     }
-    $scope.getSelectedStationStylePrimary = function(index) {
+
+    // Styling Helper for Primary buttons (Groups)
+    $scope.getSelectedStationStylePrimary = function (index) {
         if ($scope.source == index) {
             return "grayed";
         } else if ($scope.selectedStation == index) {
@@ -40,11 +71,15 @@ function atvmController($scope) {
             return "";
         }
     }
-    $scope.getStation = function(index) {
+
+    // Data Accessor
+    $scope.getStation = function (index) {
         return $scope.stations[index].name;
     }
 
-    $scope.setSelectedStation = function(index) {
+    // Action: Set destination station
+    $scope.setSelectedStation = function (index) {
+        // Find which 'Main Station' group this index belongs to
         for (var i = 0; i < $scope.mainStations.length; i++) {
             if ($scope.mainStations[i + 1] > index) {
                 $scope.selectedMainStation = i;
@@ -53,23 +88,28 @@ function atvmController($scope) {
         }
         $scope.selectedStation = index;
     }
-    $scope.setSelectedMainStation = function(index) {
+
+    // Action: Set main station group
+    $scope.setSelectedMainStation = function (index) {
         $scope.selectedMainStation = index;
         $scope.selectedStation = $scope.mainStations[index];
     }
 
-    $scope.getSubstations = function(index) {
+    // Helper: Dynamic subset of stations for the middle panel
+    $scope.getSubstations = function (index) {
         var startIndex = $scope.mainStations[index];
         var endIndex = 0;
+        // Determine end index based on next main station
         if (index + 1 == $scope.mainStations.length) {
-            endIndex = -1;
+            endIndex = -1; // Last group
         } else {
             endIndex = $scope.mainStations[index + 1] - 1;
         }
-        //return [startIndex, endIndex];
+
         if (endIndex == -1) {
             return [[$scope.stations[startIndex].name, startIndex]];
         } else {
+            // Build array of [Name, Index] pairs
             var arr = new Array();
             for (var i = startIndex; i <= endIndex; i++) {
                 arr.push([$scope.stations[i].name, i])
@@ -78,46 +118,85 @@ function atvmController($scope) {
         }
     }
 
-    $scope.getSingleClass = function() {
+    // Styling logic for Ticket Preview (Single/Return opacity)
+    $scope.getSingleClass = function () {
         if (!$scope.returnTicket)
             return "";
         else
             return "opaque";
     }
 
-    $scope.getReturnClass = function() {
+    $scope.getReturnClass = function () {
         if (!$scope.returnTicket)
             return "opaque";
         else
             return "";
     }
 
-    $scope.getPersonClass = function(index, number) {
+    // Styling logic for visualized passengers
+    $scope.getPersonClass = function (index, number) {
         if (index < number) {
             return "";
         } else {
             return "opaque";
         }
     }
-    $scope.setNoOfAdults = function(num) {
+
+    // State Modifiers
+    $scope.setNoOfAdults = function (num) {
         $scope.noOfAdults = num;
     }
-    $scope.setNoOfChildren = function(num) {
+    $scope.setNoOfChildren = function (num) {
         $scope.noOfChildren = num;
     }
 
-    $scope.getTotal = function(dest, ret, ad, ch) {
+    // UI Helpers (Increment/Decrement)
+    $scope.addAdult = function (val) {
+        var newValue = $scope.noOfAdults + val;
+        if (newValue >= 1 && newValue <= 10) { // Limit reasonable passengers
+            $scope.noOfAdults = newValue;
+        }
+    }
+
+    $scope.addChild = function (val) {
+        var newValue = $scope.noOfChildren + val;
+        if (newValue >= 0 && newValue <= 10) {
+            $scope.noOfChildren = newValue;
+        }
+    }
+
+    // Core Logic: Calculate Total Cost
+    $scope.getCost = function () {
+        // Use cost matrix: stations[source].costs[destination]
+        var unitCost = $scope.stations[$scope.source].costs[$scope.selectedStation];
+        if ($scope.returnTicket) {
+            // Example logic: Return might be double or discounted, assuming simple double here if not specified differently
+            // But usually return is unitCost * 2
+            unitCost = unitCost * 2;
+        }
+        return unitCost;
+        // Logic for total display including passengers is handled in HTML binding or separate formatted function
+    }
+
+    $scope.printTicket = function () {
+        alert("Ticket Printed Successfully! \nDestination: " + $scope.stations[$scope.selectedStation].name + "\nCost: " + ($scope.getCost() * ($scope.noOfAdults + $scope.noOfChildren)) + " Rs");
+    }
+
+    // Total Display Helper (with Hindi translation)
+    $scope.getTotal = function (dest, ret, ad, ch) {
         var total = 0;
         total = $scope.stations[$scope.source].costs[dest];
         if (ret) {
             total = total * 2;
         }
-        total = total * ad + total * ch * 0.5;
+        total = total * ad + total * ch * 0.5; // Children half price logic? (From original code likely)
         return total + " (= " + num2hindi(total) + ")";
     }
 
+    // Main hub indices for grouping UI
     $scope.mainStations = [0, 5, 9, 12, 16, 20];
 
+    // Data: Stations, Hindi names, Cost Matrix, Time Matrix
     $scope.stations = [
         {
             "name": "Borivali",
@@ -247,7 +326,4 @@ function atvmController($scope) {
         }
 
     ];
-    $scope.range = function(num) {
-        return new Array(num);
-    }
 }
