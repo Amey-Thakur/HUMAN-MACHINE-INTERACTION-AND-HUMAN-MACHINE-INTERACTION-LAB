@@ -219,10 +219,15 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
   [![Language](https://img.shields.io/badge/Language-HTML%20%7C%20JS%20%7C%20CSS-blueviolet.svg)](HMI%20Lab/)
   [![Status](https://img.shields.io/badge/Status-Complete-brightgreen.svg)](HMI%20Lab/)
 
+  [![Live Demo HMI-2](https://img.shields.io/badge/%F0%9F%8C%90%20Live%20Demo-HMI--2-007ACC?logo=github&logoColor=white&style=flat-square)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-2/index.html)
+  [![Live Demo HMI-3](https://img.shields.io/badge/%F0%9F%8C%90%20Live%20Demo-HMI--3-007ACC?logo=github&logoColor=white&style=flat-square)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-3/form.html)
+  [![Live Demo HMI-4](https://img.shields.io/badge/%F0%9F%8C%90%20Live%20Demo-HMI--4-007ACC?logo=github&logoColor=white&style=flat-square)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-4/index.html)
+  [![Live Demo HMI-6](https://img.shields.io/badge/%F0%9F%8C%90%20Live%20Demo-HMI--6-007ACC?logo=github&logoColor=white&style=flat-square)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-6/index.html)
+
 </div>
 
 > [!TIP]
-> **Source Code**: For the complete source code and detailed documentation of each experiment, visit the [**HMI Lab**](HMI%20Lab/) directory.
+> **Live Implementation**: For a quick structural and responsive evaluation, use the 🚀 (**Rocket**) links in the 'Live Demo' column to view the implementations directly in your browser. For the complete source code and detailed documentation, visit the [**HMI Lab**](HMI%20Lab/) directory.
 
 | # | Experiment | Date | Marks | Report | Live Demo |
 |:-:|:---|:---:|:---:|:-:|:-:|
