@@ -216,7 +216,8 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 <div align="center">
 
   [![Total Experiments](https://img.shields.io/badge/Total%20Experiments-9-yellowgreen.svg)](HMI%20Lab/)
-  [![Language](https://img.shields.io/badge/Language-HTML%20%7C%20JS%20%7C%20CSS-blueviolet.svg)](HMI%20Lab/)
+  [![Language](https://img.shields.io/badge/Language-HTML5%20%7C%20CSS3%20%7C%20JS-blueviolet.svg)](HMI%20Lab/)
+  [![Technologies](https://img.shields.io/badge/Technologies-AngularJS%20%7C%20Bootstrap-orange.svg)](HMI%20Lab/)
   [![Status](https://img.shields.io/badge/Status-Complete-brightgreen.svg)](HMI%20Lab/)
 
   [![Live Demo HMI Portfolio](https://img.shields.io/badge/Live_Demo-HMI_Portfolio-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/)
