@@ -29,7 +29,7 @@
      ========================================================================================= -->
 ## Overview
 
-Human Machine Interaction (CSC801) and Human Machine Interaction Laboratory (CSL801) are pivotal subjects in the Final Year (Semester VIII) of the Computer Engineering curriculum at the University of Mumbai. These courses explore the design, evaluation, and implementation of interactive computing systems for human use and with the study of major phenomena surrounding them.
+Human Machine Interaction (CSC801) and Human Machine Interaction Laboratory (CSL801) are core subjects in the Final Year (Semester VIII) of the Computer Engineering curriculum at the University of Mumbai. These courses provide a deep dive into the design, evaluation, and implementation of interactive computing systems for human use and the study of major phenomena surrounding them.
 
 ### Course Topics
 
