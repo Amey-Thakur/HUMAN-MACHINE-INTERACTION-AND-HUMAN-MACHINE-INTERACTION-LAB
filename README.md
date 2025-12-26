@@ -224,17 +224,17 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 > [!TIP]
 > **Source Code**: For the complete source code and detailed documentation of each experiment, visit the [**HMI Lab**](HMI%20Lab/) directory.
 
-| # | Experiment | Date | Marks | Report |
-|:-:|:---|:---:|:---:|:-:|
-| 1 | Analyze and rate existing at least 3 websites and users for any specific Domain of your choice. Visualize the ratings using graphs. | February 04, 2022 | 9/10 | [View](HMI%20Lab/Experiment%201/AMEY_B-50_HMI_EXPERIMENT-1.pdf) |
-| 2 | Create a mathematical application for kids of age 4-7 years to teach them the basics of mathematics. | February 11, 2022 | 9/10 | [View](HMI%20Lab/Experiment%202/AMEY_B-50_HMI_EXPERIMENT-2.pdf) |
-| 3 | Design GUI for the data entry form for any application of selected domain which you have analyzed. | February 18, 2022 | 10/10 | [View](HMI%20Lab/Experiment%203/AMEY_B-50_HMI_EXPERIMENT-3.pdf) |
-| 4 | Design interface for automated ticket vending machine (ATVM) for any system. | February 18, 2022 | 9/10 | [View](HMI%20Lab/Experiment%204/AMEY_B-50_HMI_EXPERIMENT-4.pdf) |
-| 5 | Design an interface for any machine which you find troublesome to use and want to change its interface like automatic washing machine, microwave oven etc. | March 12, 2022 | 10/10 | [View](HMI%20Lab/Experiment%205/AMEY_B-50_HMI_EXPERIMENT-5.pdf) |
-| 6 | Design website for an application of the selected domain with home page and subsequent pages. | March 13, 2022 | 10/10 | [View](HMI%20Lab/Experiment%206/AMEY_B-50_HMI_EXPERIMENT-6.pdf) |
-| 7 | Design menu for selected website. | March 23, 2022 | 9/10 | [View](HMI%20Lab/Experiment%207/AMEY_B-50_HMI_EXPERIMENT-7.pdf) |
-| 8 | Design the menus for the selected website. | March 24, 2022 | 9/10 | [View](HMI%20Lab/Experiment%208/AMEY_B-50_HMI_EXPERIMENT-8.pdf) |
-| 9 | Prepare the Interview Questions for the Subject Matter Expert (SME) of your selected domain to gather requirements. | April 01, 2022 | 10/10 | [View](HMI%20Lab/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf) |
+| # | Experiment | Date | Marks | Report | Live Demo |
+|:-:|:---|:---:|:---:|:-:|:-:|
+| 1 | Analyze and rate existing at least 3 websites and users for any specific Domain of your choice. Visualize the ratings using graphs. | February 04, 2022 | 9/10 | [View](HMI%20Lab/Experiment%201/AMEY_B-50_HMI_EXPERIMENT-1.pdf) | — |
+| 2 | Create a mathematical application for kids of age 4-7 years to teach them the basics of mathematics. | February 11, 2022 | 9/10 | [View](HMI%20Lab/Experiment%202/AMEY_B-50_HMI_EXPERIMENT-2.pdf) | [🚀](HMI/HMI-2/index.html) |
+| 3 | Design GUI for the data entry form for any application of selected domain which you have analyzed. | February 18, 2022 | 10/10 | [View](HMI%20Lab/Experiment%203/AMEY_B-50_HMI_EXPERIMENT-3.pdf) | [🚀](HMI/HMI-3/form.html) |
+| 4 | Design interface for automated ticket vending machine (ATVM) for any system. | February 18, 2022 | 9/10 | [View](HMI%20Lab/Experiment%204/AMEY_B-50_HMI_EXPERIMENT-4.pdf) | [🚀](HMI/HMI-4/index.html) |
+| 5 | Design an interface for any machine which you find troublesome to use and want to change its interface like automatic washing machine, microwave oven etc. | March 12, 2022 | 10/10 | [View](HMI%20Lab/Experiment%205/AMEY_B-50_HMI_EXPERIMENT-5.pdf) | — |
+| 6 | Design website for an application of the selected domain with home page and subsequent pages. | March 13, 2022 | 10/10 | [View](HMI%20Lab/Experiment%206/AMEY_B-50_HMI_EXPERIMENT-6.pdf) | [🚀](HMI/HMI-6/index.html) |
+| 7 | Design menu for selected website. | March 23, 2022 | 9/10 | [View](HMI%20Lab/Experiment%207/AMEY_B-50_HMI_EXPERIMENT-7.pdf) | — |
+| 8 | Design the menus for the selected website. | March 24, 2022 | 9/10 | [View](HMI%20Lab/Experiment%208/AMEY_B-50_HMI_EXPERIMENT-8.pdf) | — |
+| 9 | Prepare the Interview Questions for the Subject Matter Expert (SME) of your selected domain to gather requirements. | April 01, 2022 | 10/10 | [View](HMI%20Lab/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf) | — |
 
 ### Program Details
 
