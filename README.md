@@ -297,7 +297,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 ---
 
 
-## HMI Mini Project
+## Human Machine Interaction Mini Project
 
 <div align="center">
 
