@@ -359,7 +359,7 @@ Internal assessment evaluations conducted during the course:
 | 1 | [Question Paper](IAT-1/HMI%20IAT-1%20Question%20Paper.pdf) | HMI Internal Assessment Test 1 Question Paper | — |
 | 2 | [Answer Sheet](IAT-1/HMI%20IAT-1%20Answer%20Sheet%20%5B19%20out%20of%2020%5D.pdf) | HMI Internal Assessment Test 1 Answer Sheet | 19/20 |
 
-### IAT - 2
+### IAT - 2 · April 18, 2022
 
 | # | Resource | Description | Marks |
 |:-:|:---|:---|:---:|
