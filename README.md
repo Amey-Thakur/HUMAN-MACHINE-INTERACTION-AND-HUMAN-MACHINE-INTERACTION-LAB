@@ -428,13 +428,9 @@ Course completion documentation with exit survey:
 > [!IMPORTANT]
 > **Important**
 >
-> Always verify the latest syllabus details with the official University of Mumbai website, as curriculum updates may occur after this repository's archival date.
-
----
 >
-> Always verify the latest syllabus details with the official University of Mumbai website, as curriculum updates may occur after this repository's archival date.
-
 ---
+
 
 ## Usage Guidelines
 
