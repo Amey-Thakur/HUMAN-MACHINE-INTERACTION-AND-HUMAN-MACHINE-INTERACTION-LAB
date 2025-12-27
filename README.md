@@ -234,61 +234,61 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 | # | Experiment | Date | Marks | Report | Live Demo |
 |:-:|:---|:---:|:---:|:-:|:-:|
-| 1 | Analyze and rate existing at least 3 websites and users for any specific Domain of your choice. Visualize the ratings using graphs. | February 04, 2022 | 9/10 | [View](HMI%20Lab/Experiment%201/AMEY_B-50_HMI_EXPERIMENT-1.pdf) | — |
-| 2 | Create a mathematical application for kids of age 4-7 years to teach them the basics of mathematics. | February 11, 2022 | 9/10 | [View](HMI%20Lab/Experiment%202/AMEY_B-50_HMI_EXPERIMENT-2.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-2/index.html) |
-| 3 | Design GUI for the data entry form for any application of selected domain which you have analyzed. | February 18, 2022 | 10/10 | [View](HMI%20Lab/Experiment%203/AMEY_B-50_HMI_EXPERIMENT-3.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-3/form.html) |
-| 4 | Design interface for automated ticket vending machine (ATVM) for any system. | February 18, 2022 | 9/10 | [View](HMI%20Lab/Experiment%204/AMEY_B-50_HMI_EXPERIMENT-4.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-4/index.html) |
-| 5 | Design an interface for any machine which you find troublesome to use and want to change its interface like automatic washing machine, microwave oven etc. | March 12, 2022 | 10/10 | [View](HMI%20Lab/Experiment%205/AMEY_B-50_HMI_EXPERIMENT-5.pdf) | — |
-| 6 | Design website for an application of the selected domain with home page and subsequent pages. | March 13, 2022 | 10/10 | [View](HMI%20Lab/Experiment%206/AMEY_B-50_HMI_EXPERIMENT-6.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-6/index.html) |
-| 7 | Design menu for selected website. | March 23, 2022 | 9/10 | [View](HMI%20Lab/Experiment%207/AMEY_B-50_HMI_EXPERIMENT-7.pdf) | — |
-| 8 | Design the menus for the selected website. | March 24, 2022 | 9/10 | [View](HMI%20Lab/Experiment%208/AMEY_B-50_HMI_EXPERIMENT-8.pdf) | — |
-| 9 | Prepare the Interview Questions for the Subject Matter Expert (SME) of your selected domain to gather requirements. | April 01, 2022 | 10/10 | [View](HMI%20Lab/Experiment%209/AMEY_B-50_HMI_EXPERIMENT-9.pdf) | — |
+| 1 | Analyze and rate existing at least 3 websites and users for any specific Domain of your choice. Visualize the ratings using graphs. | February 04, 2022 | 9/10 | [View](HMI%20Lab/Experiment-1/AMEY_B-50_HMI_EXPERIMENT-1.pdf) | — |
+| 2 | Create a mathematical application for kids of age 4-7 years to teach them the basics of mathematics. | February 11, 2022 | 9/10 | [View](HMI%20Lab/Experiment-2/AMEY_B-50_HMI_EXPERIMENT-2.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-2/index.html) |
+| 3 | Design GUI for the data entry form for any application of selected domain which you have analyzed. | February 18, 2022 | 10/10 | [View](HMI%20Lab/Experiment-3/AMEY_B-50_HMI_EXPERIMENT-3.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-3/form.html) |
+| 4 | Design interface for automated ticket vending machine (ATVM) for any system. | February 18, 2022 | 9/10 | [View](HMI%20Lab/Experiment-4/AMEY_B-50_HMI_EXPERIMENT-4.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-4/index.html) |
+| 5 | Design an interface for any machine which you find troublesome to use and want to change its interface like automatic washing machine, microwave oven etc. | March 12, 2022 | 10/10 | [View](HMI%20Lab/Experiment-5/AMEY_B-50_HMI_EXPERIMENT-5.pdf) | — |
+| 6 | Design website for an application of the selected domain with home page and subsequent pages. | March 13, 2022 | 10/10 | [View](HMI%20Lab/Experiment-6/AMEY_B-50_HMI_EXPERIMENT-6.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-6/index.html) |
+| 7 | Design menu for selected website. | March 23, 2022 | 9/10 | [View](HMI%20Lab/Experiment-7/AMEY_B-50_HMI_EXPERIMENT-7.pdf) | — |
+| 8 | Design the menus for the selected website. | March 24, 2022 | 9/10 | [View](HMI%20Lab/Experiment-8/AMEY_B-50_HMI_EXPERIMENT-8.pdf) | — |
+| 9 | Prepare the Interview Questions for the Subject Matter Expert (SME) of your selected domain to gather requirements. | April 01, 2022 | 10/10 | [View](HMI%20Lab/Experiment-9/AMEY_B-50_HMI_EXPERIMENT-9.pdf) | — |
 
 ### Program Details
 
 <details>
-<summary><b>Experiment 2: Static Web Page (1 Program)</b></summary>
+<summary><b>Experiment-2: Static Web Page (1 Program)</b></summary>
 <br>
 
 | Program | Category | Description | Code |
 |:---|:---|:---|:-:|
-| `index.html` | Web UI | Static layout for a basic HMI concept | [View](HMI%20Lab/Experiment%202/Source%20Code/index.html) |
+| `index.html` | Web UI | Static layout for a basic HMI concept | [View](HMI%20Lab/Experiment-2/Source%20Code/index.html) |
 
 </details>
 
 <details>
-<summary><b>Experiment 3: Dynamic Web Page (1 Program)</b></summary>
+<summary><b>Experiment-3: Dynamic Web Page (1 Program)</b></summary>
 <br>
 
 | Program | Category | Description | Code |
 |:---|:---|:---|:-:|
-| `form.html` | Web UI | Interactive form with validation logic | [View](HMI%20Lab/Experiment%203/Source%20Code/form.html) |
+| `form.html` | Web UI | Interactive form with validation logic | [View](HMI%20Lab/Experiment-3/Source%20Code/form.html) |
 
 </details>
 
 <details>
-<summary><b>Experiment 4: ATVM Interface (4 Programs)</b></summary>
+<summary><b>Experiment-4: ATVM Interface (4 Programs)</b></summary>
 <br>
 
 | Program | Category | Description | Code |
 |:---|:---|:---|:-:|
-| `index.html` | Application | Main ATVM interface layout | [View](HMI%20Lab/Experiment%204/Source%20Code/index.html) |
-| `script.js` | Logic | Interactive ticketing logic | [View](HMI%20Lab/Experiment%204/Source%20Code/script.js) |
-| `style.css` | Design | ATM/ATVM visual styling | [View](HMI%20Lab/Experiment%204/Source%20Code/style.css) |
-| `README.md` | Doc | Setup and usage instructions | [View](HMI%20Lab/Experiment%204/Source%20Code/README.md) |
+| `index.html` | Application | Main ATVM interface layout | [View](HMI%20Lab/Experiment-4/Source%20Code/index.html) |
+| `script.js` | Logic | Interactive ticketing logic | [View](HMI%20Lab/Experiment-4/Source%20Code/script.js) |
+| `style.css` | Design | ATM/ATVM visual styling | [View](HMI%20Lab/Experiment-4/Source%20Code/style.css) |
+| `README.md` | Doc | Setup and usage instructions | [View](HMI%20Lab/Experiment-4/Source%20Code/README.md) |
 
 </details>
 
 <details>
-<summary><b>Experiment 6: E-Commerce UI (Complex Application)</b></summary>
+<summary><b>Experiment-6: E-Commerce UI (Complex Application)</b></summary>
 <br>
 
 | Program | Category | Description | Code |
 |:---|:---|:---|:-:|
-| `index.html` | Web UI | Multi-page store interface | [View](HMI%20Lab/Experiment%206/Source%20Code/index.html) |
-| `blog.html` | Content | Integrated blog/news section | [View](HMI%20Lab/Experiment%206/Source%20Code/blog.html) |
-| `services.html` | Service | Service offering catalog | [View](HMI%20Lab/Experiment%206/Source%20Code/services.html) |
-| `contact_us.html` | Contact | Customer support interface | [View](HMI%20Lab/Experiment%206/Source%20Code/contact_us.html) |
+| `index.html` | Web UI | Multi-page store interface | [View](HMI%20Lab/Experiment-6/Source%20Code/index.html) |
+| `blog.html` | Content | Integrated blog/news section | [View](HMI%20Lab/Experiment-6/Source%20Code/blog.html) |
+| `services.html` | Service | Service offering catalog | [View](HMI%20Lab/Experiment-6/Source%20Code/services.html) |
+| `contact_us.html` | Contact | Customer support interface | [View](HMI%20Lab/Experiment-6/Source%20Code/contact_us.html) |
 
 </details>
 

@@ -1,4 +1,4 @@
-# Experiment 2: Mathematical Application for Kids (Math Sprint Game)
+# Experiment-2: Mathematical Application for Kids (Math Sprint Game)
 
 <div align="center">
 

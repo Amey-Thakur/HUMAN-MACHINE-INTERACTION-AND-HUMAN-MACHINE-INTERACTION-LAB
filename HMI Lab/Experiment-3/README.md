@@ -1,4 +1,4 @@
-# Experiment 3: GUI Design for Data Entry Form
+# Experiment-3: GUI Design for Data Entry Form
 
 <div align="center">
 
