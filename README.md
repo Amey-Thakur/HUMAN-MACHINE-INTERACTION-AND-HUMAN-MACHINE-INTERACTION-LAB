@@ -354,7 +354,7 @@ The system leverages a responsive design framework to maintain interaction consi
 
 Internal assessment evaluations conducted during the course:
 
-### IAT - 1 · March 16, 2022
+### IAT - 1 · March 2, 2022
 
 | # | Resource | Description | Marks |
 |:-:|:---|:---|:---:|
