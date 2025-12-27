@@ -420,7 +420,6 @@ Course completion documentation with exit survey:
 
 ## Syllabus
 
----
 
 > [**Official CBCGS Syllabus**](MU%20SEM%20VIII%20SYLLABUS.pdf)  
 > Complete Fourth Year Computer Engineering syllabus document from the University of Mumbai, including detailed course outcomes, assessment criteria, and module specifications for Human Machine Interaction and Human Machine Interaction Laboratory.
