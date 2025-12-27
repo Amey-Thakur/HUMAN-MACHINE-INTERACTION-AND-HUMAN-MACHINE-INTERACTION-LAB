@@ -351,15 +351,7 @@ HMI-specific quizzes conducted during the course:
 ---
 
 
-## Internal Assessment (IAT)
-
-### IAT - 1
-
-| # | Resource | Description | Date |
-|:-:|:---|:---|:---:|
-| 1 | [Question Paper](IAT-1/HMI%20IAT-1%20Question%20Paper.pdf) | University IAT-1 Question Paper | 2022 |
-| 2 | [HMI Module - 1](IAT-1/HMI_Module-1.pdf) | Foundations of HMI Notes | 2022 |
-### Internal Assessment Test
+## Internal Assessment Test
 
 Internal assessment evaluations conducted during the course:
 
