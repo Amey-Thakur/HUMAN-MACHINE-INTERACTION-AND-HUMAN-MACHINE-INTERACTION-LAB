@@ -17,7 +17,7 @@
 
   ---
 
-  [How to Use](#how-to-use) &nbsp;·&nbsp; [Learning Path](#learning-path) &nbsp;·&nbsp; [Experiment-1](#experiment-1-domain-analysis--rating) &nbsp;·&nbsp; [Experiment-2](#experiment-2-mathematical-application-for-kids) &nbsp;·&nbsp; [Experiment-3](#experiment-3-data-entry-form-design) &nbsp;·&nbsp; [Experiment-4](#experiment-4-atvm-interface-design) &nbsp;·&nbsp; [Experiment-5](#experiment-5-interface-redesign) &nbsp;·&nbsp; [Experiment-6](#experiment-6-e-commerce-website-design) &nbsp;·&nbsp; [Experiment-7](#experiment-7-menu-design-set-1) &nbsp;·&nbsp; [Experiment-8](#experiment-8-menu-design-set-2) &nbsp;·&nbsp; [Experiment-9](#experiment-9-sme-interview-questions)
+  [How to Use](#how-to-use) &nbsp;·&nbsp; [Learning Path](#learning-path) &nbsp;·&nbsp; [Experiment 1](#experiment-1-domain-analysis--rating) &nbsp;·&nbsp; [Experiment 2](#experiment-2-mathematical-application-for-kids) &nbsp;·&nbsp; [Experiment 3](#experiment-3-data-entry-form-design) &nbsp;·&nbsp; [Experiment 4](#experiment-4-atvm-interface-design) &nbsp;·&nbsp; [Experiment 5](#experiment-5-interface-redesign) &nbsp;·&nbsp; [Experiment 6](#experiment-6-e-commerce-website-design) &nbsp;·&nbsp; [Experiment 7](#experiment-7-menu-design-set-1) &nbsp;·&nbsp; [Experiment 8](#experiment-8-menu-design-set-2) &nbsp;·&nbsp; [Experiment 9](#experiment-9-sme-interview-questions)
 
 </div>
 
@@ -272,7 +272,7 @@ Prepare the Interview Questions for the Subject Matter Expert (SME) of your sele
   <!-- Footer Navigation -->
   [↑ Back to Top](#human-machine-interaction-lab)
 
-  [How to Use](#how-to-use) &nbsp;·&nbsp; [Learning Path](#learning-path) &nbsp;·&nbsp; [Experiment-1](#experiment-1-domain-analysis--rating) &nbsp;·&nbsp; [Experiment-2](#experiment-2-mathematical-application-for-kids) &nbsp;·&nbsp; [Experiment-3](#experiment-3-data-entry-form-design) &nbsp;·&nbsp; [Experiment-4](#experiment-4-atvm-interface-design) &nbsp;·&nbsp; [Experiment-5](#experiment-5-interface-redesign) &nbsp;·&nbsp; [Experiment-6](#experiment-6-e-commerce-website-design) &nbsp;·&nbsp; [Experiment-7](#experiment-7-menu-design-set-1) &nbsp;·&nbsp; [Experiment-8](#experiment-8-menu-design-set-2) &nbsp;·&nbsp; [Experiment-9](#experiment-9-sme-interview-questions)
+  [How to Use](#how-to-use) &nbsp;·&nbsp; [Learning Path](#learning-path) &nbsp;·&nbsp; [Experiment 1](#experiment-1-domain-analysis--rating) &nbsp;·&nbsp; [Experiment 2](#experiment-2-mathematical-application-for-kids) &nbsp;·&nbsp; [Experiment 3](#experiment-3-data-entry-form-design) &nbsp;·&nbsp; [Experiment 4](#experiment-4-atvm-interface-design) &nbsp;·&nbsp; [Experiment 5](#experiment-5-interface-redesign) &nbsp;·&nbsp; [Experiment 6](#experiment-6-e-commerce-website-design) &nbsp;·&nbsp; [Experiment 7](#experiment-7-menu-design-set-1) &nbsp;·&nbsp; [Experiment 8](#experiment-8-menu-design-set-2) &nbsp;·&nbsp; [Experiment 9](#experiment-9-sme-interview-questions)
 
   <br>
 
