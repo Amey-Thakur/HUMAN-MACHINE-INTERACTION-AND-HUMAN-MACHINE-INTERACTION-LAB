@@ -388,18 +388,18 @@ Final semester examination submission:
 
 | # | Resource | Description | Date |
 |:-:|:---|:---|:---:|
-| 1 | [MCQ](Semester%20Exam/HMI%20QB%20Answers.pdf) | HMI Semester Exam MCQ Paper | June 02, 2022 |
-| 2 | [Question 2](Semester%20Exam/HMI_SEM.pdf) | HMI Semester Exam Answer Sheet | June 02, 2022 |
-| 3 | [Question Paper](Semester%20Exam/HMI_Question_Paper.pdf) | Official University Question Paper | June 02, 2022 |
+| 1 | [Question Paper](Semester%20Exam/HMI_Question_Paper.pdf) | Official University Question Paper | June 02, 2022 |
 
 **Additional Resources**:
 
 | # | Resource | Description |
 |:-:|:---|:---|
-| 1 | [Question Bank](Semester%20Exam/HMI_Question_Bank.pdf) | Subject-wise essential questions |
-| 2 | [Sample Questions](Semester%20Exam/Comp_R16_Sem%20VIII_DLO8013_Human%20Machine%20Interaction+Sample%20Questions.pdf) | HMI practice and sample questions |
-| 3 | [Design Problems](Semester%20Exam/HMI%20DESIGN%20PROBLEMS.pdf) | Comprehensive design specific cases |
-| 4 | [Timetable](Semester%20Exam/Semester%208%20Timetable.pdf) | Semester 8 examination schedule |
+| 1 | [MCQ](Semester%20Exam/HMI%20QB%20Answers.pdf) | HMI Semester Exam MCQ Paper |
+| 2 | [Answer Sheet](Semester%20Exam/HMI_SEM.pdf) | HMI Semester Exam Answer Sheet |
+| 3 | [Question Bank](Semester%20Exam/HMI_Question_Bank.pdf) | Subject-wise essential questions |
+| 4 | [Sample Questions](Semester%20Exam/Comp_R16_Sem%20VIII_DLO8013_Human%20Machine%20Interaction+Sample%20Questions.pdf) | HMI practice and sample questions |
+| 5 | [Design Problems](Semester%20Exam/HMI%20DESIGN%20PROBLEMS.pdf) | Comprehensive design specific cases |
+| 6 | [Timetable](Semester%20Exam/Semester%208%20Timetable.pdf) | Semester 8 examination schedule |
 
 ---
 
