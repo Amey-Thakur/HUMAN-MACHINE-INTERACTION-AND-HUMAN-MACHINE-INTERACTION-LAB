@@ -432,8 +432,6 @@ Course completion documentation with exit survey:
 
 ---
 
-
-
 ## Usage Guidelines
 
 This repository is openly shared to support learning and knowledge exchange across the academic community.
