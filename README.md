@@ -194,6 +194,21 @@ Academic assignments for comprehensive learning and practice:
 ---
 
 
+### Quizzes
+
+HMI-specific quizzes conducted during the course:
+
+| # | Quiz | Topics | Marks |
+|:-:|:---|:---|:---:|
+| 1 | [Quiz 1](Quizzes/HMI_QUIZ-1.pdf) | Module 1: Introduction to HMI | 12/12 |
+| 2 | [Quiz 2](Quizzes/HMI_QUIZ-2.pdf) | Module 2: HCI Basics | 10/10 |
+| 3 | [Quiz 3](Quizzes/HMI_QUIZ-3.pdf) | Module 3: Designing the UI | 6/10 |
+| 4 | [Quiz 4](Quizzes/HMI_QUIZ-4.pdf) | Module 4: Interaction Models | 5/6 |
+| 5 | [Quiz 5](Quizzes/HMI_QUIZ-5.pdf) | Module 5: Usability Engineering | 6/6 |
+| 6 | [Quiz 6](Quizzes/HMI_QUIZ-6.pdf) | Module 6: Advanced Interfaces | 5/6 |
+
+---
+
 ## Human Machine Interaction Laboratory
 
 The laboratory component (CSL801) focuses on hands-on implementation of user interface design, interaction techniques, usability evaluation, and developing interactive web applications.
@@ -331,22 +346,6 @@ The system leverages a responsive design framework to maintain interaction consi
 | 3 | Project Repository | Complete source code and documentation | May 2022 | — | [View](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME) |
 | 4 | Project Teams | Team composition and roles | March 2022 | — | [View](HMI%20Mini%20Project/HMI%20Mini%20Project%20Teams.pdf) |
 | 5 | Project Demo (YouTube) | Real-time demonstration of features | May 2022 | — | [View](https://youtu.be/CCbrTQwYyE8) |
-
----
-
-
-### Quizzes
-
-HMI-specific quizzes conducted during the course:
-
-| # | Quiz | Topics | Date | Marks |
-|:-:|:---|:---|:---:|:---:|
-| 1 | [Quiz 1](Quizzes/HMI_QUIZ-1.pdf) | Module 1: Introduction to HMI | 2022 | — |
-| 2 | [Quiz 2](Quizzes/HMI_QUIZ-2.pdf) | Module 2: HCI Basics | 2022 | — |
-| 3 | [Quiz 3](Quizzes/HMI_QUIZ-3.pdf) | Module 3: Designing the UI | 2022 | — |
-| 4 | [Quiz 4](Quizzes/HMI_QUIZ-4.pdf) | Module 4: Interaction Models | 2022 | — |
-| 5 | [Quiz 5](Quizzes/HMI_QUIZ-5.pdf) | Module 5: Usability Engineering | 2022 | — |
-| 6 | [Quiz 6](Quizzes/HMI_QUIZ-6.pdf) | Module 6: Advanced Interfaces | 2022 | — |
 
 ---
 
