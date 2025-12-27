@@ -407,14 +407,12 @@ Final semester examination submission:
 
 ## Submission Completion Report
 
-Course completion documentation and exit surveys:
+Course completion documentation with exit survey:
 
 | # | Document | Description |
 |:-:|:---|:---|
-| 1 | [Submission Report](Submission%20Report/AMEY_B-50_HMI_SUBMISSION_REPORT.pdf) | Final HMI coursework submission report |
-| 2 | [Exit Survey (Theory)](Submission%20Report/HMI%20Course%20Exit%20Survey%20(BE%20-%20B).pdf) | Course outcome survey for HMI Theory |
-| 3 | [Exit Survey (Lab)](Submission%20Report/HMI%20Laboratory%20Exit%20Survey%20(BE%20-%20B).pdf) | Course outcome survey for HMI Laboratory |
-| 4 | [Semester Report](Submission%20Report/Amey_B-50_Submission_Report.pdf) | Collective Semester 8 submission report |
+| 1 | [Submission Report](Submission%20Report/AMEY_B-50_HMI_SUBMISSION_REPORT.pdf) | Final coursework submission report |
+| 2 | [Exit Survey (Lab)](Submission%20Report/HMI%20Laboratory%20Exit%20Survey%20(BE%20-%20B).pdf) | Course outcome survey for HMI Lab |
 
 ---
 
