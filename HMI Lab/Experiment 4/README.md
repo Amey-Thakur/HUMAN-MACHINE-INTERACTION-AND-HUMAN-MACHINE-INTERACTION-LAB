@@ -2,10 +2,7 @@
 
 <div align="center">
 
-| **Roll No: 50** | **Name: Amey Mahendra Thakur** | **Class: BE COMPS B** | **Batch: B3** |
-| :---: | :---: | :---: | :---: |
-
-**[📂 Views Repository](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB)** &nbsp;|&nbsp; **[👤 User Profile](https://github.com/Amey-Thakur)**
+  [Overview](#-overview) &nbsp;·&nbsp; [Features](#-features) &nbsp;·&nbsp; [Screenshots](#-application-screenshots) &nbsp;·&nbsp; [Lab Repository](../README.md) &nbsp;·&nbsp; [Main Repository](../../README.md)
 
 </div>
 
@@ -41,3 +38,17 @@ This experiment focuses on determining the basic requirements for an automated s
 
 #### Booking Flow
 ![Ticket Booking](https://user-images.githubusercontent.com/54937357/155710391-6693d70b-1d1c-4429-8a01-b567df5c2e0a.png)
+
+---
+
+<div align="center">
+
+  [↑ Back to Top](#experiment-4-atvm-interface-design)
+
+  [Overview](#-overview) &nbsp;·&nbsp; [Features](#-features) &nbsp;·&nbsp; [Screenshots](#-application-screenshots) &nbsp;·&nbsp; [Lab Repository](../README.md) &nbsp;·&nbsp; [Main Repository](../../README.md)
+
+  <br>
+
+  🔬 **[Human Machine Interaction Laboratory](../README.md)** &nbsp;·&nbsp; ♟️ **[Chess Game App](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)**
+
+</div>

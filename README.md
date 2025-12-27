@@ -18,7 +18,7 @@
 
   ---
 
-  [Overview](#overview) &nbsp;·&nbsp; [Contents](#repository-contents) &nbsp;·&nbsp; [The Wall](#the-wall) &nbsp;·&nbsp; [Mega's Notes](#megas-notes) &nbsp;·&nbsp; [Assignments](#assignments) &nbsp;·&nbsp; [Laboratory](#hmi-lab) &nbsp;·&nbsp; [Mini Project](#mini-project) &nbsp;·&nbsp; [Quizzes](#quizzes) &nbsp;·&nbsp; [IAT-1](#iat-1) &nbsp;·&nbsp; [IAT-2](#iat-2) &nbsp;·&nbsp; [Semester Exam](#semester-exam) &nbsp;·&nbsp; [Submission Report](#submission-completion-report) &nbsp;·&nbsp; [Syllabus](#syllabus) &nbsp;·&nbsp; [Usage Guidelines](#usage-guidelines) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository) &nbsp;·&nbsp; [Acknowledgments](#acknowledgments)
+  [Overview](#overview) &nbsp;·&nbsp; [Contents](#repository-contents) &nbsp;·&nbsp; [Reference Books](#reference-books) &nbsp;·&nbsp; [The Wall](#the-wall) &nbsp;·&nbsp; [Mega's Notes](#megas-notes) &nbsp;·&nbsp; [Assignments](#assignments) &nbsp;·&nbsp; [Quizzes](#quizzes) &nbsp;·&nbsp; [Laboratory](#human-machine-interaction-laboratory) &nbsp;·&nbsp; [Mini Project](#human-machine-interaction-mini-project) &nbsp;·&nbsp; [Internal Assessment Test](#internal-assessment-test) &nbsp;·&nbsp; [Semester Exam](#semester-exam) &nbsp;·&nbsp; [Submission Report](#submission-completion-report) &nbsp;·&nbsp; [Syllabus](#syllabus) &nbsp;·&nbsp; [Usage Guidelines](#usage-guidelines) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository) &nbsp;·&nbsp; [Acknowledgments](#acknowledgments)
 
 </div>
 
@@ -48,11 +48,11 @@ This repository represents a curated collection of study materials, reference bo
 
 As a computer engineer, understanding HMI is crucial for developing intuitive, efficient, and user-centric software systems. This repository serves as my intellectual reference point: a resource I can return to for relearning concepts, reviewing methodologies, and strengthening understanding when needed.
 
-### Why this repository exists:
+**Why this repository exists:**
 
 - **Knowledge Preservation**: To maintain organized access to comprehensive study materials beyond the classroom.
 - **Continuous Learning**: To support lifelong learning by enabling easy revisitation of fundamental HMI concepts.
-- **Academic Documentation**: To authentically document my learning journey through Human Machine Interaction and Human Machine Interaction Laboratory.
+- **Academic Documentation**: To authentically document my learning journey through HMI.
 - **Community Contribution**: To share these resources with students and learners who may benefit from them.
 
 All materials in this repository were gathered, organized, and documented by me during my undergraduate studies (2018-2022) as part of my coursework and exam preparation.
@@ -64,6 +64,9 @@ All materials in this repository were gathered, organized, and documented by me 
      ========================================================================================= -->
 ## Repository Contents
 
+<!-- =========================================================================================
+                                     REFERENCE BOOKS SECTION
+     ========================================================================================= -->
 ### Reference Books
 
 This collection includes **comprehensive reference materials** covering all major topics:
@@ -102,6 +105,9 @@ This collection includes **comprehensive reference materials** covering all majo
 
 ---
 
+<!-- =========================================================================================
+                                     THE WALL SECTION
+     ========================================================================================= -->
 ### The Wall
 
 <div align="center">
@@ -142,11 +148,11 @@ Comprehensive module-wise notes curated by Mega Satish, covering all essential t
 | 4 | [HMI Module - 4](THE%20WALL/HMI_Module-4.pdf) | Interaction Models and Techniques |
 | 5 | [HMI Module - 5](THE%20WALL/HMI_Module-5.pdf) | Usability Engineering and Evaluation |
 | 6 | [HMI Module - 6](THE%20WALL/HMI_Module-6.pdf) | Advanced Interfaces and Future Trends |
-
-
-
 ---
 
+<!-- =========================================================================================
+                                     MEGA'S NOTES SECTION
+     ========================================================================================= -->
 ### Mega's Notes
 
 <div align="center">
@@ -171,12 +177,11 @@ Comprehensive module-wise notes curated by Mega Satish, covering all essential t
 | 4 | [HMI Module - 4](MEGA%20NOTES/HMI_Module-4.pdf) | Menu selection and form fill-in |
 | 5 | [HMI Module - 5](MEGA%20NOTES/HMI_Module-5.pdf) | Usability engineering metrics |
 | 6 | [HMI Module - 6](MEGA%20NOTES/HMI_Module-6.pdf) | Advanced user interfaces |
-
-
-
 ---
 
-
+<!-- =========================================================================================
+                                     ASSIGNMENTS SECTION
+     ========================================================================================= -->
 ### Assignments
 
 Academic assignments for comprehensive learning and practice:
@@ -187,11 +192,13 @@ Academic assignments for comprehensive learning and practice:
 | 2 | [Assignment 2](Assignments/AMEY_B-50_HMI_ASSIGNMENT-2.pdf) | Gestalt Principles, factors affecting learning, menu and navigation schemes | February 15, 2022 | 54/60 |
 | 3 | [Assignment 3](Assignments/AMEY_B-50_HMI_ASSIGNMENT-3.pdf) | Virtual Reality, input and output devices in VR, case study | February 15, 2022 | 18/20 |
 
-**Topics Covered**: UI Design Evolution · Gestalt Principles · Menu and Navigation · Virtual Reality · Usability Engineering
+**Topics Covered:** UI Design Evolution · Gestalt Principles · Menu and Navigation · Virtual Reality · Usability Engineering
 
 ---
 
-
+<!-- =========================================================================================
+                                     QUIZZES SECTION
+     ========================================================================================= -->
 ### Quizzes
 
 HMI-specific quizzes conducted during the course:
@@ -246,6 +253,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 <details>
 <summary><b>Experiment 2: Static Web Page (1 Program)</b></summary>
+<br>
 
 | Program | Category | Description | Code |
 |:---|:---|:---|:-:|
@@ -255,6 +263,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 <details>
 <summary><b>Experiment 3: Dynamic Web Page (1 Program)</b></summary>
+<br>
 
 | Program | Category | Description | Code |
 |:---|:---|:---|:-:|
@@ -264,6 +273,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 <details>
 <summary><b>Experiment 4: ATVM Interface (4 Programs)</b></summary>
+<br>
 
 | Program | Category | Description | Code |
 |:---|:---|:---|:-:|
@@ -276,6 +286,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 <details>
 <summary><b>Experiment 6: E-Commerce UI (Complex Application)</b></summary>
+<br>
 
 | Program | Category | Description | Code |
 |:---|:---|:---|:-:|
@@ -294,7 +305,9 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 ---
 
-
+<!-- =========================================================================================
+                                     MINI PROJECT SECTION
+     ========================================================================================= -->
 ## Human Machine Interaction Mini Project
 
 <div align="center">
@@ -316,10 +329,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 </div>
 
-<div align="center">
-
-  <!-- Authors Table -->
-  ### 👥 Authors
+  #### 👥 Authors
 | <img src="https://github.com/Amey-Thakur.png" width="150" alt="Amey Thakur"><br>[**Amey Thakur**](https://github.com/Amey-Thakur) | <img src="THE%20WALL/Mega/Mega.png" width="150" alt="Mega Satish"><br>[**Mega Satish**](https://github.com/msatmod) |
 | :---: | :---: |
 </div>
@@ -334,7 +344,6 @@ This project involves the development of a sophisticated **Online Chess Game**, 
 
 The system leverages a responsive design framework to maintain interaction consistency across diverse device orientations. At its core, the application integrates complex algorithmic structures for **real-time move validation** and state management, demonstrating the practical application of usability engineering metrics. This project serves as an exploration into the synergy between high-performance back-end logic and intuitive front-end layouts, aiming to optimize the overall **User Experience (UX)** through iterative design and evaluation.
 
-  <!-- Resources Table -->
   ### Resources
 
 | # | Resource | Description | Date | Marks | Link |
@@ -347,7 +356,9 @@ The system leverages a responsive design framework to maintain interaction consi
 
 ---
 
-
+<!-- =========================================================================================
+                                     INTERNAL ASSESSMENT TEST SECTION
+     ========================================================================================= -->
 ## Internal Assessment Test
 
 Internal assessment evaluations conducted during the course:
@@ -366,7 +377,7 @@ Internal assessment evaluations conducted during the course:
 | 1 | [Question Paper](IAT-2/HMI_IAT-2_Question_Paper.pdf) | HMI Internal Assessment Test 2 Question Paper | — |
 | 2 | [Question Bank](IAT-2/HMI_IAT-2_Question_Bank.pdf) | HMI Internal Assessment Test 2 Question Bank | — |
 
-**Additional Resources**:
+**Additional Resources:**
 
 | # | Resource | Description |
 |:-:|:---|:---|
@@ -378,11 +389,11 @@ Internal assessment evaluations conducted during the course:
 | 6 | [HMI Module - 6](IAT-2/HMI_Module-6_%5BHandwritten%5D.pdf) | Personal Exam Preparation Notes |
 
 ---
- 
 
+<!-- =========================================================================================
+                                     SEMESTER EXAM SECTION
+     ========================================================================================= -->
 ## Semester Exam
-
-
 
 Final semester examination submission:
 
@@ -390,7 +401,7 @@ Final semester examination submission:
 |:-:|:---|:---|:---:|
 | 1 | [Question Paper](Semester%20Exam/HMI_Question_Paper.pdf) | Official University Question Paper | May 17, 2022 |
 
-**Additional Resources**:
+**Additional Resources:**
 
 | # | Resource | Description |
 |:-:|:---|:---|
@@ -403,8 +414,9 @@ Final semester examination submission:
 
 ---
 
-
-
+<!-- =========================================================================================
+                                     SUBMISSION COMPLETION REPORT SECTION
+     ========================================================================================= -->
 ## Submission Completion Report
 
 Course completion documentation with exit survey:
@@ -417,9 +429,10 @@ Course completion documentation with exit survey:
 | 4 | [Semester Report](Submission%20Report/Amey_B-50_Submission_Report.pdf) | Collective Semester 8 submission report |
 
 ---
-
+<!-- =========================================================================================
+                                     SYLLABUS SECTION
+     ========================================================================================= -->
 ## Syllabus
-
 
 > [**Official CBCGS Syllabus**](MU%20SEM%20VIII%20SYLLABUS.pdf)  
 > Complete Fourth Year Computer Engineering syllabus document from the University of Mumbai, including detailed course outcomes, assessment criteria, and module specifications for Human Machine Interaction and Human Machine Interaction Laboratory.
@@ -429,25 +442,28 @@ Course completion documentation with exit survey:
 
 ---
 
+<!-- =========================================================================================
+                                     USAGE GUIDELINES SECTION
+     ========================================================================================= -->
 ## Usage Guidelines
-
 
 This repository is openly shared to support learning and knowledge exchange across the academic community.
 
-For Students  
+**For Students**  
 Use these resources as reference materials for understanding interaction design principles, usability testing, and preparing for examinations. All content is organized for self-paced learning.
 
-For Educators  
+**For Educators**  
 These materials may serve as curriculum references, lab examples, or supplementary teaching resources. Attribution is appreciated when utilizing content.
 
-For Researchers  
+**For Researchers**  
 The documentation and organization may provide insights into academic resource curation and educational content structuring.
 
 ---
 
+<!-- =========================================================================================
+                                     LICENSE SECTION
+     ========================================================================================= -->
 ## License
-
-
 This repository and all linked academic content are made available under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**. See the [LICENSE](LICENSE) file for complete terms.
 
 > [!NOTE]
@@ -455,22 +471,25 @@ This repository and all linked academic content are made available under the **C
 
 ---
 
+<!-- =========================================================================================
+                                     ABOUT SECTION
+     ========================================================================================= -->
 ## About This Repository
 
-**Created & Maintained by**: [Amey Thakur](https://github.com/Amey-Thakur)  
-**Academic Journey**: Bachelor of Engineering in Computer Engineering (2018-2022)  
-**Institution**: [Terna Engineering College](https://ternaengg.ac.in/), Navi Mumbai  
-**University**: [University of Mumbai](https://mu.ac.in/)
+**Created & Maintained by:** [Amey Thakur](https://github.com/Amey-Thakur)  
+**Academic Journey:** Bachelor of Engineering in Computer Engineering (2018-2022)  
+**Institution:** [Terna Engineering College](https://ternaengg.ac.in/), Navi Mumbai  
+**University:** [University of Mumbai](https://mu.ac.in/)
 
-This repository represents a comprehensive collection of study materials, reference books, assignments, and personal preparation notes curated during my academic journey. All content has been carefully organized and documented to serve as a valuable resource for students pursuing Human Machine Interaction & Human Machine Interaction Laboratory.
+This repository represents a comprehensive collection of study materials, reference books, assignments, and personal preparation notes curated during my academic journey. All content has been carefully organized and documented to serve as a valuable resource for students pursuing Human Machine Interaction and Human Machine Interaction Laboratory.
 
-**Connect**: [GitHub](https://github.com/Amey-Thakur) · [LinkedIn](https://www.linkedin.com/in/amey-thakur)
+**Connect:** [GitHub](https://github.com/Amey-Thakur) · [LinkedIn](https://www.linkedin.com/in/amey-thakur)
 
 ### Acknowledgments
 
-Grateful acknowledgment to **[Mega Satish](https://github.com/msatmod)** for her exceptional contribution to this repository through "Mega's Notes" and "The Wall" - comprehensive module-wise notes that became an invaluable resource for understanding complex HMI concepts. Her constant support, patience, and clarity throughout this journey made a real difference. Learning alongside her was transformative, not only because she explained concepts so clearly, but because she truly cared about understanding them together. Her thoughtful approach to teaching, openness to discussion, and steady encouragement turned challenges into meaningful learning moments. This work reflects the growth that came from learning side by side. Thank you, Mega, for everything you shared and taught along the way.
+Grateful acknowledgment to [**Mega Satish**](https://github.com/msatmod) for her exceptional contribution to this repository through "Mega's Notes" and "The Wall" - comprehensive module-wise notes that became an invaluable resource for understanding complex HMI concepts. Her constant support, patience, and clarity throughout this journey made a real difference. Learning alongside her was transformative, not only because she explained concepts so clearly, but because she truly cared about understanding them together. Her thoughtful approach to teaching, openness to discussion, and steady encouragement turned challenges into meaningful learning moments. This work reflects the growth that came from learning side by side. Thank you, Mega, for everything you shared and taught along the way.
 
-Special thanks to the faculty members of the Department of Computer Engineering at Terna Engineering College for their guidance and instruction in Human Machine Interaction. Their expertise and support helped develop a strong understanding of user-centric design.
+Grateful acknowledgment to the faculty members of the Department of Computer Engineering at Terna Engineering College for their guidance and instruction in Human Machine Interaction. Their expertise and support helped develop a strong understanding of user-centric design.
 
 Special thanks to the mentors and peers whose encouragement, discussions, and support contributed meaningfully to this learning experience.
 
@@ -484,7 +503,7 @@ Special thanks to the mentors and peers whose encouragement, discussions, and su
   <!-- Footer Navigation -->
   [↑ Back to Top](#human-machine-interaction-and-human-machine-interaction-laboratory)
 
-  [Overview](#overview) &nbsp;·&nbsp; [Contents](#repository-contents) &nbsp;·&nbsp; [The Wall](#the-wall) &nbsp;·&nbsp; [Mega's Notes](#megas-notes) &nbsp;·&nbsp; [Assignments](#assignments) &nbsp;·&nbsp; [Laboratory](#hmi-lab) &nbsp;·&nbsp; [Mini Project](#mini-project) &nbsp;·&nbsp; [Quizzes](#quizzes) &nbsp;·&nbsp; [IAT-1](#iat-1) &nbsp;·&nbsp; [IAT-2](#iat-2) &nbsp;·&nbsp; [Semester Exam](#semester-exam) &nbsp;·&nbsp; [Submission Report](#submission-completion-report) &nbsp;·&nbsp; [Syllabus](#syllabus) &nbsp;·&nbsp; [Usage Guidelines](#usage-guidelines) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository) &nbsp;·&nbsp; [Acknowledgments](#acknowledgments)
+  [Overview](#overview) &nbsp;·&nbsp; [Contents](#repository-contents) &nbsp;·&nbsp; [Reference Books](#reference-books) &nbsp;·&nbsp; [The Wall](#the-wall) &nbsp;·&nbsp; [Mega's Notes](#megas-notes) &nbsp;·&nbsp; [Assignments](#assignments) &nbsp;·&nbsp; [Quizzes](#quizzes) &nbsp;·&nbsp; [Laboratory](#human-machine-interaction-laboratory) &nbsp;·&nbsp; [Mini Project](#human-machine-interaction-mini-project) &nbsp;·&nbsp; [Internal Assessment Test](#internal-assessment-test) &nbsp;·&nbsp; [Semester Exam](#semester-exam) &nbsp;·&nbsp; [Submission Report](#submission-completion-report) &nbsp;·&nbsp; [Syllabus](#syllabus) &nbsp;·&nbsp; [Usage Guidelines](#usage-guidelines) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository) &nbsp;·&nbsp; [Acknowledgments](#acknowledgments)
 
   <br>
 
