@@ -447,7 +447,6 @@ The documentation and organization may provide insights into academic resource c
 
 ## License
 
----
 
 This repository and all linked academic content are made available under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**. See the [LICENSE](LICENSE) file for complete terms.
 
