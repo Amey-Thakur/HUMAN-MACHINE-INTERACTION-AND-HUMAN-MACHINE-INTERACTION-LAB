@@ -342,7 +342,7 @@ This project implements an Online Chess Game featuring a responsive user interfa
 | 1 | Presentation | Visual demonstration and slides | [View PDF](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf) |
 | 2 | Project Report | Detailed project documentation | [View PDF](HMI%20Mini%20Project/HMI_MINI_PROJECT_REPORT_BE_COMPS_B-50,51,58.pdf) |
 | 3 | Source Code | Complete source code on GitHub | [View Repository](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME) |
-| 4 | Project Teams | Team composition and roles | [View PDF](HMI%20Project/HMI%20Mini%20Project%20Teams.pdf) |
+| 4 | Project Teams | Team composition and roles | [View PDF](HMI%20Mini%20Project/HMI%20Mini%20Project%20Teams.pdf) |
 | 5 | Video Demo | Live walkthrough of the application | [YouTube](https://youtu.be/CCbrTQwYyE8) |
 
 ---
