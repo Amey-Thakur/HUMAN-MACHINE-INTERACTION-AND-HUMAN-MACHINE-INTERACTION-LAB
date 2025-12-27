@@ -359,20 +359,34 @@ HMI-specific quizzes conducted during the course:
 |:-:|:---|:---|:---:|
 | 1 | [Question Paper](IAT-1/HMI%20IAT-1%20Question%20Paper.pdf) | University IAT-1 Question Paper | 2022 |
 | 2 | [HMI Module - 1](IAT-1/HMI_Module-1.pdf) | Foundations of HMI Notes | 2022 |
-| 3 | [HMI Module - 2](IAT-1/HMI_Module-2.pdf) | HCI Basics Notes | 2022 |
-| 4 | [HMI Module - 3](IAT-1/HMI_Module-3.pdf) | Designing the UI Notes | 2022 |
+### Internal Assessment Test
 
----
+Internal assessment evaluations conducted during the course:
+
+### IAT - 1 · March 16, 2022
+
+| # | Resource | Description | Marks |
+|:-:|:---|:---|:---:|
+| 1 | [Question Paper](IAT-1/HMI%20IAT-1%20Question%20Paper.pdf) | HMI Internal Assessment Test 1 Question Paper | — |
+| 2 | [Answer Sheet](IAT-1/HMI%20IAT-1%20Answer%20Sheet%20%5B19%20out%20of%2020%5D.pdf) | HMI Internal Assessment Test 1 Answer Sheet | 19/20 |
 
 ### IAT - 2
 
-| # | Resource | Description | Date |
+| # | Resource | Description | Marks |
 |:-:|:---|:---|:---:|
-| 1 | [Question Paper](IAT-2/HMI_IAT-2_Question_Paper.pdf) | University IAT-2 Question Paper | 2022 |
-| 2 | [HMI Question Bank](IAT-2/HMI_IAT-2_Question_Bank.pdf) | Comprehensive IAT-2 preparation bank | 2022 |
-| 3 | [HMI Module - 4](IAT-2/HMI_Module-4_%5BHandwritten%5D.pdf) | Handwritten notes on Interaction Models | 2022 |
-| 4 | [HMI Module - 5](IAT-2/HMI_Module-5_%5BHandwritten%5D.pdf) | Handwritten notes on Usability Engineering | 2022 |
-| 5 | [HMI Module - 6](IAT-2/HMI_Module-6_%5BHandwritten%5D.pdf) | Handwritten notes on Advanced Interfaces | 2022 |
+| 1 | [Question Paper](IAT-2/HMI_IAT-2_Question_Paper.pdf) | HMI Internal Assessment Test 2 Question Paper | — |
+| 2 | [Question Bank](IAT-2/HMI_IAT-2_Question_Bank.pdf) | HMI Internal Assessment Test 2 Question Bank | — |
+
+**Additional Resources**:
+
+| # | Resource | Description |
+|:-:|:---|:---|
+| 1 | [HMI Module - 1](IAT-1/HMI_Module-1.pdf) | Module 1 Reference Material |
+| 2 | [HMI Module - 2](IAT-1/HMI_Module-2.pdf) | Module 2 Reference Material |
+| 3 | [HMI Module - 3](IAT-1/HMI_Module-3.pdf) | Module 3 Reference Material |
+| 4 | [HMI Module - 4](IAT-2/HMI_Module-4_%5BHandwritten%5D.pdf) | Module 4 Handwritten Notes |
+| 5 | [HMI Module - 5](IAT-2/HMI_Module-5_%5BHandwritten%5D.pdf) | Module 5 Handwritten Notes |
+| 6 | [HMI Module - 6](IAT-2/HMI_Module-6_%5BHandwritten%5D.pdf) | Module 6 Handwritten Notes |
 
 ---
  
