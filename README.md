@@ -332,7 +332,9 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 ### Project Overview
 
-This project implements an Online Chess Game featuring a responsive user interface, real-time move validation, and multiplayer capabilities, demonstrating principles of interactive system design and UX/UI optimization.
+This project involves the development of a sophisticated **Online Chess Game**, engineered as a comprehensive case study in interactive system design and user-centric architecture. The implementation prioritizes fundamental Human-Machine Interaction (HMI) principles, specifically focusing on **direct manipulation** and **immediate visual feedback** to ensure a seamless mental model for the user. 
+
+The system leverages a responsive design framework to maintain interaction consistency across diverse device orientations. At its core, the application integrates complex algorithmic structures for **real-time move validation** and state management, demonstrating the practical application of usability engineering metrics. This project serves as an exploration into the synergy between high-performance back-end logic and intuitive front-end layouts, aiming to optimize the overall **User Experience (UX)** through iterative design and evaluation.
 
   <!-- Resources Table -->
   ### Resources
