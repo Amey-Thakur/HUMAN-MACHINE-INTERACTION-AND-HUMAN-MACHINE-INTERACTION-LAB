@@ -2,10 +2,7 @@
 
 <div align="center">
 
-| **Roll No: 50** | **Name: Amey Mahendra Thakur** | **Class: BE COMPS B** | **Batch: B3** |
-| :---: | :---: | :---: | :---: |
-
-**[📂 Views Repository](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB)** &nbsp;|&nbsp; **[👤 User Profile](https://github.com/Amey-Thakur)**
+  [Overview](#-overview) &nbsp;·&nbsp; [Features](#-features) &nbsp;·&nbsp; [Usage](#-usage-guidelines) &nbsp;·&nbsp; [Lab Repository](../README.md) &nbsp;·&nbsp; [Main Repository](../../README.md)
 
 </div>
 
@@ -35,3 +32,17 @@ This experiment focuses on the **Principles of Graphical User Interface (GUI) De
     *   Enter an invalid email format.
     *   Observe the browser alerts that guide you to correct the input.
 4.  **Submit**: Fill all details correctly and click "Submit" to see the successful validation flow.
+
+---
+
+<div align="center">
+
+  [↑ Back to Top](#experiment-3-gui-design-for-data-entry-form)
+
+  [Overview](#-overview) &nbsp;·&nbsp; [Features](#-features) &nbsp;·&nbsp; [Usage](#-usage-guidelines) &nbsp;·&nbsp; [Lab Repository](../README.md) &nbsp;·&nbsp; [Main Repository](../../README.md)
+
+  <br>
+
+  🔬 **[Human Machine Interaction Laboratory](../README.md)** &nbsp;·&nbsp; ♟️ **[Chess Game App](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)**
+
+</div>

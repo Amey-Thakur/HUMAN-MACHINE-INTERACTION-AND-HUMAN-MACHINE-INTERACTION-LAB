@@ -2,10 +2,7 @@
 
 <div align="center">
 
-| **Roll No: 50** | **Name: Amey Mahendra Thakur** | **Class: BE COMPS B** | **Batch: B3** |
-| :---: | :---: | :---: | :---: |
-
-**[📂 Views Repository](https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB)** &nbsp;|&nbsp; **[👤 User Profile](https://github.com/Amey-Thakur)**
+  [Overview](#-overview) &nbsp;·&nbsp; [Features](#-features) &nbsp;·&nbsp; [Screenshots](#-application-screenshots) &nbsp;·&nbsp; [Lab Repository](../README.md) &nbsp;·&nbsp; [Main Repository](../../README.md)
 
 </div>
 
@@ -46,3 +43,17 @@ The **Math Sprint Game** is an interactive educational web application designed 
 
 #### Score Summary
 ![Score](https://user-images.githubusercontent.com/54937357/154504124-7b832fba-60fe-4340-a103-f0527ccc098a.png)
+
+---
+
+<div align="center">
+
+  [↑ Back to Top](#experiment-2-mathematical-application-for-kids-math-sprint-game)
+
+  [Overview](#-overview) &nbsp;·&nbsp; [Features](#-features) &nbsp;·&nbsp; [Screenshots](#-application-screenshots) &nbsp;·&nbsp; [Lab Repository](../README.md) &nbsp;·&nbsp; [Main Repository](../../README.md)
+
+  <br>
+
+  🔬 **[Human Machine Interaction Laboratory](../README.md)** &nbsp;·&nbsp; ♟️ **[Chess Game App](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)**
+
+</div>

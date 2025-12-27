@@ -1,8 +1,20 @@
-# HMI Portfolio Dashboard
+<!-- =========================================================================================
+                                     HEADER SECTION
+     ========================================================================================= -->
+<div align="center">
 
-**A curated collection of Human-Machine Interaction (HMI) experiments.**
 
-This directory contains the deployed version of the HMI Laboratory portfolio, featuring a modern dashboard and a series of "legacy" experiments that demonstrate the evolution of web technologies and interaction design concepts.
+  # HMI Portfolio Dashboard
+
+  **A curated collection of Human-Machine Interaction (HMI) experiments.**
+
+  ---
+
+  [Features](#-features) &nbsp;·&nbsp; [Contents](#-portfolio-contents) &nbsp;·&nbsp; [Modernization](#️-enhancements--modernization) &nbsp;·&nbsp; [Main Repository](../README.md)
+
+</div>
+
+---
 
 ## 🚀 Features
 
@@ -30,6 +42,14 @@ While the core experiment code remains **untouched** to preserve its historical 
 
 ---
 
-<p align="center">
-  <a href="../README.md">🏠 Back to Main Repository</a>
-</p>
+<div align="center">
+
+  [↑ Back to Top](#hmi-portfolio-dashboard)
+
+  [Features](#-features) &nbsp;·&nbsp; [Contents](#-portfolio-contents) &nbsp;·&nbsp; [Modernization](#️-enhancements--modernization) &nbsp;·&nbsp; [Main Repository](../README.md)
+
+  <br>
+
+  🔬 **[Human Machine Interaction Laboratory](../HMI%20Lab/README.md)** &nbsp;·&nbsp; ♟️ **[Chess Game App](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)**
+
+</div>
