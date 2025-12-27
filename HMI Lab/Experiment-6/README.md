@@ -1,4 +1,4 @@
-# Experiment 6: E-Commerce / Cloud Service Website Design
+# Experiment-6: E-Commerce / Cloud Service Website Design
 
 <div align="center">
 
