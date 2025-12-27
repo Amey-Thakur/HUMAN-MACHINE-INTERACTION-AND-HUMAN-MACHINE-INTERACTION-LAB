@@ -388,7 +388,7 @@ Final semester examination submission:
 
 | # | Resource | Description | Date |
 |:-:|:---|:---|:---:|
-| 1 | [Question Paper](Semester%20Exam/HMI_Question_Paper.pdf) | Official University Question Paper | June 02, 2022 |
+| 1 | [Question Paper](Semester%20Exam/HMI_Question_Paper.pdf) | Official University Question Paper | May 17, 2022 |
 
 **Additional Resources**:
 
