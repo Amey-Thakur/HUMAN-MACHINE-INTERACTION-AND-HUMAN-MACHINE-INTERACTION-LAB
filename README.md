@@ -172,8 +172,7 @@ Comprehensive module-wise notes curated by Mega Satish, covering all essential t
 | 5 | [HMI Module - 5](MEGA%20NOTES/HMI_Module-5.pdf) | Usability engineering metrics |
 | 6 | [HMI Module - 6](MEGA%20NOTES/HMI_Module-6.pdf) | Advanced user interfaces |
 
-> [!NOTE]
-> **COVID-19 Impact**: This coursework was completed during the COVID-19 pandemic. While this section contains the **complete set** of comprehensive notes curated by Mega Satish, the signature "The Wall" collaborative study sessions (typically documented with photos) could not be conducted due to the nationwide lockdown. This section therefore focuses solely on the digitized study materials, as movement restrictions prevented the in-person collaboration required for "The Wall" sessions.
+
 
 ---
 
