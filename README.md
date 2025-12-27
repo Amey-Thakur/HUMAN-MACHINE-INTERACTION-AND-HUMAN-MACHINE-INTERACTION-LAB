@@ -426,8 +426,6 @@ Course completion documentation with exit survey:
 > Complete Fourth Year Computer Engineering syllabus document from the University of Mumbai, including detailed course outcomes, assessment criteria, and module specifications for Human Machine Interaction and Human Machine Interaction Laboratory.
 
 > [!IMPORTANT]
-> **Important**
->
 > Always verify the latest syllabus details with the official University of Mumbai website, as curriculum updates may occur after this repository's archival date.
 
 ---
