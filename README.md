@@ -297,7 +297,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 ---
 
 
-## Human Machine Interaction Project
+## HMI Mini Project
 
 <div align="center">
 
@@ -305,42 +305,45 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
   **A comprehensive web-based multiplayer chess game with interactive UI**
 
-  [![Presentation](https://img.shields.io/badge/%F0%9F%93%8A%20Presentation-007bff?style=flat-square)](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf)
-  [![Source Code](https://img.shields.io/badge/%F0%9F%92%BB%20Source%20Code-97ca00?style=flat-square)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
-  [![Game Repository](https://img.shields.io/badge/%F0%9F%8E%AE%20Game%20Repository-f08042?style=flat-square)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
+  [![Presentation](https://img.shields.io/badge/📊-Presentation-blue.svg)](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf)
+  [![Code](https://img.shields.io/badge/💻-Source%20Code-green.svg)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
+  [![Repository](https://img.shields.io/badge/🎮-Game%20Repository-orange.svg)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
 
   <br>
 
-  [![Alternative Text](https://img.youtube.com/vi/CCbrTQwYyE8/maxresdefault.jpg)](https://youtu.be/CCbrTQwYyE8)
-
-  ### 👥 Authors
-
-  | [<img src="https://github.com/Amey-Thakur.png" width="150" alt="Amey Thakur"><br>**Amey Thakur**](https://github.com/Amey-Thakur) | [<img src="https://github.com/msatmod.png" width="150" alt="Mega Satish"><br>**Mega Satish**](https://github.com/msatmod) | [<img src="https://github.com/SaakshiDeokar.png" width="150" alt="Saakshi Deokar"><br>**Saakshi Deokar**](https://github.com/SaakshiDeokar) |
-  | :---: | :---: | :---: |
+  <a href="https://youtu.be/CCbrTQwYyE8">
+    <img src="https://img.youtube.com/vi/CCbrTQwYyE8/maxresdefault.jpg" width="60%" alt="Online Chess Game Demo">
+  </a>
+  <br>
 
 </div>
 
-> [!IMPORTANT]
->
-> ### 🤝 Special Acknowledgement
->
-> Special thanks to **[Mega Satish](https://github.com/msatmod)** and **[Saakshi Deokar](https://github.com/SaakshiDeokar)** for their meaningful contributions, guidance, and support that helped shape this work.
+<div align="center">
 
----
+  <!-- Authors Table -->
+  ### 👥 Authors
+| <img src="https://github.com/Amey-Thakur.png" width="150" alt="Amey Thakur"><br>[**Amey Thakur**](https://github.com/Amey-Thakur) | <img src="https://github.com/msatmod.png" width="150" alt="Mega Satish"><br>[**Mega Satish**](https://github.com/msatmod) |
+| :---: | :---: |
+</div>
+
+> [!IMPORTANT]
+> ### 🤝🏻 Special Acknowledgement
+> *Special thanks to [Mega Satish](https://github.com/msatmod) for her meaningful contributions, guidance, and support that helped shape this work.*
 
 ### Project Overview
 
 This project implements an Online Chess Game featuring a responsive user interface, real-time move validation, and multiplayer capabilities, demonstrating principles of interactive system design and UX/UI optimization.
 
-### Resources
+  <!-- Resources Table -->
+  ### Resources
 
-| # | Project Component | Description | Date | Marks | Link |
-|:-:|:---|:---|:---:|:---:|:---:|
-| 1 | Chess Game Code | Complete source code on GitHub | 2022 | - | [View](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME) |
-| 2 | Project Report | Detailed project documentation | 2022 | - | [View](HMI%20Mini%20Project/HMI_MINI_PROJECT_REPORT_BE_COMPS_B-50,51,58.pdf) |
-| 3 | Project Teams | Team composition and roles | 2022 | - | [View](HMI%20Project/HMI%20Mini%20Project%20Teams.pdf) |
-| 4 | Presentation | Final project demonstration slides | 2022 | - | [View](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf) |
-| 5 | Demo | Live Web Application (YouTube) | - | - | [YouTube](https://youtu.be/CCbrTQwYyE8) |
+| # | Resource | Description | Link |
+|:-:|:---|:---|:---|
+| 1 | Presentation | Visual demonstration and slides | [View PDF](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf) |
+| 2 | Project Report | Detailed project documentation | [View PDF](HMI%20Mini%20Project/HMI_MINI_PROJECT_REPORT_BE_COMPS_B-50,51,58.pdf) |
+| 3 | Source Code | Complete source code on GitHub | [View Repository](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME) |
+| 4 | Project Teams | Team composition and roles | [View PDF](HMI%20Project/HMI%20Mini%20Project%20Teams.pdf) |
+| 5 | Video Demo | Live walkthrough of the application | [YouTube](https://youtu.be/CCbrTQwYyE8) |
 
 ---
 
