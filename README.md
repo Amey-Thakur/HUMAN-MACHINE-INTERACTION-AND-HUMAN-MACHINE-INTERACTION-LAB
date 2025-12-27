@@ -370,12 +370,12 @@ Internal assessment evaluations conducted during the course:
 
 | # | Resource | Description |
 |:-:|:---|:---|
-| 1 | [HMI Module - 1](IAT-1/HMI_Module-1.pdf) | Module 1 Reference Material |
-| 2 | [HMI Module - 2](IAT-1/HMI_Module-2.pdf) | Module 2 Reference Material |
-| 3 | [HMI Module - 3](IAT-1/HMI_Module-3.pdf) | Module 3 Reference Material |
-| 4 | [HMI Module - 4](IAT-2/HMI_Module-4_%5BHandwritten%5D.pdf) | Module 4 Handwritten Notes |
-| 5 | [HMI Module - 5](IAT-2/HMI_Module-5_%5BHandwritten%5D.pdf) | Module 5 Handwritten Notes |
-| 6 | [HMI Module - 6](IAT-2/HMI_Module-6_%5BHandwritten%5D.pdf) | Module 6 Handwritten Notes |
+| 1 | [HMI Module - 1](IAT-1/HMI_Module-1.pdf) | Personal Exam Preparation Notes |
+| 2 | [HMI Module - 2](IAT-1/HMI_Module-2.pdf) | Personal Exam Preparation Notes |
+| 3 | [HMI Module - 3](IAT-1/HMI_Module-3.pdf) | Personal Exam Preparation Notes |
+| 4 | [HMI Module - 4](IAT-2/HMI_Module-4_%5BHandwritten%5D.pdf) | Personal Exam Preparation Notes |
+| 5 | [HMI Module - 5](IAT-2/HMI_Module-5_%5BHandwritten%5D.pdf) | Personal Exam Preparation Notes |
+| 6 | [HMI Module - 6](IAT-2/HMI_Module-6_%5BHandwritten%5D.pdf) | Personal Exam Preparation Notes |
 
 ---
  
