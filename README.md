@@ -394,7 +394,7 @@ Final semester examination submission:
 
 | # | Resource | Description |
 |:-:|:---|:---|
-| 1 | [MCQ](Semester%20Exam/HMI%20QB%20Answers.pdf) | Solved MCQs for exam preparation |
+| 1 | [MCQ](Semester%20Exam/HMI%20QB%20Answers.pdf) | MCQ Question Bank |
 | 2 | [Answer Sheet](Semester%20Exam/HMI_SEM.pdf) | HMI Semester Exam Answer Sheet |
 | 3 | [Question Bank](Semester%20Exam/HMI_Question_Bank.pdf) | Personal Exam Preparation Notes |
 | 4 | [Sample Questions](Semester%20Exam/Comp_R16_Sem%20VIII_DLO8013_Human%20Machine%20Interaction+Sample%20Questions.pdf) | HMI practice and sample questions |
