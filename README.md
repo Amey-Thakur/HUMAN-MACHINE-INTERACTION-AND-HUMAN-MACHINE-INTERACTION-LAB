@@ -328,7 +328,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 > [!IMPORTANT]
 > ### 🤝🏻 Special Acknowledgement
-> *Special thanks to [Mega Satish](https://github.com/msatmod) for her meaningful contributions, guidance, and support that helped shape this work.*
+> *Special thanks to [**Mega Satish**](https://github.com/msatmod) for her meaningful contributions, guidance, and support that helped shape this work.*
 
 ### Project Overview
 
