@@ -339,13 +339,13 @@ The system leverages a responsive design framework to maintain interaction consi
   <!-- Resources Table -->
   ### Resources
 
-| # | Resource | Description | Date | Link |
-|:-:|:---|:---|:---:|:---:|
-| 1 | Project Presentation | Visual demonstration and slides | May 2022 | [View](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf) |
-| 2 | Project Report | Detailed project documentation | May 2022 | [View](HMI%20Mini%20Project/HMI_MINI_PROJECT_REPORT_BE_COMPS_B-50,51,58.pdf) |
-| 3 | Project Repository | Complete source code and documentation | May 2022 | [View](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME) |
-| 4 | Project Teams | Team composition and roles | March 2022 | [View](HMI%20Mini%20Project/HMI%20Mini%20Project%20Teams.pdf) |
-| 5 | Project Demo (YouTube) | Real-time demonstration of features | May 2022 | [View](https://youtu.be/CCbrTQwYyE8) |
+| # | Resource | Description | Date | Marks | Link |
+|:-:|:---|:---|:---:|:---:|:---:|
+| 1 | Project Presentation | Visual demonstration and slides | May 2022 | 9/10 | [View](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf) |
+| 2 | Project Report | Detailed project documentation | May 2022 | 9/10 | [View](HMI%20Mini%20Project/HMI_MINI_PROJECT_REPORT_BE_COMPS_B-50,51,58.pdf) |
+| 3 | Project Repository | Complete source code and documentation | May 2022 | — | [View](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME) |
+| 4 | Project Teams | Team composition and roles | March 2022 | — | [View](HMI%20Mini%20Project/HMI%20Mini%20Project%20Teams.pdf) |
+| 5 | Project Demo (YouTube) | Real-time demonstration of features | May 2022 | — | [View](https://youtu.be/CCbrTQwYyE8) |
 
 ---
 
