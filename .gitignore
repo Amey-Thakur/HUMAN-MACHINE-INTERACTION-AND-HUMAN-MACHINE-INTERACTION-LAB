@@ -1,31 +1,27 @@
-# ALL REPOSITORIES
-# ----------------
-# General
+# Human-Machine Interaction - Academic Repository
+# Specialized .gitignore for UI/UX design and scholarly archiving
+
+# OS-generated files
+[Tt]humbs.db
+[Dd]esktop.ini
 .DS_Store
-Thumbs.db
-*.swp
-*.log
-*.tmp
-*.bak
-*~
+.AppleDouble
+.LSOverride
 
-# Windows
-desktop.ini
-$RECYCLE.BIN/
-
-# VS Code
+# Editor and IDE configuration
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.iml
 *.code-workspace
 
-# JetBrains
-.idea/
-*.iml
-
-# Web
+# Web Design Artifacts
 node_modules/
-.env
 dist/
 build/
+.env
 
 # Office Temporary Files
 ~$*.doc
@@ -35,7 +31,7 @@ build/
 ~$*.xls
 ~$*.xlsx
 
-# LaTeX (if used)
+# LaTeX / Document Artifacts
 *.aux
 *.bbl
 *.blg
@@ -45,6 +41,8 @@ build/
 *.lot
 *.out
 *.toc
+*.log
+*.synctex.gz
 
 # Archives
 *.zip
@@ -52,5 +50,13 @@ build/
 *.rar
 *.7z
 
-# Git
+# Temporary and Cache files
+*.tmp
+*.log
+.cache/
+
+# Academic build/output artifacts
+*.bak
+*.sav
+*.old
 *.orig
