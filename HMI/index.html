@@ -1070,6 +1070,58 @@
             border-color: var(--accent-color);
         }
 
+        /* Color Selector for AI Mode */
+        .color-selector {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 12px;
+            border: 1px dashed var(--accent-color);
+        }
+
+        .color-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .color-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: 2px solid var(--border-color);
+            background: var(--card-bg);
+            color: var(--text-primary);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .color-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .color-btn.white-btn:hover {
+            background: #f5f5f5;
+            border-color: #ccc;
+        }
+
+        .color-btn.black-btn:hover {
+            background: #333;
+            color: white;
+            border-color: #333;
+        }
+
+        .color-icon {
+            font-size: 1.2rem;
+        }
+
         .chessboard {
             display: grid;
             grid-template-columns: repeat(8, 1fr);
@@ -2122,6 +2174,17 @@
                             </button>
                             <button id="mode-ai" class="mode-btn" title="Play vs AI">
                                 <i class="fas fa-robot"></i> vs AI
+                            </button>
+                        </div>
+
+                        <!-- Color Selection for AI Mode -->
+                        <div id="color-selector" class="color-selector mb-3" style="display: none;">
+                            <span class="color-label">Play as:</span>
+                            <button id="play-white" class="color-btn white-btn" title="Play as White">
+                                <span class="color-icon">♔</span> White
+                            </button>
+                            <button id="play-black" class="color-btn black-btn" title="Play as Black">
+                                <span class="color-icon">♚</span> Black
                             </button>
                         </div>
 

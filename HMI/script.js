@@ -449,6 +449,7 @@ if (shareBtn) {
     let soundEnabled = true;
     let gameOver = false;
     let gameMode = '2p'; // '2p' or 'ai'
+    let playerColor = 'white'; // Player's color when playing vs AI
     let undoStack = []; // Store board states for undo
     let redoStack = []; // Store board states for redo
 
@@ -860,8 +861,8 @@ if (shareBtn) {
                 updateMoveHistory();
                 updateCapturedPieces();
 
-                // Trigger AI move if in AI mode
-                if (gameMode === 'ai' && currentTurn === 'black' && !gameOver) {
+                // Trigger AI move if in AI mode and it's AI's turn
+                if (gameMode === 'ai' && currentTurn !== playerColor && !gameOver) {
                     setTimeout(makeAIMove, 500);
                 }
             } else if (isCurrentPlayerPiece(piece)) {
@@ -1034,10 +1035,12 @@ if (shareBtn) {
     }
 
     function makeAIMove() {
-        if (gameOver || currentTurn !== 'black' || gameMode !== 'ai') return;
+        const aiColor = playerColor === 'white' ? 'black' : 'white';
+        if (gameOver || currentTurn !== aiColor || gameMode !== 'ai') return;
 
         // Simple AI: Pick best move based on material evaluation
-        const moves = getAllMoves(false);
+        const aiPlaysWhite = aiColor === 'white';
+        const moves = getAllMoves(aiPlaysWhite);
         if (moves.length === 0) return;
 
         let bestMove = null;
@@ -1051,8 +1054,10 @@ if (shareBtn) {
             board[move.from.row][move.from.col] = '';
 
             // Check if move leaves king in check
-            if (!isKingInCheck(false)) {
-                const score = evaluateBoard() + (backup ? PIECE_VALUES[backup.toLowerCase()] * 2 : 0);
+            if (!isKingInCheck(aiPlaysWhite)) {
+                let score = evaluateBoard();
+                if (aiPlaysWhite) score = -score; // Flip for white AI
+                score += (backup ? PIECE_VALUES[backup.toLowerCase()] * 2 : 0);
                 if (score > bestScore) {
                     bestScore = score;
                     bestMove = move;
@@ -1070,7 +1075,11 @@ if (shareBtn) {
             const capturedPiece = board[bestMove.to.row][bestMove.to.col];
 
             if (capturedPiece) {
-                capturedWhite.push(capturedPiece);
+                if (isWhite(capturedPiece)) {
+                    capturedBlack.push(capturedPiece);
+                } else {
+                    capturedWhite.push(capturedPiece);
+                }
                 playSound('capture');
             } else {
                 playSound('move');
@@ -1080,15 +1089,16 @@ if (shareBtn) {
             board[bestMove.from.row][bestMove.from.col] = '';
 
             // Pawn promotion
-            if (movingPiece === 'p' && bestMove.to.row === 7) {
-                board[bestMove.to.row][bestMove.to.col] = 'q';
+            const promotionRow = aiPlaysWhite ? 7 : 0;
+            if (movingPiece.toLowerCase() === 'p' && bestMove.to.row === promotionRow) {
+                board[bestMove.to.row][bestMove.to.col] = aiPlaysWhite ? 'Q' : 'q';
             }
 
             lastMove = bestMove;
             const notation = getNotation(bestMove.from.row, bestMove.from.col, bestMove.to.row, bestMove.to.col, movingPiece, !!capturedPiece);
-            moveHistory.push({ turn: 'black', notation });
+            moveHistory.push({ turn: aiColor, notation });
 
-            currentTurn = 'white';
+            currentTurn = playerColor;
             selectedSquare = null;
             validMoves = [];
 
@@ -1117,10 +1127,29 @@ if (shareBtn) {
     });
 
     document.getElementById('mode-ai')?.addEventListener('click', function () {
+        // Show color selection
+        const colorSelector = document.getElementById('color-selector');
+        if (colorSelector) {
+            colorSelector.style.display = 'flex';
+        }
         gameMode = 'ai';
         document.getElementById('mode-ai')?.classList.add('active');
         document.getElementById('mode-2p')?.classList.remove('active');
+    });
+
+    // Color Selection Buttons
+    document.getElementById('play-white')?.addEventListener('click', function () {
+        playerColor = 'white';
+        document.getElementById('color-selector').style.display = 'none';
         newGame();
+    });
+
+    document.getElementById('play-black')?.addEventListener('click', function () {
+        playerColor = 'black';
+        document.getElementById('color-selector').style.display = 'none';
+        newGame();
+        // AI makes the first move as white
+        setTimeout(makeAIMove, 500);
     });
 
     // Initialize
