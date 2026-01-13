@@ -1244,38 +1244,59 @@
         }
 
         /* Game Mode Selector */
+        /* Game Mode Selector - Apple Segmented Control Style */
         .game-mode-selector {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
+            display: inline-flex;
+            background-color: rgba(118, 118, 128, 0.12);
+            padding: 3px;
+            border-radius: 99px;
+            width: fit-content;
+            margin: 0 auto 20px auto;
+            position: relative;
+        }
+
+        [data-theme="dark"] .game-mode-selector {
+            background-color: rgba(118, 118, 128, 0.24);
         }
 
         .mode-btn {
-            background: var(--card-bg);
-            border: 2px solid var(--border-color);
+            background: transparent;
+            border: none;
             color: var(--text-primary);
-            padding: 8px 20px;
-            border-radius: 25px;
-            font-weight: 600;
+            padding: 6px 20px;
+            border-radius: 99px;
+            font-weight: 500;
             font-size: 0.9rem;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
+            opacity: 0.8;
+            margin: 0;
+            min-width: 120px;
+            justify-content: center;
         }
 
         .mode-btn:hover {
-            border-color: var(--accent-color);
-            color: var(--accent-color);
-            transform: translateY(-2px);
+            opacity: 1;
         }
 
         .mode-btn.active {
-            background: var(--accent-color);
-            border-color: var(--accent-color);
-            color: white;
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            background: #ffffff;
+            color: #000000;
+            font-weight: 600;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12), 0 3px 1px rgba(0, 0, 0, 0.04);
+            opacity: 1;
+            transform: none;
+            /* Override previous button transform */
+        }
+
+        [data-theme="dark"] .mode-btn.active {
+            background: #6366f1;
+            /* Accent color for dark mode active state */
+            color: #ffffff;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
         }
 
         /* Apple-Style Chess Pieces - Clean & Minimal */
