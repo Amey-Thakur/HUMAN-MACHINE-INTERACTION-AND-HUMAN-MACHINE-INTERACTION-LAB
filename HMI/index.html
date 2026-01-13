@@ -1036,6 +1036,12 @@
             margin: 0 auto;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
             animation: boardFadeIn 0.6s ease-out;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .chessboard:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
         }
 
         @keyframes boardFadeIn {
@@ -1505,6 +1511,40 @@
             }
         }
 
+        /* Animated Author Link */
+        .author-link {
+            color: var(--accent-color);
+            font-weight: 500;
+            text-decoration: none;
+            position: relative;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .author-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--accent-color);
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        .author-link:hover {
+            color: var(--primary-color);
+            text-shadow: 0 0 8px rgba(37, 99, 235, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .author-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
         /* Laptop/MacBook Visuals */
         .laptop-column {
             width: 100%;
@@ -1519,6 +1559,11 @@
             position: relative;
             padding-bottom: 25px;
             width: 85%;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .laptop-frame:hover {
+            transform: scale(1.03);
         }
 
         .laptop-screen {
@@ -1918,9 +1963,9 @@
                         <!-- Author Credit (like OOPM) -->
                         <p class="text-center mb-2" style="font-size: 0.85rem; color: var(--text-secondary);">
                             Designed and Developed by <a href="https://github.com/Amey-Thakur" target="_blank"
-                                style="color: var(--accent-color); font-weight: 500; text-decoration: none;">Amey
+                                class="author-link">Amey
                                 Thakur</a> & <a href="https://github.com/msatmod" target="_blank"
-                                style="color: var(--accent-color); font-weight: 500; text-decoration: none;">Mega
+                                class="author-link">Mega
                                 Satish</a>
                         </p>
                         <h5 style="color: var(--accent-color); margin-bottom: 15px; text-align: center;">
