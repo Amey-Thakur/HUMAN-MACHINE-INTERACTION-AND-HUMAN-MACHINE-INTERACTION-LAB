@@ -944,9 +944,22 @@
         .chess-container {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 20px;
-            box-shadow: var(--shadow-md);
+            border-radius: 20px;
+            padding: 24px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            animation: slideUp 0.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .chess-header {
@@ -1012,23 +1025,38 @@
         .chessboard {
             display: grid;
             grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
             gap: 0;
             border: 3px solid var(--border-color);
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
-            aspect-ratio: 1;
-            max-width: 480px;
+            width: 100%;
+            max-width: 420px;
+            aspect-ratio: 1 / 1;
             margin: 0 auto;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            animation: boardFadeIn 0.6s ease-out;
+        }
+
+        @keyframes boardFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         .chess-square {
-            aspect-ratio: 1;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.5rem;
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
             cursor: pointer;
-            transition: all 0.15s ease;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             user-select: none;
         }
