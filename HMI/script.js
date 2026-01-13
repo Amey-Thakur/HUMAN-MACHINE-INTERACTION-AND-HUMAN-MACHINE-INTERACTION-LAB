@@ -41,7 +41,12 @@ document.addEventListener('contextmenu', (e) => {
     e.preventDefault();
 }, false);
 
-// 2. Disable Keyboard Shortcuts (F12, Ctrl+U, Ctrl+Shift+I/J/C, Ctrl+S, Ctrl+P)
+// 2. Disable Text Selection (Strict)
+document.onselectstart = function () {
+    return false;
+};
+
+// 3. Disable Keyboard Shortcuts (F12, Ctrl+U, etc.)
 document.addEventListener('keydown', (e) => {
     // F12 key
     if (e.key === 'F12' || e.keyCode === 123) {
@@ -49,7 +54,7 @@ document.addEventListener('keydown', (e) => {
         return false;
     }
 
-    // Ctrl+Shift+I (Inspect), Ctrl+Shift+J (Console), Ctrl+Shift+C (Inspect Element)
+    // Ctrl+Shift+I/J/C
     if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C' || e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
         e.preventDefault();
         return false;
@@ -74,7 +79,7 @@ document.addEventListener('keydown', (e) => {
     }
 }, false);
 
-// 3. Disable Dragging Images
+// 4. Disable Dragging Images
 document.querySelectorAll('img').forEach(img => {
     img.addEventListener('dragstart', (e) => {
         e.preventDefault();
@@ -116,7 +121,6 @@ function backToTop() {
 
 // --- Theme Toggle Logic ---
 if (toggleBtn) {
-    // Check for saved user preference
     const savedTheme = localStorage.getItem('theme') || 'light';
     htmlElement.setAttribute('data-theme', savedTheme);
     updateIcon(savedTheme);
@@ -141,3 +145,107 @@ function updateIcon(theme) {
         themeIcon.classList.add('fa-moon');
     }
 }
+
+// =========================================
+//   COMMAND PALETTE LOGIC ⌘
+// =========================================
+const cmdOverlay = document.getElementById('cmd-overlay');
+const cmdInput = document.getElementById('cmd-input');
+const cmdResults = document.getElementById('cmd-results');
+const kbdHint = document.getElementById('kbd-hint');
+
+// Search Data
+const searchItems = [
+    { title: 'Math Sprint Game (Exp 2)', url: 'HMI-2/index.html', icon: 'fas fa-calculator', type: 'Experiment' },
+    { title: 'Registration Interface (Exp 3)', url: 'HMI-3/form.html', icon: 'fas fa-file-signature', type: 'Experiment' },
+    { title: 'ATVM Simulator (Exp 4)', url: 'HMI-4/index.html', icon: 'fas fa-subway', type: 'Experiment' },
+    { title: 'Cloud Services Portal (Exp 6)', url: 'HMI-6/index.html', icon: 'fas fa-cloud-upload-alt', type: 'Experiment' },
+    { title: 'HMI Repository', url: 'https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB', icon: 'fab fa-github', type: 'Link' },
+    { title: 'Amey Thakur Profile', url: 'https://github.com/Amey-Thakur', icon: 'fas fa-user-graduate', type: 'Link' },
+];
+
+// Open/Close Handlers
+document.addEventListener('keydown', (e) => {
+    // Ctrl+K to Open
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        openCmd();
+    }
+    // Esc to Close
+    if (e.key === 'Escape') {
+        closeCmd();
+    }
+});
+
+// Click outside to close
+if (cmdOverlay) {
+    cmdOverlay.addEventListener('click', (e) => {
+        if (e.target === cmdOverlay) {
+            closeCmd();
+        }
+    });
+
+    // Populate Initial Results
+    renderResults(searchItems);
+
+    // Filter Logic
+    cmdInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        const filtered = searchItems.filter(item =>
+            item.title.toLowerCase().includes(query) ||
+            item.type.toLowerCase().includes(query)
+        );
+        renderResults(filtered);
+    });
+}
+
+function openCmd() {
+    if (!cmdOverlay) return;
+    cmdOverlay.classList.add('active');
+    cmdInput.value = '';
+    renderResults(searchItems);
+    setTimeout(() => cmdInput.focus(), 100);
+}
+
+function closeCmd() {
+    if (!cmdOverlay) return;
+    cmdOverlay.classList.remove('active');
+}
+
+function renderResults(items) {
+    if (!cmdResults) return;
+    cmdResults.innerHTML = '';
+
+    if (items.length === 0) {
+        cmdResults.innerHTML = '<div class="cmd-item" style="cursor:default; color:var(--text-secondary);">No results found</div>';
+        return;
+    }
+
+    items.forEach(item => {
+        const el = document.createElement('a');
+        el.className = 'cmd-item';
+        el.href = item.url;
+        // Check if external link
+        if (item.url.startsWith('http')) {
+            el.target = '_blank';
+            el.rel = 'noopener noreferrer';
+        }
+
+        el.innerHTML = `
+            <div style="display:flex; align-items:center;">
+                <div class="cmd-icon"><i class="${item.icon}"></i></div>
+                <span>${item.title}</span>
+            </div>
+            <span class="cmd-item-meta">${item.type}</span>
+        `;
+        cmdResults.appendChild(el);
+    });
+}
+
+// Auto-hide keyboard hint after 5 seconds
+setTimeout(() => {
+    if (kbdHint) {
+        kbdHint.style.opacity = '0';
+        setTimeout(() => kbdHint.remove(), 500);
+    }
+}, 5000);
