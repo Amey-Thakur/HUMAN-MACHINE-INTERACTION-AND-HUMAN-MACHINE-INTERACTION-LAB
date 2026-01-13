@@ -460,16 +460,53 @@ if (shareBtn) {
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
     function fireConfetti() {
-        if (typeof confetti === 'function') {
-            confetti({
-                particleCount: 150,
-                spread: 70,
-                origin: { y: 0.6 },
-                zIndex: 10002
-            });
-        } else {
+        // Use window.confetti to be certain we access the global library
+        const _confetti = window.confetti || confetti;
+
+        if (typeof _confetti !== 'function') {
             console.warn('Confetti library logic fallback - manual trigger failed');
+            return;
         }
+
+        const count = 200;
+        const defaults = {
+            origin: { y: 0.7 },
+            zIndex: 10002
+        };
+
+        function fire(particleRatio, opts) {
+            _confetti({
+                ...defaults,
+                ...opts,
+                particleCount: Math.floor(count * particleRatio)
+            });
+        }
+
+        // Slight delay to ensure DOM is ready and sounds started
+        setTimeout(() => {
+            fire(0.25, {
+                spread: 26,
+                startVelocity: 55,
+            });
+            fire(0.2, {
+                spread: 60,
+            });
+            fire(0.35, {
+                spread: 100,
+                decay: 0.91,
+                scalar: 0.8
+            });
+            fire(0.1, {
+                spread: 120,
+                startVelocity: 25,
+                decay: 0.92,
+                scalar: 1.2
+            });
+            fire(0.1, {
+                spread: 120,
+                startVelocity: 45,
+            });
+        }, 300);
     }
 
     function playSound(type) {
