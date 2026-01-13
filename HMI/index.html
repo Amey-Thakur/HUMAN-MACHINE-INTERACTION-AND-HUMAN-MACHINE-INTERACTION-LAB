@@ -1369,6 +1369,59 @@
             animation: spin 1s linear infinite;
         }
 
+        /* Move Indicators - Apple Style */
+        .chess-square.selected {
+            background-color: rgba(37, 99, 235, 0.2) !important;
+        }
+
+        .chess-square.valid-move::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background-color: rgba(37, 99, 235, 0.4);
+            border-radius: 50%;
+            transition: transform 0.2s;
+        }
+
+        .chess-square.valid-move:hover::after {
+            transform: scale(1.2);
+            background-color: rgba(37, 99, 235, 0.6);
+        }
+
+        .chess-square.valid-capture::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 4px solid rgba(239, 68, 68, 0.4);
+            border-radius: 50%;
+            box-sizing: border-box;
+            transform: scale(0.85);
+        }
+
+        .chess-square.check {
+            background: radial-gradient(circle, rgba(239, 68, 68, 0.4) 0%, transparent 70%) !important;
+        }
+
+        .chess-square.last-move {
+            background-color: rgba(255, 255, 0, 0.15) !important;
+        }
+
+        .chess-square.drag-over {
+            background-color: rgba(37, 99, 235, 0.3) !important;
+            box-shadow: inset 0 0 10px rgba(37, 99, 235, 0.5);
+        }
+
+        /* Drag & Drop Cursors */
+        .chess-square {
+            cursor: grab;
+        }
+
+        .chess-square.dragging {
+            cursor: grabbing;
+        }
+
         @keyframes spin {
             from {
                 transform: rotate(0deg);

@@ -683,8 +683,54 @@ if (shareBtn) {
                     const pieceSpan = document.createElement('span');
                     pieceSpan.className = 'piece';
                     pieceSpan.textContent = PIECES[piece];
+                    pieceSpan.draggable = true;
+
+                    // Drag events
+                    pieceSpan.addEventListener('dragstart', (e) => {
+                        if (!isCurrentPlayerPiece(piece) || gameOver) {
+                            e.preventDefault();
+                            return;
+                        }
+                        e.dataTransfer.setData('text/plain', JSON.stringify({ r, c }));
+                        e.dataTransfer.effectAllowed = 'move';
+
+                        // Select square on drag start
+                        handleSquareClick(r, c);
+                        setTimeout(() => pieceSpan.style.opacity = '0', 0);
+                    });
+
+                    pieceSpan.addEventListener('dragend', (e) => {
+                        pieceSpan.style.opacity = '1';
+                    });
+
                     square.appendChild(pieceSpan);
                 }
+
+                // Drop zone events
+                square.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    e.dataTransfer.dropEffect = 'move';
+                    if (!square.classList.contains('drag-over')) {
+                        square.classList.add('drag-over');
+                    }
+                });
+
+                square.addEventListener('dragleave', () => {
+                    square.classList.remove('drag-over');
+                });
+
+                square.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    square.classList.remove('drag-over');
+                    try {
+                        const data = JSON.parse(e.dataTransfer.getData('text/plain'));
+                        if (data && (data.r !== r || data.c !== c)) {
+                            handleSquareClick(r, c);
+                        }
+                    } catch (err) {
+                        console.error('Drop error:', err);
+                    }
+                });
 
                 // Selection highlight
                 if (selectedSquare && selectedSquare.row === r && selectedSquare.col === c) {
