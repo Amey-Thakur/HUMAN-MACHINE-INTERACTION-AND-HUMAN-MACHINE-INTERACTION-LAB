@@ -1849,52 +1849,6 @@
             </div>
 
             <div class="row g-4 mb-5 reveal">
-                <!-- Left: Chessboard -->
-                <div class="col-lg-7">
-                    <div class="card-custom h-100 p-4">
-                        <!-- Author Credit (like OOPM) -->
-                        <p class="text-center mb-2" style="font-size: 0.85rem; color: var(--text-secondary);">
-                            Designed and Developed by <span style="color: var(--accent-color); font-weight: 500;">Amey
-                                Thakur</span> & <span style="color: var(--accent-color); font-weight: 500;">Mega
-                                Satish</span>
-                        </p>
-                        <h5 style="color: var(--accent-color); margin-bottom: 15px; text-align: center;">
-                            <i class="fas fa-play-circle me-2"></i>Play Chess Now!
-                        </h5>
-
-                        <!-- Game Mode Selection -->
-                        <div class="game-mode-selector mb-3">
-                            <button id="mode-2p" class="mode-btn active" title="Two Players">
-                                <i class="fas fa-users"></i> 2 Player
-                            </button>
-                            <button id="mode-ai" class="mode-btn" title="Play vs AI">
-                                <i class="fas fa-robot"></i> vs AI
-                            </button>
-                        </div>
-
-                        <div class="chess-header">
-                            <div class="turn-indicator">
-                                <span id="turn-dot" class="turn-dot white"></span>
-                                <span id="turn-text">White's Turn</span>
-                            </div>
-                            <div class="chess-controls">
-                                <button id="sound-toggle" class="chess-btn" title="Toggle Sound"
-                                    aria-label="Toggle Sound">
-                                    <i class="fas fa-volume-up"></i>
-                                </button>
-                                <button id="undo-btn" class="chess-btn" title="Undo Move" aria-label="Undo Move">
-                                    <i class="fas fa-undo"></i>
-                                </button>
-                                <button id="new-game-btn" class="chess-btn" title="New Game" aria-label="New Game">
-                                    <i class="fas fa-redo"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div id="chessboard" class="chessboard" role="grid" aria-label="Chess Board"></div>
-                        <div id="game-status" class="game-status"></div>
-                    </div>
-                </div>
-
                 <!-- Right: Game Info Panel -->
                 <div class="col-lg-5">
                     <div class="card-custom h-100 p-4">
@@ -1962,6 +1916,52 @@
                                 <i class="fab fa-github me-2"></i>View Repository
                             </a>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Left: Chessboard -->
+                <div class="col-lg-7">
+                    <div class="card-custom h-100 p-4">
+                        <!-- Author Credit (like OOPM) -->
+                        <p class="text-center mb-2" style="font-size: 0.85rem; color: var(--text-secondary);">
+                            Designed and Developed by <span style="color: var(--accent-color); font-weight: 500;">Amey
+                                Thakur</span> & <span style="color: var(--accent-color); font-weight: 500;">Mega
+                                Satish</span>
+                        </p>
+                        <h5 style="color: var(--accent-color); margin-bottom: 15px; text-align: center;">
+                            <i class="fas fa-play-circle me-2"></i>Play Chess Now!
+                        </h5>
+
+                        <!-- Game Mode Selection -->
+                        <div class="game-mode-selector mb-3">
+                            <button id="mode-2p" class="mode-btn active" title="Two Players">
+                                <i class="fas fa-users"></i> 2 Player
+                            </button>
+                            <button id="mode-ai" class="mode-btn" title="Play vs AI">
+                                <i class="fas fa-robot"></i> vs AI
+                            </button>
+                        </div>
+
+                        <div class="chess-header">
+                            <div class="turn-indicator">
+                                <span id="turn-dot" class="turn-dot white"></span>
+                                <span id="turn-text">White's Turn</span>
+                            </div>
+                            <div class="chess-controls">
+                                <button id="sound-toggle" class="chess-btn" title="Toggle Sound"
+                                    aria-label="Toggle Sound">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                                <button id="undo-btn" class="chess-btn" title="Undo Move" aria-label="Undo Move">
+                                    <i class="fas fa-undo"></i>
+                                </button>
+                                <button id="new-game-btn" class="chess-btn" title="New Game" aria-label="New Game">
+                                    <i class="fas fa-redo"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="chessboard" class="chessboard" role="grid" aria-label="Chess Board"></div>
+                        <div id="game-status" class="game-status"></div>
                     </div>
                 </div>
             </div>
