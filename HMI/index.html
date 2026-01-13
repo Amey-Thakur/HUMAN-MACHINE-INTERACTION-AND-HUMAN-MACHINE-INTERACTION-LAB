@@ -104,7 +104,9 @@
             /* Disable text selection */
         }
 
-        /* Command Palette Styles */
+        /* =========================================
+           COMMAND PALETTE
+           ========================================= */
         .cmd-overlay {
             position: fixed;
             top: 0;
@@ -113,10 +115,11 @@
             height: 100%;
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(4px);
-            z-index: 9999;
+            z-index: 10000;
             display: none;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
+            padding-top: 15vh;
             opacity: 0;
             transition: opacity 0.2s ease;
         }
@@ -127,15 +130,15 @@
         }
 
         .cmd-modal {
-            width: 600px;
-            max-width: 90%;
+            width: 100%;
+            max-width: 600px;
             background: var(--card-bg);
             border-radius: 12px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border: 1px solid var(--border-color);
             overflow: hidden;
             transform: scale(0.95);
-            transition: transform 0.2s ease;
-            border: 1px solid var(--border-color);
+            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .cmd-overlay.active .cmd-modal {
@@ -152,17 +155,26 @@
 
         .cmd-header i {
             color: var(--text-secondary);
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
 
         #cmd-input {
             flex: 1;
-            background: transparent;
             border: none;
+            background: transparent;
             font-size: 1.1rem;
             color: var(--text-primary);
             outline: none;
             font-family: 'Poppins', sans-serif;
+        }
+
+        .cmd-esc kbd {
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
         }
 
         .cmd-body {
@@ -172,62 +184,137 @@
         }
 
         .cmd-item {
-            padding: 12px 16px;
+            padding: 10px 12px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border-radius: 8px;
             cursor: pointer;
             color: var(--text-primary);
-            transition: all 0.2s;
-            margin-bottom: 4px;
-            text-decoration: none;
+            transition: background 0.1s;
         }
 
-        .cmd-item:hover {
+        .cmd-item:hover,
+        .cmd-item.selected {
             background: var(--badge-bg);
             color: var(--accent-color);
         }
 
-        .cmd-footer {
-            padding: 12px 16px;
-            background: var(--bg-color);
-            border-top: 1px solid var(--border-color);
-            font-size: 0.75rem;
+        .cmd-item-icon {
+            margin-right: 12px;
+            width: 24px;
+            text-align: center;
             color: var(--text-secondary);
-            display: flex;
-            gap: 15px;
         }
 
-        /* Keyboard Hint */
+        .cmd-item.selected .cmd-item-icon {
+            color: var(--accent-color);
+        }
+
+        .cmd-item-text {
+            flex: 1;
+            font-weight: 500;
+        }
+
+        .cmd-item-type {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            background: var(--bg-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        .cmd-footer {
+            padding: 8px 16px;
+            background: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .cmd-keys {
+            display: flex;
+            gap: 12px;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .k-small {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: inherit;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        /* Scrollbar */
+        .cmd-body::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .cmd-body::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 3px;
+        }
+
+        /* =========================================
+           KEYBOARD HINT BADGE
+           ========================================= */
         .kbd-hint {
             position: fixed;
             bottom: 25px;
-            left: 25px;
-            background: var(--card-bg);
-            padding: 8px 12px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            box-shadow: var(--shadow-sm);
-            font-size: 0.8rem;
-            color: var(--text-secondary);
+            left: 20px;
             display: flex;
             align-items: center;
             gap: 6px;
-            z-index: 100;
-            transition: all 0.3s;
-            animation: fadeIn 0.5s ease 2s backwards;
+            padding: 10px 16px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            z-index: 999;
+            opacity: 1;
+            transition: opacity 0.5s ease, transform 0.3s ease, visibility 0.5s ease;
+            animation: kbdSlideIn 0.5s ease;
         }
 
-        kbd {
-            background: var(--bg-color);
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            padding: 2px 6px;
-            font-size: 0.75rem;
-            font-family: monospace;
-            color: var(--text-primary);
-            box-shadow: 0 2px 0 var(--border-color);
+        .kbd-hint.hidden {
+            opacity: 0 !important;
+            visibility: hidden;
+            pointer-events: none;
+            transform: translateY(20px);
+            animation: none !important;
+        }
+
+        .kbd-hint kbd {
+            padding: 4px 8px;
+            background: var(--accent-color);
+            color: #fff;
+            border-radius: 6px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            font-weight: 600;
+            box-shadow: none;
+            border: none;
+        }
+
+        @keyframes kbdSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Back to Top Button */
@@ -910,11 +997,13 @@
 
     <!-- Keyboard Shortcut Hint -->
     <div id="kbd-hint" class="kbd-hint">
-        <span>Press</span>
-        <kbd>Ctrl</kbd>
-        <span>+</span>
-        <kbd>K</kbd>
-        <span>to search</span>
+        <div style="display:flex; align-items:center; gap:8px;">
+            <span>Press</span>
+            <kbd>Ctrl</kbd>
+            <span>+</span>
+            <kbd>K</kbd>
+            <span>to search</span>
+        </div>
     </div>
 
     <!-- Command Palette Overlay -->
@@ -923,15 +1012,18 @@
             <div class="cmd-header">
                 <i class="fas fa-search"></i>
                 <input type="text" id="cmd-input" placeholder="Search experiments..." autocomplete="off">
-                <kbd>ESC</kbd>
+                <div class="cmd-esc">
+                    <kbd>ESC</kbd>
+                </div>
             </div>
             <div class="cmd-body" id="cmd-results">
                 <!-- Results will be populated by JS -->
             </div>
             <div class="cmd-footer">
-                <span><kbd>↑↓</kbd> Navigate</span>
-                <span><kbd>↵</kbd> Select</span>
-                <span><kbd>ESC</kbd> Close</span>
+                <div class="cmd-keys">
+                    <span><kbd class="k-small">↑↓</kbd> Navigate</span>
+                    <span><kbd class="k-small">↵</kbd> Select</span>
+                </div>
             </div>
         </div>
     </div>

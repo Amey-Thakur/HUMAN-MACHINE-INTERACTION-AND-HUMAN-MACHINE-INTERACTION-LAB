@@ -222,30 +222,47 @@ function renderResults(items) {
     }
 
     items.forEach(item => {
-        const el = document.createElement('a');
+        const el = document.createElement('div');
         el.className = 'cmd-item';
-        el.href = item.url;
-        // Check if external link
-        if (item.url.startsWith('http')) {
-            el.target = '_blank';
-            el.rel = 'noopener noreferrer';
-        }
+        el.setAttribute('role', 'button');
 
-        el.innerHTML = `
-            <div style="display:flex; align-items:center;">
-                <div class="cmd-icon"><i class="${item.icon}"></i></div>
-                <span>${item.title}</span>
-            </div>
-            <span class="cmd-item-meta">${item.type}</span>
-        `;
+        el.addEventListener('click', () => {
+            if (item.url.startsWith('http')) {
+                window.open(item.url, '_blank');
+            } else {
+                window.location.href = item.url;
+            }
+            closeCmd();
+        });
+
+        // Icon
+        const iconDiv = document.createElement('div');
+        iconDiv.className = 'cmd-item-icon';
+        iconDiv.innerHTML = `<i class="${item.icon}"></i>`;
+
+        // Text
+        const textDiv = document.createElement('div');
+        textDiv.className = 'cmd-item-text';
+        textDiv.textContent = item.title;
+
+        // Type Badge
+        const typeDiv = document.createElement('div');
+        typeDiv.className = 'cmd-item-type';
+        typeDiv.textContent = item.type;
+
+        el.appendChild(iconDiv);
+        el.appendChild(textDiv);
+        el.appendChild(typeDiv);
+
         cmdResults.appendChild(el);
     });
 }
 
-// Auto-hide keyboard hint after 5 seconds
+// Auto-hide keyboard hint after 8 seconds (gave user more time)
 setTimeout(() => {
     if (kbdHint) {
-        kbdHint.style.opacity = '0';
-        setTimeout(() => kbdHint.remove(), 500);
+        kbdHint.classList.add('hidden');
+        // Remove from DOM after transition
+        setTimeout(() => kbdHint.remove(), 600);
     }
-}, 5000);
+}, 8000);
