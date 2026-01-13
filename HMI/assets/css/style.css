@@ -897,12 +897,29 @@
         /*   CHESS GAME STYLES                       */
         /* ========================================= */
         .chess-container {
-            background: var(--card-bg);
+            /* Hero-like animated gradient background */
+            background: linear-gradient(-45deg, #ffffff, #f0f4ff, #e0e7ff, #f8fafc);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite, slideUp 0.8s ease-out;
             border: 1px solid var(--border-color);
             border-radius: 20px;
             padding: 24px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-            animation: slideUp 0.5s ease-out;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        [data-theme="dark"] .chess-container {
+            background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1a237e);
+            background-size: 400% 400%;
+        }
+
+        .chess-container:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: var(--accent-color);
         }
 
         @keyframes slideUp {
@@ -1321,7 +1338,7 @@
             aspect-ratio: 1 / 1;
             margin: 0 auto;
             padding: 2px;
-            background: var(--accent-color);
+            background: rgba(37, 99, 235, 0.05);
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12), 0 0 15px rgba(37, 99, 235, 0.15);
             animation: boardFadeIn 0.6s ease-out;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1329,7 +1346,7 @@
 
         .chessboard:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25), 0 0 25px rgba(37, 99, 235, 0.2);
         }
 
         @keyframes boardFadeIn {
@@ -1380,7 +1397,7 @@
 
         /* LIGHT MODE - Modern Frosted Glass (Apple Vision Pro inspired) */
         .chess-square.light {
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: rgba(255, 255, 255, 0.55);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1388,24 +1405,23 @@
         }
 
         .chess-square.dark {
-            background-color: rgba(200, 200, 200, 0.25);
+            background-color: rgba(200, 200, 200, 0.35);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            /* Subtle separation */
+            border: 1px solid rgba(255, 255, 255, 0.1);
             color: #1d1d1f;
         }
 
         /* DARK MODE - Deep Space Glass */
         [data-theme="dark"] .chess-square.light {
-            background-color: rgba(255, 255, 255, 0.15);
+            background-color: rgba(255, 255, 255, 0.18);
             border-color: rgba(255, 255, 255, 0.1);
             color: #f5f5f7;
         }
 
         [data-theme="dark"] .chess-square.dark {
-            background-color: rgba(0, 0, 0, 0.2);
-            border-color: rgba(255, 255, 255, 0.02);
+            background-color: rgba(0, 0, 0, 0.28);
+            border-color: rgba(255, 255, 255, 0.05);
             color: #f5f5f7;
         }
 
@@ -1432,8 +1448,10 @@
         }
 
         .chess-square.last-move {
-            background: rgba(37, 99, 235, 0.25) !important;
-            box-shadow: inset 0 0 8px rgba(37, 99, 235, 0.3);
+            background-color: rgba(0, 122, 255, 0.25) !important;
+            /* iOS Blue */
+            box-shadow: inset 0 0 0 1px rgba(0, 122, 255, 0.4);
+            backdrop-filter: brightness(1.1);
         }
 
         .piece-animate {
@@ -1449,6 +1467,39 @@
             100% {
                 transform: scale(1) translateY(0);
                 opacity: 1;
+            }
+        }
+
+        /* AI Thinking Indicator */
+        .ai-thinking {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: var(--accent-color);
+            font-weight: 600;
+            padding: 10px;
+            background: rgba(37, 99, 235, 0.08);
+            border-radius: 12px;
+            margin-top: 10px;
+            backdrop-filter: blur(5px);
+        }
+
+        .ai-thinking.active {
+            display: flex;
+        }
+
+        .ai-thinking i {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
             }
         }
 
@@ -1483,12 +1534,30 @@
         }
 
         .chess-info-panel {
-            background: var(--card-bg);
+            /* Hero-like animated gradient background */
+            background: linear-gradient(-45deg, #ffffff, #f0f4ff, #e0e7ff, #f8fafc);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite, slideUp 0.8s ease-out;
             border: 1px solid var(--border-color);
             border-radius: 16px;
             padding: 25px;
             height: 100%;
             box-shadow: var(--shadow-md);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        [data-theme="dark"] .chess-info-panel {
+            background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1a237e);
+            background-size: 400% 400%;
+        }
+
+        .chess-info-panel:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: var(--accent-color);
         }
 
         .chess-info-panel h4 {
@@ -1537,6 +1606,13 @@
             overflow: hidden;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
             border: 1px solid #333;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .move-history-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+            border-color: var(--accent-color);
         }
 
         [data-theme="dark"] .move-history-container {
@@ -1596,214 +1672,6 @@
             font-weight: normal;
             line-height: 1;
             -webkit-font-smoothing: antialiased;
-        }
-
-        .chess-square span.piece {
-            filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.15));
-            transition: transform 0.15s ease;
-        }
-
-        .chess-square:hover span.piece {
-            transform: scale(1.08);
-        }
-
-        .chess-square.selected span.piece {
-            transform: scale(1.1);
-            filter: drop-shadow(2px 3px 4px rgba(37, 99, 235, 0.4));
-        }
-
-        /* LIGHT MODE - Modern Frosted Glass (Apple Vision Pro inspired) */
-        .chess-square.light {
-            background-color: rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #1d1d1f;
-        }
-
-        .chess-square.dark {
-            background-color: rgba(200, 200, 200, 0.25);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            /* Subtle separation */
-            color: #1d1d1f;
-        }
-
-        /* DARK MODE - Deep Space Glass */
-        [data-theme="dark"] .chess-square.light {
-            background-color: rgba(255, 255, 255, 0.15);
-            border-color: rgba(255, 255, 255, 0.1);
-            color: #f5f5f7;
-        }
-
-        [data-theme="dark"] .chess-square.dark {
-            background-color: rgba(0, 0, 0, 0.2);
-            border-color: rgba(255, 255, 255, 0.02);
-            color: #f5f5f7;
-        }
-
-        /* Hero Card Styling for Frosted Theme */
-        .chess-container,
-        .chess-info-panel {
-            /* Hero-like animated gradient background */
-            background: linear-gradient(-45deg, #ffffff, #f0f4ff, #e0e7ff, #f8fafc);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite, slideUp 0.8s ease-out;
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
-            padding: 24px;
-            box-shadow: var(--shadow-md);
-
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-        }
-
-        [data-theme="dark"] .chess-container,
-        [data-theme="dark"] .chess-info-panel {
-            background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1a237e);
-            background-size: 400% 400%;
-        }
-
-        .chess-container::before,
-        .chess-info-panel::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.1) 100%);
-            pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.3s;
-            z-index: 2;
-        }
-
-        .chess-container:hover,
-        .chess-info-panel:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            border-color: var(--accent-color);
-        }
-
-        .chess-container:hover::before,
-        .chess-info-panel:hover::before {
-            opacity: 1;
-        }
-
-        /* AI Thinking Indicator */
-        .ai-thinking {
-            display: none;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            color: var(--accent-color);
-            font-weight: 600;
-            padding: 10px;
-            background: rgba(37, 99, 235, 0.08);
-            border-radius: 12px;
-            margin-top: 10px;
-            backdrop-filter: blur(5px);
-        }
-
-        .ai-thinking.active {
-            display: flex;
-        }
-
-        .ai-thinking i {
-            animation: spin 1s linear infinite;
-        }
-
-        /* Vibrant Selection & Highlights (Apple System Colors) */
-        .chess-square.selected {
-            background-color: rgba(0, 122, 255, 0.25) !important;
-            /* iOS Blue */
-            box-shadow: inset 0 0 0 2px rgba(0, 122, 255, 0.4);
-        }
-
-        .chess-square.valid-move::after {
-            content: '';
-            position: absolute;
-            width: 14px;
-            height: 14px;
-            background-color: rgba(0, 122, 255, 0.4);
-            /* Frosted Blue Dot */
-            border-radius: 50%;
-            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-            backdrop-filter: blur(2px);
-        }
-
-        .chess-square.valid-move:hover::after {
-            transform: scale(1.4);
-            background-color: rgba(0, 122, 255, 0.7);
-        }
-
-        /* Clean Ring for Capture */
-        .chess-square.valid-capture::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border: 4px solid rgba(255, 59, 48, 0.5);
-            /* iOS Red */
-            border-radius: 50%;
-            box-sizing: border-box;
-            transform: scale(0.85);
-            background: rgba(255, 59, 48, 0.1);
-        }
-
-        /* Elegant Check Pulse */
-        .chess-square.check {
-            background: radial-gradient(circle, rgba(255, 59, 48, 0.6) 0%, transparent 70%) !important;
-            animation: pulse-red 2s infinite;
-        }
-
-        @keyframes pulse-red {
-            0% {
-                box-shadow: inset 0 0 0 0 rgba(255, 59, 48, 0.4);
-            }
-
-            70% {
-                box-shadow: inset 0 0 20px 0 rgba(255, 59, 48, 0);
-            }
-
-            100% {
-                box-shadow: inset 0 0 0 0 rgba(255, 59, 48, 0);
-            }
-        }
-
-        /* Last Move - Subtle Highlight */
-        .chess-square.last-move {
-            background-color: rgba(255, 214, 10, 0.2) !important;
-            /* iOS Yellow */
-        }
-
-        .chess-square.drag-over {
-            background-color: rgba(52, 199, 89, 0.3) !important;
-            /* iOS Green */
-            box-shadow: inset 0 0 0 2px rgba(52, 199, 89, 0.5);
-        }
-
-        /* Drag & Drop Cursors */
-        .chess-square {
-            cursor: grab;
-        }
-
-        .chess-square.dragging {
-            cursor: grabbing;
-        }
-
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
         }
 
         @media (max-width: 768px) {
