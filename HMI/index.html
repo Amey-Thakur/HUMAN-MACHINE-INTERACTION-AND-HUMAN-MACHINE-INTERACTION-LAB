@@ -706,6 +706,12 @@
             transform: translateX(0);
         }
 
+        .reveal-left.active,
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
         /* Top Controls (Share, PWA, Theme) */
         .top-controls {
             position: absolute;
@@ -831,6 +837,19 @@
             background: var(--badge-bg);
             color: var(--badge-text);
             border-color: var(--badge-bg);
+        }
+
+        .badge-playable {
+            background: #eff6ff !important;
+            color: #2563eb !important;
+            border: none;
+            font-weight: 600;
+        }
+
+        [data-theme="dark"] .badge-playable {
+            background: #1e3a8a !important;
+            /* Darker blue for dark mode */
+            color: #60a5fa !important;
         }
 
         .badge-tech.filled {
@@ -1619,9 +1638,9 @@
             border-radius: 12px 12px 0 0;
             border: 6px solid #1e293b;
             border-bottom: none;
-            overflow: hidden;
             position: relative;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
 
         .laptop-screen::before {
@@ -1939,9 +1958,9 @@
                 <h3>Mini Project</h3>
             </div>
 
-            <div class="row g-4 mb-5 reveal">
+            <div class="row g-4 mb-5">
                 <!-- Right: Game Info Panel -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 reveal-left">
                     <div class="card-custom h-100 p-4">
                         <h4 class="text-center"><i class="fas fa-chess-king me-2"></i>Online Chess Game</h4>
                         <p class="text-secondary mb-3 text-center">
@@ -1954,7 +1973,7 @@
                             <span class="badge-tech">JavaScript</span>
                             <span class="badge-tech">Game Logic</span>
                             <span class="badge-tech">AI Engine</span>
-                            <span class="badge-tech filled-green"
+                            <span class="badge badge-playable ms-1" style="font-size: 0.7rem;"
                                 data-tooltip="Interactive playable game component">Playable</span>
                         </div>
 
@@ -1962,6 +1981,7 @@
                         <div class="laptop-column mb-4">
                             <div class="laptop-frame">
                                 <div class="laptop-screen">
+                                    <div class="loading-spinner"></div>
                                     <iframe
                                         src="https://www.youtube.com/embed/CCbrTQwYyE8?autoplay=1&mute=1&loop=1&playlist=CCbrTQwYyE8"
                                         title="Online Chess Game Demo"
@@ -2007,7 +2027,7 @@
                 </div>
 
                 <!-- Left: Chessboard -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 reveal-right" style="transition-delay: 0.2s;">
                     <div class="card-custom h-100 p-4">
                         <!-- Author Credit (like OOPM) -->
                         <p class="text-center mb-2" style="font-size: 0.85rem; color: var(--text-secondary);">
