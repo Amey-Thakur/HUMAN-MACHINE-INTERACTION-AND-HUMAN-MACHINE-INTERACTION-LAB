@@ -18,7 +18,7 @@
 
   ---
 
-  [Overview](#overview) &nbsp;·&nbsp; [Contents](#repository-contents) &nbsp;·&nbsp; [Reference Books](#reference-books) &nbsp;·&nbsp; [The Wall](#the-wall) &nbsp;·&nbsp; [Mega's Notes](#megas-notes) &nbsp;·&nbsp; [Assignments](#assignments) &nbsp;·&nbsp; [Quizzes](#quizzes) &nbsp;·&nbsp; [Laboratory](#human-machine-interaction-laboratory) &nbsp;·&nbsp; [Mini Project](#human-machine-interaction-mini-project) &nbsp;·&nbsp; [Internal Assessment Test](#internal-assessment-test) &nbsp;·&nbsp; [Semester Exam](#semester-exam) &nbsp;·&nbsp; [Submission Report](#submission-completion-report) &nbsp;·&nbsp; [Syllabus](#syllabus) &nbsp;·&nbsp; [Usage Guidelines](#usage-guidelines) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository) &nbsp;·&nbsp; [Acknowledgments](#acknowledgments)
+  [Overview](#overview) &nbsp;·&nbsp; [Contents](#repository-contents) &nbsp;·&nbsp; [Reference Books](#reference-books) &nbsp;·&nbsp; [The Wall](#the-wall) &nbsp;·&nbsp; [Mega's Notes](#megas-notes) &nbsp;·&nbsp; [Assignments](#assignments) &nbsp;·&nbsp; [Quizzes](#quizzes) &nbsp;·&nbsp; [Laboratory](#human-machine-interaction-laboratory) &nbsp;·&nbsp; [Mini-Project](#human-machine-interaction-mini-project) &nbsp;·&nbsp; [Internal Assessment Test](#internal-assessment-test) &nbsp;·&nbsp; [Semester Exam](#semester-exam) &nbsp;·&nbsp; [Submission Report](#submission-completion-report) &nbsp;·&nbsp; [Syllabus](#syllabus) &nbsp;·&nbsp; [Usage Guidelines](#usage-guidelines) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository) &nbsp;·&nbsp; [Acknowledgments](#acknowledgments)
 
 </div>
 
@@ -303,7 +303,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 <!-- =========================================================================================
                                      MINI PROJECT SECTION
      ========================================================================================= -->
-## Human Machine Interaction Mini Project
+## Human Machine Interaction Mini-Project
 
 <div align="center">
 
@@ -311,7 +311,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
   **A comprehensive web-based multiplayer chess game with interactive UI**
 
-  [![Presentation](https://img.shields.io/badge/📊-Presentation-blue.svg)](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf)
+  [![Presentation](https://img.shields.io/badge/📊-Presentation-blue.svg)](HMI%20Mini-Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf)
   [![Code](https://img.shields.io/badge/💻-Source%20Code-green.svg)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
   [![Repository](https://img.shields.io/badge/🎮-Game%20Repository-orange.svg)](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)
 
@@ -343,10 +343,10 @@ The system leverages a responsive design framework to maintain interaction consi
 
 | # | Resource | Description | Date | Marks | Link |
 |:-:|:---|:---|:---:|:---:|:---:|
-| 1 | Project Presentation | Visual demonstration and slides | May 2022 | 9/10 | [View](HMI%20Mini%20Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf) |
-| 2 | Project Report | Detailed project documentation | May 2022 | 9/10 | [View](HMI%20Mini%20Project/HMI_MINI_PROJECT_REPORT_BE_COMPS_B-50,51,58.pdf) |
+| 1 | Project Presentation | Visual demonstration and slides | May 2022 | 9/10 | [View](HMI%20Mini-Project/HMI_MINI_PROJECT_PRESENTATION_BE_COMPS_B-50,51,58.pdf) |
+| 2 | Project Report | Detailed project documentation | May 2022 | 9/10 | [View](HMI%20Mini-Project/HMI_MINI_PROJECT_REPORT_BE_COMPS_B-50,51,58.pdf) |
 | 3 | Project Repository | Complete source code and documentation | May 2022 | — | [View](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME) |
-| 4 | Project Teams | Team composition and roles | March 2022 | — | [View](HMI%20Mini%20Project/HMI%20Mini%20Project%20Teams.pdf) |
+| 4 | Project Teams | Team composition and roles | March 2022 | — | [View](HMI%20Mini-Project/HMI%20Mini%20Project%20Teams.pdf) |
 | 5 | Project Demo (YouTube) | Real-time demonstration of features | May 2022 | — | [View](https://youtu.be/CCbrTQwYyE8) |
 
 ---
@@ -478,7 +478,7 @@ This repository and all linked academic content are made available under the **C
 
 This repository represents a comprehensive collection of study materials, reference books, assignments, and personal preparation notes curated during my academic journey. All content has been carefully organized and documented to serve as a valuable resource for students pursuing Human Machine Interaction and Human Machine Interaction Laboratory.
 
-**Connect:** [GitHub](https://github.com/Amey-Thakur) · [LinkedIn](https://www.linkedin.com/in/amey-thakur)
+**Connect:** [GitHub](https://github.com/Amey-Thakur) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/amey-thakur) &nbsp;·&nbsp; [ORCID](https://orcid.org/0000-0001-5644-1575)
 
 ### Acknowledgments
 
@@ -498,7 +498,7 @@ Special thanks to the mentors and peers whose encouragement, discussions, and su
   <!-- Footer Navigation -->
   [↑ Back to Top](#human-machine-interaction-and-human-machine-interaction-laboratory)
 
-  [Overview](#overview) &nbsp;·&nbsp; [Contents](#repository-contents) &nbsp;·&nbsp; [Reference Books](#reference-books) &nbsp;·&nbsp; [The Wall](#the-wall) &nbsp;·&nbsp; [Mega's Notes](#megas-notes) &nbsp;·&nbsp; [Assignments](#assignments) &nbsp;·&nbsp; [Quizzes](#quizzes) &nbsp;·&nbsp; [Laboratory](#human-machine-interaction-laboratory) &nbsp;·&nbsp; [Mini Project](#human-machine-interaction-mini-project) &nbsp;·&nbsp; [Internal Assessment Test](#internal-assessment-test) &nbsp;·&nbsp; [Semester Exam](#semester-exam) &nbsp;·&nbsp; [Submission Report](#submission-completion-report) &nbsp;·&nbsp; [Syllabus](#syllabus) &nbsp;·&nbsp; [Usage Guidelines](#usage-guidelines) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository) &nbsp;·&nbsp; [Acknowledgments](#acknowledgments)
+  [Overview](#overview) &nbsp;·&nbsp; [Contents](#repository-contents) &nbsp;·&nbsp; [Reference Books](#reference-books) &nbsp;·&nbsp; [The Wall](#the-wall) &nbsp;·&nbsp; [Mega's Notes](#megas-notes) &nbsp;·&nbsp; [Assignments](#assignments) &nbsp;·&nbsp; [Quizzes](#quizzes) &nbsp;·&nbsp; [Laboratory](#human-machine-interaction-laboratory) &nbsp;·&nbsp; [Mini-Project](#human-machine-interaction-mini-project) &nbsp;·&nbsp; [Internal Assessment Test](#internal-assessment-test) &nbsp;·&nbsp; [Semester Exam](#semester-exam) &nbsp;·&nbsp; [Submission Report](#submission-completion-report) &nbsp;·&nbsp; [Syllabus](#syllabus) &nbsp;·&nbsp; [Usage Guidelines](#usage-guidelines) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository) &nbsp;·&nbsp; [Acknowledgments](#acknowledgments)
 
   <br>
 
