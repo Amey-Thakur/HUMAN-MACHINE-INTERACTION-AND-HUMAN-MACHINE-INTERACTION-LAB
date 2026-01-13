@@ -326,4 +326,4 @@ function atvmController($scope) {
         }
 
     ];
-}
+}/* HMI */

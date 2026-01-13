@@ -373,3 +373,4 @@ gamePage.addEventListener('click', startTimer);
 // --- Initialization ---
 // Load best scores from local storage on application start
 getSavedBestScores();
+/* HMI */

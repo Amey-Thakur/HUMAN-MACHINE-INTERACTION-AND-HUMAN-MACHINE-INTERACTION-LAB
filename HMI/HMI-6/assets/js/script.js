@@ -69,4 +69,4 @@ $(document).ready(function () {
         navigationText: ["", ""],
         autoPlay: true
     });
-});
+});/* HMI */
