@@ -848,7 +848,7 @@
             transition: transform 0.3s ease;
             margin-bottom: 50px;
             position: relative;
-            overflow: hidden;
+            /* Removed overflow hidden */
         }
 
         [data-theme="dark"] .mini-project-showcase {
@@ -907,6 +907,7 @@
             box-shadow: var(--shadow-md);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
+            /* Removed overflow: hidden to prevent clipping of celebratory effects */
             z-index: 1;
         }
 
@@ -1331,7 +1332,7 @@
             gap: 0;
             border: 2px solid var(--accent-color);
             border-radius: 12px;
-            overflow: hidden;
+            /* Removed overflow: hidden to allow piece entry animations and confetti */
             width: 100%;
             max-width: 420px;
             aspect-ratio: 1 / 1;
@@ -1552,7 +1553,6 @@
             box-shadow: var(--shadow-md);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
-            overflow: hidden;
             z-index: 1;
         }
 
@@ -1679,8 +1679,30 @@
             font-weight: 400;
             line-height: 1.5;
             -webkit-font-smoothing: antialiased;
-            color: #e6edf3;
-            /* Light gray/white for visibility */
+            color: #ffffff;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+        }
+
+        /* Apple/macOS Style Scrollbar */
+        .move-history::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .move-history::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .move-history::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            border: 2px solid transparent;
+            background-clip: content-box;
+        }
+
+        .move-history::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.35);
+            background-clip: content-box;
         }
 
         .move-entry {
@@ -1699,13 +1721,13 @@
         }
 
         .move-entry span:not(.move-number) {
-            color: #58a6ff;
-            /* Standard terminal blue for moves */
+            color: #ffffff;
+            /* Explicit high-contrast white for Apple Terminal look */
             font-weight: 500;
         }
 
         [data-theme="dark"] .move-entry span:not(.move-number) {
-            color: #79c0ff;
+            color: #ffffff;
         }
 
         @media (max-width: 768px) {

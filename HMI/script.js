@@ -456,57 +456,79 @@ if (shareBtn) {
     // Piece values for AI evaluation
     const PIECE_VALUES = { p: 10, n: 30, b: 30, r: 50, q: 90, k: 900 };
 
+    // Piece-Square Tables (PST) - higher means better positional advantage
+    const PST = {
+        p: [[0, 0, 0, 0, 0, 0, 0, 0], [50, 50, 50, 50, 50, 50, 50, 50], [10, 10, 20, 30, 30, 20, 10, 10], [5, 5, 10, 25, 25, 10, 5, 5], [0, 0, 0, 20, 20, 0, 0, 0], [5, -5, -10, 0, 0, -10, -5, 5], [5, 10, 10, -20, -20, 10, 10, 5], [0, 0, 0, 0, 0, 0, 0, 0]],
+        n: [[-50, -40, -30, -30, -30, -30, -40, -50], [-40, -20, 0, 0, 0, 0, -20, -40], [-30, 0, 10, 15, 15, 10, 0, -30], [-30, 5, 15, 20, 20, 15, 5, -30], [-30, 0, 15, 20, 20, 15, 0, -30], [-30, 5, 10, 15, 15, 10, 5, -30], [-40, -20, 0, 5, 5, 0, -20, -40], [-50, -40, -30, -30, -30, -30, -40, -50]],
+        b: [[-20, -10, -10, -10, -10, -10, -10, -20], [-10, 0, 0, 0, 0, 0, 0, -10], [-10, 0, 5, 10, 10, 5, 0, -10], [-10, 5, 5, 10, 10, 5, 5, -10], [-10, 0, 10, 10, 10, 10, 0, -10], [-10, 10, 10, 10, 10, 10, 10, -10], [-10, 5, 0, 0, 0, 0, 5, -10], [-20, -10, -10, -10, -10, -10, -10, -20]],
+        r: [[0, 0, 0, 0, 0, 0, 0, 0], [5, 10, 10, 10, 10, 10, 10, 5], [-5, 0, 0, 0, 0, 0, 0, -5], [-5, 0, 0, 0, 0, 0, 0, -5], [-5, 0, 0, 0, 0, 0, 0, -5], [-5, 0, 0, 0, 0, 0, 0, -5], [-5, 0, 0, 0, 0, 0, 0, -5], [0, 0, 0, 5, 5, 0, 0, 0]],
+        q: [[-20, -10, -10, -5, -5, -10, -10, -20], [-10, 0, 0, 0, 0, 0, 0, -10], [-10, 0, 5, 5, 5, 5, 0, -10], [-5, 0, 5, 5, 5, 5, 0, -5], [0, 0, 5, 5, 5, 5, 0, -5], [-10, 5, 5, 5, 5, 5, 0, -10], [-10, 0, 5, 0, 0, 0, 0, -10], [-20, -10, -10, -5, -5, -10, -10, -20]],
+        k: [[-30, -40, -40, -50, -50, -40, -40, -30], [-30, -40, -40, -50, -50, -40, -40, -30], [-30, -40, -40, -50, -50, -40, -40, -30], [-30, -40, -40, -50, -50, -40, -40, -30], [-20, -30, -30, -40, -40, -30, -30, -20], [-10, -20, -20, -20, -20, -20, -20, -10], [20, 20, 0, 0, 0, 0, 20, 20], [20, 30, 10, 0, 0, 10, 30, 20]]
+    };
+
     // Audio Context for sounds
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
     function fireConfetti() {
-        // Use window.confetti to be certain we access the global library
-        const _confetti = window.confetti || confetti;
+        console.log("🎊 [HMI] Preparing robust confetti celebration...");
 
-        if (typeof _confetti !== 'function') {
-            console.warn('Confetti library logic fallback - manual trigger failed');
+        // Ensure we find the library
+        const confLib = window.confetti;
+        if (typeof confLib !== 'function') {
+            console.error("❌ [HMI] Confetti library not found!");
             return;
         }
 
+        // Create a dedicated canvas for confetti to guarantee visibility
+        const canvas = document.createElement('canvas');
+        canvas.style.position = 'fixed';
+        canvas.style.top = '0';
+        canvas.style.left = '0';
+        canvas.style.width = '100%';
+        canvas.style.height = '100%';
+        canvas.style.zIndex = '999999';
+        canvas.style.pointerEvents = 'none';
+        document.body.appendChild(canvas);
+
+        const myConfetti = confLib.create(canvas, {
+            resize: true,
+            useWorker: false
+        });
+
+        // Fire multiple bursts
         const count = 200;
         const defaults = {
             origin: { y: 0.7 },
-            zIndex: 10002
+            zIndex: 999999
         };
 
         function fire(particleRatio, opts) {
-            _confetti({
+            myConfetti({
                 ...defaults,
                 ...opts,
                 particleCount: Math.floor(count * particleRatio)
             });
         }
 
-        // Slight delay to ensure DOM is ready and sounds started
+        console.log("🚀 [HMI] Launching confetti bursts!");
+
+        // Immediate burst
+        fire(0.25, { spread: 26, startVelocity: 55 });
+        fire(0.2, { spread: 60 });
+        fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
+        fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 });
+        fire(0.1, { spread: 120, startVelocity: 45 });
+
+        // Side bursts
         setTimeout(() => {
-            fire(0.25, {
-                spread: 26,
-                startVelocity: 55,
-            });
-            fire(0.2, {
-                spread: 60,
-            });
-            fire(0.35, {
-                spread: 100,
-                decay: 0.91,
-                scalar: 0.8
-            });
-            fire(0.1, {
-                spread: 120,
-                startVelocity: 25,
-                decay: 0.92,
-                scalar: 1.2
-            });
-            fire(0.1, {
-                spread: 120,
-                startVelocity: 45,
-            });
+            myConfetti({ ...defaults, particleCount: 100, spread: 70, origin: { x: 0.1, y: 0.6 } });
+            myConfetti({ ...defaults, particleCount: 100, spread: 70, origin: { x: 0.9, y: 0.6 } });
         }, 300);
+
+        // Cleanup canvas after animation
+        setTimeout(() => {
+            document.body.removeChild(canvas);
+        }, 6000);
     }
 
     function playSound(type) {
@@ -707,6 +729,35 @@ if (shareBtn) {
         return moves;
     }
 
+    function getLegalMoves(row, col) {
+        const piece = board[row][col];
+        if (!piece) return [];
+
+        const isW = isWhite(piece);
+        const pseudoMoves = getValidMoves(row, col);
+
+        return pseudoMoves.filter(move => {
+            // 1. Explicitly check if move captures a king (Never allowed in chess)
+            const target = board[move.row][move.col];
+            if (target && target.toLowerCase() === 'k') return false;
+
+            // 2. Simulate move to see if own king is in check
+            const backup = board[move.row][move.col];
+            const orig = board[row][col];
+
+            board[move.row][move.col] = orig;
+            board[row][col] = '';
+
+            const resultsInCheck = isKingInCheck(isW);
+
+            // Restore
+            board[row][col] = orig;
+            board[move.row][move.col] = backup;
+
+            return !resultsInCheck;
+        });
+    }
+
     function findKing(isWhiteKing) {
         for (let r = 0; r < 8; r++) {
             for (let c = 0; c < 8; c++) {
@@ -727,36 +778,10 @@ if (shareBtn) {
             for (let c = 0; c < 8; c++) {
                 const piece = board[r][c];
                 if (piece && (isWhiteKing ? isBlack(piece) : isWhite(piece))) {
+                    // Important: uses pseudo-move generation to check if king square is attacked
                     const moves = getValidMoves(r, c);
                     if (moves.some(m => m.row === king.row && m.col === king.col)) {
                         return true;
-                    }
-                }
-            }
-        }
-        return false;
-    }
-
-    function hasLegalMoves(isWhiteTurn) {
-        for (let r = 0; r < 8; r++) {
-            for (let c = 0; c < 8; c++) {
-                const piece = board[r][c];
-                if (piece && (isWhiteTurn ? isWhite(piece) : isBlack(piece))) {
-                    const moves = getValidMoves(r, c);
-                    for (const move of moves) {
-                        // Simulate move
-                        const backup = board[move.row][move.col];
-                        const orig = board[r][c];
-                        board[move.row][move.col] = orig;
-                        board[r][c] = '';
-
-                        const stillInCheck = isKingInCheck(isWhiteTurn);
-
-                        // Restore
-                        board[r][c] = orig;
-                        board[move.row][move.col] = backup;
-
-                        if (!stillInCheck) return true;
                     }
                 }
             }
@@ -788,6 +813,7 @@ if (shareBtn) {
                     const pieceSpan = document.createElement('span');
                     pieceSpan.className = 'piece';
                     pieceSpan.textContent = PIECES[piece];
+                    pieceSpan.dataset.piece = piece; // Store original key (e.g., 'K', 'p')
 
                     // Add cursor pointer for player's pieces
                     if (isCurrentPlayerPiece(piece) && !gameOver) {
@@ -837,6 +863,19 @@ if (shareBtn) {
 
         // Update game status
         updateGameStatus();
+    }
+
+    function hasLegalMoves(isWhiteTurn) {
+        for (let r = 0; r < 8; r++) {
+            for (let c = 0; c < 8; c++) {
+                const piece = board[r][c];
+                if (piece && (isWhiteTurn ? isWhite(piece) : isBlack(piece))) {
+                    const moves = getLegalMoves(r, c);
+                    if (moves.length > 0) return true;
+                }
+            }
+        }
+        return false;
     }
 
     function updateGameStatus() {
@@ -936,7 +975,7 @@ if (shareBtn) {
             } else if (isCurrentPlayerPiece(piece)) {
                 // Select different piece
                 selectedSquare = { row, col };
-                validMoves = getValidMoves(row, col);
+                validMoves = getLegalMoves(row, col);
                 renderBoard();
             } else {
                 // Deselect
@@ -947,7 +986,7 @@ if (shareBtn) {
         } else if (isCurrentPlayerPiece(piece)) {
             // Select piece
             selectedSquare = { row, col };
-            validMoves = getValidMoves(row, col);
+            validMoves = getLegalMoves(row, col);
             renderBoard();
         }
     }
@@ -1073,17 +1112,81 @@ if (shareBtn) {
 
     // AI Move Logic
     function evaluateBoard() {
-        let score = 0;
+        let totalScore = 0;
         for (let r = 0; r < 8; r++) {
             for (let c = 0; c < 8; c++) {
                 const piece = board[r][c];
                 if (piece) {
-                    const value = PIECE_VALUES[piece.toLowerCase()] || 0;
-                    score += isWhite(piece) ? -value : value;
+                    const type = piece.toLowerCase();
+                    const isWhitePiece = isWhite(piece);
+
+                    // Base material score
+                    let score = PIECE_VALUES[type] || 0;
+
+                    // Positional score from PST
+                    // For black pieces, flip the table row
+                    const table = PST[type];
+                    if (table) {
+                        const tableRow = isWhitePiece ? 7 - r : r;
+                        score += table[tableRow][c] / 10; // Normalized bonus
+                    }
+
+                    totalScore += isWhitePiece ? -score : score;
                 }
             }
         }
-        return score;
+        return totalScore;
+    }
+
+    function minimax(depth, isMaximizing, alpha, beta) {
+        if (depth === 0) return evaluateBoard();
+
+        const moves = getAllMoves(!isMaximizing);
+        if (moves.length === 0) {
+            if (isKingInCheck(!isMaximizing)) return isMaximizing ? -Infinity : Infinity;
+            return 0; // Draw
+        }
+
+        // Add variety to equal quality moves
+        moves.sort(() => Math.random() - 0.5);
+
+        if (isMaximizing) {
+            let bestScore = -Infinity;
+            for (const move of moves) {
+                const backup = board[move.to.row][move.to.col];
+                const orig = board[move.from.row][move.from.col];
+                board[move.to.row][move.to.col] = orig;
+                board[move.from.row][move.from.col] = '';
+
+                const score = minimax(depth - 1, false, alpha, beta);
+
+                board[move.from.row][move.from.col] = orig;
+                board[move.to.row][move.to.col] = backup;
+
+                bestScore = Math.max(bestScore, score);
+                alpha = Math.max(alpha, bestScore);
+                if (beta <= alpha) break;
+            }
+            return bestScore;
+        } else {
+            let bestScore = Infinity;
+            for (const move of moves) {
+                const backup = board[move.to.row][move.to.col];
+                const orig = board[move.from.row][move.from.col];
+                board[move.to.row][move.to.col] = orig;
+                board[move.from.row][move.from.col] = '';
+
+                const score = minimax(depth - 1, true, alpha, beta);
+
+                board[move.from.row][move.from.col] = orig;
+                board[move.to.row][move.to.col] = backup;
+
+                bestScore = Math.min(bestScore, score);
+                beta = Math.min(beta, bestScore);
+                if (beta <= alpha) break;
+            }
+            return bestScore;
+        }
     }
 
     function getAllMoves(forWhite) {
@@ -1092,7 +1195,7 @@ if (shareBtn) {
             for (let c = 0; c < 8; c++) {
                 const piece = board[r][c];
                 if (piece && (forWhite ? isWhite(piece) : isBlack(piece))) {
-                    const pieceMoves = getValidMoves(r, c);
+                    const pieceMoves = getLegalMoves(r, c);
                     pieceMoves.forEach(m => {
                         moves.push({ from: { row: r, col: c }, to: m });
                     });
@@ -1111,28 +1214,39 @@ if (shareBtn) {
         const moves = getAllMoves(aiPlaysWhite);
         if (moves.length === 0) return;
 
-        let bestMove = null;
-        let bestScore = -Infinity;
+        // Shuffle moves to prevent repetitive patterns and make game feel more "alive"
+        moves.sort(() => Math.random() - 0.5);
 
+        let bestMove = null;
+        let bestScore = aiPlaysWhite ? Infinity : -Infinity;
+
+        // Alpha-Beta Search at depth 2
         for (const move of moves) {
-            // Simulate move
             const backup = board[move.to.row][move.to.col];
             const orig = board[move.from.row][move.from.col];
+
             board[move.to.row][move.to.col] = orig;
             board[move.from.row][move.from.col] = '';
 
-            // Check if move leaves king in check
-            if (!isKingInCheck(aiPlaysWhite)) {
-                let score = evaluateBoard();
-                if (aiPlaysWhite) score = -score; // Flip for white AI
-                score += (backup ? PIECE_VALUES[backup.toLowerCase()] * 2 : 0);
-                if (score > bestScore) {
+            // Evaluate move using Minimax depth 2
+            // Since minimax returns evaluation from board perspective (Black positive),
+            // AI wants to maximize this if it's Black, and minimize it if it's White.
+            let score = minimax(1, !aiPlaysWhite, -Infinity, Infinity);
+
+            if (aiPlaysWhite) {
+                // White AI wants to MINIMIZE totalScore
+                if (bestMove === null || score < bestScore) {
+                    bestScore = score;
+                    bestMove = move;
+                }
+            } else {
+                // Black AI wants to MAXIMIZE totalScore
+                if (bestMove === null || score > bestScore) {
                     bestScore = score;
                     bestMove = move;
                 }
             }
 
-            // Restore
             board[move.from.row][move.from.col] = orig;
             board[move.to.row][move.to.col] = backup;
         }
@@ -1157,7 +1271,8 @@ if (shareBtn) {
             board[bestMove.from.row][bestMove.from.col] = '';
 
             // Pawn promotion
-            const promotionRow = aiPlaysWhite ? 7 : 0;
+            // White (Row 6 -> 0), Black (Row 1 -> 7)
+            const promotionRow = aiPlaysWhite ? 0 : 7;
             if (movingPiece.toLowerCase() === 'p' && bestMove.to.row === promotionRow) {
                 board[bestMove.to.row][bestMove.to.col] = aiPlaysWhite ? 'Q' : 'q';
             }
@@ -1231,235 +1346,196 @@ if (shareBtn) {
     // Initialize
     renderBoard();
     updateCapturedPieces();
-})();
 
-// =========================================
-//   CHESS SHARE FUNCTIONALITY
-// =========================================
-let currentChessImageBlob = null;
+    // =========================================
+    //   CHESS SHARE FUNCTIONALITY (Inside Scope)
+    // =========================================
+    let currentChessImageBlob = null;
 
-async function shareChessGame() {
-    const modal = document.getElementById('chess-share-modal');
-    const previewContainer = document.getElementById('chess-share-preview');
+    async function shareChessGame() {
+        const modal = document.getElementById('chess-share-modal');
+        const previewContainer = document.getElementById('chess-share-preview');
 
-    if (!modal || !previewContainer) return;
+        if (!modal || !previewContainer) return;
 
-    // Show loading
-    previewContainer.innerHTML = '<div class="text-center p-5"><i class="fas fa-spinner fa-spin fa-2x" style="color: var(--accent-color);"></i><p class="mt-3" style="color: var(--text-secondary);">Generating preview...</p></div>';
+        // Pro Loading State
+        previewContainer.innerHTML = `
+            <div class="text-center p-5">
+                <div class="pro-spinner mb-3"></div>
+                <p style="color: var(--text-secondary); font-family: -apple-system, sans-serif; font-weight: 500;">Generating High-Def Capture...</p>
+            </div>
+            <style>
+                .pro-spinner { width: 32px; height: 32px; border: 3px solid rgba(0,0,0,0.1); border-top-color: #2563eb; border-radius: 50%; animation: pro-spin 0.8s linear infinite; margin: 0 auto; }
+                @keyframes pro-spin { to { transform: rotate(360deg); } }
+            </style>`;
 
-    // Show Modal
-    modal.classList.add('active');
+        modal.classList.add('active');
 
-    try {
-        // Target the chessboard
-        const targetEl = document.querySelector('.chessboard');
-        if (!targetEl) throw new Error("Chessboard not found");
+        try {
+            const originalBoard = document.querySelector('.chessboard');
+            if (!originalBoard) throw new Error("Board not found");
 
-        // Create a wrapper for capture to hold board + footer
-        const wrapper = document.createElement('div');
-        const isDarkMode = document.body.classList.contains('dark-mode');
+            // 1. Off-screen Staging (Visible to browser rendering but out of user viewport)
+            const stage = document.createElement('div');
+            // Using visibility: visible and opacity: 1 but absolute position far away
+            stage.style.cssText = "position: absolute; top: -10000px; left: -10000px; width: 800px; background: #ffffff; visibility: visible; opacity: 1; z-index: -1000;";
+            document.body.appendChild(stage);
 
-        wrapper.style.width = targetEl.offsetWidth + 'px';
-        wrapper.style.display = 'flex';
-        wrapper.style.flexDirection = 'column';
-        // Force solid background to prevent fading
-        wrapper.style.backgroundColor = isDarkMode ? '#0f172a' : '#ffffff';
-        wrapper.style.borderRadius = '12px';
-        wrapper.style.overflow = 'hidden';
-        wrapper.style.boxShadow = 'none';
+            // 2. High-Contrast Pro Card
+            const card = document.createElement('div');
+            card.style.cssText = "background: #ffffff; padding: 45px; border-radius: 36px; box-shadow: 0 40px 80px rgba(0,0,0,0.15); display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: -apple-system, system-ui, sans-serif;";
 
-        // Insert wrapper
-        targetEl.parentNode.insertBefore(wrapper, targetEl);
-        wrapper.appendChild(targetEl);
+            // 3. Exact Multi-Project Card Theme
+            const boardBox = document.createElement('div');
+            boardBox.style.cssText = "background: #ffffff; padding: 2px; border-radius: 8px; border: 2px solid #2563eb; box-shadow: 0 10px 30px rgba(0,0,0,0.05); line-height: 0;";
 
-        // Add footer
-        const tempFooter = document.createElement('div');
-        tempFooter.innerHTML = 'Created by Amey Thakur & Mega Satish';
-        Object.assign(tempFooter.style, {
-            background: isDarkMode ? '#1e293b' : '#f1f5f9',
-            color: isDarkMode ? '#cbd5e1' : '#475569',
-            padding: '12px',
-            textAlign: 'center',
-            fontSize: '12px',
-            fontFamily: "'Poppins', sans-serif",
-            letterSpacing: '0.5px',
-            borderTop: isDarkMode ? '1px solid #334155' : '1px solid #e2e8f0'
-        });
-        wrapper.appendChild(tempFooter);
+            const grid = document.createElement('div');
+            grid.style.cssText = "display: grid; grid-template-columns: repeat(8, 60px); grid-template-rows: repeat(8, 60px); width: 480px; height: 480px; background: #ffffff; border-radius: 4px; overflow: hidden;";
 
-        // Apply temporary high-contrast styling to board squares for clear image
-        const squares = targetEl.querySelectorAll('.chess-square');
-        const stateMap = new Map(); // Consistent variable name
+            // Exact Piece Mapping from Screenshot (Outline for White, Solid for Black)
+            const THEME_PIECES = {
+                'K': '♔', 'Q': '♕', 'R': '♖', 'B': '♗', 'N': '♘', 'P': '♙',
+                'k': '♚', 'q': '♛', 'r': '♜', 'b': '♝', 'n': '♞', 'p': '♟'
+            };
 
-        squares.forEach((sq) => {
-            const pieceSpan = sq.querySelector('.piece');
-            stateMap.set(sq, {
-                bg: sq.style.backgroundColor,
-                color: sq.style.color,
-                opacity: sq.style.opacity,
-                spanColor: pieceSpan ? pieceSpan.style.color : null,
-                spanShadow: pieceSpan ? pieceSpan.style.textShadow : null,
-                spanWeight: pieceSpan ? pieceSpan.style.fontWeight : null,
-                spanOpacity: pieceSpan ? pieceSpan.style.opacity : null
+            const cells = originalBoard.querySelectorAll('.chess-square');
+            cells.forEach((cell, index) => {
+                const r = Math.floor(index / 8);
+                const c = index % 8;
+                const isLight = (r + c) % 2 === 0;
+
+                const sq = document.createElement('div');
+                sq.style.cssText = `width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background-color: ${isLight ? '#ffffff' : '#f1f5f9'}; margin: 0; padding: 0;`;
+
+                const origPiece = cell.querySelector('.piece');
+                if (origPiece) {
+                    const pk = origPiece.dataset.piece;
+                    const isW = pk === pk.toUpperCase();
+
+                    const pSpan = document.createElement('span');
+                    pSpan.textContent = THEME_PIECES[pk] || '';
+                    pSpan.style.cssText = `
+                        font-size: 52px;
+                        line-height: 60px;
+                        color: #1e293b;
+                        font-weight: normal;
+                        display: block;
+                        text-align: center;
+                        -webkit-font-smoothing: antialiased;
+                    `;
+                    sq.appendChild(pSpan);
+                }
+                grid.appendChild(sq);
             });
 
-            // 1. Force Board Square Colors (Solid, No Transparency)
-            // Use standard clean colors (Blue/White theme)
-            if (sq.classList.contains('light')) {
-                sq.style.backgroundColor = '#f1f5f9'; // Slate 100
-            } else {
-                sq.style.backgroundColor = '#93c5fd'; // Blue 300
-            }
-            sq.style.opacity = '1';
+            boardBox.appendChild(grid);
+            card.appendChild(boardBox);
 
-            // 2. Force Piece Styling (High Contrast)
-            if (pieceSpan) {
-                // Force all pieces to be Solid Black/Dark Grey for maximum contrast
-                // This makes White pieces (Outlines) look like Dark Outlines (Clear)
-                // And Black pieces (Filled) look like Solid Dark (Clear)
-                pieceSpan.style.color = '#1e293b'; // Slate 800
-                pieceSpan.style.textShadow = 'none';
-                pieceSpan.style.fontWeight = 'bold';
-                pieceSpan.style.opacity = '1';
-            }
-        });
+            // 4. Integrated Footer (Clean Layout)
+            const footer = document.createElement('div');
+            footer.style.cssText = "padding-top: 35px; text-align: center; width: 100%;";
 
-        // Capture
-        const canvas = await html2canvas(wrapper, {
-            scale: 4, // Ultra quality
-            backgroundColor: '#ffffff',
-            useCORS: true,
-            logging: false,
-            imageTimeout: 0
-        });
+            const bTxt = document.createElement('div');
+            bTxt.textContent = "♚ Created by Amey Thakur & Mega Satish";
+            bTxt.style.cssText = "font-size: 18px; font-weight: 700; color: #1e293b; letter-spacing: -0.02em; margin-bottom: 4px;";
 
-        // Restore original state
-        squares.forEach(sq => {
-            const saved = stateMap.get(sq);
-            if (!saved) return;
+            const lTxt = document.createElement('div');
+            lTxt.textContent = "HMI LAB PORTFOLIO";
+            lTxt.style.cssText = "font-size: 11px; font-weight: 500; color: #64748b; text-transform: uppercase; letter-spacing: 0.15em;";
 
-            sq.style.backgroundColor = saved.bg;
-            sq.style.color = saved.color;
-            sq.style.opacity = saved.opacity;
+            footer.appendChild(bTxt);
+            footer.appendChild(lTxt);
+            card.appendChild(footer);
 
-            const pieceSpan = sq.querySelector('.piece');
-            if (pieceSpan) {
-                pieceSpan.style.color = saved.spanColor;
-                pieceSpan.style.textShadow = saved.spanShadow;
-                pieceSpan.style.fontWeight = saved.spanWeight;
-                pieceSpan.style.opacity = saved.spanOpacity;
-            }
-        });
+            stage.appendChild(card);
 
-        // Cleanup: Restore board
-        wrapper.parentNode.insertBefore(targetEl, wrapper);
-        wrapper.remove();
+            // 5. High-Resolution Capture
+            const canvas = await html2canvas(card, {
+                scale: 3,
+                backgroundColor: '#ffffff',
+                useCORS: true,
+                logging: false,
+                imageTimeout: 0,
+                removeContainer: true
+            });
 
-        // Display in preview
-        previewContainer.innerHTML = '';
-        const img = document.createElement('img');
-        img.src = canvas.toDataURL('image/png');
-        img.style.maxWidth = '100%';
-        img.style.maxHeight = '40vh';
-        img.style.width = 'auto';
-        img.style.borderRadius = '8px';
-        previewContainer.appendChild(img);
+            // Cleanup
+            document.body.removeChild(stage);
 
-        // Store blob
-        canvas.toBlob(blob => {
-            currentChessImageBlob = blob;
-        });
+            // 6. Surface Result
+            previewContainer.innerHTML = '';
+            const img = document.createElement('img');
+            img.src = canvas.toDataURL('image/png', 1.0);
+            img.style.cssText = "max-width: 100%; max-height: 50vh; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid #f1f5f9;";
+            previewContainer.appendChild(img);
 
-    } catch (err) {
-        console.error("Capture failed:", err);
-        previewContainer.innerHTML = `<div class="text-center p-4" style="color: #ef4444;">
-            <i class="fas fa-exclamation-circle me-2"></i>Failed to generate preview.<br>
-            <small>${err.message}</small>
-        </div>`;
-    }
-}
+            canvas.toBlob(blob => {
+                currentChessImageBlob = blob;
+            }, 'image/png');
 
-function closeChessShareModal() {
-    const modal = document.getElementById('chess-share-modal');
-    if (modal) modal.classList.remove('active');
-}
-
-function downloadChessImage() {
-    if (!currentChessImageBlob) return;
-
-    const url = URL.createObjectURL(currentChessImageBlob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `HMI_Chess_Game_By_Amey_and_Mega.png`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-}
-
-function copyChessLink() {
-    const url = window.location.href;
-    const shareText = "Play this awesome Chess Game created by Amey Thakur & Mega Satish! " + url;
-
-    if (navigator.clipboard) {
-        navigator.clipboard.writeText(shareText).then(() => {
-            const btn = document.querySelector('.chess-share-btn.copy');
-            if (btn) {
-                const originalContent = btn.innerHTML;
-                btn.innerHTML = '<i class="fas fa-check me-2"></i>Copied!';
-                btn.style.backgroundColor = '#22c55e';
-                btn.style.color = '#fff';
-                btn.style.borderColor = '#22c55e';
-
-                setTimeout(() => {
-                    btn.innerHTML = originalContent;
-                    btn.style.backgroundColor = '';
-                    btn.style.color = '';
-                    btn.style.borderColor = '';
-                }, 2000);
-            }
-        });
-    } else {
-        // Fallback
-        const textArea = document.createElement("textarea");
-        textArea.value = shareText;
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand("Copy");
-        textArea.remove();
-        alert("Link copied to clipboard!");
-    }
-}
-
-async function shareChessNative() {
-    if (navigator.share && currentChessImageBlob) {
-        try {
-            const file = new File([currentChessImageBlob], 'chess_game_amey_mega.png', { type: 'image/png' });
-            if (navigator.canShare && navigator.canShare({ files: [file] })) {
-                await navigator.share({
-                    title: 'HMI Chess Game',
-                    text: 'Check out this Chess Game created by Amey Thakur & Mega Satish!',
-                    files: [file]
-                });
-            } else {
-                await navigator.share({
-                    title: 'HMI Chess Game',
-                    text: 'Check out this Chess Game created by Amey Thakur & Mega Satish!',
-                    url: window.location.href
-                });
-            }
         } catch (err) {
-            console.log('Error sharing:', err);
+            console.error("Capture failure:", err);
+            previewContainer.innerHTML = `<div class="p-5 text-center text-danger"><p>Capture failed: ${err.message}</p></div>`;
         }
-    } else {
-        alert("Web Share API not supported on this device/browser.");
     }
-}
 
-// Close modal on outside click
-document.addEventListener('click', (e) => {
-    const modal = document.getElementById('chess-share-modal');
-    if (e.target === modal) {
-        closeChessShareModal();
+    function closeChessShareModal() {
+        const modal = document.getElementById('chess-share-modal');
+        if (modal) modal.classList.remove('active');
     }
-});
+
+    function downloadChessImage() {
+        if (!currentChessImageBlob) return;
+
+        const url = URL.createObjectURL(currentChessImageBlob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `HMI_Chess_Game.png`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+
+    function copyChessLink() {
+        const url = window.location.href;
+        const shareText = "Play this awesome Chess Game created by Amey Thakur & Mega Satish! " + url;
+
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(shareText).then(() => {
+                const btn = document.querySelector('.chess-share-btn.copy');
+                if (btn) {
+                    const originalContent = btn.innerHTML;
+                    btn.innerHTML = '<i class="fas fa-check me-2"></i>Copied!';
+                    setTimeout(() => btn.innerHTML = originalContent, 2000);
+                }
+            });
+        }
+    }
+
+    async function shareChessNative() {
+        if (navigator.share && currentChessImageBlob) {
+            try {
+                const file = new File([currentChessImageBlob], 'chess_game.png', { type: 'image/png' });
+                if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                    await navigator.share({
+                        title: 'HMI Chess Game',
+                        text: 'Check out this Chess Game!',
+                        files: [file]
+                    });
+                }
+            } catch (err) {
+                console.log('Error sharing:', err);
+            }
+        }
+    }
+
+    // Expose share functions to window for onclick handlers
+    window.shareChessGame = shareChessGame;
+    window.closeChessShareModal = closeChessShareModal;
+    window.downloadChessImage = downloadChessImage;
+    window.copyChessLink = copyChessLink;
+    window.shareChessNative = shareChessNative;
+
+})();
+
