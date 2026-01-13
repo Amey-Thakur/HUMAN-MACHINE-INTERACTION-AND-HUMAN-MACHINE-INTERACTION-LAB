@@ -40,4 +40,4 @@ function shuffle(array) {
 
     return array;
 }
-/* HMI */
+

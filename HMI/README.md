@@ -53,4 +53,4 @@ While the core experiment code remains **untouched** to preserve its historical 
   🔬 **[Human Machine Interaction Laboratory](../HMI%20Lab/README.md)** &nbsp;·&nbsp; ♟️ **[Chess Game App](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)**
 
 </div>
-<!-- HMI -->
+
