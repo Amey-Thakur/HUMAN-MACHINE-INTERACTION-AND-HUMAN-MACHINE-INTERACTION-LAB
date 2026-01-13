@@ -693,68 +693,14 @@ if (shareBtn) {
                     const pieceSpan = document.createElement('span');
                     pieceSpan.className = 'piece';
                     pieceSpan.textContent = PIECES[piece];
-                    pieceSpan.draggable = true;
 
-                    // Drag events
-                    pieceSpan.addEventListener('dragstart', (e) => {
-                        if (!isCurrentPlayerPiece(piece) || gameOver) {
-                            e.preventDefault();
-                            return;
-                        }
-
-                        // Set drag data
-                        e.dataTransfer.setData('text/plain', JSON.stringify({ r: displayRow, c: displayCol }));
-                        e.dataTransfer.effectAllowed = 'move';
-                        e.dataTransfer.dropEffect = 'move';
-
-                        // Create drag image (clone of piece)
-                        const dragImage = pieceSpan.cloneNode(true);
-                        dragImage.style.position = 'absolute';
-                        dragImage.style.top = '-1000px';
-                        dragImage.style.fontSize = '2.5rem';
-                        document.body.appendChild(dragImage);
-                        e.dataTransfer.setDragImage(dragImage, 25, 25);
-                        setTimeout(() => document.body.removeChild(dragImage), 0);
-
-                        // Select square on drag start
-                        handleSquareClick(displayRow, displayCol);
-                        setTimeout(() => pieceSpan.style.opacity = '0.3', 0);
-                    });
-
-                    pieceSpan.addEventListener('dragend', (e) => {
-                        pieceSpan.style.opacity = '1';
-                    });
+                    // Add cursor pointer for player's pieces
+                    if (isCurrentPlayerPiece(piece) && !gameOver) {
+                        pieceSpan.style.cursor = 'pointer';
+                    }
 
                     square.appendChild(pieceSpan);
                 }
-
-                // Drop zone events
-                square.addEventListener('dragover', (e) => {
-                    e.preventDefault();
-                    e.dataTransfer.dropEffect = 'move';
-                    if (!square.classList.contains('drag-over')) {
-                        square.classList.add('drag-over');
-                    }
-                });
-
-                square.addEventListener('dragleave', () => {
-                    square.classList.remove('drag-over');
-                });
-
-                square.addEventListener('drop', (e) => {
-                    e.preventDefault();
-                    square.classList.remove('drag-over');
-                    try {
-                        const data = JSON.parse(e.dataTransfer.getData('text/plain'));
-                        const targetRow = parseInt(square.dataset.row);
-                        const targetCol = parseInt(square.dataset.col);
-                        if (data && (data.r !== targetRow || data.c !== targetCol)) {
-                            handleSquareClick(targetRow, targetCol);
-                        }
-                    } catch (err) {
-                        console.error('Drop error:', err);
-                    }
-                });
 
                 // Selection highlight
                 if (selectedSquare && selectedSquare.row === displayRow && selectedSquare.col === displayCol) {
@@ -1178,7 +1124,131 @@ if (shareBtn) {
         setTimeout(makeAIMove, 500);
     });
 
+    // Share Button
+    document.getElementById('share-chess-btn')?.addEventListener('click', shareChessGame);
+
     // Initialize
     renderBoard();
     updateCapturedPieces();
 })();
+
+// =========================================
+//   CHESS SHARE FUNCTIONALITY
+// =========================================
+let currentChessImageBlob = null;
+
+async function shareChessGame() {
+    const modal = document.getElementById('chess-share-modal');
+    const previewContainer = document.getElementById('chess-share-preview');
+
+    if (!modal || !previewContainer) return;
+
+    // Show loading
+    previewContainer.innerHTML = '<div class="text-center p-5"><i class="fas fa-spinner fa-spin fa-2x" style="color: var(--accent-color);"></i><p class="mt-3" style="color: var(--text-secondary);">Generating preview...</p></div>';
+
+    // Show Modal
+    modal.classList.add('active');
+
+    try {
+        // Target the chessboard
+        const targetEl = document.querySelector('.chessboard');
+        if (!targetEl) throw new Error("Chessboard not found");
+
+        // Use html2canvas to capture the element
+        const canvas = await html2canvas(targetEl, {
+            backgroundColor: getComputedStyle(document.body).getPropertyValue('--card-bg').trim() || '#ffffff',
+            scale: 2,
+            logging: false,
+            useCORS: true
+        });
+
+        // Display in preview
+        previewContainer.innerHTML = '';
+        const img = document.createElement('img');
+        img.src = canvas.toDataURL('image/png');
+        img.style.maxWidth = '100%';
+        img.style.borderRadius = '8px';
+        previewContainer.appendChild(img);
+
+        // Store blob for sharing/downloading
+        canvas.toBlob(blob => {
+            currentChessImageBlob = blob;
+        });
+
+    } catch (err) {
+        console.error("Capture failed:", err);
+        previewContainer.innerHTML = '<div class="text-center p-4" style="color: #ef4444;"><i class="fas fa-exclamation-circle me-2"></i>Failed to generate preview.</div>';
+    }
+}
+
+function closeChessShareModal() {
+    const modal = document.getElementById('chess-share-modal');
+    if (modal) modal.classList.remove('active');
+}
+
+function downloadChessImage() {
+    if (!currentChessImageBlob) return;
+
+    const url = URL.createObjectURL(currentChessImageBlob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `HMI_Chess_Game_${Date.now()}.png`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
+function copyChessLink() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+        const btn = document.querySelector('.chess-share-btn.copy');
+        if (btn) {
+            const originalContent = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check me-2"></i>Copied!';
+            btn.style.backgroundColor = '#22c55e';
+            btn.style.color = '#fff';
+            btn.style.borderColor = '#22c55e';
+
+            setTimeout(() => {
+                btn.innerHTML = originalContent;
+                btn.style.backgroundColor = '';
+                btn.style.color = '';
+                btn.style.borderColor = '';
+            }, 2000);
+        }
+    });
+}
+
+async function shareChessNative() {
+    if (navigator.share && currentChessImageBlob) {
+        try {
+            const file = new File([currentChessImageBlob], 'chess_game.png', { type: 'image/png' });
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                await navigator.share({
+                    title: 'HMI Chess Game',
+                    text: 'Check out my chess game! Created by Amey Thakur & Mega Satish',
+                    files: [file]
+                });
+            } else {
+                await navigator.share({
+                    title: 'HMI Chess Game',
+                    text: 'Check out the chess game!',
+                    url: window.location.href
+                });
+            }
+        } catch (err) {
+            console.log('Error sharing:', err);
+        }
+    } else {
+        alert("Web Share API not supported on this device/browser.");
+    }
+}
+
+// Close modal on outside click
+document.addEventListener('click', (e) => {
+    const modal = document.getElementById('chess-share-modal');
+    if (e.target === modal) {
+        closeChessShareModal();
+    }
+});
