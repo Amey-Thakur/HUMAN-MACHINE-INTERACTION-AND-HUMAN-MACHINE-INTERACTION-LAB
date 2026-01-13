@@ -332,6 +332,7 @@ The system leverages a responsive design framework to maintain interaction consi
 | 3 | Project Repository | Complete source code and documentation | May 2022 | — | [View](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME) |
 | 4 | Project Teams | Team composition and roles | March 2022 | — | [View](HMI%20Mini-Project/HMI%20Mini%20Project%20Teams.pdf) |
 | 5 | Project Demo (YouTube) | Real-time demonstration of features | May 2022 | — | [View](https://youtu.be/CCbrTQwYyE8) |
+| 6 | **ResearchGate** | Research paper available on ResearchGate | May 2022 | — | [View](https://doi.org/10.13140/RG.2.2.28183.85920) |
 
 ---
 
