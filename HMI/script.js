@@ -757,6 +757,11 @@ if (shareBtn) {
                         pieceSpan.style.cursor = 'pointer';
                     }
 
+                    // Add animation to the piece that just moved
+                    if (lastMove && lastMove.to.row === displayRow && lastMove.to.col === displayCol) {
+                        pieceSpan.classList.add('piece-animate');
+                    }
+
                     square.appendChild(pieceSpan);
                 }
 

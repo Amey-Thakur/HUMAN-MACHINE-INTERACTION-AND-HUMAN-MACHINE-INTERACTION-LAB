@@ -1320,6 +1320,8 @@
             max-width: 420px;
             aspect-ratio: 1 / 1;
             margin: 0 auto;
+            padding: 2px;
+            background: var(--accent-color);
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12), 0 0 15px rgba(37, 99, 235, 0.15);
             animation: boardFadeIn 0.6s ease-out;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1430,7 +1432,24 @@
         }
 
         .chess-square.last-move {
-            background: rgba(255, 255, 0, 0.3) !important;
+            background: rgba(37, 99, 235, 0.25) !important;
+            box-shadow: inset 0 0 8px rgba(37, 99, 235, 0.3);
+        }
+
+        .piece-animate {
+            animation: pieceAppear 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes pieceAppear {
+            0% {
+                transform: scale(0.5) translateY(20px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
         }
 
         .chess-square.check {
