@@ -1209,6 +1209,128 @@
             text-align: center;
         }
 
+        /* Game Mode Selector */
+        .game-mode-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .mode-btn {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .mode-btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .mode-btn.active {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Apple-Style Chess Pieces */
+        .chess-square {
+            font-size: 2.8rem;
+            text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .chess-square.light {
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4c0 100%);
+        }
+
+        .chess-square.dark {
+            background: linear-gradient(135deg, #b88b62 0%, #a67c52 100%);
+        }
+
+        [data-theme="dark"] .chess-square.light {
+            background: linear-gradient(135deg, #86a96f 0%, #769656 100%);
+        }
+
+        [data-theme="dark"] .chess-square.dark {
+            background: linear-gradient(135deg, #5a8a4a 0%, #4a7c3a 100%);
+        }
+
+        /* Hero Card Styling for Chess */
+        .chess-container,
+        .chess-info-panel {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chess-container::before,
+        .chess-info-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, transparent 0%, rgba(37, 99, 235, 0.03) 100%);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .chess-container:hover,
+        .chess-info-panel:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .chess-container:hover::before,
+        .chess-info-panel:hover::before {
+            opacity: 1;
+        }
+
+        /* AI Thinking Indicator */
+        .ai-thinking {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: var(--accent-color);
+            font-weight: 500;
+            padding: 10px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .ai-thinking.active {
+            display: flex;
+        }
+
+        .ai-thinking i {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
         @media (max-width: 768px) {
             .chess-square {
                 font-size: 1.8rem;
@@ -1216,6 +1338,11 @@
 
             .chessboard {
                 max-width: 100%;
+            }
+
+            .mode-btn {
+                padding: 6px 14px;
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -1480,6 +1607,26 @@
                 <!-- Left: Chessboard -->
                 <div class="col-lg-7">
                     <div class="chess-container">
+                        <!-- Author Credit (like OOPM) -->
+                        <p class="text-center mb-2" style="font-size: 0.85rem; color: var(--text-secondary);">
+                            Designed and Developed by <span style="color: var(--accent-color); font-weight: 500;">Amey
+                                Thakur</span> & <span style="color: var(--accent-color); font-weight: 500;">Mega
+                                Satish</span>
+                        </p>
+                        <h5 style="color: var(--accent-color); margin-bottom: 15px; text-align: center;">
+                            <i class="fas fa-play-circle me-2"></i>Play Chess Now!
+                        </h5>
+
+                        <!-- Game Mode Selection -->
+                        <div class="game-mode-selector mb-3">
+                            <button id="mode-2p" class="mode-btn active" title="Two Players">
+                                <i class="fas fa-users"></i> 2 Player
+                            </button>
+                            <button id="mode-ai" class="mode-btn" title="Play vs AI">
+                                <i class="fas fa-robot"></i> vs AI
+                            </button>
+                        </div>
+
                         <div class="chess-header">
                             <div class="turn-indicator">
                                 <span id="turn-dot" class="turn-dot white"></span>
@@ -1508,15 +1655,14 @@
                     <div class="chess-info-panel">
                         <h4><i class="fas fa-chess-king me-2"></i>Online Chess Game</h4>
                         <p class="text-secondary mb-3">
-                            A strategic two-player chess application with full move validation, check/checkmate
-                            detection,
-                            and HMI-focused interaction design.
+                            A strategic chess application with full move validation, check/checkmate detection,
+                            AI opponent, and HMI-focused interaction design.
                         </p>
 
                         <div class="tech-stack mb-3 d-flex flex-wrap gap-2">
                             <span class="badge-tech">JavaScript</span>
                             <span class="badge-tech">Game Logic</span>
-                            <span class="badge-tech">Accessibility</span>
+                            <span class="badge-tech">AI Engine</span>
                             <span class="badge bg-success" style="font-size: 0.7rem;">Playable</span>
                         </div>
 
@@ -1544,8 +1690,8 @@
                         <div class="hmi-features mt-3">
                             <small class="text-secondary">
                                 <i class="fas fa-mouse-pointer me-1"></i> Click to select & move |
-                                <i class="fas fa-eye me-1"></i> Visual move hints |
-                                <i class="fas fa-bell me-1"></i> Audio feedback
+                                <i class="fas fa-eye me-1"></i> Visual hints |
+                                <i class="fas fa-robot me-1"></i> AI opponent
                             </small>
                         </div>
 

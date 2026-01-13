@@ -448,6 +448,10 @@ if (shareBtn) {
     let lastMove = null;
     let soundEnabled = true;
     let gameOver = false;
+    let gameMode = '2p'; // '2p' or 'ai'
+
+    // Piece values for AI evaluation
+    const PIECE_VALUES = { p: 10, n: 30, b: 30, r: 50, q: 90, k: 900 };
 
     // Audio Context for sounds
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -793,6 +797,11 @@ if (shareBtn) {
                 renderBoard();
                 updateMoveHistory();
                 updateCapturedPieces();
+
+                // Trigger AI move if in AI mode
+                if (gameMode === 'ai' && currentTurn === 'black' && !gameOver) {
+                    setTimeout(makeAIMove, 500);
+                }
             } else if (isCurrentPlayerPiece(piece)) {
                 // Select different piece
                 selectedSquare = { row, col };
@@ -859,6 +868,108 @@ if (shareBtn) {
         renderBoard();
         updateMoveHistory();
         updateCapturedPieces();
+
+        const statusEl = document.getElementById('game-status');
+        if (statusEl) {
+            statusEl.textContent = '';
+            statusEl.className = 'game-status';
+        }
+    }
+
+    // AI Move Logic
+    function evaluateBoard() {
+        let score = 0;
+        for (let r = 0; r < 8; r++) {
+            for (let c = 0; c < 8; c++) {
+                const piece = board[r][c];
+                if (piece) {
+                    const value = PIECE_VALUES[piece.toLowerCase()] || 0;
+                    score += isWhite(piece) ? -value : value;
+                }
+            }
+        }
+        return score;
+    }
+
+    function getAllMoves(forWhite) {
+        const moves = [];
+        for (let r = 0; r < 8; r++) {
+            for (let c = 0; c < 8; c++) {
+                const piece = board[r][c];
+                if (piece && (forWhite ? isWhite(piece) : isBlack(piece))) {
+                    const pieceMoves = getValidMoves(r, c);
+                    pieceMoves.forEach(m => {
+                        moves.push({ from: { row: r, col: c }, to: m });
+                    });
+                }
+            }
+        }
+        return moves;
+    }
+
+    function makeAIMove() {
+        if (gameOver || currentTurn !== 'black' || gameMode !== 'ai') return;
+
+        // Simple AI: Pick best move based on material evaluation
+        const moves = getAllMoves(false);
+        if (moves.length === 0) return;
+
+        let bestMove = null;
+        let bestScore = -Infinity;
+
+        for (const move of moves) {
+            // Simulate move
+            const backup = board[move.to.row][move.to.col];
+            const orig = board[move.from.row][move.from.col];
+            board[move.to.row][move.to.col] = orig;
+            board[move.from.row][move.from.col] = '';
+
+            // Check if move leaves king in check
+            if (!isKingInCheck(false)) {
+                const score = evaluateBoard() + (backup ? PIECE_VALUES[backup.toLowerCase()] * 2 : 0);
+                if (score > bestScore) {
+                    bestScore = score;
+                    bestMove = move;
+                }
+            }
+
+            // Restore
+            board[move.from.row][move.from.col] = orig;
+            board[move.to.row][move.to.col] = backup;
+        }
+
+        if (bestMove) {
+            // Execute AI move
+            const movingPiece = board[bestMove.from.row][bestMove.from.col];
+            const capturedPiece = board[bestMove.to.row][bestMove.to.col];
+
+            if (capturedPiece) {
+                capturedWhite.push(capturedPiece);
+                playSound('capture');
+            } else {
+                playSound('move');
+            }
+
+            board[bestMove.to.row][bestMove.to.col] = movingPiece;
+            board[bestMove.from.row][bestMove.from.col] = '';
+
+            // Pawn promotion
+            if (movingPiece === 'p' && bestMove.to.row === 7) {
+                board[bestMove.to.row][bestMove.to.col] = 'q';
+            }
+
+            lastMove = bestMove;
+            const notation = getNotation(bestMove.from.row, bestMove.from.col, bestMove.to.row, bestMove.to.col, movingPiece, !!capturedPiece);
+            moveHistory.push({ turn: 'black', notation });
+
+            currentTurn = 'white';
+            selectedSquare = null;
+            validMoves = [];
+
+            renderBoard();
+            updateMoveHistory();
+            updateCapturedPieces();
+        }
     }
 
     // Event Listeners
@@ -867,6 +978,21 @@ if (shareBtn) {
         soundEnabled = !soundEnabled;
         this.innerHTML = soundEnabled ? '<i class="fas fa-volume-up"></i>' : '<i class="fas fa-volume-mute"></i>';
         this.style.opacity = soundEnabled ? '1' : '0.5';
+    });
+
+    // Game Mode Buttons
+    document.getElementById('mode-2p')?.addEventListener('click', function () {
+        gameMode = '2p';
+        document.getElementById('mode-2p')?.classList.add('active');
+        document.getElementById('mode-ai')?.classList.remove('active');
+        newGame();
+    });
+
+    document.getElementById('mode-ai')?.addEventListener('click', function () {
+        gameMode = 'ai';
+        document.getElementById('mode-ai')?.classList.add('active');
+        document.getElementById('mode-2p')?.classList.remove('active');
+        newGame();
     });
 
     // Initialize
