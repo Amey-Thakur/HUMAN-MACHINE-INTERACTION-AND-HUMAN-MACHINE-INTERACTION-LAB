@@ -674,14 +674,21 @@ if (shareBtn) {
         const inCheck = isKingInCheck(currentTurn === 'white');
         const kingPos = findKing(currentTurn === 'white');
 
+        // Flip board when playing as black
+        const flipBoard = playerColor === 'black' && gameMode === 'ai';
+
         for (let r = 0; r < 8; r++) {
             for (let c = 0; c < 8; c++) {
-                const square = document.createElement('div');
-                square.className = `chess-square ${(r + c) % 2 === 0 ? 'light' : 'dark'}`;
-                square.dataset.row = r;
-                square.dataset.col = c;
+                // Calculate actual board position (flipped if playing as black)
+                const displayRow = flipBoard ? 7 - r : r;
+                const displayCol = flipBoard ? 7 - c : c;
 
-                const piece = board[r][c];
+                const square = document.createElement('div');
+                square.className = `chess-square ${(displayRow + displayCol) % 2 === 0 ? 'light' : 'dark'}`;
+                square.dataset.row = displayRow;
+                square.dataset.col = displayCol;
+
+                const piece = board[displayRow][displayCol];
                 if (piece) {
                     const pieceSpan = document.createElement('span');
                     pieceSpan.className = 'piece';
@@ -694,11 +701,11 @@ if (shareBtn) {
                             e.preventDefault();
                             return;
                         }
-                        e.dataTransfer.setData('text/plain', JSON.stringify({ r, c }));
+                        e.dataTransfer.setData('text/plain', JSON.stringify({ r: displayRow, c: displayCol }));
                         e.dataTransfer.effectAllowed = 'move';
 
                         // Select square on drag start
-                        handleSquareClick(r, c);
+                        handleSquareClick(displayRow, displayCol);
                         setTimeout(() => pieceSpan.style.opacity = '0', 0);
                     });
 
@@ -727,8 +734,8 @@ if (shareBtn) {
                     square.classList.remove('drag-over');
                     try {
                         const data = JSON.parse(e.dataTransfer.getData('text/plain'));
-                        if (data && (data.r !== r || data.c !== c)) {
-                            handleSquareClick(r, c);
+                        if (data && (data.r !== displayRow || data.c !== displayCol)) {
+                            handleSquareClick(displayRow, displayCol);
                         }
                     } catch (err) {
                         console.error('Drop error:', err);
@@ -736,28 +743,28 @@ if (shareBtn) {
                 });
 
                 // Selection highlight
-                if (selectedSquare && selectedSquare.row === r && selectedSquare.col === c) {
+                if (selectedSquare && selectedSquare.row === displayRow && selectedSquare.col === displayCol) {
                     square.classList.add('selected');
                 }
 
                 // Valid move indicators
-                const validMove = validMoves.find(m => m.row === r && m.col === c);
+                const validMove = validMoves.find(m => m.row === displayRow && m.col === displayCol);
                 if (validMove) {
                     square.classList.add(validMove.capture ? 'valid-capture' : 'valid-move');
                 }
 
                 // Last move highlight
-                if (lastMove && ((lastMove.from.row === r && lastMove.from.col === c) ||
-                    (lastMove.to.row === r && lastMove.to.col === c))) {
+                if (lastMove && ((lastMove.from.row === displayRow && lastMove.from.col === displayCol) ||
+                    (lastMove.to.row === displayRow && lastMove.to.col === displayCol))) {
                     square.classList.add('last-move');
                 }
 
                 // Check highlight
-                if (inCheck && kingPos && kingPos.row === r && kingPos.col === c) {
+                if (inCheck && kingPos && kingPos.row === displayRow && kingPos.col === displayCol) {
                     square.classList.add('check');
                 }
 
-                square.addEventListener('click', () => handleSquareClick(r, c));
+                square.addEventListener('click', () => handleSquareClick(displayRow, displayCol));
                 boardEl.appendChild(square);
             }
         }
