@@ -833,6 +833,30 @@
             border-color: var(--badge-bg);
         }
 
+        .badge-tech.filled {
+            color: #fff !important;
+            border: none;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Override hover effects for filled badges to keep them filled */
+        .card-custom:hover .badge-tech.filled,
+        .mini-project-showcase:hover .badge-tech.filled {
+            background: var(--filled-bg) !important;
+            color: #fff !important;
+        }
+
+        .badge-tech.filled-green {
+            background: #10b981;
+            --filled-bg: #10b981;
+        }
+
+        .badge-tech.filled-blue {
+            background: #0ea5e9;
+            --filled-bg: #0ea5e9;
+        }
+
         /* Custom Tooltips for Badges */
         .badge[data-tooltip] {
             position: relative;
@@ -1857,7 +1881,7 @@
                             <span class="badge-tech">Simulation</span>
                             <span class="badge-tech">Interaction</span>
                             <span class="badge-tech">Layout</span>
-                            <span class="badge bg-info text-dark ms-1" style="font-size: 0.7rem;"
+                            <span class="badge-tech filled-blue"
                                 data-tooltip="Built with AngularJS framework (version 1.x)">AngularJS</span>
                         </div>
                         <p>
@@ -1930,7 +1954,7 @@
                             <span class="badge-tech">JavaScript</span>
                             <span class="badge-tech">Game Logic</span>
                             <span class="badge-tech">AI Engine</span>
-                            <span class="badge bg-success ms-1" style="font-size: 0.7rem;"
+                            <span class="badge-tech filled-green"
                                 data-tooltip="Interactive playable game component">Playable</span>
                         </div>
 
