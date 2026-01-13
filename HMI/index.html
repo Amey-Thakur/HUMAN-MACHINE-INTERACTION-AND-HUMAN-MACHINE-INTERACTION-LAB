@@ -10,10 +10,10 @@
     <!-- Primary Meta Tags -->
     <meta name="title" content="AMEY | HMI Lab Portfolio">
     <meta name="description"
-        content="Official scholarly portfolio for Human Machine Interaction Laboratory at University of Mumbai. Features 4 HMI experiments and Online Chess Mini Project by Amey Thakur.">
+        content="Official scholarly portfolio for Human Machine Interaction Laboratory at University of Mumbai. Features 4 HMI experiments and Online Chess Mini Project by Amey Thakur & Mega Satish.">
     <meta name="keywords"
-        content="HMI, Human Machine Interaction, UI/UX Design, Web Development, Portfolio, Amey Thakur, University of Mumbai, Computer Engineering">
-    <meta name="author" content="Amey Thakur">
+        content="HMI, Human Machine Interaction, UI/UX Design, Web Development, Portfolio, Amey Thakur, Mega Satish, University of Mumbai, Computer Engineering">
+    <meta name="author" content="Amey Thakur, Mega Satish">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     <link rel="canonical"
@@ -27,7 +27,7 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="AMEY | HMI Lab Portfolio">
     <meta property="og:description"
-        content="Official scholarly portfolio for Human Machine Interaction Laboratory. Features 4 HMI experiments by Amey Thakur.">
+        content="Official scholarly portfolio for Human Machine Interaction Laboratory. Features 4 HMI experiments and Chess Mini Project by Amey Thakur & Mega Satish.">
     <meta property="og:image"
         content="https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/assets/og-image.png">
     <meta property="og:image:width" content="1200">
@@ -39,7 +39,7 @@
         content="https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/">
     <meta name="twitter:title" content="AMEY | HMI Lab Portfolio">
     <meta name="twitter:description"
-        content="Official scholarly portfolio for Human Machine Interaction Laboratory. Features 4 HMI experiments by Amey Thakur.">
+        content="Official scholarly portfolio for Human Machine Interaction Laboratory. Features 4 HMI experiments and Chess Mini Project by Amey Thakur & Mega Satish.">
     <meta name="twitter:image"
         content="https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/assets/og-image.png">
     <meta name="twitter:creator" content="@AmeyThakur">
@@ -937,6 +937,287 @@
             color: white;
             box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
         }
+
+        /* ========================================= */
+        /*   CHESS GAME STYLES                       */
+        /* ========================================= */
+        .chess-container {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .chess-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .turn-indicator {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .turn-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 2px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .turn-dot.white {
+            background: #f0f0f0;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        }
+
+        .turn-dot.black {
+            background: #333;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .chess-controls {
+            display: flex;
+            gap: 8px;
+        }
+
+        .chess-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chess-btn:hover {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 0;
+            border: 3px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            aspect-ratio: 1;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .chess-square {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            position: relative;
+            user-select: none;
+        }
+
+        .chess-square.light {
+            background: #f0d9b5;
+        }
+
+        .chess-square.dark {
+            background: #b58863;
+        }
+
+        [data-theme="dark"] .chess-square.light {
+            background: #769656;
+        }
+
+        [data-theme="dark"] .chess-square.dark {
+            background: #4a7c4a;
+        }
+
+        .chess-square:hover {
+            filter: brightness(1.1);
+        }
+
+        .chess-square.selected {
+            background: #7fc7ff !important;
+            box-shadow: inset 0 0 10px rgba(0, 100, 255, 0.5);
+        }
+
+        .chess-square.valid-move::after {
+            content: '';
+            position: absolute;
+            width: 30%;
+            height: 30%;
+            background: rgba(0, 150, 0, 0.5);
+            border-radius: 50%;
+        }
+
+        .chess-square.valid-capture {
+            background: rgba(255, 100, 100, 0.4) !important;
+        }
+
+        .chess-square.last-move {
+            background: rgba(255, 255, 0, 0.3) !important;
+        }
+
+        .chess-square.check {
+            background: rgba(255, 0, 0, 0.4) !important;
+            animation: pulse-check 1s infinite;
+        }
+
+        @keyframes pulse-check {
+
+            0%,
+            100% {
+                box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.5);
+            }
+
+            50% {
+                box-shadow: inset 0 0 20px rgba(255, 0, 0, 0.8);
+            }
+        }
+
+        .game-status {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 600;
+            color: var(--accent-color);
+            min-height: 24px;
+        }
+
+        .game-status.checkmate {
+            color: #dc2626;
+            font-size: 1.1rem;
+        }
+
+        .chess-info-panel {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 25px;
+            height: 100%;
+            box-shadow: var(--shadow-md);
+        }
+
+        .chess-info-panel h4 {
+            color: var(--text-primary);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .captured-section {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+        [data-theme="dark"] .captured-section {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .captured-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .captured-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .captured-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            min-width: 110px;
+        }
+
+        .captured-pieces {
+            font-size: 1.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+        }
+
+        .move-history-container {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        [data-theme="dark"] .move-history-container {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .move-history-header {
+            background: var(--accent-color);
+            color: white;
+            padding: 8px 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .move-history {
+            max-height: 150px;
+            overflow-y: auto;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: var(--text-primary);
+        }
+
+        .move-history::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .move-history::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 3px;
+        }
+
+        .move-entry {
+            display: flex;
+            gap: 15px;
+            padding: 3px 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .move-number {
+            color: var(--text-secondary);
+            min-width: 25px;
+        }
+
+        .hmi-features {
+            padding: 10px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .chess-square {
+                font-size: 1.8rem;
+            }
+
+            .chessboard {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -1012,6 +1293,9 @@
             <div class="info-badges">
                 <a href="https://github.com/Amey-Thakur" class="badge-pill clickable-badge" target="_blank">
                     <i class="fas fa-user-graduate me-2"></i>Amey Thakur
+                </a>
+                <a href="https://github.com/msatmod" class="badge-pill clickable-badge" target="_blank">
+                    <i class="fas fa-user-graduate me-2"></i>Mega Satish
                 </a>
                 <span class="badge-pill">Roll No: 50</span>
                 <span class="badge-pill">Batch: B3</span>
@@ -1187,34 +1471,90 @@
 
             </div>
 
-            <!-- Section: Mini Project -->
+            <!-- Section: Mini Project - Interactive Chess Game -->
             <div class="section-title mt-5 reveal" id="mini-project">
                 <h3>Mini Project</h3>
             </div>
 
-            <div class="mini-project-showcase reveal">
-                <div class="project-info">
-                    <h4><i class="fas fa-chess me-2"></i>Online Chess Game</h4>
-                    <p>
-                        A strategic two-player chess application implementing standard rules, move validation, and game
-                        state management.
-                        Features a clean, responsive interface with drag-and-drop functionality and visual move
-                        indicators.
-                    </p>
-
-                    <div class="tech-stack mb-3 justify-content-center">
-                        <span class="badge-tech">JavaScript</span>
-                        <span class="badge-tech">Game Logic</span>
-                        <span class="badge-tech">CSS3</span>
-                        <span class="badge bg-primary ms-1" style="font-size: 0.7rem;"
-                            data-tooltip="Fully playable two-player game with move validation">Interactive</span>
+            <div class="row g-4 mb-5 reveal">
+                <!-- Left: Chessboard -->
+                <div class="col-lg-7">
+                    <div class="chess-container">
+                        <div class="chess-header">
+                            <div class="turn-indicator">
+                                <span id="turn-dot" class="turn-dot white"></span>
+                                <span id="turn-text">White's Turn</span>
+                            </div>
+                            <div class="chess-controls">
+                                <button id="sound-toggle" class="chess-btn" title="Toggle Sound"
+                                    aria-label="Toggle Sound">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                                <button id="undo-btn" class="chess-btn" title="Undo Move" aria-label="Undo Move">
+                                    <i class="fas fa-undo"></i>
+                                </button>
+                                <button id="new-game-btn" class="chess-btn" title="New Game" aria-label="New Game">
+                                    <i class="fas fa-redo"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="chessboard" class="chessboard" role="grid" aria-label="Chess Board"></div>
+                        <div id="game-status" class="game-status"></div>
                     </div>
+                </div>
 
-                    <div class="project-buttons">
-                        <a href="https://github.com/Amey-Thakur/ONLINE-CHESS-GAME" class="btn btn-primary-custom"
-                            target="_blank">
-                            <i class="fab fa-github me-2"></i>View Repository
-                        </a>
+                <!-- Right: Game Info Panel -->
+                <div class="col-lg-5">
+                    <div class="chess-info-panel">
+                        <h4><i class="fas fa-chess-king me-2"></i>Online Chess Game</h4>
+                        <p class="text-secondary mb-3">
+                            A strategic two-player chess application with full move validation, check/checkmate
+                            detection,
+                            and HMI-focused interaction design.
+                        </p>
+
+                        <div class="tech-stack mb-3 d-flex flex-wrap gap-2">
+                            <span class="badge-tech">JavaScript</span>
+                            <span class="badge-tech">Game Logic</span>
+                            <span class="badge-tech">Accessibility</span>
+                            <span class="badge bg-success" style="font-size: 0.7rem;">Playable</span>
+                        </div>
+
+                        <!-- Captured Pieces -->
+                        <div class="captured-section mb-3">
+                            <div class="captured-row">
+                                <span class="captured-label">⚪ White captured:</span>
+                                <div id="white-captured" class="captured-pieces"></div>
+                            </div>
+                            <div class="captured-row">
+                                <span class="captured-label">⚫ Black captured:</span>
+                                <div id="black-captured" class="captured-pieces"></div>
+                            </div>
+                        </div>
+
+                        <!-- Move History -->
+                        <div class="move-history-container">
+                            <div class="move-history-header">
+                                <i class="fas fa-list-ol me-2"></i>Move History
+                            </div>
+                            <div id="move-history" class="move-history"></div>
+                        </div>
+
+                        <!-- HMI Features List -->
+                        <div class="hmi-features mt-3">
+                            <small class="text-secondary">
+                                <i class="fas fa-mouse-pointer me-1"></i> Click to select & move |
+                                <i class="fas fa-eye me-1"></i> Visual move hints |
+                                <i class="fas fa-bell me-1"></i> Audio feedback
+                            </small>
+                        </div>
+
+                        <div class="project-buttons mt-3">
+                            <a href="https://github.com/Amey-Thakur/ONLINE-CHESS-GAME" class="btn btn-primary-custom"
+                                target="_blank">
+                                <i class="fab fa-github me-2"></i>View Repository
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1226,8 +1566,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>2022 &copy; All Rights Reserved | Designed and Developed by <a href="https://github.com/Amey-Thakur">Amey
-                Thakur</a></p>
+        <p>2022 &copy; All Rights Reserved | Designed and Developed by <a href="https://github.com/Amey-Thakur"
+                target="_blank" rel="noopener noreferrer">Amey Thakur</a> & <a href="https://github.com/msatmod"
+                target="_blank" rel="noopener noreferrer">Mega Satish</a></p>
     </footer>
 
     <!-- Back to Top Button -->

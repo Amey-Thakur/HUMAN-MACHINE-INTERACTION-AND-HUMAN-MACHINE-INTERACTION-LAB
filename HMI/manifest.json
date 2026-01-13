@@ -1,7 +1,7 @@
 {
     "name": "HMI Lab Portfolio",
     "short_name": "HMI Lab",
-    "description": "Human Machine Interaction Lab Portfolio - A showcase of experimental interface designs by Amey Thakur",
+    "description": "Human Machine Interaction Lab Portfolio - A showcase of experimental interface designs by Amey Thakur & Mega Satish",
     "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#0f172a",
