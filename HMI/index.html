@@ -839,14 +839,14 @@
             border-color: var(--badge-bg);
         }
 
-        .badge-playable {
+        .badge-tech.playable {
             background: #eff6ff !important;
             color: #2563eb !important;
             border: none;
             font-weight: 600;
         }
 
-        [data-theme="dark"] .badge-playable {
+        [data-theme="dark"] .badge-tech.playable {
             background: #1e3a8a !important;
             /* Darker blue for dark mode */
             color: #60a5fa !important;
@@ -877,12 +877,14 @@
         }
 
         /* Custom Tooltips for Badges */
-        .badge[data-tooltip] {
+        .badge[data-tooltip],
+        .badge-tech[data-tooltip] {
             position: relative;
             cursor: help;
         }
 
-        .badge[data-tooltip]::after {
+        .badge[data-tooltip]::after,
+        .badge-tech[data-tooltip]::after {
             content: attr(data-tooltip);
             position: absolute;
             bottom: 100%;
@@ -901,7 +903,8 @@
             font-weight: normal;
         }
 
-        .badge[data-tooltip]::before {
+        .badge[data-tooltip]::before,
+        .badge-tech[data-tooltip]::before {
             content: '';
             position: absolute;
             bottom: 100%;
@@ -916,7 +919,9 @@
         }
 
         .badge[data-tooltip]:hover::after,
-        .badge[data-tooltip]:hover::before {
+        .badge[data-tooltip]:hover::before,
+        .badge-tech[data-tooltip]:hover::after,
+        .badge-tech[data-tooltip]:hover::before {
             opacity: 1;
             transform: translateX(-50%) translateY(0);
         }
@@ -1973,7 +1978,7 @@
                             <span class="badge-tech">JavaScript</span>
                             <span class="badge-tech">Game Logic</span>
                             <span class="badge-tech">AI Engine</span>
-                            <span class="badge badge-playable ms-1" style="font-size: 0.7rem;"
+                            <span class="badge-tech playable"
                                 data-tooltip="Interactive playable game component">Playable</span>
                         </div>
 
