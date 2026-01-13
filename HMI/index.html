@@ -1296,22 +1296,26 @@
             filter: drop-shadow(2px 3px 4px rgba(37, 99, 235, 0.4));
         }
 
-        /* Light mode - elegant blue/white theme */
+        /* Light mode - warm neutral theme (Apple "Sand" aesthetic) */
         .chess-square.light {
-            background: linear-gradient(135deg, #e8eef5 0%, #dde5ef 100%);
+            background-color: #f4f1ea;
+            color: #1d1d1f;
         }
 
         .chess-square.dark {
-            background: linear-gradient(135deg, #5b7bb3 0%, #4a6a9f 100%);
+            background-color: #c5b4a1;
+            color: #1d1d1f;
         }
 
-        /* Dark mode - deeper blue tones */
+        /* Dark mode - warm charcoal theme */
         [data-theme="dark"] .chess-square.light {
-            background: linear-gradient(135deg, #3d4f6f 0%, #344563 100%);
+            background-color: #4a4a4c;
+            color: #f5f5f7;
         }
 
         [data-theme="dark"] .chess-square.dark {
-            background: linear-gradient(135deg, #1e3a5f 0%, #162d4d 100%);
+            background-color: #323232;
+            color: #f5f5f7;
         }
 
         /* Hero Card Styling for Chess */
@@ -1330,7 +1334,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, transparent 0%, rgba(37, 99, 235, 0.03) 100%);
+            background: linear-gradient(135deg, transparent 0%, rgba(197, 180, 161, 0.1) 100%);
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.3s;
@@ -1356,7 +1360,7 @@
             color: var(--accent-color);
             font-weight: 500;
             padding: 10px;
-            background: rgba(37, 99, 235, 0.1);
+            background: rgba(197, 180, 161, 0.2);
             border-radius: 8px;
             margin-top: 10px;
         }
@@ -1369,9 +1373,9 @@
             animation: spin 1s linear infinite;
         }
 
-        /* Move Indicators - Apple Style */
+        /* Move Indicators - Refined Apple Style */
         .chess-square.selected {
-            background-color: rgba(37, 99, 235, 0.2) !important;
+            background-color: rgba(180, 160, 100, 0.4) !important;
         }
 
         .chess-square.valid-move::after {
@@ -1379,14 +1383,14 @@
             position: absolute;
             width: 14px;
             height: 14px;
-            background-color: rgba(37, 99, 235, 0.4);
+            background-color: rgba(100, 100, 100, 0.3);
             border-radius: 50%;
             transition: transform 0.2s;
         }
 
         .chess-square.valid-move:hover::after {
             transform: scale(1.2);
-            background-color: rgba(37, 99, 235, 0.6);
+            background-color: rgba(100, 100, 100, 0.5);
         }
 
         .chess-square.valid-capture::after {
@@ -1394,23 +1398,23 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            border: 4px solid rgba(239, 68, 68, 0.4);
+            border: 4px solid rgba(160, 80, 80, 0.4);
             border-radius: 50%;
             box-sizing: border-box;
             transform: scale(0.85);
         }
 
         .chess-square.check {
-            background: radial-gradient(circle, rgba(239, 68, 68, 0.4) 0%, transparent 70%) !important;
+            background: radial-gradient(circle, rgba(239, 68, 68, 0.5) 0%, transparent 70%) !important;
         }
 
         .chess-square.last-move {
-            background-color: rgba(255, 255, 0, 0.15) !important;
+            background-color: rgba(180, 200, 100, 0.5) !important;
         }
 
         .chess-square.drag-over {
-            background-color: rgba(37, 99, 235, 0.3) !important;
-            box-shadow: inset 0 0 10px rgba(37, 99, 235, 0.5);
+            background-color: rgba(180, 200, 100, 0.6) !important;
+            box-shadow: inset 0 0 10px rgba(100, 100, 100, 0.2);
         }
 
         /* Drag & Drop Cursors */
