@@ -337,3 +337,80 @@ function reveal() {
 window.addEventListener('scroll', reveal);
 reveal(); // Trigger once on load
 
+// =========================================
+//   SERVICE WORKER REGISTRATION
+// =========================================
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+            .then((registration) => {
+                console.log('✅ Service Worker registered:', registration.scope);
+            })
+            .catch((error) => {
+                console.log('❌ Service Worker registration failed:', error);
+            });
+    });
+}
+
+// =========================================
+//   PWA INSTALL PROMPT
+// =========================================
+let deferredPrompt;
+const pwaInstallBtn = document.getElementById('pwa-install-btn');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    if (pwaInstallBtn) {
+        pwaInstallBtn.style.display = 'flex';
+    }
+});
+
+if (pwaInstallBtn) {
+    pwaInstallBtn.addEventListener('click', async () => {
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            const { outcome } = await deferredPrompt.userChoice;
+            console.log(`PWA Install: ${outcome}`);
+            deferredPrompt = null;
+            pwaInstallBtn.style.display = 'none';
+        }
+    });
+}
+
+window.addEventListener('appinstalled', () => {
+    console.log('✅ PWA installed successfully');
+    if (pwaInstallBtn) {
+        pwaInstallBtn.style.display = 'none';
+    }
+});
+
+// =========================================
+//   SHARE FUNCTIONALITY
+// =========================================
+const shareBtn = document.getElementById('share-btn');
+
+if (shareBtn) {
+    shareBtn.addEventListener('click', async () => {
+        const shareData = {
+            title: 'HMI Lab Portfolio',
+            text: 'Explore Human Machine Interaction experiments by Amey Thakur',
+            url: window.location.href
+        };
+
+        try {
+            if (navigator.share) {
+                await navigator.share(shareData);
+                console.log('✅ Shared successfully');
+            } else {
+                // Fallback: Copy to clipboard
+                await navigator.clipboard.writeText(window.location.href);
+                alert('Link copied to clipboard!');
+            }
+        } catch (error) {
+            console.log('Share error:', error);
+        }
+    });
+}
+
+
