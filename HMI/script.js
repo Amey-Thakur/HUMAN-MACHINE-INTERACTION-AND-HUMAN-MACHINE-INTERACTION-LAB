@@ -162,10 +162,17 @@ const searchItems = [
     { title: 'Cloud Services Portal (Exp 6)', url: 'HMI-6/index.html', icon: 'fas fa-cloud-upload-alt', type: 'Experiment' },
     { title: 'HMI Repository', url: 'https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB', icon: 'fab fa-github', type: 'Link' },
     { title: 'Amey Thakur Profile', url: 'https://github.com/Amey-Thakur', icon: 'fas fa-user-graduate', type: 'Link' },
+    { title: 'Toggle Theme', action: 'toggleTheme', icon: 'fas fa-adjust', type: 'Action' },
 ];
 
 // Open/Close Handlers
 document.addEventListener('keydown', (e) => {
+    // Toggle Theme (Shift + T)
+    if (e.key.toLowerCase() === 't' && e.shiftKey && !e.ctrlKey && !e.metaKey && document.activeElement.tagName !== 'INPUT') {
+        const toggleBtn = document.getElementById('theme-toggle');
+        if (toggleBtn) toggleBtn.click();
+    }
+
     // Ctrl+K to Open
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
@@ -227,7 +234,10 @@ function renderResults(items) {
         el.setAttribute('role', 'button');
 
         el.addEventListener('click', () => {
-            if (item.url.startsWith('http')) {
+            if (item.action === 'toggleTheme') {
+                const toggleBtn = document.getElementById('theme-toggle');
+                if (toggleBtn) toggleBtn.click();
+            } else if (item.url.startsWith('http')) {
                 window.open(item.url, '_blank');
             } else {
                 window.location.href = item.url;
