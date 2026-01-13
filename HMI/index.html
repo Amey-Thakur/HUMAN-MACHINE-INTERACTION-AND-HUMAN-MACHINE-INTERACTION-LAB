@@ -1765,7 +1765,7 @@
             <div class="row g-4 mb-5 reveal">
                 <!-- Left: Chessboard -->
                 <div class="col-lg-7">
-                    <div class="chess-container">
+                    <div class="card-custom h-100 p-4">
                         <!-- Author Credit (like OOPM) -->
                         <p class="text-center mb-2" style="font-size: 0.85rem; color: var(--text-secondary);">
                             Designed and Developed by <span style="color: var(--accent-color); font-weight: 500;">Amey
@@ -1811,18 +1811,20 @@
 
                 <!-- Right: Game Info Panel -->
                 <div class="col-lg-5">
-                    <div class="chess-info-panel">
+                    <div class="card-custom h-100 p-4">
                         <h4><i class="fas fa-chess-king me-2"></i>Online Chess Game</h4>
                         <p class="text-secondary mb-3">
                             A strategic chess application with full move validation, check/checkmate detection,
                             AI opponent, and HMI-focused interaction design.
                         </p>
 
-                        <div class="tech-stack mb-3 d-flex flex-wrap gap-2">
+                        <!-- Standard Tech Stack formatting -->
+                        <div class="tech-stack mb-3">
                             <span class="badge-tech">JavaScript</span>
                             <span class="badge-tech">Game Logic</span>
                             <span class="badge-tech">AI Engine</span>
-                            <span class="badge bg-success" style="font-size: 0.7rem;">Playable</span>
+                            <span class="badge bg-success ms-1" style="font-size: 0.7rem;"
+                                data-tooltip="Interactive playable game component">Playable</span>
                         </div>
 
                         <!-- Captured Pieces -->
@@ -1848,7 +1850,7 @@
                         <!-- HMI Features List -->
                         <div class="hmi-features mt-3">
                             <small class="text-secondary">
-                                <i class="fas fa-mouse-pointer me-1"></i> Click to select & move |
+                                <i class="fas fa-mouse-pointer me-1"></i> Click/Drag to move |
                                 <i class="fas fa-eye me-1"></i> Visual hints |
                                 <i class="fas fa-robot me-1"></i> AI opponent
                             </small>
