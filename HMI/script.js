@@ -460,15 +460,16 @@ if (shareBtn) {
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
     function fireConfetti() {
-        if (typeof confetti === 'function') {
+        const confettiLib = window.confetti;
+        if (typeof confettiLib === 'function') {
             const count = 200;
             const defaults = {
                 origin: { y: 0.7 },
-                zIndex: 9999
+                zIndex: 10002
             };
 
             function fire(particleRatio, opts) {
-                confetti(Object.assign({}, defaults, opts, {
+                confettiLib(Object.assign({}, defaults, opts, {
                     particleCount: Math.floor(count * particleRatio)
                 }));
             }
@@ -478,6 +479,8 @@ if (shareBtn) {
             fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
             fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 });
             fire(0.1, { spread: 120, startVelocity: 45 });
+        } else {
+            console.log('Confetti library not loaded');
         }
     }
 
@@ -1144,6 +1147,11 @@ if (shareBtn) {
     }
 
     // Event Listeners
+    document.getElementById('test-confetti-btn')?.addEventListener('click', () => {
+        console.log('Testing confetti...');
+        fireConfetti();
+        playSound('win');
+    });
     document.getElementById('new-game-btn')?.addEventListener('click', newGame);
     document.getElementById('undo-btn')?.addEventListener('click', undoMove);
     document.getElementById('redo-btn')?.addEventListener('click', redoMove);
@@ -1222,63 +1230,127 @@ async function shareChessGame() {
         const targetEl = document.querySelector('.chessboard');
         if (!targetEl) throw new Error("Chessboard not found");
 
-        // Add temporary authorship footer
+        // Create a wrapper for capture to hold board + footer
+        const wrapper = document.createElement('div');
+        const isDarkMode = document.body.classList.contains('dark-mode');
+
+        wrapper.style.width = targetEl.offsetWidth + 'px';
+        wrapper.style.display = 'flex';
+        wrapper.style.flexDirection = 'column';
+        // Force solid background to prevent fading
+        wrapper.style.backgroundColor = isDarkMode ? '#0f172a' : '#ffffff';
+        wrapper.style.borderRadius = '12px';
+        wrapper.style.overflow = 'hidden';
+        wrapper.style.boxShadow = 'none';
+
+        // Insert wrapper
+        targetEl.parentNode.insertBefore(wrapper, targetEl);
+        wrapper.appendChild(targetEl);
+
+        // Add footer
         const tempFooter = document.createElement('div');
-        tempFooter.innerHTML = '<div style="background: rgba(0,0,0,0.8); color: white; padding: 10px; text-align: center; font-size: 14px; font-family: sans-serif; font-weight: bold; border-radius: 0 0 12px 12px; margin-top: -2px;">Created by Amey Thakur & Mega Satish</div>';
-        // Append to board container parent if possible or clone structure
-        // Since we are capturing the chessboard element directly, we need to wrap it or append to it if it allows
+        tempFooter.innerHTML = 'Created by Amey Thakur & Mega Satish';
+        Object.assign(tempFooter.style, {
+            background: isDarkMode ? '#1e293b' : '#f1f5f9',
+            color: isDarkMode ? '#cbd5e1' : '#475569',
+            padding: '12px',
+            textAlign: 'center',
+            fontSize: '12px',
+            fontFamily: "'Poppins', sans-serif",
+            letterSpacing: '0.5px',
+            borderTop: isDarkMode ? '1px solid #334155' : '1px solid #e2e8f0'
+        });
+        wrapper.appendChild(tempFooter);
 
-        // Better approach: Clone the board, append footer, invisible render
-        const cloneContainer = document.createElement('div');
-        cloneContainer.style.position = 'absolute';
-        cloneContainer.style.left = '-9999px';
-        cloneContainer.style.top = '-9999px';
-        cloneContainer.style.width = targetEl.offsetWidth + 'px';
-        // Copy styles
-        cloneContainer.className = targetEl.className;
-        cloneContainer.style.height = 'auto';
-        cloneContainer.style.border = 'none'; // remove original border to avoid double
-        cloneContainer.style.background = getComputedStyle(document.body).getPropertyValue('--card-bg');
-        cloneContainer.style.borderRadius = '12px';
-        cloneContainer.style.overflow = 'hidden';
+        // Apply temporary high-contrast styling to board squares for clear image
+        const squares = targetEl.querySelectorAll('.chess-square');
+        const stateMap = new Map(); // Consistent variable name
 
-        const boardClone = targetEl.cloneNode(true);
-        boardClone.style.boxShadow = 'none';
-        boardClone.style.margin = '0';
-        boardClone.style.transform = 'none';
+        squares.forEach((sq) => {
+            const pieceSpan = sq.querySelector('.piece');
+            stateMap.set(sq, {
+                bg: sq.style.backgroundColor,
+                color: sq.style.color,
+                opacity: sq.style.opacity,
+                spanColor: pieceSpan ? pieceSpan.style.color : null,
+                spanShadow: pieceSpan ? pieceSpan.style.textShadow : null,
+                spanWeight: pieceSpan ? pieceSpan.style.fontWeight : null,
+                spanOpacity: pieceSpan ? pieceSpan.style.opacity : null
+            });
 
-        cloneContainer.appendChild(boardClone);
-        cloneContainer.appendChild(tempFooter.firstChild);
+            // 1. Force Board Square Colors (Solid, No Transparency)
+            // Use standard clean colors (Blue/White theme)
+            if (sq.classList.contains('light')) {
+                sq.style.backgroundColor = '#f1f5f9'; // Slate 100
+            } else {
+                sq.style.backgroundColor = '#93c5fd'; // Blue 300
+            }
+            sq.style.opacity = '1';
 
-        document.body.appendChild(cloneContainer);
-
-        // Use html2canvas to capture the CLONE
-        const canvas = await html2canvas(cloneContainer, {
-            backgroundColor: null,
-            scale: 2,
-            logging: false,
-            useCORS: true
+            // 2. Force Piece Styling (High Contrast)
+            if (pieceSpan) {
+                // Force all pieces to be Solid Black/Dark Grey for maximum contrast
+                // This makes White pieces (Outlines) look like Dark Outlines (Clear)
+                // And Black pieces (Filled) look like Solid Dark (Clear)
+                pieceSpan.style.color = '#1e293b'; // Slate 800
+                pieceSpan.style.textShadow = 'none';
+                pieceSpan.style.fontWeight = 'bold';
+                pieceSpan.style.opacity = '1';
+            }
         });
 
-        // Remove clone
-        document.body.removeChild(cloneContainer);
+        // Capture
+        const canvas = await html2canvas(wrapper, {
+            scale: 4, // Ultra quality
+            backgroundColor: '#ffffff',
+            useCORS: true,
+            logging: false,
+            imageTimeout: 0
+        });
+
+        // Restore original state
+        squares.forEach(sq => {
+            const saved = stateMap.get(sq);
+            if (!saved) return;
+
+            sq.style.backgroundColor = saved.bg;
+            sq.style.color = saved.color;
+            sq.style.opacity = saved.opacity;
+
+            const pieceSpan = sq.querySelector('.piece');
+            if (pieceSpan) {
+                pieceSpan.style.color = saved.spanColor;
+                pieceSpan.style.textShadow = saved.spanShadow;
+                pieceSpan.style.fontWeight = saved.spanWeight;
+                pieceSpan.style.opacity = saved.spanOpacity;
+            }
+        });
+
+        // Cleanup: Restore board
+        wrapper.parentNode.insertBefore(targetEl, wrapper);
+        wrapper.remove();
 
         // Display in preview
         previewContainer.innerHTML = '';
         const img = document.createElement('img');
         img.src = canvas.toDataURL('image/png');
         img.style.maxWidth = '100%';
+        img.style.maxHeight = '40vh';
+        img.style.width = 'auto';
         img.style.borderRadius = '8px';
         previewContainer.appendChild(img);
 
-        // Store blob for sharing/downloading
+        // Store blob
         canvas.toBlob(blob => {
             currentChessImageBlob = blob;
         });
 
     } catch (err) {
         console.error("Capture failed:", err);
-        previewContainer.innerHTML = '<div class="text-center p-4" style="color: #ef4444;"><i class="fas fa-exclamation-circle me-2"></i>Failed to generate preview.</div>';
+        previewContainer.innerHTML = `<div class="text-center p-4" style="color: #ef4444;">
+            <i class="fas fa-exclamation-circle me-2"></i>Failed to generate preview.<br>
+            <small>${err.message}</small>
+        </div>`;
     }
 }
 
