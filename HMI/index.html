@@ -1279,24 +1279,25 @@
         }
 
         .mode-btn:hover {
+            color: var(--accent-color);
+            transform: translateY(-2px);
             opacity: 1;
         }
 
         .mode-btn.active {
-            background: #ffffff;
-            color: #000000;
+            background: var(--accent-color);
+            color: white;
             font-weight: 600;
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12), 0 3px 1px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
             opacity: 1;
             transform: none;
-            /* Override previous button transform */
         }
 
+        /* Remove specific dark mode override to keep consistency with the requested "previous colors" */
         [data-theme="dark"] .mode-btn.active {
-            background: #6366f1;
-            /* Accent color for dark mode active state */
-            color: #ffffff;
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            background: var(--accent-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
         }
 
         /* Apple-Style Chess Pieces - Clean & Minimal */
