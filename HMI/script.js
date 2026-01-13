@@ -459,18 +459,40 @@ if (shareBtn) {
     // Audio Context for sounds
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
+    function fireConfetti() {
+        if (typeof confetti === 'function') {
+            const count = 200;
+            const defaults = {
+                origin: { y: 0.7 },
+                zIndex: 9999
+            };
+
+            function fire(particleRatio, opts) {
+                confetti(Object.assign({}, defaults, opts, {
+                    particleCount: Math.floor(count * particleRatio)
+                }));
+            }
+
+            fire(0.25, { spread: 26, startVelocity: 55 });
+            fire(0.2, { spread: 60 });
+            fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
+            fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 });
+            fire(0.1, { spread: 120, startVelocity: 45 });
+        }
+    }
+
     function playSound(type) {
         if (!soundEnabled) return;
         if (audioCtx.state === 'suspended') audioCtx.resume();
 
-        const osc = audioCtx.createOscillator();
-        const gain = audioCtx.createGain();
-        osc.connect(gain);
-        gain.connect(audioCtx.destination);
-
         const now = audioCtx.currentTime;
 
         if (type === 'move') {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
             osc.type = 'sine';
             osc.frequency.setValueAtTime(600, now);
             gain.gain.setValueAtTime(0.1, now);
@@ -478,6 +500,11 @@ if (shareBtn) {
             osc.start(now);
             osc.stop(now + 0.1);
         } else if (type === 'capture') {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
             osc.type = 'triangle';
             osc.frequency.setValueAtTime(300, now);
             osc.frequency.exponentialRampToValueAtTime(150, now + 0.15);
@@ -486,12 +513,52 @@ if (shareBtn) {
             osc.start(now);
             osc.stop(now + 0.15);
         } else if (type === 'check') {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
             osc.type = 'sawtooth';
-            osc.frequency.setValueAtTime(400, now);
+            osc.frequency.setValueAtTime(800, now);
             gain.gain.setValueAtTime(0.1, now);
-            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
             osc.start(now);
-            osc.stop(now + 0.2);
+            osc.stop(now + 0.3);
+
+            // Second tone for dissonance
+            const osc2 = audioCtx.createOscillator();
+            const gain2 = audioCtx.createGain();
+            osc2.connect(gain2);
+            gain2.connect(audioCtx.destination);
+            osc2.type = 'sawtooth';
+            osc2.frequency.setValueAtTime(750, now); // Dissonant interval
+            gain2.gain.setValueAtTime(0.1, now);
+            gain2.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+            osc2.start(now);
+            osc2.stop(now + 0.3);
+
+        } else if (type === 'win') {
+            // Major Triad Arpeggio (C Major)
+            const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6
+            notes.forEach((freq, i) => {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+
+                osc.type = 'triangle';
+                osc.frequency.value = freq;
+
+                const startTime = now + (i * 0.15);
+                const duration = 0.3;
+
+                gain.gain.setValueAtTime(0, startTime);
+                gain.gain.linearRampToValueAtTime(0.15, startTime + 0.05);
+                gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
+
+                osc.start(startTime);
+                osc.stop(startTime + duration);
+            });
         }
     }
 
@@ -751,8 +818,9 @@ if (shareBtn) {
                 statusEl.textContent = `Checkmate! ${currentTurn === 'white' ? 'Black' : 'White'} wins! 🎉`;
                 statusEl.className = 'game-status checkmate';
                 gameOver = true;
-                // Trigger confetti if available
-                if (typeof window.fireConfetti === 'function') window.fireConfetti();
+                // Trigger confetti and sound
+                fireConfetti();
+                playSound('win');
             } else {
                 statusEl.textContent = 'Stalemate! Draw.';
                 statusEl.className = 'game-status';
