@@ -139,8 +139,12 @@ Comprehensive module-wise notes curated by Mega Satish, covering all essential t
      ========================================================================================= -->
 ### Mega's Notes
 
+<div align="center">
+
 | <a href="https://github.com/msatmod"><img src="THE%20WALL/Mega/Mega.png" width="150" height="150" alt="Mega Satish"></a><br>[**Mega Satish**](https://github.com/msatmod)<br><br>[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--1844--9557-A6CE39)](https://orcid.org/0000-0002-1844-9557) |
 | :---: |
+
+</div>
 
 
 **Comprehensive module-wise notes curated by Mega Satish:**
