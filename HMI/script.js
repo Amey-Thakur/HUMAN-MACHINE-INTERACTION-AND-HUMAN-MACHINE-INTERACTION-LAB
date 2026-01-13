@@ -701,12 +701,24 @@ if (shareBtn) {
                             e.preventDefault();
                             return;
                         }
+
+                        // Set drag data
                         e.dataTransfer.setData('text/plain', JSON.stringify({ r: displayRow, c: displayCol }));
                         e.dataTransfer.effectAllowed = 'move';
+                        e.dataTransfer.dropEffect = 'move';
+
+                        // Create drag image (clone of piece)
+                        const dragImage = pieceSpan.cloneNode(true);
+                        dragImage.style.position = 'absolute';
+                        dragImage.style.top = '-1000px';
+                        dragImage.style.fontSize = '2.5rem';
+                        document.body.appendChild(dragImage);
+                        e.dataTransfer.setDragImage(dragImage, 25, 25);
+                        setTimeout(() => document.body.removeChild(dragImage), 0);
 
                         // Select square on drag start
                         handleSquareClick(displayRow, displayCol);
-                        setTimeout(() => pieceSpan.style.opacity = '0', 0);
+                        setTimeout(() => pieceSpan.style.opacity = '0.3', 0);
                     });
 
                     pieceSpan.addEventListener('dragend', (e) => {
