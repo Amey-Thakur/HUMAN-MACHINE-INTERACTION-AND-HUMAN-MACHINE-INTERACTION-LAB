@@ -448,7 +448,7 @@ if (shareBtn) {
     let lastMove = null;
     let soundEnabled = true;
     let gameOver = false;
-    let gameMode = '2p'; // '2p' or 'ai'
+    let gameMode = 'ai'; // 'ai' or '2p' - default to AI mode
     let playerColor = 'white'; // Player's color when playing vs AI
     let undoStack = []; // Store board states for undo
     let redoStack = []; // Store board states for redo
@@ -1132,6 +1132,11 @@ if (shareBtn) {
         gameMode = '2p';
         document.getElementById('mode-2p')?.classList.add('active');
         document.getElementById('mode-ai')?.classList.remove('active');
+        // Hide color selector for 2P mode
+        const colorSelector = document.getElementById('color-selector');
+        if (colorSelector) {
+            colorSelector.style.display = 'none';
+        }
         newGame();
     });
 
