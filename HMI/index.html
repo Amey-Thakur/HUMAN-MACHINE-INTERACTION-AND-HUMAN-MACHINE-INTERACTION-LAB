@@ -649,6 +649,57 @@
             opacity: 1;
             transform: translateX(-50%) translateY(0);
         }
+
+        /* Mini Project Card Styling */
+        .mini-project-showcase {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+            margin-bottom: 50px;
+        }
+
+        .mini-project-showcase:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .mini-project-showcase h4 {
+            color: var(--text-primary);
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .mini-project-showcase p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+
+        .btn-outline-custom {
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+            border-radius: 12px;
+            padding: 10px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            background: transparent;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-outline-custom:hover {
+            background: var(--accent-color);
+            color: white;
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+        }
     </style>
 </head>
 
@@ -812,6 +863,36 @@
                 </div>
             </div>
 
+        </div>
+
+        <!-- Section: Mini Project -->
+        <div class="section-title mt-5">
+            <h3>Mini Project</h3>
+        </div>
+
+        <div class="mini-project-showcase">
+            <div class="project-info">
+                <h4><i class="fas fa-chess me-2"></i>Online Chess Game</h4>
+                <p>
+                    A strategic two-player chess application implementing standard rules, move validation, and game
+                    state management.
+                    Features a clean, responsive interface with drag-and-drop functionality and visual move indicators.
+                </p>
+
+                <div class="tech-stack mb-3 justify-content-center">
+                    <span class="badge-tech">JavaScript</span>
+                    <span class="badge-tech">Game Logic</span>
+                    <span class="badge-tech">CSS3</span>
+                    <span class="badge bg-primary ms-1" style="font-size: 0.7rem;">Interactive</span>
+                </div>
+
+                <div class="project-buttons">
+                    <a href="https://github.com/Amey-Thakur/ONLINE-CHESS-GAME" class="btn btn-primary-custom"
+                        target="_blank">
+                        <i class="fab fa-github me-2"></i>View Repository
+                    </a>
+                </div>
+            </div>
         </div>
 
     </div>
