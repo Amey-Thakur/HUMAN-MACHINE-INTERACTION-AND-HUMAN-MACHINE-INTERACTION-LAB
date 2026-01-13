@@ -276,7 +276,7 @@ Prepare the Interview Questions for the Subject Matter Expert (SME) of your sele
 
   <br>
 
-  🏠 **[Back to Main Repository](../)**
+  🏠 **[Back to Main Repository](../)** &nbsp;·&nbsp; ♟️ **[Chess Game App](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)**
 
 </div>
 
