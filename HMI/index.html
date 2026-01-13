@@ -1504,6 +1504,92 @@
                 font-size: 0.8rem;
             }
         }
+
+        /* Laptop/MacBook Visuals */
+        .laptop-column {
+            width: 100%;
+            max-width: none;
+            margin: 20px auto;
+            perspective: 1000px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .laptop-frame {
+            position: relative;
+            padding-bottom: 25px;
+            width: 100%;
+        }
+
+        .laptop-screen {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            background: #000;
+            border-radius: 12px 12px 0 0;
+            border: 6px solid #1e293b;
+            border-bottom: none;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .laptop-screen::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 12px;
+            background: #1e293b;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            z-index: 10;
+        }
+
+        .laptop-screen iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            opacity: 0;
+            animation: videoLoad 1.5s ease-out 0.8s forwards;
+        }
+
+        @keyframes videoLoad {
+            from {
+                opacity: 0;
+                filter: blur(10px);
+                transform: scale(1.02);
+            }
+
+            to {
+                opacity: 1;
+                filter: blur(0);
+                transform: scale(1);
+            }
+        }
+
+        .laptop-base {
+            width: 116%;
+            height: 14px;
+            background: linear-gradient(to bottom, #334155, #1e293b);
+            margin-left: -8%;
+            border-radius: 2px 2px 12px 12px;
+            position: relative;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .laptop-base::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 6px;
+            background: rgba(15, 23, 42, 0.4);
+            border-radius: 0 0 10px 10px;
+        }
     </style>
 </head>
 
@@ -1825,6 +1911,20 @@
                             <span class="badge-tech">AI Engine</span>
                             <span class="badge bg-success ms-1" style="font-size: 0.7rem;"
                                 data-tooltip="Interactive playable game component">Playable</span>
+                        </div>
+
+                        <!-- Laptop Video Frame -->
+                        <div class="laptop-column mb-4">
+                            <div class="laptop-frame">
+                                <div class="laptop-screen">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/CCbrTQwYyE8?autoplay=1&mute=1&loop=1&playlist=CCbrTQwYyE8"
+                                        title="Online Chess Game Demo"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="laptop-base"></div>
+                            </div>
                         </div>
 
                         <!-- Captured Pieces -->
