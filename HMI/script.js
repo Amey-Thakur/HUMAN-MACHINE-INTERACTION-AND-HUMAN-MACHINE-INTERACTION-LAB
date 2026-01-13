@@ -680,7 +680,10 @@ if (shareBtn) {
 
                 const piece = board[r][c];
                 if (piece) {
-                    square.textContent = PIECES[piece];
+                    const pieceSpan = document.createElement('span');
+                    pieceSpan.className = 'piece';
+                    pieceSpan.textContent = PIECES[piece];
+                    square.appendChild(pieceSpan);
                 }
 
                 // Selection highlight
