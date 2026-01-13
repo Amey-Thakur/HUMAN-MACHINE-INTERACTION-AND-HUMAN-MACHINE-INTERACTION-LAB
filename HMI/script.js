@@ -449,6 +449,8 @@ if (shareBtn) {
     let soundEnabled = true;
     let gameOver = false;
     let gameMode = '2p'; // '2p' or 'ai'
+    let undoStack = []; // Store board states for undo
+    let redoStack = []; // Store board states for redo
 
     // Piece values for AI evaluation
     const PIECE_VALUES = { p: 10, n: 30, b: 30, r: 50, q: 90, k: 900 };
@@ -808,6 +810,17 @@ if (shareBtn) {
             const move = validMoves.find(m => m.row === row && m.col === col);
 
             if (move) {
+                // Save current state before move (for undo)
+                undoStack.push({
+                    board: JSON.parse(JSON.stringify(board)),
+                    currentTurn: currentTurn,
+                    moveHistory: [...moveHistory],
+                    capturedWhite: [...capturedWhite],
+                    capturedBlack: [...capturedBlack],
+                    lastMove: lastMove
+                });
+                redoStack = []; // Clear redo stack on new move
+
                 // Execute move
                 const movingPiece = board[selectedSquare.row][selectedSquare.col];
                 const capturedPiece = board[row][col];
@@ -923,6 +936,70 @@ if (shareBtn) {
             statusEl.textContent = '';
             statusEl.className = 'game-status';
         }
+        undoStack = [];
+        redoStack = [];
+    }
+
+    // Undo Move Function
+    function undoMove() {
+        if (undoStack.length === 0 || gameOver) return;
+
+        // Save current state to redo stack
+        redoStack.push({
+            board: JSON.parse(JSON.stringify(board)),
+            currentTurn: currentTurn,
+            moveHistory: [...moveHistory],
+            capturedWhite: [...capturedWhite],
+            capturedBlack: [...capturedBlack],
+            lastMove: lastMove
+        });
+
+        // Restore previous state
+        const prevState = undoStack.pop();
+        board = JSON.parse(JSON.stringify(prevState.board));
+        currentTurn = prevState.currentTurn;
+        moveHistory = [...prevState.moveHistory];
+        capturedWhite = [...prevState.capturedWhite];
+        capturedBlack = [...prevState.capturedBlack];
+        lastMove = prevState.lastMove;
+        selectedSquare = null;
+        validMoves = [];
+
+        renderBoard();
+        updateMoveHistory();
+        updateCapturedPieces();
+        playSound('move');
+    }
+
+    // Redo Move Function
+    function redoMove() {
+        if (redoStack.length === 0 || gameOver) return;
+
+        // Save current state to undo stack
+        undoStack.push({
+            board: JSON.parse(JSON.stringify(board)),
+            currentTurn: currentTurn,
+            moveHistory: [...moveHistory],
+            capturedWhite: [...capturedWhite],
+            capturedBlack: [...capturedBlack],
+            lastMove: lastMove
+        });
+
+        // Restore next state
+        const nextState = redoStack.pop();
+        board = JSON.parse(JSON.stringify(nextState.board));
+        currentTurn = nextState.currentTurn;
+        moveHistory = [...nextState.moveHistory];
+        capturedWhite = [...nextState.capturedWhite];
+        capturedBlack = [...nextState.capturedBlack];
+        lastMove = nextState.lastMove;
+        selectedSquare = null;
+        validMoves = [];
+
+        renderBoard();
+        updateMoveHistory();
+        updateCapturedPieces();
+        playSound('move');
     }
 
     // AI Move Logic
@@ -1023,6 +1100,8 @@ if (shareBtn) {
 
     // Event Listeners
     document.getElementById('new-game-btn')?.addEventListener('click', newGame);
+    document.getElementById('undo-btn')?.addEventListener('click', undoMove);
+    document.getElementById('redo-btn')?.addEventListener('click', redoMove);
     document.getElementById('sound-toggle')?.addEventListener('click', function () {
         soundEnabled = !soundEnabled;
         this.innerHTML = soundEnabled ? '<i class="fas fa-volume-up"></i>' : '<i class="fas fa-volume-mute"></i>';
