@@ -686,7 +686,8 @@
             transition: all 0.2s;
         }
 
-        .card-custom:hover .badge-tech {
+        .card-custom:hover .badge-tech,
+        .mini-project-showcase:hover .badge-tech {
             background: var(--badge-bg);
             color: var(--badge-text);
             border-color: var(--badge-bg);
@@ -739,7 +740,9 @@
 
         /* Mini Project Card Styling */
         .mini-project-showcase {
-            background: var(--card-bg);
+            background: linear-gradient(-45deg, #ffffff, #f0f4ff, #e0e7ff, #f8fafc);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
             border: 1px solid var(--border-color);
             border-radius: 20px;
             padding: 40px;
@@ -749,6 +752,13 @@
             margin: 0 auto;
             transition: transform 0.3s ease;
             margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        [data-theme="dark"] .mini-project-showcase {
+            background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1a237e);
+            background-size: 400% 400%;
         }
 
         .mini-project-showcase:hover {
