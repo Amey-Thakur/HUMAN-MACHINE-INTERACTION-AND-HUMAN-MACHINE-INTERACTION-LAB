@@ -734,8 +734,10 @@ if (shareBtn) {
                     square.classList.remove('drag-over');
                     try {
                         const data = JSON.parse(e.dataTransfer.getData('text/plain'));
-                        if (data && (data.r !== displayRow || data.c !== displayCol)) {
-                            handleSquareClick(displayRow, displayCol);
+                        const targetRow = parseInt(square.dataset.row);
+                        const targetCol = parseInt(square.dataset.col);
+                        if (data && (data.r !== targetRow || data.c !== targetCol)) {
+                            handleSquareClick(targetRow, targetCol);
                         }
                     } catch (err) {
                         console.error('Drop error:', err);
