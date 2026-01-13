@@ -46,3 +46,4 @@ This experiment focuses on the **Principles of Graphical User Interface (GUI) De
   🔬 **[Human Machine Interaction Laboratory](../README.md)** &nbsp;·&nbsp; ♟️ **[Chess Game App](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)**
 
 </div>
+<!-- HMI -->

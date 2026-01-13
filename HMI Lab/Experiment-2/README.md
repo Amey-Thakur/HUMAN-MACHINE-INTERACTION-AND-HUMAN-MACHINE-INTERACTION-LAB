@@ -57,3 +57,4 @@ The **Math Sprint Game** is an interactive educational web application designed 
   🔬 **[Human Machine Interaction Laboratory](../README.md)** &nbsp;·&nbsp; ♟️ **[Chess Game App](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)**
 
 </div>
+<!-- HMI -->
