@@ -460,27 +460,15 @@ if (shareBtn) {
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
     function fireConfetti() {
-        const confettiLib = window.confetti;
-        if (typeof confettiLib === 'function') {
-            const count = 200;
-            const defaults = {
-                origin: { y: 0.7 },
+        if (typeof confetti === 'function') {
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 },
                 zIndex: 10002
-            };
-
-            function fire(particleRatio, opts) {
-                confettiLib(Object.assign({}, defaults, opts, {
-                    particleCount: Math.floor(count * particleRatio)
-                }));
-            }
-
-            fire(0.25, { spread: 26, startVelocity: 55 });
-            fire(0.2, { spread: 60 });
-            fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
-            fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 });
-            fire(0.1, { spread: 120, startVelocity: 45 });
+            });
         } else {
-            console.log('Confetti library not loaded');
+            console.warn('Confetti library logic fallback - manual trigger failed');
         }
     }
 
@@ -1147,11 +1135,6 @@ if (shareBtn) {
     }
 
     // Event Listeners
-    document.getElementById('test-confetti-btn')?.addEventListener('click', () => {
-        console.log('Testing confetti...');
-        fireConfetti();
-        playSound('win');
-    });
     document.getElementById('new-game-btn')?.addEventListener('click', newGame);
     document.getElementById('undo-btn')?.addEventListener('click', undoMove);
     document.getElementById('redo-btn')?.addEventListener('click', redoMove);
