@@ -319,6 +319,10 @@ This project involves the development of a sophisticated **Online Chess Game**, 
 
 The system leverages a responsive design framework to maintain interaction consistency across diverse device orientations. At its core, the application integrates complex algorithmic structures for **real-time move validation** and state management, demonstrating the practical application of usability engineering metrics. This project serves as an exploration into the synergy between high-performance back-end logic and intuitive front-end layouts, aiming to optimize the overall **User Experience (UX)** through iterative design and evaluation.
 
+> [!NOTE]
+> **Research Impact:** This project was published as an academic research paper on **ResearchGate**.
+> - [Published Paper @ResearchGate](https://doi.org/10.13140/RG.2.2.28183.85920)
+
 ### Resources
 
 | # | Resource | Description | Date | Marks | Link |
