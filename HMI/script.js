@@ -16,7 +16,7 @@
 //   CONSOLE EASTER EGG 🥚
 // =========================================
 console.log(
-    "%c🎨 HMI Lab Portfolio",
+    "%c🖱️ HMI Lab Portfolio",
     "font-size: 28px; font-weight: bold; color: #2563eb; text-shadow: 2px 2px 0 #0f172a;"
 );
 console.log(
