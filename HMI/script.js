@@ -1222,13 +1222,46 @@ async function shareChessGame() {
         const targetEl = document.querySelector('.chessboard');
         if (!targetEl) throw new Error("Chessboard not found");
 
-        // Use html2canvas to capture the element
-        const canvas = await html2canvas(targetEl, {
-            backgroundColor: getComputedStyle(document.body).getPropertyValue('--card-bg').trim() || '#ffffff',
+        // Add temporary authorship footer
+        const tempFooter = document.createElement('div');
+        tempFooter.innerHTML = '<div style="background: rgba(0,0,0,0.8); color: white; padding: 10px; text-align: center; font-size: 14px; font-family: sans-serif; font-weight: bold; border-radius: 0 0 12px 12px; margin-top: -2px;">Created by Amey Thakur & Mega Satish</div>';
+        // Append to board container parent if possible or clone structure
+        // Since we are capturing the chessboard element directly, we need to wrap it or append to it if it allows
+
+        // Better approach: Clone the board, append footer, invisible render
+        const cloneContainer = document.createElement('div');
+        cloneContainer.style.position = 'absolute';
+        cloneContainer.style.left = '-9999px';
+        cloneContainer.style.top = '-9999px';
+        cloneContainer.style.width = targetEl.offsetWidth + 'px';
+        // Copy styles
+        cloneContainer.className = targetEl.className;
+        cloneContainer.style.height = 'auto';
+        cloneContainer.style.border = 'none'; // remove original border to avoid double
+        cloneContainer.style.background = getComputedStyle(document.body).getPropertyValue('--card-bg');
+        cloneContainer.style.borderRadius = '12px';
+        cloneContainer.style.overflow = 'hidden';
+
+        const boardClone = targetEl.cloneNode(true);
+        boardClone.style.boxShadow = 'none';
+        boardClone.style.margin = '0';
+        boardClone.style.transform = 'none';
+
+        cloneContainer.appendChild(boardClone);
+        cloneContainer.appendChild(tempFooter.firstChild);
+
+        document.body.appendChild(cloneContainer);
+
+        // Use html2canvas to capture the CLONE
+        const canvas = await html2canvas(cloneContainer, {
+            backgroundColor: null,
             scale: 2,
             logging: false,
             useCORS: true
         });
+
+        // Remove clone
+        document.body.removeChild(cloneContainer);
 
         // Display in preview
         previewContainer.innerHTML = '';
@@ -1260,7 +1293,7 @@ function downloadChessImage() {
     const url = URL.createObjectURL(currentChessImageBlob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `HMI_Chess_Game_${Date.now()}.png`;
+    a.download = `HMI_Chess_Game_By_Amey_and_Mega.png`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -1269,39 +1302,52 @@ function downloadChessImage() {
 
 function copyChessLink() {
     const url = window.location.href;
-    navigator.clipboard.writeText(url).then(() => {
-        const btn = document.querySelector('.chess-share-btn.copy');
-        if (btn) {
-            const originalContent = btn.innerHTML;
-            btn.innerHTML = '<i class="fas fa-check me-2"></i>Copied!';
-            btn.style.backgroundColor = '#22c55e';
-            btn.style.color = '#fff';
-            btn.style.borderColor = '#22c55e';
+    const shareText = "Play this awesome Chess Game created by Amey Thakur & Mega Satish! " + url;
 
-            setTimeout(() => {
-                btn.innerHTML = originalContent;
-                btn.style.backgroundColor = '';
-                btn.style.color = '';
-                btn.style.borderColor = '';
-            }, 2000);
-        }
-    });
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(shareText).then(() => {
+            const btn = document.querySelector('.chess-share-btn.copy');
+            if (btn) {
+                const originalContent = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check me-2"></i>Copied!';
+                btn.style.backgroundColor = '#22c55e';
+                btn.style.color = '#fff';
+                btn.style.borderColor = '#22c55e';
+
+                setTimeout(() => {
+                    btn.innerHTML = originalContent;
+                    btn.style.backgroundColor = '';
+                    btn.style.color = '';
+                    btn.style.borderColor = '';
+                }, 2000);
+            }
+        });
+    } else {
+        // Fallback
+        const textArea = document.createElement("textarea");
+        textArea.value = shareText;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("Copy");
+        textArea.remove();
+        alert("Link copied to clipboard!");
+    }
 }
 
 async function shareChessNative() {
     if (navigator.share && currentChessImageBlob) {
         try {
-            const file = new File([currentChessImageBlob], 'chess_game.png', { type: 'image/png' });
+            const file = new File([currentChessImageBlob], 'chess_game_amey_mega.png', { type: 'image/png' });
             if (navigator.canShare && navigator.canShare({ files: [file] })) {
                 await navigator.share({
                     title: 'HMI Chess Game',
-                    text: 'Check out my chess game! Created by Amey Thakur & Mega Satish',
+                    text: 'Check out this Chess Game created by Amey Thakur & Mega Satish!',
                     files: [file]
                 });
             } else {
                 await navigator.share({
                     title: 'HMI Chess Game',
-                    text: 'Check out the chess game!',
+                    text: 'Check out this Chess Game created by Amey Thakur & Mega Satish!',
                     url: window.location.href
                 });
             }

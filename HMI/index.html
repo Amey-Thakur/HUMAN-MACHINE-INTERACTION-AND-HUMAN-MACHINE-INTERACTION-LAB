@@ -1171,9 +1171,10 @@
         .chess-share-modal {
             background: var(--card-bg);
             border-radius: 16px;
-            max-width: 480px;
-            width: 90%;
-            overflow: hidden;
+            max-width: 90vw;
+            width: 400px;
+            max-height: 90vh;
+            overflow-y: auto;
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
             border: 1px solid var(--border-color);
             animation: shareModalSlide 0.3s ease;
@@ -1246,6 +1247,8 @@
 
         .chess-share-preview img {
             max-width: 100%;
+            max-height: 40vh;
+            width: auto;
             border-radius: 8px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
             transform: scale(0.98);
