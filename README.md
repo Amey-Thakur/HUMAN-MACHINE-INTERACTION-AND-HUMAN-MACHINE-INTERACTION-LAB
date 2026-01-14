@@ -357,7 +357,7 @@ Internal assessment evaluations conducted during the course:
 | 1 | [Question Paper](IAT-2/HMI_IAT-2_Question_Paper.pdf) | HMI Internal Assessment Test 2 Question Paper | — |
 | 2 | [Question Bank](IAT-2/HMI_IAT-2_Question_Bank.pdf) | HMI Internal Assessment Test 2 Question Bank | — |
 
-### Additional Resources:
+**Additional Resources:**
 
 | # | Resource | Description |
 |:-:|:---|:---|
@@ -381,7 +381,7 @@ Final semester examination submission:
 |:-:|:---|:---|:---:|
 | 1 | [Question Paper](Semester%20Exam/HMI_Question_Paper.pdf) | Official University Question Paper | May 17, 2022 |
 
-### Additional Resources:
+**Additional Resources:**
 
 | # | Resource | Description |
 |:-:|:---|:---|
