@@ -227,7 +227,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 ### Program Details
 
 <details>
-<summary><b>Experiment-2: Static Web Page (1 Program)</b></summary>
+<summary><b>Experiment 2: Static Web Page (1 Program)</b></summary>
 <br>
 
 | Program | Category | Description | Code |
@@ -237,7 +237,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 </details>
 
 <details>
-<summary><b>Experiment-3: Dynamic Web Page (1 Program)</b></summary>
+<summary><b>Experiment 3: Dynamic Web Page (1 Program)</b></summary>
 <br>
 
 | Program | Category | Description | Code |
@@ -247,7 +247,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 </details>
 
 <details>
-<summary><b>Experiment-4: ATVM Interface (4 Programs)</b></summary>
+<summary><b>Experiment 4: ATVM Interface (4 Programs)</b></summary>
 <br>
 
 | Program | Category | Description | Code |
@@ -260,7 +260,7 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 </details>
 
 <details>
-<summary><b>Experiment-6: E-Commerce UI (Complex Application)</b></summary>
+<summary><b>Experiment 6: E-Commerce UI (Complex Application)</b></summary>
 <br>
 
 | Program | Category | Description | Code |
