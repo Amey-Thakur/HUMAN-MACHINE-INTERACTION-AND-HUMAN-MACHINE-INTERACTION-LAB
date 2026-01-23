@@ -25,12 +25,12 @@
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI%20Portfolio-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/index.html)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI%20Portfolio-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/index.html)
 
 </div>
 
 > [!NOTE]
-> **HMI Portfolio**: This repository features a centralized portfolio dashboard designed to showcase all human-machine interaction implementations and interactive prototypes. Access the full interactive experience through the [HMI Portfolio Index](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/index.html).
+> **HMI Portfolio**: This repository features a centralized portfolio dashboard designed to showcase all human-machine interaction implementations and interactive prototypes. Access the full interactive experience through the [HMI Portfolio Index](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/index.html).
 
 > [!TIP]
 > **Web Development & HMI Testing**: When developing interactive prototypes, always verify that your touch targets are at least 44x44 pixels (Mobile Accessibility Guideline) and ensure your color contrast meets WCAG 2.1 AA standards (minimum 4.5:1 ratio). Testing your interface with actual users using a 'Think Aloud' protocol is essential for identifying usability friction points.
@@ -121,7 +121,7 @@ Create a mathematical application for kids of age 4-7 years to teach them the ba
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--2-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-2/index.html)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--2-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-2/index.html)
 
 </div>
 
@@ -143,7 +143,7 @@ Design GUI for the data entry form for any application of selected domain which 
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--3-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-3/form.html)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--3-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-3/form.html)
 
 </div>
 
@@ -165,7 +165,7 @@ Design interface for automated ticket vending machine (ATVM) for any system.
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--4-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-4/index.html)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--4-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-4/index.html)
 
 </div>
 
@@ -205,7 +205,7 @@ Design website for an application of the selected domain with home page and subs
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--6-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-6/index.html)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--6-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-6/index.html)
 
 </div>
 
@@ -276,7 +276,7 @@ Prepare the Interview Questions for the Subject Matter Expert (SME) of your sele
 
   <br>
 
-  🏠 **[Back to Main Repository](../)** &nbsp;·&nbsp; ♟️ **[Chess Game](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)** &nbsp;·&nbsp; 🎫 **[ATVM Interface](https://github.com/Amey-Thakur/ATVM-INTERFACE)** &nbsp;·&nbsp; 🔢 **[Math Sprint Game](https://github.com/Amey-Thakur/MATH-SPRINT-GAME)** &nbsp;·&nbsp; 🧮 **[The Math Game](https://github.com/Amey-Thakur/THE-MATH-GAME)** &nbsp;·&nbsp; ✂️ **[Rock Paper Scissors](https://github.com/Amey-Thakur/ROCK-PAPER-SCISSORS)** &nbsp;·&nbsp; ☁️ **[Cloud Services Website](https://github.com/Amey-Thakur/CLOUD-SERVICES-WEBSITE)**
+  🏠 **[Back to Portfolio](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/)** &nbsp;·&nbsp; ♟️ **[Chess Game](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)** &nbsp;·&nbsp; 🎫 **[ATVM Interface](https://github.com/Amey-Thakur/ATVM-INTERFACE)** &nbsp;·&nbsp; 🔢 **[Math Sprint Game](https://github.com/Amey-Thakur/MATH-SPRINT-GAME)** &nbsp;·&nbsp; 🧮 **[The Math Game](https://github.com/Amey-Thakur/THE-MATH-GAME)** &nbsp;·&nbsp; ✂️ **[Rock Paper Scissors](https://github.com/Amey-Thakur/ROCK-PAPER-SCISSORS)** &nbsp;·&nbsp; ☁️ **[Cloud Services Website](https://github.com/Amey-Thakur/CLOUD-SERVICES-WEBSITE)**
 
 </div>
 

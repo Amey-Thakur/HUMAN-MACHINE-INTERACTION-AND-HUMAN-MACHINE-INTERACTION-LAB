@@ -487,7 +487,7 @@ Special thanks to the mentors and peers whose encouragement, discussions, and su
 
   <br>
 
-  🔬 **[Human Machine Interaction Laboratory](HMI%20Lab/)** &nbsp;·&nbsp; ♟️ **[Chess Game](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)** &nbsp;·&nbsp; 🎫 **[ATVM Interface](https://github.com/Amey-Thakur/ATVM-INTERFACE)** &nbsp;·&nbsp; 🔢 **[Math Sprint Game](https://github.com/Amey-Thakur/MATH-SPRINT-GAME)** &nbsp;·&nbsp; 🧮 **[The Math Game](https://github.com/Amey-Thakur/THE-MATH-GAME)** &nbsp;·&nbsp; ✂️ **[Rock Paper Scissors](https://github.com/Amey-Thakur/ROCK-PAPER-SCISSORS)** &nbsp;·&nbsp; ☁️ **[Cloud Services Website](https://github.com/Amey-Thakur/CLOUD-SERVICES-WEBSITE)**
+  🔬 **[Human Machine Interaction Laboratory](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/)** &nbsp;·&nbsp; ♟️ **[Chess Game](https://github.com/Amey-Thakur/ONLINE-CHESS-GAME)** &nbsp;·&nbsp; 🎫 **[ATVM Interface](https://github.com/Amey-Thakur/ATVM-INTERFACE)** &nbsp;·&nbsp; 🔢 **[Math Sprint Game](https://github.com/Amey-Thakur/MATH-SPRINT-GAME)** &nbsp;·&nbsp; 🧮 **[The Math Game](https://github.com/Amey-Thakur/THE-MATH-GAME)** &nbsp;·&nbsp; ✂️ **[Rock Paper Scissors](https://github.com/Amey-Thakur/ROCK-PAPER-SCISSORS)** &nbsp;·&nbsp; ☁️ **[Cloud Services Website](https://github.com/Amey-Thakur/CLOUD-SERVICES-WEBSITE)**
 
 </div>
 
