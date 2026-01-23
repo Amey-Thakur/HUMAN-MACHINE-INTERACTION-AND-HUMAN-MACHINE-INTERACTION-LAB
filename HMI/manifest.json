@@ -23,20 +23,6 @@
             "purpose": "any maskable"
         }
     ],
-    "screenshots": [
-        {
-            "src": "assets/screenshot-wide.png",
-            "sizes": "1280x720",
-            "type": "image/png",
-            "form_factor": "wide"
-        },
-        {
-            "src": "assets/screenshot-narrow.png",
-            "sizes": "540x720",
-            "type": "image/png",
-            "form_factor": "narrow"
-        }
-    ],
     "categories": [
         "education",
         "productivity"
