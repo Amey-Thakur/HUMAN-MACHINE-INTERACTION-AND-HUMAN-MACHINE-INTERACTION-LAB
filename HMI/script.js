@@ -1428,31 +1428,31 @@ if (shareBtn) {
                 grid.appendChild(sq);
             });
 
-            boardBox.appendChild(grid);
-            card.appendChild(boardBox);
-
-            // 4. Integrated Footer (Clean Layout)
-            const footer = document.createElement('div');
-            footer.style.cssText = "padding-top: 35px; text-align: center; width: 100%;";
+            // 2b. Professional Header (Authorship at top)
+            const header = document.createElement('div');
+            header.style.cssText = "margin-bottom: 30px; text-align: center; width: 100%;";
 
             const bTxt = document.createElement('div');
             bTxt.textContent = "♚ Created by Amey Thakur & Mega Satish";
-            bTxt.style.cssText = "font-size: 18px; font-weight: 700; color: #1e293b; letter-spacing: -0.02em; margin-bottom: 4px;";
+            bTxt.style.cssText = "font-size: 20px; font-weight: 700; color: #1e293b; letter-spacing: -0.02em;";
 
-            const tTxt = document.createElement('div');
-            tTxt.textContent = "HMI CHESS GAME";
-            tTxt.style.cssText = "font-size: 12px; font-weight: 600; color: #334155; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 2px;";
+            header.appendChild(bTxt);
+            card.appendChild(header);
+
+            card.appendChild(boardBox);
+
+            // 4. Integrated Footer (Lab Portolio & Link at bottom)
+            const footer = document.createElement('div');
+            footer.style.cssText = "padding-top: 30px; text-align: center; width: 100%;";
 
             const lTxt = document.createElement('div');
             lTxt.textContent = "HMI LAB PORTFOLIO";
-            lTxt.style.cssText = "font-size: 11px; font-weight: 500; color: #64748b; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 2px;";
+            lTxt.style.cssText = "font-size: 11px; font-weight: 500; color: #64748b; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 3px;";
 
             const uTxt = document.createElement('div');
             uTxt.textContent = (window.location.host + window.location.pathname).replace(/\/$/, '');
-            uTxt.style.cssText = "font-size: 9px; font-weight: 400; color: #94a3b8; font-family: monospace; letter-spacing: 0.05em;";
+            uTxt.style.cssText = "font-size: 10px; font-weight: 400; color: #94a3b8; font-family: monospace; letter-spacing: 0.05em;";
 
-            footer.appendChild(bTxt);
-            footer.appendChild(tTxt);
             footer.appendChild(lTxt);
             footer.appendChild(uTxt);
             card.appendChild(footer);
