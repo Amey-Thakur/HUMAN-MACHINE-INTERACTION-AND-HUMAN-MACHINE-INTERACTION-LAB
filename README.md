@@ -205,21 +205,21 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
   [![Technologies](https://img.shields.io/badge/Technologies-AngularJS%20%7C%20Bootstrap-orange.svg)](HMI%20Lab/)
   [![Status](https://img.shields.io/badge/Status-Complete-brightgreen.svg)](HMI%20Lab/)
 
-  [![Live Demo HMI Portfolio](https://img.shields.io/badge/Live_Demo-HMI_Portfolio-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/)
+  [![Live Demo HMI Portfolio](https://img.shields.io/badge/Live_Demo-HMI_Portfolio-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/)
  
  </div>
 
 > [!TIP]
-> **Live Implementation**: For a comprehensive showcase, visit the [**HMI Portfolio Dashboard**](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/). For a quick structural and responsive evaluation, use the 🚀 (**Rocket**) links in the 'Live Demo' column to view the implementations directly in your browser. For the complete source code and detailed documentation, visit the [**HMI Lab**](HMI%20Lab/) directory.
+> **Live Implementation**: For a comprehensive showcase, visit the [**HMI Portfolio Dashboard**](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/). For a quick structural and responsive evaluation, use the 🚀 (**Rocket**) links in the 'Live Demo' column to view the implementations directly in your browser. For the complete source code and detailed documentation, visit the [**HMI Lab**](HMI%20Lab/) directory.
 
 | # | Experiment | Date | Marks | Report | Live Demo |
 |:-:|:---|:---:|:---:|:-:|:-:|
 | 1 | Analyze and rate existing at least 3 websites and users for any specific Domain of your choice. Visualize the ratings using graphs. | February 04, 2022 | 9/10 | [View](HMI%20Lab/Experiment-1/AMEY_B-50_HMI_EXPERIMENT-1.pdf) | — |
-| 2 | Create a mathematical application for kids of age 4-7 years to teach them the basics of mathematics. | February 11, 2022 | 9/10 | [View](HMI%20Lab/Experiment-2/AMEY_B-50_HMI_EXPERIMENT-2.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-2/index.html) |
-| 3 | Design GUI for the data entry form for any application of selected domain which you have analyzed. | February 18, 2022 | 10/10 | [View](HMI%20Lab/Experiment-3/AMEY_B-50_HMI_EXPERIMENT-3.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-3/form.html) |
-| 4 | Design interface for automated ticket vending machine (ATVM) for any system. | February 18, 2022 | 9/10 | [View](HMI%20Lab/Experiment-4/AMEY_B-50_HMI_EXPERIMENT-4.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-4/index.html) |
+| 2 | Create a mathematical application for kids of age 4-7 years to teach them the basics of mathematics. | February 11, 2022 | 9/10 | [View](HMI%20Lab/Experiment-2/AMEY_B-50_HMI_EXPERIMENT-2.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-2/index.html) |
+| 3 | Design GUI for the data entry form for any application of selected domain which you have analyzed. | February 18, 2022 | 10/10 | [View](HMI%20Lab/Experiment-3/AMEY_B-50_HMI_EXPERIMENT-3.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-3/form.html) |
+| 4 | Design interface for automated ticket vending machine (ATVM) for any system. | February 18, 2022 | 9/10 | [View](HMI%20Lab/Experiment-4/AMEY_B-50_HMI_EXPERIMENT-4.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-4/index.html) |
 | 5 | Design an interface for any machine which you find troublesome to use and want to change its interface like automatic washing machine, microwave oven etc. | March 12, 2022 | 10/10 | [View](HMI%20Lab/Experiment-5/AMEY_B-50_HMI_EXPERIMENT-5.pdf) | — |
-| 6 | Design website for an application of the selected domain with home page and subsequent pages. | March 13, 2022 | 10/10 | [View](HMI%20Lab/Experiment-6/AMEY_B-50_HMI_EXPERIMENT-6.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI/HMI-6/index.html) |
+| 6 | Design website for an application of the selected domain with home page and subsequent pages. | March 13, 2022 | 10/10 | [View](HMI%20Lab/Experiment-6/AMEY_B-50_HMI_EXPERIMENT-6.pdf) | [🚀](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-6/index.html) |
 | 7 | Design menu for selected website. | March 23, 2022 | 9/10 | [View](HMI%20Lab/Experiment-7/AMEY_B-50_HMI_EXPERIMENT-7.pdf) | — |
 | 8 | Design the menus for the selected website. | March 24, 2022 | 9/10 | [View](HMI%20Lab/Experiment-8/AMEY_B-50_HMI_EXPERIMENT-8.pdf) | — |
 | 9 | Prepare the Interview Questions for the Subject Matter Expert (SME) of your selected domain to gather requirements. | April 01, 2022 | 10/10 | [View](HMI%20Lab/Experiment-9/AMEY_B-50_HMI_EXPERIMENT-9.pdf) | — |
