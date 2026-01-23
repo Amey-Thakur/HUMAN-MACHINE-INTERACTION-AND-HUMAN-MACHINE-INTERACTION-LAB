@@ -1441,10 +1441,15 @@ if (shareBtn) {
 
             const lTxt = document.createElement('div');
             lTxt.textContent = "HMI LAB PORTFOLIO";
-            lTxt.style.cssText = "font-size: 11px; font-weight: 500; color: #64748b; text-transform: uppercase; letter-spacing: 0.15em;";
+            lTxt.style.cssText = "font-size: 11px; font-weight: 500; color: #64748b; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 2px;";
+
+            const uTxt = document.createElement('div');
+            uTxt.textContent = window.location.host + window.location.pathname;
+            uTxt.style.cssText = "font-size: 9px; font-weight: 400; color: #94a3b8; font-family: monospace; letter-spacing: 0.05em;";
 
             footer.appendChild(bTxt);
             footer.appendChild(lTxt);
+            footer.appendChild(uTxt);
             card.appendChild(footer);
 
             stage.appendChild(card);
