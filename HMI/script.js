@@ -1439,6 +1439,7 @@ if (shareBtn) {
             header.appendChild(bTxt);
             card.appendChild(header);
 
+            boardBox.appendChild(grid);
             card.appendChild(boardBox);
 
             // 4. Integrated Footer (Lab Portolio & Link at bottom)
