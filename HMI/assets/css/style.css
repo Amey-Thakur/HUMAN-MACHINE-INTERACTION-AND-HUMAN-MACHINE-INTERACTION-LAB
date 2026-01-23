@@ -1264,6 +1264,7 @@
             background: var(--bg-primary);
             border-top: 1px solid var(--border-color);
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .chess-share-btn {
@@ -1276,6 +1277,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            text-align: center;
             gap: 6px;
             transition: all 0.2s ease;
             cursor: pointer;
