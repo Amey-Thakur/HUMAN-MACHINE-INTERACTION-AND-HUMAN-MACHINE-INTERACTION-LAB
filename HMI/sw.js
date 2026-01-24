@@ -7,7 +7,7 @@
  * ================================================================
  */
 
-const CACHE_NAME = 'hmi-lab-v1';
+const CACHE_NAME = 'hmi-lab-v2';
 const OFFLINE_URL = 'offline.html';
 
 // Assets to cache on install
