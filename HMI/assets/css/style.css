@@ -1911,3 +1911,64 @@
                 transform: translateY(-5px);
             }
         }
+
+        /* 
+         * =========================================
+         *   SCROLL HINT (AOA STYLE)
+         * =========================================
+         */
+        .scroll-hint-container {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeInDown 1s ease 0.5s both;
+        }
+
+        .scroll-line {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+            max-width: 100px;
+        }
+
+        .scroll-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .scroll-link:hover {
+            color: var(--accent-color);
+            letter-spacing: 0.5px;
+        }
+
+        .scroll-link i {
+            font-size: 0.8rem;
+            animation: bounce-hint 2s infinite;
+        }
+
+        @keyframes bounce-hint {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-6px);
+            }
+
+            60% {
+                transform: translateY(-3px);
+            }
+        }
