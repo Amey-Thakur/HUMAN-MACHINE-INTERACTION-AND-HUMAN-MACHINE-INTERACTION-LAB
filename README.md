@@ -52,7 +52,7 @@ As a computer engineer, understanding HMI is crucial for developing intuitive, e
 
 - **Knowledge Preservation**: To maintain organized access to comprehensive study materials beyond the classroom.
 - **Continuous Learning**: To support lifelong learning by enabling easy revisitation of fundamental HMI concepts.
-- **Academic Documentation**: To authentically document my learning journey through HMI.
+- **Academic Documentation**: To authentically document my learning journey through HMI & HMI Lab.
 - **Community Contribution**: To share these resources with students and learners who may benefit from them.
 
 > [!NOTE]
