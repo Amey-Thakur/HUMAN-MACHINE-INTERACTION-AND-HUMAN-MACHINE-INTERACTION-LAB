@@ -254,9 +254,9 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 | Program | Category | Description | Code |
 |:---|:---|:---|:-:|
 | `index.html` | Application | Main ATVM interface layout | [View](HMI%20Lab/Experiment-4/Source%20Code/index.html) |
-| `script.js` | Logic | Interactive ticketing logic | [View](HMI%20Lab/Experiment-4/Source%20Code/script.js) |
-| `style.css` | Design | ATM/ATVM visual styling | [View](HMI%20Lab/Experiment-4/Source%20Code/style.css) |
-| `README.md` | Doc | Setup and usage instructions | [View](HMI%20Lab/Experiment-4/Source%20Code/README.md) |
+| `atvm-controller.js` | Logic | Interactive ticketing logic | [View](HMI%20Lab/Experiment-4/Source%20Code/js/atvm-controller.js) |
+| `atvm.css` | Design | ATM/ATVM visual styling | [View](HMI%20Lab/Experiment-4/Source%20Code/css/atvm.css) |
+| `README.md` | Doc | Setup and usage instructions | [View](HMI%20Lab/Experiment-4/README.md) |
 
 </details>
 

@@ -172,9 +172,9 @@ Design interface for automated ticket vending machine (ATVM) for any system.
 | # | Program | Description | Source Code |
 |:-:|:---|:---|:-:|
 | 1 | index.html | Main ATVM interface layout | [View](Experiment-4/Source%20Code/index.html) |
-| 2 | script.js | Interactive ticketing logic | [View](Experiment-4/Source%20Code/script.js) |
-| 3 | style.css | ATM/ATVM visual styling | [View](Experiment-4/Source%20Code/style.css) |
-| 4 | README.md | Source code documentation | [View](Experiment-4/Source%20Code/README.md) |
+| 2 | atvm-controller.js | Interactive ticketing logic | [View](Experiment-4/Source%20Code/js/atvm-controller.js) |
+| 3 | atvm.css | ATM/ATVM visual styling | [View](Experiment-4/Source%20Code/css/atvm.css) |
+| 4 | README.md | Source code documentation | [View](Experiment-4/README.md) |
 | — | Lab Report (PDF) | Detailed experiment report | [View](Experiment-4/AMEY_B-50_HMI_EXPERIMENT-4.pdf) |
 
 ---
