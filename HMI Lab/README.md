@@ -7,11 +7,11 @@
 
   ### CSL801 · Semester VIII · Computer Engineering
 
-  [![Curated by](https://img.shields.io/badge/Curated%20by-Amey%20Thakur-blue.svg)](https://github.com/Amey-Thakur)
-  [![Documents](https://img.shields.io/badge/Documents-9-yellowgreen.svg)](#experiment-1-domain-analysis--rating)
-  [![Language](https://img.shields.io/badge/Language-HTML5%20%7C%20CSS3%20%7C%20JS-blueviolet.svg)](./)
+  [![Curated by](https://img.shields.io/badge/Curated%20by-Amey%20Thakur-0969DA.svg)](https://github.com/Amey-Thakur)
+  [![Documents](https://img.shields.io/badge/Documents-9-3949AB.svg)](#experiment-1-domain-analysis--rating)
+  [![Language](https://img.shields.io/badge/Language-HTML5%20%7C%20CSS3%20%7C%20JS-8250DF.svg)](./)
   [![Tech Stack](https://img.shields.io/badge/Tech%20Stack-AngularJS%20%7C%20Bootstrap-orange.svg)](./)
-  [![Type](https://img.shields.io/badge/Type-PDF%20%7C%20HTML-brightgreen.svg)](./)
+  [![Type](https://img.shields.io/badge/Type-PDF%20%7C%20HTML-546E7A.svg)](./)
 
   **A comprehensive collection of laboratory experiments for Human Machine Interaction, covering user interface design, interaction models, usability evaluation, and web application development.**
 
@@ -25,7 +25,7 @@
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI%20Portfolio-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/index.html)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI%20Portfolio-00B8D9?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/index.html)
 
 </div>
 
@@ -121,7 +121,7 @@ Create a mathematical application for kids of age 4-7 years to teach them the ba
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--2-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-2/index.html)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--2-00B8D9?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-2/index.html)
 
 </div>
 
@@ -143,7 +143,7 @@ Design GUI for the data entry form for any application of selected domain which 
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--3-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-3/form.html)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--3-00B8D9?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-3/form.html)
 
 </div>
 
@@ -165,7 +165,7 @@ Design interface for automated ticket vending machine (ATVM) for any system.
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--4-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-4/index.html)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--4-00B8D9?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-4/index.html)
 
 </div>
 
@@ -205,7 +205,7 @@ Design website for an application of the selected domain with home page and subs
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--6-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-6/index.html)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HMI--6-00B8D9?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/HMI-6/index.html)
 
 </div>
 

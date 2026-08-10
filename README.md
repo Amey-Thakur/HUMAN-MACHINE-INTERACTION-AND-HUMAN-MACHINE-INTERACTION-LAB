@@ -10,9 +10,9 @@
   ### CSC801 & CSL801 · Semester VIII · Computer Engineering
 
   [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
-  [![University](https://img.shields.io/badge/University-Mumbai-%23A6192E.svg)](https://mu.ac.in/)
-  [![Institution](https://img.shields.io/badge/Institution-Terna%20Engineering%20College-orange.svg)](https://ternaengg.ac.in/)
-  [![Curated by](https://img.shields.io/badge/Curated%20by-Amey%20Thakur-blue.svg)](https://github.com/Amey-Thakur)
+  [![University](https://img.shields.io/badge/University-Mumbai-A6192E.svg)](https://mu.ac.in/)
+  [![Institution](https://img.shields.io/badge/Institution-Terna%20Engineering%20College-E8710A.svg)](https://ternaengg.ac.in/)
+  [![Curated by](https://img.shields.io/badge/Curated%20by-Amey%20Thakur-0969DA.svg)](https://github.com/Amey-Thakur)
 
   **A comprehensive academic resource for Human Machine Interaction (HMI) and Human Machine Interaction Laboratory (HMI Lab), covering interaction design, usability engineering, user experience (UX), and interactive system implementation.**
 
@@ -201,12 +201,12 @@ The laboratory component (CSL801) focuses on hands-on implementation of user int
 
 <div align="center">
 
-  [![Total Experiments](https://img.shields.io/badge/Total%20Experiments-9-yellowgreen.svg)](HMI%20Lab/)
-  [![Language](https://img.shields.io/badge/Language-HTML5%20%7C%20CSS3%20%7C%20JS-blueviolet.svg)](HMI%20Lab/)
-  [![Technologies](https://img.shields.io/badge/Technologies-AngularJS%20%7C%20Bootstrap-orange.svg)](HMI%20Lab/)
-  [![Status](https://img.shields.io/badge/Status-Complete-brightgreen.svg)](HMI%20Lab/)
+  [![Total Experiments](https://img.shields.io/badge/Total%20Experiments-9-3949AB.svg)](HMI%20Lab/)
+  [![Language](https://img.shields.io/badge/Language-HTML5%20%7C%20CSS3%20%7C%20JS-8250DF.svg)](HMI%20Lab/)
+  [![Technologies](https://img.shields.io/badge/Technologies-AngularJS%20%7C%20Bootstrap-8250DF.svg)](HMI%20Lab/)
+  [![Status](https://img.shields.io/badge/Status-Complete-2EA043.svg)](HMI%20Lab/)
 
-  [![Live Demo HMI Portfolio](https://img.shields.io/badge/Live_Demo-HMI_Portfolio-007bff?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/)
+  [![Live Demo HMI Portfolio](https://img.shields.io/badge/Live_Demo-HMI_Portfolio-00B8D9?style=flat&logo=github&logoColor=lightgray)](https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/)
  
  </div>
 
