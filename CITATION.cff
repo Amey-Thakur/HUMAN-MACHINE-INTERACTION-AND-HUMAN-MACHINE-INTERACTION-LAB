@@ -11,3 +11,7 @@ title: "HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB"
 version: 1.0.0
 date-released: 2022-08-09
 url: "https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB"
+identifiers:
+  - type: other
+    value: "2022-02-07"
+    description: "Date this repository was created on GitHub."

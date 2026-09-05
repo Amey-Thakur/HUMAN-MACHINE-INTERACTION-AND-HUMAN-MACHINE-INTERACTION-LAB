@@ -1,0 +1,46 @@
+# Human Machine Interaction and Human Machine Interaction Laboratory
+
+> CSC801: Human Machine Interaction [HMI] & CSL801: Human Machine
+> Interaction Lab [HMI Lab] | BE Semester VIII | Computer Engineering
+
+Author: Amey Thakur, ORCID 0000-0001-5644-1575
+Co-author: Mega Satish, ORCID 0000-0002-1844-9557
+Institution: Terna Engineering College, University of Mumbai
+Programme: B.E. Computer Engineering, Fourth Year, Semester VIII
+Course codes: CSC801, CSL801
+Licence: CC BY 4.0, attribution required
+Repository created: 7 February 2022
+Work dated: 9 August 2022
+
+## What is in this repository
+
+- Assignments, 3 files
+- HMI, 166 files
+- HMI Lab, 166 files
+- HMI Mini-Project, 29 files
+- IAT-1, 5 files
+- IAT-2, 8 files
+- MEGA NOTES, 6 files
+- Quizzes, 12 files
+- Reference Books, 33 files
+- Semester Exam, 9 files
+- Submission Report, 4 files
+- THE WALL, 11 files
+- BE Timetable.pdf
+- MU SEM VIII SYLLABUS.pdf
+
+## Subject terms
+
+computer-engineering, computer-science, engineering, hci,
+heuristic-evaluation, hmi, human-computer-interaction,
+human-machine-interaction, interaction-design, textbooks, ui-design,
+university-of-mumbai, usability-engineering, user-experience-design,
+ux-design
+
+## Where this sits
+
+- This repository: https://github.com/Amey-Thakur/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB
+- Degree index, every subject and project: https://github.com/Amey-Thakur/COMPUTER-ENGINEERING
+- Project page: https://amey-thakur.github.io/HUMAN-MACHINE-INTERACTION-AND-HUMAN-MACHINE-INTERACTION-LAB/
+- Author: https://github.com/Amey-Thakur
+- Research notes and reflections: https://amey-thakur.github.io/
